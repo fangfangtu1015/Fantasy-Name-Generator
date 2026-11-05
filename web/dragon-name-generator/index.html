@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Dragon Name Generator - Ancient Dragon Names with Titles for D&D</title>
+  <meta name="description" content="Generate majestic dragon names for D&D and fantasy RPGs. Ancient draconic names with powerful titles, elemental affinities, and cultural meanings.">
+  <link rel="canonical" href="https://mythicname.app/dragon-name-generator/">
+  <meta property="og:title" content="Dragon Name Generator - Ancient Dragon Names with Titles for D&D">
+  <meta property="og:description" content="Generate majestic dragon names for D&D and fantasy RPGs. Ancient draconic names with powerful titles, elemental affinities">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mythicname.app/dragon-name-generator/">
+  <meta property="og:image" content="https://mythicname.app/assets/dragon-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dragon Name Generator - Ancient Dragon Names with Titles for D&D">
+  <meta name="twitter:description" content="Generate majestic dragon names for D&D and fantasy RPGs. Ancient draconic names with powerful titles, elemental affinities">
+  <meta name="twitter:image" content="https://mythicname.app/assets/dragon-hero.jpg">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Dragon Name Generator",
+    "description": "Generate majestic dragon names for D&D and fantasy RPGs. Ancient draconic names with powerful titles, elemental affinities, character cards, and AI portrait prompts.",
+    "url": "https://mythicname.app/dragon-name-generator/",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does the dragon name generator work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The generator combines Draconic morphemes (prefixes, middle syllables, suffixes) with age-appropriate titles. Chromatic dragons receive harsh phonetics (Ign-, Nax-, Ves-), metallic dragons receive noble sounds (Astr-, Elyn-, Val-), and gem dragons receive crystalline combinations (Myth-, Crys-, Jade-). Each generated name follows the structure: prefix + middle + suffix + title. The tool produces names like 'Pyraixorath the Ancient' or 'Elyndorthal the Silver Ward' that reflect the dragon's type and age category."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between wyrmling, young, adult, and ancient dragon names?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dragon names grow with age. Wyrmlings have 1-2 syllable names with no titles (Fyrax, Krix). Young dragons have 2-3 syllables and one title (Ignarax the Dread). Adult dragons have 3-4 syllables and earned titles (Veskastilaarth the Venomous). Ancient dragons have 4-6 syllables and multiple epithets (Ixyrialonthar the Eternal, Scourge of the Northern Reaches). The generator produces names across all age categories -- choose based on your dragon's role in the campaign."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use these names for dragonborn characters?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Generate a full draconic name, then abbreviate it for dragonborn use. 'Arjhanthaloth the Magnificent' becomes 'Arjhan' for a dragonborn paladin. Dragonborn names typically use 1-2 syllables from the full draconic name. You can also generate dragonborn clan names like 'Sheer Claws' or 'Flame Heart' to complete the character."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I choose between chromatic, metallic, and gem dragon names?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Match the name to your dragon's alignment and role. Chromatic dragons (red, blue, green, black, white) are evil-aligned and use harsh phonetics -- choose these for villains and threats. Metallic dragons (gold, silver, bronze, copper, brass) are good-aligned and use noble sounds -- choose these for allies and protectors. Gem dragons (amethyst, crystal, emerald, sapphire, topaz) are neutral and psionic -- choose these for puzzle encounters and neutral NPCs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What do the dragon titles mean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Titles are epithets earned through deeds. 'The Ancient' indicates great age. 'The World-Burner' indicates destruction on a massive scale. 'The Silver Ward' indicates protection of territory. 'The Crystal Sage' indicates psionic mastery. Ancient dragons accumulate multiple titles over centuries. The generator assigns titles based on phonetic patterns that match the dragon's type -- chromatic dragons receive threatening titles, metallic dragons receive noble titles, gem dragons receive mystical titles."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I pronounce these dragon names?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Draconic pronunciation emphasizes sibilant sounds and ancient cadences. The letter \"x\" is always pronounced (Ignarax = \"ig-NAR-ax\"). The letter \"y\" functions as a vowel (Veskastilaarth = ves-KAS-tee-lah-ARTH). Syllable stress falls on the first or antepenultimate syllable (IK-sy-ri-a-LON-thar). Sibilant clusters (sx, zh, sh) are drawn out with a hissing quality. Use the speaker icon on generated names to hear correct pronunciation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I generate names for wyverns and drakes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The generator focuses on true dragons (chromatic, metallic, gem) but the naming principles apply to dragon-kin. Wyverns use shorter, harsher names (Gryx, Skrix, Vexil) reflecting their bestial nature. Drakes use simple, sharp names (Krix, Drax, Brak) reflecting their lesser status. You can use the generator's wyrmling names as a starting point and abbreviate further for wyverns and drakes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are these names free to use in my campaign?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. All generated names are original and free to use in your tabletop RPG campaigns, novels, games, or any creative project. The names follow established draconic naming conventions and are original creations. Use them without restriction."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mythicname.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Races",
+      "item": "https://mythicname.app/races/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Dragon Name Generator",
+      "item": "https://mythicname.app/dragon-name-generator/"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">
+        <span class="logo-icon">&#9876;</span>
+        Fantasy Name Generator
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/races/">Races</a></li>
+          <li><a href="/backstory-generator/">Backstory Generator</a></li>
+          <li><a href="/guides/">Guides</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="race-hero">
+          <img src="/assets/dragon-hero.jpg" alt="Majestic ancient dragon in humanoid form, scales shimmering with elemental power">
+          <div class="race-hero-overlay">
+            <div class="race-hero-text">
+              <h1>Dragon Name Generator</h1>
+              <p>Generate majestic dragon names for D&D 5e — ancient names with powerful sibilant sounds and noble titles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>&rsaquo;</span>
+        <a href="/races/">Races</a>
+        <span>&rsaquo;</span>
+        Dragon Name Generator
+      </div>
+
+      <h2>Generate Dragon Names for Your Fantasy RPG Adventures</h2>
+      
+      <div class="generator-box">
+        <div class="tab-switcher">
+          <button class="tab-btn active" onclick="switchTab('quick-names', this)">Quick Dragon Names</button>
+          <button class="tab-btn" onclick="switchTab('character-card', this)">D&D 5e Dragon Character Card</button>
+        </div>
+
+        <!-- Tab 1: Quick Name Generator -->
+        <div id="quick-names" class="tab-content active">
+          <div class="generator-controls">
+            <div class="form-group">
+              <label for="dragon-count">How many?</label>
+              <input type="number" id="dragon-count" min="1" max="20" value="5">
+            </div>
+          </div>
+          <button class="btn btn-primary generate-btn" onclick="generateDragonNames()">Generate Dragon Names</button>
+          <div class="results" id="dragon-results"></div>
+        </div>
+
+        <!-- Tab 2: D&D 5e Character Card -->
+        <div id="character-card" class="tab-content">
+          <div id="char-generator">
+            <div class="char-gen-controls">
+              <div class="form-group">
+                <label for="char-class">Class</label>
+                <select id="char-class">
+                  <option value="">Random</option>
+                  <option value="sorcerer">Sorcerer</option>
+                  <option value="wizard">Wizard</option>
+                  <option value="warlock">Warlock</option>
+                  <option value="fighter">Fighter</option>
+                  <option value="barbarian">Barbarian</option>
+                  <option value="cleric">Cleric</option>
+                  <option value="paladin">Paladin</option>
+                  <option value="ranger">Ranger</option>
+                  <option value="rogue">Rogue</option>
+                  <option value="druid">Druid</option>
+                  <option value="monk">Monk</option>
+                  <option value="bard">Bard</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="char-style">Name Style</label>
+                <select id="char-style">
+                  <option value="random">Random</option>
+                  <option value="tolkien">Tolkien-esque</option>
+                  <option value="grrm">GRRM-esque</option>
+                  <option value="elder-scrolls">Elder Scrolls-esque</option>
+                  <option value="wow">WoW-esque</option>
+                  <option value="dark-souls">Dark Souls-esque</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="char-level">Level</label>
+                <input type="number" id="char-level" min="1" max="20" value="1">
+              </div>
+              <div class="form-group">
+                <label for="char-background">Background</label>
+                <select id="char-background">
+                  <option value="">Random</option>
+                  <option value="sage">Sage</option>
+                  <option value="noble">Noble</option>
+                  <option value="outlander">Outlander</option>
+                  <option value="hermit">Hermit</option>
+                  <option value="soldier">Soldier</option>
+                  <option value="acolyte">Acolyte</option>
+                  <option value="criminal">Criminal</option>
+                  <option value="folk hero">Folk Hero</option>
+                  <option value="guild artisan">Guild Artisan</option>
+                  <option value="charlatan">Charlatan</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="portrait-style">Portrait Style</label>
+                <select id="portrait-style">
+                  <option value="fantasy-art">Fantasy Art</option>
+                  <option value="oil-painting">Oil Painting</option>
+                  <option value="digital-art">Digital Art</option>
+                  <option value="watercolor">Watercolor</option>
+                  <option value="pencil-sketch">Pencil Sketch</option>
+                  <option value="anime">Anime</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="batch-mode">Batch Mode</label>
+                <select id="batch-mode">
+                  <option value="single">Single Character</option>
+                  <option value="party">Full Party (4)</option>
+                  <option value="custom">Custom Count</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn btn-primary generate-btn" onclick="generateDragonCharacter()">Generate Character</button>
+            <div id="char-results"></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="mt-2">
+        <h2>How to Choose a Dragon Name</h2>
+        <p>Dragon naming follows fundamentally different rules from mortal races. Dragons are not player characters -- they are ancient NPCs whose names reflect <strong>age, type, and campaign role</strong>. A wyrmling's name is simple and given by its mother. An ancient wyrm's name accumulates syllables over centuries, each one recording a conquest or elemental mastery. Use this guide to match the right name to your dragon's place in the story.</p>
+
+        <h3>Match by Age Category</h3>
+        <p>Dragon names grow with the creature. A young dragon's name is a seed; an ancient dragon's name is a history book.</p>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h4>Wyrmling (0-5 years)</h4>
+            <p><strong>1-2 syllables, simple sounds.</strong> Given by the mother, not yet earned through deeds. These names are practical -- the dragon hasn't lived long enough to accumulate titles.</p>
+            <div class="name-example">
+              <strong>Generated examples:</strong> <span class="phonetic-tag">Fyrax</span> <span class="phonetic-tag">Krix</span> <span class="phonetic-tag">Ash</span> <span class="phonetic-tag">Glyth</span><br>
+              <strong>Naming pattern:</strong> Single prefix + short suffix, no title yet<br>
+              <strong>Campaign use:</strong> The party encounters a young dragon still living under its mother's wing. The simple name signals vulnerability.
+            </div>
+          </div>
+          <div class="feature-card">
+            <h4>Young Dragon (6-100 years)</h4>
+            <p><strong>2-3 syllables, self-chosen.</strong> The dragon has left the nest and claimed its first territory. It chooses its own name, often adding a title reflecting its first major deed.</p>
+            <div class="name-example">
+              <strong>Generated examples:</strong> <span class="phonetic-tag">Ignarax the Dread</span> <span class="phonetic-tag">Veskastil</span> <span class="phonetic-tag">Pyraixorath</span><br>
+              <strong>Naming pattern:</strong> Prefix + middle + suffix + first earned title<br>
+              <strong>Campaign use:</strong> A young red dragon terrorizing a frontier village. The title "the Dread" marks its first successful raid.
+            </div>
+          </div>
+          <div class="feature-card">
+            <h4>Adult Dragon (101-800 years)</h4>
+            <p><strong>3-4 syllables, multiple titles.</strong> The dragon has survived centuries, accumulated territory, and earned epithets through conquests that mortals remember in legends.</p>
+            <div class="name-example">
+              <strong>Generated examples:</strong> <span class="phonetic-tag">Ignaraxaloth the World-Burner</span> <span class="phonetic-tag">Elyndorthal the Silver Ward</span><br>
+              <strong>Naming pattern:</strong> Extended name + territorial or elemental title<br>
+              <strong>Campaign use:</strong> The party faces a dragon who has ruled a region for centuries. Its name is spoken with fear in every tavern.
+            </div>
+          </div>
+          <div class="feature-card">
+            <h4>Ancient Dragon (800+ years)</h4>
+            <p><strong>4-6 syllables, multiple epithets.</strong> The dragon's true name is so long that mortals use abbreviated forms. Each syllable records a deed of power. The full name is a weapon -- speaking it in Draconic is said to have magical force.</p>
+            <div class="name-example">
+              <strong>Generated examples:</strong> <span class="phonetic-tag">Ixyrialonthar the Eternal, Scourge of the Northern Reaches</span> <span class="phonetic-tag">Veskastilaarth the Undying, Queen of the Deep Caves</span><br>
+              <strong>Naming pattern:</strong> Multi-syllabic true name + accumulated titles + territorial epithets<br>
+              <strong>Campaign use:</strong> The final boss. An ancient wyrm whose name alone is a quest hook. The party must learn its true name to bargain with it or bind it.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h3>Match by Dragon Type</h3>
+        <p>Dragon type determines phonetic patterns. Chromatic dragons sound harsh and commanding. Metallic dragons sound noble and ancient. Gem dragons sound crystalline and otherworldly. Choose a name that matches your dragon's bloodline.</p>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h4>Chromatic Dragons (Evil)</h4>
+            <p><strong>Harsh consonants, sibilant hisses, commanding endings.</strong> Red, blue, green, black, and white dragons use sounds that evoke fire, venom, lightning, cold, and domination.</p>
+            <div class="name-example">
+              <strong>Red dragon pattern:</strong> <span class="phonetic-tag">Ign-</span> (fire) + <span class="phonetic-tag">-rax</span> (destroyer) = Ignarax<br>
+              <strong>Blue dragon pattern:</strong> <span class="phonetic-tag">Nax-</span> (lightning) + <span class="phonetic-tag">-ene</span> (born of) = Naxene<br>
+              <strong>Green dragon pattern:</strong> <span class="phonetic-tag">Ves-</span> (venom) + <span class="phonetic-tag">-ka-</span> (of) + <span class="phonetic-tag">-stil</span> (shadow) = Veskastil<br>
+              <strong>Common titles:</strong> the World-Burner, the Stormcaller, the Venomous, the Acid-Tongued
+            </div>
+          </div>
+          <div class="feature-card">
+            <h4>Metallic Dragons (Good)</h4>
+            <p><strong>Liquid consonants, open vowels, regal endings.</strong> Gold, silver, bronze, copper, and brass dragons use sounds that evoke nobility, wisdom, and divine authority.</p>
+            <div class="name-example">
+              <strong>Gold dragon pattern:</strong> <span class="phonetic-tag">Astr-</span> (star) + <span class="phonetic-tag">-an-</span> (divine) + <span class="phonetic-tag">-eryx</span> (golden one) = Astrantheryx<br>
+              <strong>Silver dragon pattern:</strong> <span class="phonetic-tag">Elyn-</span> (moonlight) + <span class="phonetic-tag">-dor-</span> (guardian) + <span class="phonetic-tag">-thal</span> (silver shield) = Elyndorthal<br>
+              <strong>Bronze dragon pattern:</strong> <span class="phonetic-tag">Val-</span> (strong) + <span class="phonetic-tag">-er-</span> (speaker) + <span class="phonetic-tag">-ion</span> (ancient suffix) = Valerion<br>
+              <strong>Common titles:</strong> the Dawnkeeper, the Silver Ward, the Bronze Voice, the Eternal
+            </div>
+          </div>
+          <div class="feature-card">
+            <h4>Gem Dragons (Neutral/Psionic)</h4>
+            <p><strong>Crystalline combinations, otherworldly syllables.</strong> Amethyst, crystal, emerald, sapphire, and topaz dragons use sounds that evoke psionic power and planar resonance.</p>
+            <div class="name-example">
+              <strong>Amethyst dragon pattern:</strong> <span class="phonetic-tag">Myth-</span> (mind) + <span class="phonetic-tag">-ax-</span> (crystal) + <span class="phonetic-tag">-endral</span> (psionic) = Mythaxendral<br>
+              <strong>Crystal dragon pattern:</strong> <span class="phonetic-tag">Crys-</span> (crystal) + <span class="phonetic-tag">-al-</span> (clear) + <span class="phonetic-tag">-ith</span> (mind) = Crysalth<br>
+              <strong>Emerald dragon pattern:</strong> <span class="phonetic-tag">Jade-</span> (green) + <span class="phonetic-tag">-ir-</span> (vision) + <span class="phonetic-tag">-ion</span> (ancient) = Jadeirion<br>
+              <strong>Common titles:</strong> the Crystal Sage, the Mind-Weaver, the Dream-Keeper, the Psionic
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h3>Match by Campaign Role</h3>
+        <p>A dragon's name should signal its role in your story before the party even rolls initiative.</p>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h4>Final Boss</h4>
+            <p><strong>Long name, multiple titles, territorial epithets.</strong> The party has heard legends before they meet this dragon. Its name alone is a quest hook.</p>
+            <div class="name-example">
+              <strong>Example:</strong> <em>Pyraixorath the Ancient, Scourge of the Cinder Peaks, the World-Burner</em><br>
+              <strong>Why it works:</strong> 5 syllables + 3 titles = immense age and power. Players know this is the campaign's climax.
+            </div>
+          </div>
+          <div class="feature-card">
+            <h4>Reluctant Ally</h4>
+            <p><strong>Moderate length, one earned title, neutral phonetics.</strong> This dragon is powerful but not immediately hostile. Its name suggests wisdom rather than terror.</p>
+            <div class="name-example">
+              <strong>Example:</strong> <em>Elyndorthal the Silver Ward</em><br>
+              <strong>Why it works:</strong> Metallic dragon phonetics (L, R, open vowels) signal good alignment. "Ward" suggests protector, not predator.
+            </div>
+          </div>
+          <div class="feature-card">
+            <h4>Puzzle or Riddle</h4>
+            <p><strong>Name contains hidden meaning, etymology matters.</strong> This dragon's name is a clue. Players must understand Draconic morphemes to bargain with it or learn its weakness.</p>
+            <div class="name-example">
+              <strong>Example:</strong> <em>Mythaxendral the Crystal Sage</em><br>
+              <strong>Why it works:</strong> "Myth-" (mind) + "ax" (crystal) + "endral" (psionic) = this dragon's power is mental, not physical. The name tells players how to approach it.
+            </div>
+          </div>
+          <div class="feature-card">
+            <h4>Dragonborn Patron</h4>
+            <p><strong>Full draconic name + abbreviated dragonborn form.</strong> This dragon is the ancestor of a dragonborn PC. Generate the full name, then use the dragonborn's shortened form.</p>
+            <div class="name-example">
+              <strong>Full dragon name:</strong> <em>Arjhanthaloth the Magnificent</em><br>
+              <strong>Dragonborn descendant:</strong> <em>Arjhan</em> of Clan Sheer Claws<br>
+              <strong>Why it works:</strong> The dragonborn's name (Arjhan) is clearly derived from the ancestor's name (Arjhanthaloth), showing heritage.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Understanding Your Generated Name</h2>
+        <div class="article-content">
+          <h3>Name Structure: Prefix + Middle + Suffix + Title</h3>
+          <p>Every dragon name follows a consistent structure rooted in the Draconic language. Understanding this structure helps you interpret what your generated name means and how it reflects the dragon's nature.</p>
+          <ul>
+            <li><strong>Prefix:</strong> Indicates elemental affinity or bloodline (Ign- = fire, Nax- = lightning, Elyn- = moonlight, Crys- = crystal)</li>
+            <li><strong>Middle syllables:</strong> Record deeds, territory, or magical nature (-ar- = lord, -dor- = guardian, -ka- = of, -th- = eternal)</li>
+            <li><strong>Suffix:</strong> Marks age category or power level (-ax = destroyer, -oth = ancient, -ion = eternal, -arth = elder, -alith = crystal-borne)</li>
+            <li><strong>Title:</strong> Earned through conquest or deed (the Ancient, the World-Burner, the Silver Ward, the Crystal Sage)</li>
+          </ul>
+
+          <div class="name-example">
+            <strong>Breaking down "Pyraixorath the Ancient":</strong><br>
+            <em>Pyr-</em> (fire prefix) + <em>-ai-</em> (bond/link) + <em>-xor-</em> (destroyer root) + <em>-ath</em> (ancient suffix) + "the Ancient" (earned title)<br>
+            <strong>Full meaning:</strong> Ancient fire-destroyer, bonded to destruction since the dawn of its power<br>
+            <strong>Dragon type:</strong> Red dragon (fire prefix + harsh consonants)
+          </div>
+
+          <h3>The Title System: Age Determines Honorifics</h3>
+          <p>Dragons earn titles through deeds, and the complexity of their titles reflects their age and accomplishments. A wyrmling has no title. An ancient wyrm may have three or four.</p>
+
+          <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+            <thead>
+              <tr style="border-bottom: 2px solid #ddd;">
+                <th style="text-align: left; padding: 0.5rem;">Age Category</th>
+                <th style="text-align: left; padding: 0.5rem;">Typical Titles</th>
+                <th style="text-align: left; padding: 0.5rem;">Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #eee;">
+                <td style="padding: 0.5rem;">Wyrmling</td>
+                <td style="padding: 0.5rem;">None</td>
+                <td style="padding: 0.5rem;">Fyrax</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #eee;">
+                <td style="padding: 0.5rem;">Young</td>
+                <td style="padding: 0.5rem;">One title (the Dread, the Swift)</td>
+                <td style="padding: 0.5rem;">Ignarax the Dread</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #eee;">
+                <td style="padding: 0.5rem;">Adult</td>
+                <td style="padding: 0.5rem;">One earned title (the World-Burner, the Stormcaller)</td>
+                <td style="padding: 0.5rem;">Veskastilaarth the Venomous</td>
+              </tr>
+              <tr>
+                <td style="padding: 0.5rem;">Ancient</td>
+                <td style="padding: 0.5rem;">Multiple titles + territorial epithets</td>
+                <td style="padding: 0.5rem;">Ixyrialonthar the Eternal, Scourge of the Northern Reaches</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Pronunciation Guide</h3>
+          <p>Draconic pronunciation emphasizes sibilant sounds and ancient cadences:</p>
+          <ul>
+            <li><strong>"x"</strong> is always pronounced: <em>Ignarax</em> = "ig-NAR-ax" with sharp final syllable</li>
+            <li><strong>"th"</strong> as in "this" (voiced) for metallic dragons, "thin" (unvoiced) for chromatic: <em>Valerion</em> vs <em>Ignaroth</em></li>
+            <li><strong>"y"</strong> functions as a vowel: <em>Veskastilaarth</em> = ves-KAS-tee-lah-ARTH</li>
+            <li><strong>Syllable stress</strong> falls on the first or antepenultimate syllable: <em>IK-sy-ri-a-LON-thar</em></li>
+            <li><strong>Sibilant clusters</strong> are drawn out with a hissing quality: <em>Ssxith</em> = "SSS-zith"</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Complete Dragon Encounter Examples</h2>
+        <p>See how generated names translate into full dragon encounters. Each example includes the dragon's stats, backstory, and how the name reflects its nature.</p>
+
+        <div class="character-card">
+          <div class="card-header">
+            <h3>Pyraixorath the Ancient</h3>
+            <span class="card-badge">Final Boss</span>
+          </div>
+          <div class="card-body">
+            <p><strong>Name breakdown:</strong> <em>Pyr-</em> (fire) + <em>-ai-</em> (bond) + <em>-xor-</em> (destroyer) + <em>-ath</em> (ancient) + "the Ancient" (title)</p>
+            <p><strong>Dragon type:</strong> Adult Red Dragon (CR 17)</p>
+            <p><strong>Age:</strong> 650 years</p>
+            <p><strong>Lair:</strong> The Cinder Peaks, an active volcano 200 miles from the nearest civilization</p>
+            <p><strong>Backstory:</strong> Pyraixorath has ruled the Cinder Peaks for four centuries. The "Ancient" title was earned when it single-handedly destroyed an army that marched against it 300 years ago. Its name's fire prefix (Pyr-) and destroyer suffix (-xor-) perfectly reflect its nature: a dragon bonded to destruction, whose very presence turns the surrounding 50 miles into scorched wasteland.</p>
+            <p><strong>Encounter hook:</strong> The party must bargain with Pyraixorath to learn the location of an artifact hidden in its hoard. The dragon's true name is a quest reward -- learning it gives the party leverage in future negotiations.</p>
+          </div>
+        </div>
+
+        <div class="character-card">
+          <div class="card-header">
+            <h3>Elyndorthal the Silver Ward</h3>
+            <span class="card-badge">Reluctant Ally</span>
+          </div>
+          <div class="card-body">
+            <p><strong>Name breakdown:</strong> <em>Elyn-</em> (moonlight) + <em>-dor-</em> (guardian) + <em>-thal</em> (silver shield) + "the Silver Ward" (title)</p>
+            <p><strong>Dragon type:</strong> Adult Silver Dragon (CR 16)</p>
+            <p><strong>Age:</strong> 420 years</p>
+            <p><strong>Lair:</strong> The Moonstone Mountains, a range of silver-veined peaks sacred to local elves</p>
+            <p><strong>Backstory:</strong> Elyndorthal has protected the Moonstone Mountains from invasion for three centuries. The "Silver Ward" title was earned when it held off a drow incursion single-handedly. Its name's metallic phonetics (L, R, open vowels) and guardian suffix (-dor-) signal its noble nature: a moonlit protector whose very presence shields the mountains from evil.</p>
+            <p><strong>Encounter hook:</strong> The party needs Elyndorthal's help against a greater threat. The dragon is wary of mortals but respects those who demonstrate honor. It will aid the party if they prove worthy of its protection.</p>
+          </div>
+        </div>
+
+        <div class="character-card">
+          <div class="card-header">
+            <h3>Mythaxendral the Crystal Sage</h3>
+            <span class="card-badge">Puzzle Dragon</span>
+          </div>
+          <div class="card-body">
+            <p><strong>Name breakdown:</strong> <em>Myth-</em> (mind) + <em>-ax-</em> (crystal) + <em>-endral</em> (psionic) + "the Crystal Sage" (title)</p>
+            <p><strong>Dragon type:</strong> Adult Amethyst Dragon (CR 15)</p>
+            <p><strong>Age:</strong> 380 years</p>
+            <p><strong>Lair:</strong> The Crystal Caverns, a network of psionically-charged gemstone caves</p>
+            <p><strong>Backstory:</strong> Mythaxendral is a gem dragon who has spent centuries studying the nature of mind and reality. The "Crystal Sage" title reflects its mastery of psionic lore. Its name's crystalline morphemes (Myth- = mind, -ax- = crystal, -endral = psionic) tell the party exactly what they face: a dragon whose power is mental, not physical. Brute force will fail; only clever bargaining or psionic countermeasures will succeed.</p>
+            <p><strong>Encounter hook:</strong> The party must solve a series of psionic puzzles to earn Mythaxendral's aid. The dragon's name is the first clue -- understanding its etymology reveals that this encounter is a test of intellect, not combat.</p>
+          </div>
+        </div>
+
+        <div class="character-card">
+          <div class="card-header">
+            <h3>Fyrax the Unproven</h3>
+            <span class="card-badge">Young Dragon</span>
+          </div>
+          <div class="card-body">
+            <p><strong>Name breakdown:</strong> <em>Fyr-</em> (fire) + <em>-ax</em> (destroyer suffix, abbreviated) + "the Unproven" (title)</p>
+            <p><strong>Dragon type:</strong> Young Red Dragon (CR 10)</p>
+            <p><strong>Age:</strong> 45 years</p>
+            <p><strong>Lair:</strong> A small cave system in the foothills, recently claimed from a displaced manticore</p>
+            <p><strong>Backstory:</strong> Fyrax left its mother's territory two years ago and claimed a small hunting ground. The "Unproven" title reflects its status: it has not yet earned a true epithet through major deeds. Its short name (2 syllables) and simple title signal that this is a young dragon, still growing into its power. The fire prefix (Fyr-) shows it has the potential for greatness, but the abbreviated destroyer suffix (-ax instead of -rax) shows it hasn't yet mastered its nature.</p>
+            <p><strong>Encounter hook:</strong> Fyrax is terrorizing a frontier village, but it's not evil -- it's young, hungry, and inexperienced. The party can drive it off, bargain with it, or even mentor it. This encounter is a choice, not a boss fight.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Using Dragon Names in Your Campaign</h2>
+        <div class="article-content">
+          <h3>DM Workflow: From Generator to Encounter</h3>
+          <p>Follow this workflow to turn a generated name into a complete dragon encounter:</p>
+          <ol>
+            <li><strong>Determine the dragon's role:</strong> Is it a final boss, reluctant ally, puzzle, or young dragon? This determines name length and title complexity.</li>
+            <li><strong>Choose dragon type:</strong> Chromatic (evil), metallic (good), or gem (neutral)? This determines phonetic patterns.</li>
+            <li><strong>Generate names:</strong> Click "Generate Names" until you find one that fits the role and type. The tool produces names with appropriate structure.</li>
+            <li><strong>Break down the etymology:</strong> Use the name structure guide above to interpret what the name means. This informs the dragon's backstory.</li>
+            <li><strong>Assign age category:</strong> Wyrmling, young, adult, or ancient? This determines the title system.</li>
+            <li><strong>Build the encounter:</strong> Use the complete examples above as templates. The name tells you everything: the dragon's nature, its power level, and how the party should approach it.</li>
+          </ol>
+
+          <h3>Naming Dragon Families and Bloodlines</h3>
+          <p>When creating multiple dragons in the same bloodline, use consistent phonetic patterns to show their relationship:</p>
+          <ul>
+            <li><strong>Mother and offspring:</strong> Share the same prefix. <em>Pyraixorath</em> (mother) and <em>Pyraxal</em> (offspring) both use the fire prefix (Pyr-).</li>
+            <li><strong>Sibling rivalry:</strong> Similar names with different suffixes. <em>Ignarax</em> and <em>Ignaroth</em> are brothers whose names differ only in the final syllable, reflecting their competition.</li>
+            <li><strong>Clan naming:</strong> All dragons in a clan use the same suffix pattern. The "Thal" clan of silver dragons all have names ending in <em>-thal</em>: <em>Elyndorthal</em>, <em>Valerithal</em>, <em>Astronthal</em>.</li>
+          </ul>
+
+          <h3>Dragon Names as Plot Devices</h3>
+          <p>A dragon's true name is a weapon in D&D lore. Use this in your campaign:</p>
+          <ul>
+            <li><strong>Quest hooks:</strong> The party must learn an ancient dragon's true name to bargain with it or bind it. The name is hidden in ancient texts, guarded by riddles.</li>
+            <li><strong>Character development:</strong> A dragonborn PC's name is derived from their draconic ancestor. Learning the full name reveals their heritage and unlocks powers.</li>
+            <li><strong>Magical significance:</strong> Speaking a dragon's true name in Draconic gives you power over it. This is a double-edged sword -- the dragon will hunt you if you misuse this knowledge.</li>
+            <li><strong>Territorial markers:</strong> Dragon names often include territorial epithets ("of the Cinder Peaks," "Warden of the Coast"). These names are claims -- other dragons challenge them at their peril.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Related Generators</h2>
+        <div class="internal-links">
+          <a href="/orc-name-generator/">Orc Name Generator</a>
+          <a href="/dwarf-name-generator/">Dwarf Name Generator</a>
+          <a href="/tiefling-name-generator/">Tiefling Name Generator</a>
+          <a href="/elf-name-generator/">Elf Name Generator</a>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>How does the dragon name generator work?</h3>
+          <p>The generator combines Draconic morphemes (prefixes, middle syllables, suffixes) with age-appropriate titles. Chromatic dragons receive harsh phonetics (Ign-, Nax-, Ves-), metallic dragons receive noble sounds (Astr-, Elyn-, Val-), and gem dragons receive crystalline combinations (Myth-, Crys-, Jade-). Each generated name follows the structure: prefix + middle + suffix + title. The tool produces names like "Pyraixorath the Ancient" or "Elyndorthal the Silver Ward" that reflect the dragon's type and age category.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What's the difference between wyrmling, young, adult, and ancient dragon names?</h3>
+          <p>Dragon names grow with age. Wyrmlings have 1-2 syllable names with no titles (Fyrax, Krix). Young dragons have 2-3 syllables and one title (Ignarax the Dread). Adult dragons have 3-4 syllables and earned titles (Veskastilaarth the Venomous). Ancient dragons have 4-6 syllables and multiple epithets (Ixyrialonthar the Eternal, Scourge of the Northern Reaches). The generator produces names across all age categories -- choose based on your dragon's role in the campaign.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I use these names for dragonborn characters?</h3>
+          <p>Yes. Generate a full draconic name, then abbreviate it for dragonborn use. "Arjhanthaloth the Magnificent" becomes "Arjhan" for a dragonborn paladin. Dragonborn names typically use 1-2 syllables from the full draconic name. You can also generate dragonborn clan names like "Sheer Claws" or "Flame Heart" to complete the character.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I choose between chromatic, metallic, and gem dragon names?</h3>
+          <p>Match the name to your dragon's alignment and role. Chromatic dragons (red, blue, green, black, white) are evil-aligned and use harsh phonetics -- choose these for villains and threats. Metallic dragons (gold, silver, bronze, copper, brass) are good-aligned and use noble sounds -- choose these for allies and protectors. Gem dragons (amethyst, crystal, emerald, sapphire, topaz) are neutral and psionic -- choose these for puzzle encounters and neutral NPCs.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What do the dragon titles mean?</h3>
+          <p>Titles are epithets earned through deeds. "The Ancient" indicates great age. "The World-Burner" indicates destruction on a massive scale. "The Silver Ward" indicates protection of territory. "The Crystal Sage" indicates psionic mastery. Ancient dragons accumulate multiple titles over centuries. The generator assigns titles based on phonetic patterns that match the dragon's type -- chromatic dragons receive threatening titles, metallic dragons receive noble titles, gem dragons receive mystical titles.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I pronounce these dragon names?</h3>
+          <p>Draconic pronunciation emphasizes sibilant sounds and ancient cadences. The letter "x" is always pronounced (Ignarax = "ig-NAR-ax"). The letter "y" functions as a vowel (Veskastilaarth = ves-KAS-tee-lah-ARTH). Syllable stress falls on the first or antepenultimate syllable (IK-sy-ri-a-LON-thar). Sibilant clusters (sx, zh, sh) are drawn out with a hissing quality. Use the speaker icon on generated names to hear correct pronunciation.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I generate names for wyverns and drakes?</h3>
+          <p>The generator focuses on true dragons (chromatic, metallic, gem) but the naming principles apply to dragon-kin. Wyverns use shorter, harsher names (Gryx, Skrix, Vexil) reflecting their bestial nature. Drakes use simple, sharp names (Krix, Drax, Brak) reflecting their lesser status. You can use the generator's wyrmling names as a starting point and abbreviate further for wyverns and drakes.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Are these names free to use in my campaign?</h3>
+          <p>Yes. All generated names are original and free to use in your tabletop RPG campaigns, novels, games, or any creative project. The names follow established draconic naming conventions and are original creations. Use them without restriction.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Race Generators</h4>
+          <ul>
+            <li><a href="/elf-name-generator/">Elf Name Generator</a></li>
+            <li><a href="/dwarf-name-generator/">Dwarf Name Generator</a></li>
+            <li><a href="/dragon-name-generator/">Dragon Name Generator</a></li>
+            <li><a href="/orc-name-generator/">Orc Name Generator</a></li>
+            <li><a href="/tiefling-name-generator/">Tiefling Name Generator</a></li>
+            <li><a href="/drow-name-generator/">Drow Name Generator</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Elf Subtypes</h4>
+          <ul>
+            <li><a href="/wood-elf/">Wood Elf Names</a></li>
+            <li><a href="/high-elf/">High Elf Names</a></li>
+            <li><a href="/dark-elf/">Dark Elf Names</a></li>
+            <li><a href="/female-elf/">Female Elf Names</a></li>
+            <li><a href="/male-elf/">Male Elf Names</a></li>
+            <li><a href="/elf-last-name/">Elf Last Names</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="/guides/how-to-choose-a-sound-palette/">Sound Palette Guide</a></li>
+            <li><a href="/guides/how-to-name-a-dd-character/">D&amp;D Naming Guide</a></li>
+            <li><a href="/guides/how-to-pronounce-fantasy-names/">Pronunciation Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Tools</h4>
+          <ul>
+            <li><a href="/backstory-generator/">Backstory Generator</a></li>
+            <li><a href="/races/">All Race Generators</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fantasy Name Generator. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/name-generator.js"></script>
+  <script src="/assets/character-generator.js"></script>
+  <script src="/assets/race-page-components.js"></script>
+  <script>
+    // Race mapping: page race key → CharacterData race key
+    const RACE_MAP = {
+      'dragon': { race: 'Dragonborn', subrace: null },
+      'orc': { race: 'Half-Orc', subrace: null },
+      'elf': { race: 'Elf', subrace: null },
+      'wood-elf': { race: 'Elf', subrace: 'Wood Elf' },
+      'high-elf': { race: 'Elf', subrace: 'High Elf' },
+      'dark-elf': { race: 'Elf', subrace: 'Dark Elf (Drow)' },
+      'drow': { race: 'Elf', subrace: 'Dark Elf (Drow)' },
+      'dwarf': { race: 'Dwarf', subrace: null },
+      'tiefling': { race: 'Tiefling', subrace: null }
+    };
+
+    // Global wrapper functions for character generation
+    function generateCharacter(raceKey, gender, className, style, level, background, artStyle) {
+      const mapping = RACE_MAP[raceKey] || { race: raceKey, subrace: null };
+      return RacePageComponents.generateCharacter(mapping.race, {
+        subrace: mapping.subrace,
+        class: className,
+        style: style || 'Tolkien-esque',
+        level: level || 3,
+        background: background,
+        gender: gender === 'random' ? (Math.random() > 0.5 ? 'male' : 'female') : gender,
+        artStyle: artStyle || 'Classic Fantasy'
+      });
+    }
+    function generateBatchChars(raceKey, count, className, style, level, background, artStyle) {
+      const mapping = RACE_MAP[raceKey] || { race: raceKey, subrace: null };
+      return RacePageComponents.generateBatchChars(mapping.race, count, {
+        subrace: mapping.subrace,
+        class: className,
+        style: style || 'Tolkien-esque',
+        level: level || 3,
+        background: background,
+        artStyle: artStyle || 'Classic Fantasy'
+      });
+    }
+    function renderCharCard(result) {
+      return RacePageComponents.renderCharCard(result.char, result.portraitPrompt);
+    }
+    function copyText(text) {
+      RacePageComponents.copyText(text);
+    }
+
+    function switchTab(tabId, btnElement) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      btnElement.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+
+    function generateDragonNames() {
+      const count = parseInt(document.getElementById('dragon-count').value);
+      
+      const names = generateNames('dragon', 'male', count);
+      const resultsDiv = document.getElementById('dragon-results');
+      
+      resultsDiv.innerHTML = names.map(nameObj => {
+        const etymology = generateEtymology(nameObj.name, 'dragon');
+        
+        return `
+        <div class="name-card">
+          <div>
+            <div class="name-text">${nameObj.name}</div>
+            <div class="name-meaning">${nameObj.meaning}</div>
+            
+            <div class="etymology-box">
+              <strong>Etymology:</strong> ${etymology}
+            </div>
+          </div>
+          <div class="name-actions">
+            <button class="icon-btn" onclick="copyText('${nameObj.name}')" title="Copy">&#128203;</button>
+            <button class="icon-btn" onclick="speakName('${nameObj.name}')" title="Listen">&#128266;</button>
+          </div>
+        </div>
+      `}).join('');
+    }
+    
+    function speakName(name) {
+      if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(name);
+        utterance.rate = 0.6;
+        utterance.pitch = 0.8;
+        speechSynthesis.speak(utterance);
+      }
+    }
+
+    function generateDragonCharacter() {
+      const charClass = document.getElementById('char-class').value || undefined;
+      const style = document.getElementById('char-style').value;
+      const level = parseInt(document.getElementById('char-level').value);
+      const background = document.getElementById('char-background').value || undefined;
+      const portraitStyle = document.getElementById('portrait-style').value;
+      const batchMode = document.getElementById('batch-mode').value;
+      
+      let count = 1;
+      if (batchMode === 'party') count = 4;
+      else if (batchMode === 'custom') count = parseInt(prompt('How many characters?', '5')) || 5;
+      
+      const resultsDiv = document.getElementById('char-results');
+      
+      if (count === 1) {
+        const charData = generateCharacter('dragon', 'random', charClass, style, level, background, portraitStyle);
+        resultsDiv.innerHTML = renderCharCard(charData);
+      } else {
+        const chars = generateBatchChars('dragon', count, charClass, style, level, background, portraitStyle);
+        window._lastBatch = chars;
+        resultsDiv.innerHTML = chars.map((charData, index) => 
+          `<h3>Character ${index + 1}</h3>` + renderCharCard(charData)
+        ).join('<hr style="margin: 2rem 0; border-color: var(--border);">');
+        
+        const exportButtons = `
+          <div class="export-buttons">
+            <button class="btn btn-secondary" onclick="exportAsText(window._lastBatch)">Export as Text</button>
+            <button class="btn btn-secondary" onclick="exportAsJSON(window._lastBatch)">Export as JSON</button>
+          </div>
+        `;
+        resultsDiv.innerHTML += exportButtons;
+      }
+    }
+    
+    window.addEventListener('load', generateDragonNames);
+  </script>
+</body>
+</html>

@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Kobold Name Generator - Draconic Servant Names & Pack Names for D&D 5e</title>
+  <meta name="description" content="Generate kobold names for D&D 5e that reflect their draconic masters. Pack names, dragon-given names, role-based titles, name-earning traditions, character cards, and etymology breakdown.">
+  <link rel="canonical" href="https://mythicname.app/kobold-name-generator/">
+  <meta property="og:title" content="Kobold Name Generator - Draconic Servant Names & Pack Names for D&D 5e">
+  <meta property="og:description" content="Generate kobold names for D&D 5e that reflect their draconic masters. Pack names, dragon-given names, role-based titles, name-earning traditions, character cards, and etymology breakdown.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mythicname.app/kobold-name-generator/">
+  <meta property="og:image" content="https://mythicname.app/assets/kobold-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kobold Name Generator - Draconic Servant Names & Pack Names for D&D 5e">
+  <meta name="twitter:description" content="Generate kobold names for D&D 5e that reflect their draconic masters. Pack names, dragon-given names, role-based titles, name-earning traditions, character cards, and etymology breakdown.">
+  <meta name="twitter:image" content="https://mythicname.app/assets/kobold-hero.jpg">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Kobold Name Generator",
+    "description": "Generate kobold names for D&D 5e that reflect their draconic masters. Pack names, dragon-given names, role-based titles, name-earning traditions, and character cards.",
+    "url": "https://mythicname.app/kobold-name-generator/",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do kobolds get their names in D&D 5e?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kobolds do not choose their own names. A kobold's name is given by their dragon master, usually when the kobold is assigned a role within the pack. The name reflects the kobold's function (digger, trap-setter, messenger) or a characteristic the dragon finds noteworthy. Kobolds serving different dragon types develop distinct naming patterns -- those serving red dragons receive harsher names than those serving green dragons."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can kobolds change their names?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, but only under specific circumstances. A kobold may earn a new name from their dragon master after exceptional service, such as surviving a dangerous mission or completing a major construction project. Kobolds who escape dragon servitude often choose entirely new names as an act of defiance and self-determination. However, changing your own name without a dragon's permission is considered deeply taboo among kobolds still in service."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes a kobold name sound authentic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Authentic kobold names are short (1-2 syllables), use sibilant and plosive sounds (S, K, T, Sh, Z, Ch), and often sound diminutive or slightly pathetic by humanoid standards: Droop, Snit, Grik, Meepo, Splug. The names reflect kobold culture's emphasis on subservience -- even the sounds are designed to be spoken deferentially, never commanding. Names serving red dragons tend toward harsher sounds (Krag, Droth), while those serving blue dragons use crackling consonants (Zik, Skat)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do different dragon masters affect kobold naming?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Each dragon color imposes distinct naming conventions on their kobold servants. Red dragon kobolds receive harsh, fire-themed names (Ashfang, Droth, Kragmaw). Green dragon kobolds get sly, poison-themed names (Venom, Skul, Mirel). Blue dragon kobolds receive sharp, lightning-themed names (Zik, Skat, Voltik). White dragon kobolds get simple, cold-themed names (Frost, Shiver, Icik). Black dragon kobolds receive murky, acid-themed names (Murk, Sludge, Corro). The dragon's personality further modifies these patterns."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the name-earning tradition for kobolds?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kobolds earn new names through acts of exceptional service to their dragon master. A kobold who successfully sets a trap that captures an intruder might earn a new name referencing that achievement. A kobold who survives a suicide mission might receive a name meaning 'the one who returned.' These earned names are considered higher status than birth names, and kobolds compete fiercely for opportunities to earn better names through service. The highest honor is receiving a name directly from the dragon's own mouth."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens when a kobold's dragon dies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When a kobold's dragon master dies, the kobold faces an identity crisis. Their name -- given by the dragon -- loses its spiritual authority. Some kobolds wander alone, refusing new names. Others seek a new dragon master and accept a replacement name. A rare few choose their own names, an act that other kobolds view with a mixture of horror and awe. These self-named kobolds often become leaders of independent packs or outcasts entirely."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a kobold pack name?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A kobold pack name identifies which group a kobold belongs to within the larger tribe. Pack names are descriptive compound words referencing the pack's primary function or the dragon they serve: the Emberclaw Pack (serving a red dragon), the Venomscale Pack (serving a green dragon), the Frostbite Pack (serving a white dragon). Kobolds introduce themselves by pack first, then personal name -- \"Emberclaw Droop\" means Droop of the Emberclaw Pack."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use these kobold names for my D&D campaign?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. All generated names are free to use in your tabletop RPG campaigns, novels, games, or any creative project. Our names follow established D&D 5e kobold naming conventions from Volo's Guide to Monsters and other official sources, while being checked against famous characters like Meepo to avoid direct IP conflicts."
+        }
+      }]
+  }
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mythicname.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Races",
+      "item": "https://mythicname.app/races/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Kobold Name Generator",
+      "item": "https://mythicname.app/kobold-name-generator/"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">
+        <span class="logo-icon">&#9876;</span>
+        Fantasy Name Generator
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/races/">Races</a></li>
+          <li><a href="/backstory-generator/">Backstory Generator</a></li>
+          <li><a href="/guides/">Guides</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="race-hero">
+          <img src="/assets/kobold-hero.jpg" alt="Small kobold craftsperson with draconic features, serving a dragon master with loyalty and cunning">
+          <div class="race-hero-overlay">
+            <div class="race-hero-text">
+              <h1>Kobold Name Generator</h1>
+              <p>Generate kobold names for D&D 5e — dragon-given names, pack identity names, role-based names, and servitude traditions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>&rsaquo;</span>
+        <a href="/races/">Races</a>
+        <span>&rsaquo;</span>
+        Kobold Name Generator
+      </div>
+
+      <h2>Draconic Servant Names and Pack Identity for Kobolds</h2>
+      
+      <div class="generator-box">
+        <div class="tab-switcher">
+          <button class="tab-btn active" onclick="switchTab('quick-names', this)">Quick Kobold Names</button>
+          <button class="tab-btn" onclick="switchTab('character-card', this)">D&D 5e Kobold Character Card</button>
+        </div>
+
+        <!-- Tab 1: Quick Name Generator -->
+        <div id="quick-names" class="tab-content active">
+          <div class="generator-controls">
+            <div class="form-group">
+              <label for="kobold-gender">Gender</label>
+              <select id="kobold-gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="kobold-count">How many?</label>
+              <input type="number" id="kobold-count" min="1" max="20" value="5">
+            </div>
+          </div>
+          <button class="btn btn-primary generate-btn" onclick="generateKoboldNames()">Generate Kobold Names</button>
+          <div class="results" id="kobold-results"></div>
+        </div>
+
+        <!-- Tab 2: D&D 5e Character Card -->
+        <div id="character-card" class="tab-content">
+          <div id="char-generator">
+            <div class="char-gen-controls">
+              <div class="form-group">
+                <label for="char-class">Class</label>
+                <select id="char-class">
+                  <option value="">Random</option>
+                  <option value="barbarian">Barbarian</option>
+                  <option value="fighter">Fighter</option>
+                  <option value="ranger">Ranger</option>
+                  <option value="paladin">Paladin</option>
+                  <option value="cleric">Cleric</option>
+                  <option value="rogue">Rogue</option>
+                  <option value="wizard">Wizard</option>
+                  <option value="druid">Druid</option>
+                  <option value="monk">Monk</option>
+                  <option value="sorcerer">Sorcerer</option>
+                  <option value="warlock">Warlock</option>
+                  <option value="bard">Bard</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="char-style">Name Style</label>
+                <select id="char-style">
+                  <option value="random">Random</option>
+                  <option value="tolkien">Tolkien-esque</option>
+                  <option value="grrm">GRRM-esque</option>
+                  <option value="elder-scrolls">Elder Scrolls-esque</option>
+                  <option value="wow">WoW-esque</option>
+                  <option value="dark-souls">Dark Souls-esque</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="char-level">Level</label>
+                <input type="number" id="char-level" min="1" max="20" value="1">
+              </div>
+              <div class="form-group">
+                <label for="char-background">Background</label>
+                <select id="char-background">
+                  <option value="">Random</option>
+                  <option value="soldier">Soldier</option>
+                  <option value="folk hero">Folk Hero</option>
+                  <option value="outlander">Outlander</option>
+                  <option value="urchin">Urchin</option>
+                  <option value="criminal">Criminal</option>
+                  <option value="acolyte">Acolyte</option>
+                  <option value="noble">Noble</option>
+                  <option value="sage">Sage</option>
+                  <option value="hermit">Hermit</option>
+                  <option value="guild artisan">Guild Artisan</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="portrait-style">Portrait Style</label>
+                <select id="portrait-style">
+                  <option value="fantasy-art">Fantasy Art</option>
+                  <option value="oil-painting">Oil Painting</option>
+                  <option value="digital-art">Digital Art</option>
+                  <option value="watercolor">Watercolor</option>
+                  <option value="pencil-sketch">Pencil Sketch</option>
+                  <option value="anime">Anime</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="batch-mode">Batch Mode</label>
+                <select id="batch-mode">
+                  <option value="single">Single Character</option>
+                  <option value="party">Full Party (4)</option>
+                  <option value="custom">Custom Count</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn btn-primary generate-btn" onclick="generateKoboldCharacter()">Generate Character</button>
+            <div id="char-results"></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="mt-2">
+        <h2>Serving Dragons: How Kobold Names Reflect Their Draconic Masters</h2>
+        <div class="article-content">
+          <p>A kobold's name is not their own. It never was. From the moment a kobold hatchling emerges from its egg, it belongs to the dragon that rules the warren, and every aspect of kobold identity -- including names -- flows downward from that draconic authority. To understand kobold names, you must first understand kobold servitude. These small, reptilian humanoids do not name themselves because they do not belong to themselves. They belong to the dragon, and the dragon's gift of a name is the first chain in a lifetime of devotion.</p>
+
+          <p>This stands in stark contrast to how most humanoid races approach naming. Elves choose melodic names reflecting starlight and nature. Dwarves inherit clan names carved into stone tablets. Orcs earn their names through blood and battle. But kobolds? Kobolds receive their names the way a vassal receives a title -- from above, from the one who holds power over them, as both a gift and a reminder of their place in the world's most rigid hierarchy.</p>
+
+          <h3>The Dragon-Given Name System</h3>
+          <p>When a kobold egg hatches, the hatchling is brought before the tribe's dragon master (or, in the case of tribes without a direct dragon relationship, before the chieftain who speaks for the dragon). The dragon examines the hatchling -- noting its size, its coloring, the shape of its claws, the brightness of its eyes -- and pronounces a name. This name is not random. It is a functional label that encodes the kobold's expected role within the pack.</p>
+
+          <p>A kobold with large, powerful hands might be named <strong>Drok</strong> (meaning "dig" in Draconic pidgin), marking it as a future tunnel-digger. A kobold with keen eyes and nimble fingers might be named <strong>Slik</strong> (meaning "trap" or "snare"), designating it as a trap-setter. A kobold with a loud, distinctive voice might be named <strong>Yip</strong> (meaning "call" or "warn"), earmarking it as a sentry or messenger. The dragon sees utility first, identity second.</p>
+
+          <div class="name-example">
+            <strong>Common dragon-given names by role:</strong><br>
+            <em>Diggers:</em> Drok, Burak, Grub, Delv, Spadd<br>
+            <em>Trap-setters:</em> Slik, Snar, Trip, Wirek, Hook<br>
+            <em>Messengers:</em> Yip, Skri, Call, Pip, Echo<br>
+            <em>Guards:</em> Wach, Bord, Stand, Pik, Shield<br>
+            <em>Cook-keepers:</em> Broth, Salt, Kettl, Roast, Simm<br>
+            <em>Dragon-tenders:</em> Pol, Scraib, Ash, Ember, Gleam
+          </div>
+
+          <p>The name is spoken once, in Draconic, and it is never repeated casually. To speak a kobold's name is to invoke the dragon's authority over that kobold. Other kobolds will use the name respectfully, but always preceded by the pack identifier -- never alone, never casually. The name belongs to the dragon as much as it belongs to the kobold.</p>
+
+          <h3>Pack First, Name Second: The Identity Hierarchy</h3>
+          <p>In kobold culture, your pack identity always comes before your personal name. A kobold is not "Slik" -- they are "Emberclaw Slik," "Frostbite Slik," or "Venomscale Slik." The pack name identifies which dragon's authority you serve under, and the personal name identifies your function within that pack. This order of introduction is not optional. A kobold who introduces themselves by personal name first is either a very confused kobold or one making a dangerous statement about their independence.</p>
+
+          <p>Pack names are compound descriptors that reference the dragon master's color, domain, or most feared quality. They serve as both identification and warning -- when a kobold says "Emberclaw Slik," they are also saying "I serve the red dragon whose claws burn like embers, and you should be afraid." The pack name carries the dragon's reputation, and every kobold in the pack is responsible for upholding it.</p>
+
+          <div class="name-example">
+            <strong>Pack names by dragon type:</strong><br>
+            <em>Red Dragon packs:</em> Emberclaw, Ashscale, Flamefang, Cinderbite, Burningmaw<br>
+            <em>Blue Dragon packs:</em> Stormscale, Sandslither, Thundervolt, Dunesnap, Crackleshine<br>
+            <em>Green Dragon packs:</em> Venomscale, Mistwalker, Thorncoil, Poisonleaf, Shadowvine<br>
+            <em>White Dragon packs:</em> Frostbite, Iceshard, Shiverclaw, Snowmaw, Coldgrip<br>
+            <em>Black Dragon packs:</em> Murkmire, Sludgetooth, Corroscale, Swampfang, Darkpool<br>
+            <em>Brass Dragon packs:</em> Sunscorch, Sandsinger, Heatwave, Dustrunner, Blazetail<br>
+            <em>Copper Dragon packs:</em> Verdantscale, Mossback, Patinawing, Greenveil, Earthenclaw
+          </div>
+
+          <p>When kobold packs merge or split, the pack name changes to reflect the new power structure. A kobold might go from "Emberclaw Droop" to "Greater-Emberclaw Droop" if their pack absorbs a smaller one. Conversely, a splinter pack might adopt a diminished version of the original name: "Emberclaw-Small Droop" to indicate they broke away from the main group. These modifications are always approved by the dragon master, since the pack name is an extension of the dragon's own identity.</p>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Role-Based Naming: Your Name Is Your Job</h2>
+        <div class="article-content">
+          <p>Among kobolds, your name is your resume, your job description, and your purpose all compressed into one or two sharp syllables. Unlike humanoid races where a name might reflect parental hopes or cultural beauty, a kobold's name reflects what the dragon needs them to do. This produces a naming system that is brutally practical and deeply alien to most other races.</p>
+
+          <h3>The Role Categories</h3>
+          <p><strong>The Diggers (Tunnel-workers):</strong> Kobolds named for digging have names with hard, percussive sounds -- Drok, Burak, Grub, Delv. These names mimic the sound of claws on stone, the tap-tap-tap of a kobold excavation team carving new tunnels beneath the dragon's lair. Digger-named kobolds are the backbone of any kobold warren, responsible for maintaining the maze of tunnels that protects their master. A digger who collapses a tunnel loses all respect; a digger who carves a new escape route earns the right to a modified name, perhaps "Drok Deepdelver" or "Burak Stonetooth."</p>
+
+          <p><strong>The Trap-Setters (Engineers):</strong> Kobolds named for trap-setting receive sibilant, precise names -- Slik, Snar, Trip, Wirek. These names evoke the whisper of a tripwire, the click of a mechanism, the sudden snap of a jaw trap. Trap-setters are the most intellectually respected kobolds in the warren, second only to the dragon-tenders. A trap-setter who designs a trap that captures an adventurer might earn a name expansion: "Slik of the Hundred-Snaps" or "Snar the Patient."</p>
+
+          <p><strong>The Messengers (Voice-carriers):</strong> Kobolds named for communication receive short, sharp, carrying names -- Yip, Skri, Call, Pip. These names are designed to be heard across long distances in echoing tunnels. A messenger's name must cut through the sound of dripping water, scratching claws, and rumbling earth. Messengers serve as the dragon's personal communication network, carrying orders from the master's lair to the furthest reaches of the warren. The best messengers earn names that reference their speed: "Yip Swiftclaw" or "Skri the Wind-Runner."</p>
+
+          <p><strong>The Dragon-Tenders (Sacred servants):</strong> The most honored kobolds in any warren are those named for direct service to the dragon -- Pol, Scraib, Ash, Ember, Gleam. These names reference the dragon's physical magnificence: the polish of its scales, the scrape of its claws, the glow of its breath weapon. Dragon-tenders are responsible for cleaning the dragon's lair, polishing its scales, bringing it food, and generally making the dragon's existence more comfortable. A dragon-tender who serves a red dragon might be named "Ember" or "Ash" for the residual heat of their master. A dragon-tender serving a blue dragon might be "Gleam" or "Spark" for the electric aura.</p>
+
+          <p><strong>The Scale-Bearers (Warriors):</strong> While most kobolds serve in support roles, some are named for combat -- Wach, Bord, Pik, Shield. These names reference defensive equipment and positions, reflecting the kobold's role as a guardian. Scale-bearers are not expected to defeat enemies single-handedly (they are kobolds, after all) but to raise the alarm, slow intruders, and die buying time for the dragon to awaken. A scale-bearer who survives a battle earns a modified name: "Wach the Unbroken" or "Pik Shield-Survivor."</p>
+
+          <h3>Name Phonetics by Dragon Type</h3>
+          <p>The dragon's chromatic or metallic heritage subtly influences the sounds used in kobold names. This is not a formal rule but a cultural drift that occurs over generations of service:</p>
+          <ul>
+            <li><strong>Red dragon kobolds:</strong> Harsh, fiery consonants (K, R, G, D). Names sound like crackling flames: Droth, Krag, Rogar, Drakik, Gred.</li>
+            <li><strong>Blue dragon kobolds:</strong> Sharp, crackling sounds (Z, K, T, Sk). Names sound like lightning strikes: Zik, Skat, Tik, Kraz, Zent.</li>
+            <li><strong>Green dragon kobolds:</strong> Sibilant, slippery sounds (S, Sh, V, Z). Names sound like hissing venom: Siss, Vrak, Shyl, Zes, Syth.</li>
+            <li><strong>White dragon kobolds:</strong> Cold, clipped sounds (F, Sh, K, Ic). Names sound like cracking ice: Frik, Shiver, Icik, Kold, Frost.</li>
+            <li><strong>Black dragon kobolds:</strong> Murky, gurgling sounds (M, B, G, Sl). Names sound like bubbling acid: Murk, Bog, Slag, Gorb, Mirel.</li>
+            <li><strong>Brass dragon kobolds:</strong> Warm, open sounds (S, L, R, An). Names sound like desert wind: Sal, Ran, Lor, Anik, Sura.</li>
+            <li><strong>Copper dragon kobolds:</strong> Earthy, grounded sounds (K, M, P, Or). Names sound like stone on metal: Kor, Pem, Ort, Mak, Cupr.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Name Earning: The Kobold's Path to Identity</h2>
+        <div class="article-content">
+          <p>A kobold's dragon-given name is merely a starting point. Through exceptional service, a kobold can earn modifications, expansions, or even entirely new names that elevate their status within the pack. This "name earning" tradition is the closest thing kobold culture has to social mobility, and it drives much of their behavior.</p>
+
+          <h3>How Names Are Earned</h3>
+          <p><strong>Service Expansion:</strong> The most common form of name earning adds a descriptor to the original name, acknowledging a specific achievement. "Drok" who carves a particularly impressive tunnel becomes "Drok Deepdelver." "Slik" who builds a trap that captures a minotaur becomes "Slik the Beast-Snarer." These expansions are granted by the dragon master during a formal naming ceremony, where the kobold kneels before the dragon and receives the new syllables as a blessing.</p>
+
+          <p><strong>Full Name Replacement:</strong> In rare cases, a kobold's service is so extraordinary that the dragon grants an entirely new name, retiring the old one. This is the highest honor a kobold can receive. The old name is spoken one final time and then forbidden -- no kobold may ever use it again. The new name carries the weight of the dragon's personal approval and elevates the kobold to a status approaching nobility within the pack. A digger named "Grub" who discovers a natural hot spring beneath the lair might be renamed "Thermak" (meaning "warm-water" in Draconic), a name that will be spoken with reverence by future generations of kobolds.</p>
+
+          <p><strong>Collective Name Honors:</strong> Sometimes an entire pack earns a name modification after a group achievement. If the Emberclaw pack successfully raids a human settlement and returns with tribute, the dragon might rename them the "Greater-Emberclaw" pack. If they fail catastrophically, they might be renamed the "Lesser-Emberclaw" as a mark of shame. These collective name changes affect every kobold in the pack simultaneously -- "Emberclaw Droop" becomes "Greater-Emberclaw Droop" overnight.</p>
+
+          <h3>The Competition for Name Earning</h3>
+          <p>Kobolds compete fiercely for opportunities to earn better names. A kobold who hears of an intruder in the tunnels will race to be the one who raises the alarm, because the messenger who delivers the most urgent warning might earn a name expansion. A kobold assigned to dig a new tunnel will work twice as hard as necessary, because exceptional excavation is the fastest path to a better name. This competition makes kobold packs highly productive -- every kobold is constantly trying to prove their worth in hopes of draconic recognition.</p>
+
+          <p>However, this competition also produces conflict. Kobolds have been known to sabotage each other's work, set false alarms to be the first responder, or even deliberately create problems they can then solve for name-earning credit. Dragons tolerate a certain amount of this behavior (it keeps the kobolds motivated) but punish severely any kobold whose scheming endangers the dragon itself.</p>
+
+          <h3>The Name-Loss: Ultimate Shame</h3>
+          <p>The worst fate that can befall a kobold is not death but name-loss. A kobold who fails catastrophically -- who collapses a critical tunnel, who lets an intruder reach the dragon's chamber, who drops the dragon's food -- may have their name stripped as punishment. A nameless kobold is called only "the one without" or "null." They are not expelled from the pack, but they are treated as less than kobold. No other kobold will make eye contact with a nameless one. They eat last, sleep in the coldest corner of the warren, and are the first sent into dangerous situations. Many nameless kobolds seek death in service, hoping to die earning a new name through sacrifice.</p>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Escaping the Dragon: Kobolds Who Change Their Own Names</h2>
+        <div class="article-content">
+          <p>Not all kobolds serve dragons willingly, and not all serve them forever. Some kobolds escape -- fleeing the warren after a particularly cruel dragon, surviving the destruction of their pack, or simply wandering too far from the tunnels during a foraging mission and deciding not to return. These freed kobolds face a profound identity crisis: their name was given by a dragon. To keep it feels like remaining in servitude. To abandon it feels like losing themselves entirely.</p>
+
+          <p>The most common solution among escaped kobolds is to adopt a new name, chosen by the kobold themselves. This act of self-naming is revolutionary in kobold culture -- it is a declaration that the kobold belongs to no dragon, answers to no master, and defines their own purpose. Self-chosen names tend to be aspirational, reflecting what the kobold wishes to become rather than what they were told to do.</p>
+
+          <div class="name-example">
+            <strong>Escaped kobolds and their self-chosen names:</strong><br>
+            <em>Former digger "Grub" becomes "Freeclaw"</em> -- choosing a name that references their liberation<br>
+            <em>Former trap-setter "Slik" becomes "Quickmind"</em> -- choosing a name that references their intelligence rather than their function<br>
+            <em>Former messenger "Yip" becomes "Farvoice"</em> -- keeping the communication theme but elevating it<br>
+            <em>Former dragon-tender "Ash" becomes "Cinder"</em> -- transforming a servant's name into something fierier and more independent<br>
+            <em>Former scale-bearer "Wach" becomes "Brave"</em> -- choosing a name that asserts the courage they were never allowed to show
+          </div>
+
+          <p>Other kobolds still in service view self-named kobolds with a mixture of horror, confusion, and secret envy. The idea that a kobold could choose their own name is almost blasphemous -- it implies that the dragon's authority is not absolute, that a kobold can exist outside the hierarchy. Most kobolds dismiss self-named individuals as "broken" or "mad," but the seed of the idea persists in warren folklore. Tales of the "First Free Kobold" -- who named themselves "Kreetak" after escaping a blue dragon's service -- are whispered among young hatchlings who have not yet received their dragon-given names.</p>
+
+          <h3>The Self-Named in Adventuring Parties</h3>
+          <p>A self-named kobold adventurer is a rare and fascinating character. They have already taken the most radical step their culture allows -- rejecting the dragon's authority over their identity. This makes them natural allies for other outcasts and rebels. A self-named kobold in an adventuring party will typically be: fiercely independent, deeply loyal to those who respect their autonomy, terrified of dragons (but determined to face that fear), and constantly proving that a kobold can be more than a servant.</p>
+
+          <p>Some self-named kobold adventurers eventually earn enough renown that they are offered a chance to rejoin a dragon's service -- this time as a respected ally rather than a menial servant. If the dragon agrees to call them by their chosen name (a sign of mutual respect), the kobold might accept. If the dragon insists on giving them a new name, the kobold will almost certainly refuse, because accepting a dragon-given name means accepting the dragon's authority, and they fought too hard for their freedom to surrender it.</p>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Tribal Differences: How Dragon Type Shapes Kobold Culture</h2>
+        <div class="article-content">
+          <p>Not all kobold tribes are the same. The dragon they serve -- its color, its temperament, its demands -- shapes every aspect of kobold culture, from tunnel architecture to naming conventions. A kobold serving a red dragon lives a radically different existence from one serving a green dragon, and their names reflect these differences.</p>
+
+          <h3>Red Dragon Tribes: The Burning Packs</h3>
+          <p>Kobolds serving red dragons are the most aggressive and militaristic. Red dragons demand tribute, destruction, and constant proof of their supremacy, and their kobold packs reflect this in everything from their tunnel design (incorporating lava channels and fire traps) to their naming conventions. Red dragon kobold names use harsh, percussive consonants that evoke the sound of cracking flame: <strong>Droth, Kragmaw, Rogar, Ashfang, Drakik</strong>. Pack names reference fire, ash, and burning: <strong>Emberclaw, Flamefang, Cinderbite, Burningmaw</strong>. A kobold named "Kragmaw of the Emberclaw" immediately tells other kobolds: this one serves a red dragon, and their pack is known for fiery aggression.</p>
+
+          <h3>Green Dragon Tribes: The Poisoned Networks</h3>
+          <p>Kobolds serving green dragons are the most cunning and treacherous. Green dragons are manipulators who enjoy psychological warfare, and their kobold servants learn these tactics from birth. Green dragon kobold names use sibilant, slippery sounds that evoke hissing and poison: <strong>Siss, Vrak, Shyl, Mirel, Syth</strong>. Pack names reference poison, mist, and shadow: <strong>Venomscale, Mistwalker, Shadowvine, Thorncoil</strong>. A kobold named "Syth of the Venomscale" is immediately recognized as a schemer, likely to offer you helpful advice that leads you directly into a trap.</p>
+
+          <h3>Blue Dragon Tribes: The Storm Sentinels</h3>
+          <p>Kobolds serving blue dragons are the most organized and disciplined. Blue dragons are territorial perfectionists who demand precision in everything, and their kobold packs operate with clockwork efficiency. Blue dragon kobold names use sharp, crackling consonants that evoke lightning: <strong>Zik, Skat, Tik, Kraz, Zent</strong>. Pack names reference storms, sand, and electricity: <strong>Stormscale, Thundervolt, Dunesnap, Crackleshine</strong>. A kobold named "Zik of the Stormscale" is likely part of a highly organized operation with precise roles, scheduled shifts, and zero tolerance for error.</p>
+
+          <h3>White Dragon Tribes: The Frozen Survivors</h3>
+          <p>Kobolds serving white dragons are the most numerous and the most expendable. White dragons are feral beasts with little interest in complex schemes, and their kobold packs function more like swarms than organizations. White dragon kobold names use cold, clipped sounds that evoke ice and wind: <strong>Frik, Shiver, Icik, Kold, Frost</strong>. Pack names reference cold, ice, and survival: <strong>Frostbite, Iceshard, Shiverclaw, Snowmaw</strong>. A kobold named "Frik of the Frostbite" is one of hundreds of identical servants, valued more for their numbers than their individual abilities.</p>
+
+          <h3>Black Dragon Tribes: The Swamp Dwellers</h3>
+          <p>Kobolds serving black dragons are the most reclusive and paranoid. Black dragons are solitary hunters who dwell in swamps and bogs, and their kobold servants adopt these traits. Black dragon kobold names use murky, gurgling sounds that evoke stagnant water: <strong>Murk, Bog, Slag, Gorb, Mirel</strong>. Pack names reference swamps, acid, and darkness: <strong>Murkmire, Sludgetooth, Corroscale, Darkpool</strong>. A kobold named "Murk of the Murkmire" is likely deeply suspicious of strangers and intimately familiar with every hidden path through the swamp.</p>
+
+          <h3>Brass and Copper Dragon Tribes: The Noble Servants</h3>
+          <p>Kobolds serving metallic dragons are the rarest and the most unusual. Brass dragon kobolds tend to be talkative and boastful, with warm, open names like <strong>Sal, Ran, Lor, Anik</strong> and pack names like <strong>Sunscorch, Sandsinger, Heatwave</strong>. Copper dragon kobolds are practical and earthy, with grounded names like <strong>Kor, Pem, Ort, Mak</strong> and pack names like <strong>Verdantscale, Mossback, Patinawing</strong>. These kobolds often have healthier relationships with their dragons, and some brass dragon kobolds are known to genuinely love their masters rather than merely fearing them.</p>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Complete Kobold Character Examples</h2>
+        <div class="article-content">
+          <p>Here are five complete kobold characters with names, pack affiliations, roles, and backstories that demonstrate how the naming system works in practice across different dragon types and circumstances:</p>
+
+          <div class="name-example">
+            <strong>Drok Deepdelver of the Emberclaw Pack</strong><br>
+            <em>Dragon Master:</em> Ignaxia the Red (adult red dragon)<br>
+            <em>Original Name:</em> Drok (dragon-given, meaning "dig")<br>
+            <em>Current Name:</em> Drok Deepdelver (earned after carving the Grand Escape Tunnel)<br>
+            <em>Role:</em> Chief Excavator / Tunnel Architect<br>
+            <em>Pack:</em> Emberclaw (serving Ignaxia in the Spine of the World mountains)<br>
+            <em>Backstory:</em> Drok was named for digging as a hatchling, showing unusually large claws that the dragon noted with approval. For fifteen years, Drok led excavation teams through solid granite, expanding the warren deeper into the mountain. When a party of adventurers breached the outer tunnels, Drok single-handedly carved the Grand Escape Tunnel in under an hour -- a feat of desperate engineering that saved the entire pack from slaughter. Ignaxia was so impressed that she granted the name expansion "Deepdelver" in a formal ceremony, making Drok the most honored non-combat kobold in the warren. Drok now trains young diggers and is rumored to be planning a tunnel that will reach the Underdark.
+          </div>
+
+          <div class="name-example">
+            <strong>Sythen the Unseen of the Venomscale Pack</strong><br>
+            <em>Dragon Master:</em> Zordaxalis the Green (young green dragon)<br>
+            <em>Original Name:</em> Siss (dragon-given, meaning "silent")<br>
+            <em>Current Name:</em> Sythen the Unseen (earned after poisoning an entire adventuring company without being detected)<br>
+            <em>Role:</em> Master of Poisons / Infiltration Specialist<br>
+            <em>Pack:</em> Venomscale (serving Zordaxalis in the Misty Forest)<br>
+            <em>Backstory:</em> Originally named "Siss" for the kobold's quiet movements, this green dragon servant showed such talent for poison-making that Zordaxalis personally renamed them "Sythen" (Draconic for "shadow-venom"). The name expansion "the Unseen" was earned after Sythen infiltrated a human trading post, replaced their salt with a slow-acting poison, and returned without being noticed once. The humans blamed each other for the illness and never discovered the kobold responsible. Sythen now leads a team of six poison-specialist kobolds and is being groomed to serve as Zordaxalis's personal spy network.
+          </div>
+
+          <div class="name-example">
+            <strong>Freeclaw (formerly Grub of the Stormscale Pack)</strong><br>
+            <em>Former Dragon Master:</em> Fulgoroth the Blue (adult blue dragon)<br>
+            <em>Original Name:</em> Grub (dragon-given, meaning "dig/delve")<br>
+            <em>Current Name:</em> Freeclaw (self-chosen after escape)<br>
+            <em>Role:</em> Adventuring Rogue / Free Agent<br>
+            <em>Former Pack:</em> Stormscale (served Fulgoroth in the Raging Desert)<br>
+            <em>Backstory:</em> Grub was an ordinary digger in Fulgoroth's warren, carving tunnels through sandstone for twelve years. During a routine supply run to the surface, Grub witnessed Fulgoroth destroy a caravan of merchants -- including several children -- and something broke inside the small kobold. Instead of returning to the warren, Grub ran. They ran for three days through the desert, nearly dying of thirst, before reaching the edge of Fulgoroth's territory. The first morning of freedom, Grub stood before a mirror-pool and declared themselves "Freeclaw" -- a name meaning "the one who belongs to no dragon." Freeclaw now adventures with a party of outcasts, using their tunneling skills and trap knowledge to help others escape the things that hunt them.
+          </div>
+
+          <div class="name-example">
+            <strong>Zik Crackleshine of the Thundervolt Pack</strong><br>
+            <em>Dragon Master:</em> Rekithar the Blue (young blue dragon)<br>
+            <em>Original Name:</em> Zik (dragon-given, meaning "quick/alert")<br>
+            <em>Current Name:</em> Zik Crackleshine (earned after redirecting a lightning bolt into an enemy siege engine)<br>
+            <em>Role:</em> Siege Defense Engineer / Lightning Conductor Specialist<br>
+            <em>Pack:</em> Thundervolt (serving Rekithar in the Stormbreak Canyons)<br>
+            <em>Backstory:</em> Zik was named for alertness as a hatchling, showing an unusual ability to detect vibrations in the canyon walls. Blue dragon kobolds are the most disciplined of all packs, and Zik excelled in this structured environment, rising from a simple sentry to a siege defense specialist. When a dwarven siege company attacked Rekithar's lair with a massive battering engine, Zik designed and installed a series of lightning rods along the canyon walls that channeled Rekithar's breath weapon directly into the siege equipment, destroying it in a spectacular explosion. Rekithar granted the name expansion "Crackleshine" in recognition of this engineering feat. Zik now commands a team of forty kobold engineers and is considered one of the most valuable non-dragon members of the pack.
+          </div>
+
+          <div class="name-example">
+            <strong>Ember the Flame-Touched of the Greater-Emberclaw Pack</strong><br>
+            <em>Dragon Master:</em> Pyrathia the Red (ancient red dragon)<br>
+            <em>Original Name:</em> Pol (dragon-given, meaning "shine/polish")<br>
+            <em>Current Name:</em> Ember the Flame-Touched (earned after surviving direct contact with dragonfire)<br>
+            <em>Role:</em> High Dragon-Tender / Sacred Servant<br>
+            <em>Pack:</em> Greater-Emberclaw (serving Pyrathia beneath the Ashen Mountain)<br>
+            <em>Backstory:</em> Originally named "Pol" for the task of polishing Pyrathia's scales, this kobold served as a dragon-tender for twenty years -- the longest tenure in the pack's history. During a battle with a rival bronze dragon, Pyrathia was wounded and Pol was caught in the crossfire of dragonfire, burning severely. Instead of fleeing, Pol dragged healing salves to Pyrathia's wounded flank, continuing to tend the ancient red through the battle. When the bronze dragon retreated, Pyrathia personally renamed the burned kobold "Ember the Flame-Touched" -- a name that acknowledges both the scarring and the devotion. Ember's scales now glow faintly orange in the dark, a permanent reminder of the fire that nearly killed them and the service that earned them a new identity.
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Using Kobold Names in Your Campaign</h2>
+        <div class="article-content">
+          <h3>For Players: Building Your Kobold's Identity</h3>
+          <p>When creating a kobold character, start by answering these questions about your naming history:</p>
+          <ul>
+            <li><strong>Who was your dragon master?</strong> The dragon's color and personality shaped your original name, your role, and your pack identity. Even if you've left that service, these origins define you.</li>
+            <li><strong>What was your dragon-given name?</strong> This name reflects the role you were designed for. Are you still that role, or have you grown beyond it?</li>
+            <li><strong>Did you earn any name expansions?</strong> If you served faithfully, you may have earned additional syllables that mark your achievements. These are a source of pride.</li>
+            <li><strong>Why did you leave (or were you driven out)?</strong> Escaped kobolds carry the weight of their old names. Do you still use your dragon-given name, or did you choose a new one? How do you feel about that choice?</li>
+            <li><strong>What is your pack relationship?</strong> Are you still in contact with your pack? Do they consider you a traitor, or do they envy your freedom? Would you return if asked?</li>
+          </ul>
+
+          <h3>For DMs: Populating Dragon Lairs with Kobold Personalities</h3>
+          <p>When designing a kobold-infested dungeon, use the naming system to create memorable encounters:</p>
+          <p><strong>Step 1: Choose the dragon type.</strong> This determines the pack's naming phonetics, their behavioral tendencies, and the dungeon's trap style. A red dragon's kobold warren will have fire traps and aggressive guards. A green dragon's warren will have poison gas traps and deceptive corridors.</p>
+          <p><strong>Step 2: Name the pack.</strong> The pack name tells the players what dragon they're dealing with before they ever see it. "Emberclaw tunnels" immediately signals a red dragon. "Venomscale markings" signals a green dragon. This builds tension and foreshadows the boss encounter.</p>
+          <p><strong>Step 3: Create named kobold leaders.</strong> The chieftain should have an earned name expansion, showing their status. "Slik the Patient" is more interesting than a generic kobold guard. Give them a backstory tied to their name.</p>
+          <p><strong>Step 4: Use nameless kobolds for atmosphere.</strong> A nameless kobold -- one whose name was stripped -- is a haunting encounter. They will not speak when addressed. Other kobolds avoid them. They throw themselves into dangerous situations without hesitation, seeking death or redemption.</p>
+          <p><strong>Step 5: Include a self-named escapee.</strong> Not every kobold in the dungeon needs to serve the dragon. A self-named kobold prisoner (or even a reluctant ally) can provide crucial information about the dungeon layout while raising interesting questions about kobold autonomy and identity.</p>
+
+          <h3>Names as Plot Devices</h3>
+          <p>Kobold names can drive your campaign's plot in several compelling ways:</p>
+          <ul>
+            <li><strong>The naming ceremony quest:</strong> A young kobold PC must return to their dragon master to receive their adult name, even though the dragon is dangerous. The party must help them survive the encounter and negotiate the naming terms.</li>
+            <li><strong>The stolen name:</strong> A sorcerer has learned to steal kobold names, stripping them of their identity and rendering them catatonic. The kobolds hire the party to recover their names from the sorcerer's spellbook.</li>
+            <li><strong>The false dragon:</strong> A cunning warlock has been impersonating a dragon, giving kobold names to ordinary goblins and building a fake warren. The real dragon -- insulted by the impersonation -- hires the party to deal with the pretender.</li>
+            <li><strong>The self-named rebellion:</strong> A charismatic kobold has been convincing others to choose their own names, sparking a rebellion against the dragon's authority. The party must decide whether to support the dragon or the freedom movement.</li>
+            <li><strong>The dead dragon's kobolds:</strong> A dragon has died, and its kobold pack is now nameless and leaderless. Some seek a new dragon. Some want to be self-named. Some want revenge on whatever killed their master. The party encounters this fractured group and must navigate their competing needs.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Related Generators</h2>
+        <div class="internal-links">
+          <a href="/dragon-name-generator/">Dragon Name Generator</a>
+          <a href="/goblin-name-generator/">Goblin Name Generator</a>
+          <a href="/orc-name-generator/">Orc Name Generator</a>
+          <a href="/lizardfolk-name-generator/">Lizardfolk Name Generator</a>
+          <a href="/dragonborn-name-generator/">Dragonborn Name Generator</a>
+          <a href="/dwarf-name-generator/">Dwarf Name Generator</a>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>How do kobolds get their names in D&D 5e?</h3>
+          <p>Kobolds do not choose their own names. A kobold's name is given by their dragon master, usually when the kobold is assigned a role within the pack. The name reflects the kobold's function (digger, trap-setter, messenger) or a characteristic the dragon finds noteworthy. Kobolds serving different dragon types develop distinct naming patterns -- those serving red dragons receive harsher names than those serving green dragons.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What is a kobold pack name?</h3>
+          <p>A kobold pack name identifies which group a kobold belongs to within the larger tribe. Pack names are descriptive compound words referencing the pack's primary function or the dragon they serve: the Emberclaw Pack (serving a red dragon), the Venomscale Pack (serving a green dragon), the Frostbite Pack (serving a white dragon). Kobolds introduce themselves by pack first, then personal name -- "Emberclaw Droop" means Droop of the Emberclaw Pack.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can kobolds change their names?</h3>
+          <p>Yes, but only under specific circumstances. A kobold may earn a new name from their dragon master after exceptional service, such as surviving a dangerous mission or completing a major construction project. Kobolds who escape dragon servitude often choose entirely new names as an act of defiance and self-determination. However, changing your own name without a dragon's permission is considered deeply taboo among kobolds still in service.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What makes a kobold name sound authentic?</h3>
+          <p>Authentic kobold names are short (1-2 syllables), use sibilant and plosive sounds (S, K, T, Sh, Z, Ch), and often sound diminutive or slightly pathetic by humanoid standards: Droop, Snit, Grik, Meepo, Splug. The names reflect kobold culture's emphasis on subservience -- even the sounds are designed to be spoken deferentially, never commanding. Names serving red dragons tend toward harsher sounds (Krag, Droth), while those serving blue dragons use crackling consonants (Zik, Skat).</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do different dragon masters affect kobold naming?</h3>
+          <p>Each dragon color imposes distinct naming conventions on their kobold servants. Red dragon kobolds receive harsh, fire-themed names (Ashfang, Droth, Kragmaw). Green dragon kobolds get sly, poison-themed names (Venom, Skul, Mirel). Blue dragon kobolds receive sharp, lightning-themed names (Zik, Skat, Voltik). White dragon kobolds get simple, cold-themed names (Frost, Shiver, Icik). Black dragon kobolds receive murky, acid-themed names (Murk, Sludge, Corro). The dragon's personality further modifies these patterns.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What is the name-earning tradition for kobolds?</h3>
+          <p>Kobolds earn new names through acts of exceptional service to their dragon master. A kobold who successfully sets a trap that captures an intruder might earn a new name referencing that achievement. A kobold who survives a suicide mission might receive a name meaning "the one who returned." These earned names are considered higher status than birth names, and kobolds compete fiercely for opportunities to earn better names through service. The highest honor is receiving a name directly from the dragon's own mouth.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What happens when a kobold's dragon dies?</h3>
+          <p>When a kobold's dragon master dies, the kobold faces an identity crisis. Their name -- given by the dragon -- loses its spiritual authority. Some kobolds wander alone, refusing new names. Others seek a new dragon master and accept a replacement name. A rare few choose their own names, an act that other kobolds view with a mixture of horror and awe. These self-named kobolds often become leaders of independent packs or outcasts entirely.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I use these kobold names for my D&D campaign?</h3>
+          <p>Yes. All generated names are free to use in your tabletop RPG campaigns, novels, games, or any creative project. Our names follow established D&D 5e kobold naming conventions from Volo's Guide to Monsters and other official sources, while being checked against famous characters like Meepo to avoid direct IP conflicts.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Race Generators</h4>
+          <ul>
+            <li><a href="/elf-name-generator/">Elf Name Generator</a></li>
+            <li><a href="/dwarf-name-generator/">Dwarf Name Generator</a></li>
+            <li><a href="/dragon-name-generator/">Dragon Name Generator</a></li>
+            <li><a href="/orc-name-generator/">Orc Name Generator</a></li>
+            <li><a href="/tiefling-name-generator/">Tiefling Name Generator</a></li>
+            <li><a href="/drow-name-generator/">Drow Name Generator</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Elf Subtypes</h4>
+          <ul>
+            <li><a href="/wood-elf/">Wood Elf Names</a></li>
+            <li><a href="/high-elf/">High Elf Names</a></li>
+            <li><a href="/dark-elf/">Dark Elf Names</a></li>
+            <li><a href="/female-elf/">Female Elf Names</a></li>
+            <li><a href="/male-elf/">Male Elf Names</a></li>
+            <li><a href="/elf-last-name/">Elf Last Names</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="/guides/how-to-choose-a-sound-palette/">Sound Palette Guide</a></li>
+            <li><a href="/guides/how-to-name-a-dd-character/">D&amp;D Naming Guide</a></li>
+            <li><a href="/guides/how-to-pronounce-fantasy-names/">Pronunciation Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Tools</h4>
+          <ul>
+            <li><a href="/backstory-generator/">Backstory Generator</a></li>
+            <li><a href="/races/">All Race Generators</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fantasy Name Generator. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/name-generator.js"></script>
+  <script src="/assets/character-generator.js?v=20261104"></script>
+  <script src="/assets/race-page-components.js?v=20261104"></script>
+  <script>
+    // Race mapping: page race key -> CharacterData race key
+    const RACE_MAP = {
+      'dragon': { race: 'Dragonborn', subrace: null },
+      'orc': { race: 'Half-Orc', subrace: null },
+      'elf': { race: 'Elf', subrace: null },
+      'wood-elf': { race: 'Elf', subrace: 'Wood Elf' },
+      'high-elf': { race: 'Elf', subrace: 'High Elf' },
+      'dark-elf': { race: 'Elf', subrace: 'Dark Elf (Drow)' },
+      'drow': { race: 'Elf', subrace: 'Dark Elf (Drow)' },
+      'dwarf': { race: 'Dwarf', subrace: null },
+      'tiefling': { race: 'Tiefling', subrace: null },
+      'kobold': { race: 'Kobold', subrace: null }
+    };
+
+    // Global wrapper functions for character generation
+    function generateCharacter(raceKey, gender, className, style, level, background, artStyle) {
+      const mapping = RACE_MAP[raceKey] || { race: raceKey, subrace: null };
+      return RacePageComponents.generateCharacter(mapping.race, {
+        subrace: mapping.subrace,
+        class: className,
+        style: style || 'Tolkien-esque',
+        level: level || 3,
+        background: background,
+        gender: gender === 'random' ? (Math.random() > 0.5 ? 'male' : 'female') : gender,
+        artStyle: artStyle || 'Classic Fantasy'
+      });
+    }
+    function generateBatchChars(raceKey, count, className, style, level, background, artStyle) {
+      const mapping = RACE_MAP[raceKey] || { race: raceKey, subrace: null };
+      return RacePageComponents.generateBatchChars(mapping.race, count, {
+        subrace: mapping.subrace,
+        class: className,
+        style: style || 'Tolkien-esque',
+        level: level || 3,
+        background: background,
+        artStyle: artStyle || 'Classic Fantasy'
+      });
+    }
+    function renderCharCard(result) {
+      return RacePageComponents.renderCharCard(result.char, result.portraitPrompt);
+    }
+    function copyText(text) {
+      RacePageComponents.copyText(text);
+    }
+
+    function switchTab(tabId, btnElement) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      btnElement.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+
+    // Kobold name data
+    const koboldPrefixesMale = ['Drok', 'Slik', 'Grik', 'Meepo', 'Droop', 'Snit', 'Krag', 'Zik', 'Yip', 'Frik', 'Murk', 'Bog', 'Sal', 'Kor', 'Ash', 'Ember', 'Grub', 'Pol', 'Wach', 'Siss'];
+    const koboldPrefixesFemale = ['Slika', 'Drokka', 'Grikka', 'Meepi', 'Droopa', 'Snitti', 'Kragga', 'Zikka', 'Yippa', 'Frikka', 'Murka', 'Bogga', 'Sala', 'Korra', 'Asha', 'Embra', 'Grubba', 'Pola', 'Wacha', 'Syssa'];
+    const koboldSuffixes = ['Deepdelver', 'Crackleshine', 'Flame-Touched', 'the Unseen', 'Swiftclaw', 'Trap-Eye', 'Tunnel-Runner', 'Scale-Polisher', 'the Patient', 'the Brave', 'Ashwalker', 'Fang-Gnawer', 'the Quick', 'Stone-Gnawer', 'the Loyal'];
+    const koboldPackNames = ['Emberclaw', 'Venomscale', 'Stormscale', 'Frostbite', 'Murkmire', 'Sunscorch', 'Thundervolt', 'Shadowvine', 'Cinderbite', 'Sludgetooth', 'Mistwalker', 'Sandsinger', 'Iceshard', 'Corroscale', 'Verdantscale'];
+
+    function generateKoboldNames() {
+      const gender = document.getElementById('kobold-gender').value;
+      const count = parseInt(document.getElementById('kobold-count').value);
+
+      const prefixes = gender === 'male' ? koboldPrefixesMale : koboldPrefixesFemale;
+      const resultsDiv = document.getElementById('kobold-results');
+      const names = [];
+
+      for (let i = 0; i < count; i++) {
+        const base = prefixes[Math.floor(Math.random() * prefixes.length)];
+        const suffix = koboldSuffixes[Math.floor(Math.random() * koboldSuffixes.length)];
+        const pack = koboldPackNames[Math.floor(Math.random() * koboldPackNames.length)];
+        const name = Math.random() > 0.5 ? `${base} ${suffix} of the ${pack}` : `${pack} ${base}`;
+        names.push({ name: name, meaning: `Pack: ${pack} | Role-derived base: ${base}` });
+      }
+
+      resultsDiv.innerHTML = names.map(nameObj => {
+        return `
+        <div class="name-card">
+          <div>
+            <div class="name-text">${nameObj.name}</div>
+            <div class="name-meaning">${nameObj.meaning}</div>
+            
+          </div>
+          <div class="name-actions">
+            <button class="icon-btn" onclick="copyText('${nameObj.name}')" title="Copy">&#128203;</button>
+            <button class="icon-btn" onclick="speakName('${nameObj.name}')" title="Listen">&#128266;</button>
+          </div>
+        </div>
+      `}).join('');
+    }
+
+    function speakName(name) {
+      if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(name);
+        utterance.rate = 0.9;
+        utterance.pitch = 1.2;
+        speechSynthesis.speak(utterance);
+      }
+    }
+
+    function generateKoboldCharacter() {
+      const charClass = document.getElementById('char-class').value || undefined;
+      const style = document.getElementById('char-style').value;
+      const level = parseInt(document.getElementById('char-level').value);
+      const background = document.getElementById('char-background').value || undefined;
+      const portraitStyle = document.getElementById('portrait-style').value;
+      const batchMode = document.getElementById('batch-mode').value;
+
+      let count = 1;
+      if (batchMode === 'party') count = 4;
+      else if (batchMode === 'custom') count = parseInt(prompt('How many characters?', '5')) || 5;
+
+      const resultsDiv = document.getElementById('char-results');
+
+      if (count === 1) {
+        const charData = generateCharacter('kobold', 'random', charClass, style, level, background, portraitStyle);
+        resultsDiv.innerHTML = renderCharCard(charData);
+      } else {
+        const chars = generateBatchChars('kobold', count, charClass, style, level, background, portraitStyle);
+        window._lastBatch = chars;
+        resultsDiv.innerHTML = chars.map((charData, index) =>
+          `<h3>Character ${index + 1}</h3>` + renderCharCard(charData)
+        ).join('<hr style="margin: 2rem 0; border-color: var(--border);">');
+
+        const exportButtons = `
+          <div class="export-buttons">
+            <button class="btn btn-secondary" onclick="exportAsText(window._lastBatch)">Export as Text</button>
+            <button class="btn btn-secondary" onclick="exportAsJSON(window._lastBatch)">Export as JSON</button>
+          </div>
+        `;
+        resultsDiv.innerHTML += exportButtons;
+      }
+    }
+
+    window.addEventListener('load', generateKoboldNames);
+  </script>
+</body>
+</html>
