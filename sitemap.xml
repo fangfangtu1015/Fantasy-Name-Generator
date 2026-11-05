@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://mythicname.app/</loc>
+    <loc>https://fantasyname.net/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -10,7 +10,7 @@
 
   <!-- Races Hub -->
   <url>
-    <loc>https://mythicname.app/races/</loc>
+    <loc>https://fantasyname.net/races/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -18,109 +18,109 @@
 
   <!-- Race Generators -->
   <url>
-    <loc>https://mythicname.app/elf-name-generator/</loc>
+    <loc>https://fantasyname.net/elf-name-generator/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/dwarf-name-generator/</loc>
+    <loc>https://fantasyname.net/dwarf-name-generator/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/dragon-name-generator/</loc>
+    <loc>https://fantasyname.net/dragon-name-generator/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/orc-name-generator/</loc>
+    <loc>https://fantasyname.net/orc-name-generator/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/tiefling-name-generator/</loc>
+    <loc>https://fantasyname.net/tiefling-name-generator/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/drow-name-generator/</loc>
+    <loc>https://fantasyname.net/drow-name-generator/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/gnome-name-generator/</loc>
+    <loc>https://fantasyname.net/gnome-name-generator/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/goblin-name-generator/</loc>
+    <loc>https://fantasyname.net/goblin-name-generator/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/half-elf-name-generator/</loc>
+    <loc>https://fantasyname.net/half-elf-name-generator/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/half-orc-name-generator/</loc>
+    <loc>https://fantasyname.net/half-orc-name-generator/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/halfling-name-generator/</loc>
+    <loc>https://fantasyname.net/halfling-name-generator/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/dragonborn-name-generator/</loc>
+    <loc>https://fantasyname.net/dragonborn-name-generator/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/aasimar-name-generator/</loc>
+    <loc>https://fantasyname.net/aasimar-name-generator/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/genasi-name-generator/</loc>
+    <loc>https://fantasyname.net/genasi-name-generator/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/kobold-name-generator/</loc>
+    <loc>https://fantasyname.net/kobold-name-generator/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/lizardfolk-name-generator/</loc>
+    <loc>https://fantasyname.net/lizardfolk-name-generator/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/tabaxi-name-generator/</loc>
+    <loc>https://fantasyname.net/tabaxi-name-generator/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/firbolg-name-generator/</loc>
+    <loc>https://fantasyname.net/firbolg-name-generator/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -128,37 +128,37 @@
 
   <!-- Elf Subtypes -->
   <url>
-    <loc>https://mythicname.app/wood-elf/</loc>
+    <loc>https://fantasyname.net/wood-elf/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/high-elf/</loc>
+    <loc>https://fantasyname.net/high-elf/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/dark-elf/</loc>
+    <loc>https://fantasyname.net/dark-elf/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/female-elf/</loc>
+    <loc>https://fantasyname.net/female-elf/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/male-elf/</loc>
+    <loc>https://fantasyname.net/male-elf/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/elf-last-name/</loc>
+    <loc>https://fantasyname.net/elf-last-name/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -166,7 +166,7 @@
 
   <!-- Guides Hub -->
   <url>
-    <loc>https://mythicname.app/guides/</loc>
+    <loc>https://fantasyname.net/guides/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -174,19 +174,19 @@
 
   <!-- Guide Articles -->
   <url>
-    <loc>https://mythicname.app/guides/how-to-choose-a-sound-palette/</loc>
+    <loc>https://fantasyname.net/guides/how-to-choose-a-sound-palette/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/guides/how-to-name-a-dd-character/</loc>
+    <loc>https://fantasyname.net/guides/how-to-name-a-dd-character/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/guides/how-to-pronounce-fantasy-names/</loc>
+    <loc>https://fantasyname.net/guides/how-to-pronounce-fantasy-names/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -194,7 +194,7 @@
 
   <!-- Backstory Generator -->
   <url>
-    <loc>https://mythicname.app/backstory-generator/</loc>
+    <loc>https://fantasyname.net/backstory-generator/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -202,25 +202,25 @@
 
   <!-- Basic Pages -->
   <url>
-    <loc>https://mythicname.app/about/</loc>
+    <loc>https://fantasyname.net/about/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/contact/</loc>
+    <loc>https://fantasyname.net/contact/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/privacy/</loc>
+    <loc>https://fantasyname.net/privacy/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://mythicname.app/terms/</loc>
+    <loc>https://fantasyname.net/terms/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
