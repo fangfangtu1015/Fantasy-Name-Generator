@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Elf Last Name Generator - Elven Surnames & Family Names</title>
+  <meta name="description" content="Generate authentic elf last names and surnames for D&D and fantasy RPGs. Compound elven family names that tell stories of heritage and nature.">
+  <link rel="canonical" href="https://mythicname.app/elf-last-name/">
+  <meta property="og:title" content="Elf Last Name Generator - Elven Surnames & Family Names">
+  <meta property="og:description" content="Generate authentic elf last names and surnames for D&D and fantasy RPGs. Compound elven family names that tell stories of heritage and nature.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mythicname.app/elf-last-name/">
+  <meta property="og:image" content="https://mythicname.app/assets/elf-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Elf Last Name Generator - Elven Surnames & Family Names">
+  <meta name="twitter:description" content="Generate authentic elf last names and surnames for D&D and fantasy RPGs. Compound elven family names that tell stories of heritage and nature.">
+  <meta name="twitter:image" content="https://mythicname.app/assets/elf-hero.jpg">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Elf Last Name Generator",
+    "description": "Generate authentic elf last names and surnames for D&D and fantasy RPGs. Compound elven family names that tell stories of heritage and nature with",
+    "url": "https://mythicname.app/elf-last-name/",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes an elf last name sound authentic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Authentic elf surnames are compound words combining nature elements with descriptors or occupations. They follow patterns like Nature + Action (Moonwhisper, Forestwalker), Celestial + Descriptor (Starweaver, Dawnbringer), or Family Deed (Dragonslayer, Demonbane). Wood elves favor earthy compounds (Oakshield, Thornleaf), high elves prefer celestial terms (Stargazer, Moonborn), and dark elves use shadow imagery (Shadowbane, Webwalker). The name should sound melodic when spoken aloud and tell a miniature story about the family’s heritage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use these elf surnames for my D&D campaign?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. All generated surnames are free to use in your tabletop RPG campaigns, novels, games, or any creative project. Our names follow established D&D 5e and Pathfinder naming conventions. Each surname comes with an etymology breakdown showing its linguistic roots."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do elven surnames work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Elven surnames are compressed histories — compound words that describe family heritage, ancestral deeds, natural features near ancestral homes, or notable characteristics of the bloodline. When an elf introduces themselves as Moonwhisper, they are reciting a story that began centuries ago — the ancestor who first heard the moon’s voice beside a silver stream. Surnames combine a nature word (Moon, Star, Forest, River) with a descriptor or occupation (Whisper, Weaver, Walker, Keeper). Some elven cultures also use house names with apostrophes (V’lorn) or patronymic forms."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between wood elf and high elf surnames?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wood elf surnames draw from the forest floor and canopy: Oakshield, Thornbow, Mossgrower, Fernwalker, Brookfischer. They reference tangible natural elements and practical skills. High elf surnames reach for the celestial and arcane: Starweaver, Spellbinder, Dawnlight, Runemaster, Celestialforge. They reference abstract concepts, cosmic bodies, and magical traditions. Dark elf surnames use Underdark imagery: Shadowwhisper, Nightblade, Obsidianheart, Veilwalker. The surname immediately tells you which culture an elf belongs to."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What patterns do elven surnames follow in fantasy gaming?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Elven surnames in fantasy gaming follow distinctive patterns: nature-compound names like Oakshield and Fernwalker for wood elves, celestial combinations like Starweaver and Moonwhisper for high elves, and harsh apostrophe-marked house names like V’lorn and Mez’kavan for drow. In all cases, the surname combines evocative natural or magical elements with the elf’s cultural identity. Our generator creates original surnames following these established patterns."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are elven surnames passed down?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Elven surname inheritance varies by culture. High elves typically follow patrilineal descent, with children taking the father’s surname. Wood elves often use matronymic traditions, passing the mother’s surname to preserve connection to the forest. Drow houses are strictly matriarchal — children take their mother’s house name (like V’lorn or Mez’kavan). Some elven cultures allow individuals to earn a personal surname based on a notable deed, replacing or supplementing their birth name."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can elves change their surname?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, in many elven traditions. An elf who performs a legendary deed may earn a new surname that commemorates the act — a wood elf who single-handedly defended a forest pass might become “Thornwall” or “Shieldgrove.” Drow who leave their house often abandon their house name entirely, choosing to forge a new identity. Exiled or wandering elves sometimes adopt the name of their homeland or a significant location as a new surname. Our generator can help you create both inherited and earned surnames."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I combine an elf first name with a surname?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Elven full names follow the pattern: [First Name] [Surname]. The surname should complement the first name’s sound and meaning. A flowing first name like Aelindor pairs well with a concrete surname like Starweaver (Aelindor Starweaver). A short first name like Bram works with a longer surname like Thornleaf (Bram Thornleaf). Avoid alliteration unless intentional for effect. Use our generator to create first names and surnames separately, then combine them. The etymology breakdown helps ensure the full name tells a coherent story."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mythicname.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Races",
+      "item": "https://mythicname.app/races/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Elf Last Names",
+      "item": "https://mythicname.app/elf-last-name/"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">
+        <span class="logo-icon">&#9876;</span>
+        Fantasy Name Generator
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/races/">Races</a></li>
+          <li><a href="/backstory-generator/">Backstory Generator</a></li>
+          <li><a href="/guides/">Guides</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>&#8250;</span>
+        <a href="/races/">Races</a>
+        <span>&#8250;</span>
+        <a href="/elf-name-generator/">Elf Name Generator</a>
+        <span>&#8250;</span>
+        Elf Last Names
+      </div>
+
+      <h1>Elf Last Name Generator</h1>
+      <h2>Elven Surnames and Family Names for Your D&D Campaign</h2>
+      
+      <div class="generator-box">
+        <div class="tab-switcher">
+          <button class="tab-btn active" onclick="switchTab('quick-names', this)">Quick Elf Last Names</button>
+          <button class="tab-btn" onclick="switchTab('character-card', this)">D&D 5e Elf Character Card</button>
+        </div>
+
+        <!-- Tab 1: Quick Surname Generator -->
+        <div id="quick-names" class="tab-content active">
+          <div class="generator-controls">
+            <div class="form-group">
+              <label for="surname-type">Surname Type</label>
+              <select id="surname-type">
+                <option value="general">General Elf</option>
+                <option value="wood">Wood Elf</option>
+                <option value="high">High Elf</option>
+                <option value="dark">Dark Elf</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="surname-count">How many?</label>
+              <input type="number" id="surname-count" min="1" max="20" value="5">
+            </div>
+          </div>
+          <button class="btn btn-primary generate-btn" onclick="generateElfSurnames()">Generate Elf Last Names</button>
+          <div class="results" id="surname-results"></div>
+        </div>
+
+        <!-- Tab 2: D&D 5e Character Card -->
+        <div id="character-card" class="tab-content">
+          <div id="char-generator">
+            <div class="char-gen-controls">
+              <div class="form-group">
+                <label for="char-class">Class</label>
+                <select id="char-class">
+                  <option value="">Random</option>
+                  <option value="fighter">Fighter</option>
+                  <option value="ranger">Ranger</option>
+                  <option value="wizard">Wizard</option>
+                  <option value="rogue">Rogue</option>
+                  <option value="bard">Bard</option>
+                  <option value="druid">Druid</option>
+                  <option value="monk">Monk</option>
+                  <option value="paladin">Paladin</option>
+                  <option value="cleric">Cleric</option>
+                  <option value="sorcerer">Sorcerer</option>
+                  <option value="warlock">Warlock</option>
+                  <option value="barbarian">Barbarian</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="char-style">Name Style</label>
+                <select id="char-style">
+                  <option value="random">Random</option>
+                  <option value="tolkien">Tolkien-esque</option>
+                  <option value="grrm">GRRM-esque</option>
+                  <option value="elder-scrolls">Elder Scrolls-esque</option>
+                  <option value="wow">WoW-esque</option>
+                  <option value="dark-souls">Dark Souls-esque</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="char-level">Level</label>
+                <input type="number" id="char-level" min="1" max="20" value="1">
+              </div>
+              <div class="form-group">
+                <label for="char-background">Background</label>
+                <select id="char-background">
+                  <option value="">Random</option>
+                  <option value="noble">Noble</option>
+                  <option value="sage">Sage</option>
+                  <option value="folk hero">Folk Hero</option>
+                  <option value="outlander">Outlander</option>
+                  <option value="acolyte">Acolyte</option>
+                  <option value="criminal">Criminal</option>
+                  <option value="soldier">Soldier</option>
+                  <option value="entertainer">Entertainer</option>
+                  <option value="hermit">Hermit</option>
+                  <option value="urchin">Urchin</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="portrait-style">Portrait Style</label>
+                <select id="portrait-style">
+                  <option value="fantasy-art">Fantasy Art</option>
+                  <option value="oil-painting">Oil Painting</option>
+                  <option value="digital-art">Digital Art</option>
+                  <option value="watercolor">Watercolor</option>
+                  <option value="pencil-sketch">Pencil Sketch</option>
+                  <option value="anime">Anime</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="batch-mode">Batch Mode</label>
+                <select id="batch-mode">
+                  <option value="single">Single Character</option>
+                  <option value="party">Full Party (4)</option>
+                  <option value="custom">Custom Count</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn btn-primary generate-btn" onclick="generateElfSurnameCharacter()">Generate Character</button>
+            <div id="char-results"></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="mt-2">
+        <h2>Why Choose Our Elf Last Name Generator?</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">&#128220;</div>
+            <h3>Story-in-the-Syllables</h3>
+            <p>Every elven surname is a compressed family history, encoding ancestral deeds, origins, and legacy into a handful of syllables. When you generate a name like <strong>Moonwhisper</strong> or <strong>Thornbow</strong>, you are not picking random words &mdash; you are uncovering the tale of the ancestor who first heard the moon's voice or the lineage of archers who defended the forest canopy. Our generator builds surnames whose etymology breakdowns reveal these layered narratives, so each family name carries the weight of centuries.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">&#127984;</div>
+            <h3>Clan-and-House Systems</h3>
+            <p>Differentiate noble houses from common clans with naming conventions that reflect social hierarchy. Great elven families like <strong>Starweaver</strong> and <strong>Celestialforge</strong> bear surnames that signal ancient wealth and arcane tradition, while common wood elf clans use humbler earth-rooted names like <strong>Mossgrower</strong> or <strong>Fernwalker</strong>. Our tool generates surnames calibrated to rank &mdash; lofty celestial compounds for highborn houses, grounded nature terms for working clans.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">&#127795;</div>
+            <h3>Nature-Bound Surnames</h3>
+            <p>Elven family names are rooted in the living landscape &mdash; tied to the trees, rivers, and stone formations near ancestral homelands. A clan called <strong>Oakshield</strong> traces its origin to a great oak that sheltered their first matriarch; <strong>Brookfischer</strong> descends from the elves who settled beside a silver stream. Our generator draws from deep pools of forest, celestial, and geological vocabulary so every surname feels organically connected to a specific place in your world.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">&#128106;</div>
+            <h3>Patronymic vs Matronymic Lineage</h3>
+            <p>Elven cultures trace bloodlines differently, and surnames reflect those traditions. High elves typically follow patrilineal descent, passing the father's house name through generations &mdash; think of the meticulous genealogies behind names like <strong>Moonwhisper</strong>. Wood elves often use matronymic inheritance, preserving the mother's connection to sacred groves. Drow houses are strictly matriarchal: children bear their mother's house name, as with <strong>V'lorn</strong> and <strong>Mez'kavan</strong>. Our generator supports all three lineage patterns.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">&#127758;</div>
+            <h3>Migration and Exile Markers</h3>
+            <p>When an elven clan is forced from its homeland or undertakes a great migration, the surname often records that rupture. An exiled family might adopt <strong>Windrunner</strong> to commemorate their long journey, or take the name <strong>Shadowbane</strong> to mark their escape from the Underdark. A drow who sheds their house name to forge a new identity on the surface is a powerful story moment. Our tool generates surnames that encode displacement, wandering, and reinvention for characters with turbulent histories.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">&#127775;</div>
+            <h3>Subrace Distinctions</h3>
+            <p>A wood elf's surname sounds nothing like a high elf's or a drow's &mdash; and it should. Wood elf names draw from the forest floor: <strong>Thornleaf</strong>, <strong>Cedarwarden</strong>, <strong>Bramblevine</strong>. High elf names reach for the celestial and arcane: <strong>Starweaver</strong>, <strong>Runemaster</strong>, <strong>Celestialforge</strong>. Drow names carry Underdark menace: <strong>Nightblade</strong>, <strong>Webwalker</strong>, <strong>Obsidianheart</strong>. Our generator enforces these subrace conventions so every surname instantly signals cultural identity.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Who Uses This Tool?</h2>
+        <div class="scenario-grid">
+          <div class="feature-card">
+            <div class="feature-icon">&#127760;</div>
+            <h3>World-Builders Creating Elven Genealogies</h3>
+            <p>If you are constructing an elven civilization with deep history, consistent family naming across generations is essential. A noble house where surnames encode patrilineal descent feels authentic because every branch follows the same linguistic pattern. Our generator helps you produce entire clan trees where surnames like <strong>Moonbrook</strong> and <strong>Dewpearl</strong> share coherent roots, so that when a reader encounters a character from a noble line, the family connections are immediately legible across centuries of in-world history.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">&#127922;</div>
+            <h3>Dungeon Masters Populating Elven Politics</h3>
+            <p>Running an elven court means managing rival noble houses, each with distinct surnames that signal allegiance and history. The great Underdark cities are defined by their competing houses &mdash; <strong>V'lorn</strong>, <strong>Zauvirr</strong>, <strong>Mez'kavan</strong> &mdash; whose names alone convey political weight. Generate a full roster of elven families in seconds: the <strong>Starweaver</strong> faction controls the arcane academy, the <strong>Oakshield</strong> clan commands the forest rangers, and the exiled <strong>Shadowbane</strong> house plots from the borderlands. Each surname becomes an instant adventure hook with built-in alliances, grudges, and territorial claims for your players to navigate.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">&#9997;&#65039;</div>
+            <h3>Writers Crafting Elven Identity</h3>
+            <p>A character's surname is the first clue to their heritage, social standing, and personal history. A wood elf ranger introduced as <strong>Bram Thornbow</strong> tells you everything &mdash; humble origins, forest-dwelling kin, a family tradition of archery. Our generator produces surnames layered with meaning so that every character introduction carries subtext: whether they bear the celestial pride of a <strong>Dawnbringer</strong>, the dark cunning of a <strong>Webwalker</strong>, or the wanderer's mark of a <strong>Windrunner</strong>, their name reveals who they are before they speak a single line of dialogue.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Elven Surname Conventions: The Complete Guide</h2>
+        <div class="article-content">
+          <h3>The Story in the Syllables</h3>
+          <p>Elven surnames are not mere labels; they are compressed histories. When an elf introduces themselves as "Moonwhisper," they are reciting a story that began centuries ago — the ancestor who first heard the moon's voice beside a silver stream. Each surname is a family's origin story, battle cry, and love letter to the natural world, all woven into two or three syllables.</p>
+          <p>Unlike human surnames that often developed from simple occupations (Smith, Baker, Cooper) or locations (Hill, Brooks, Ford), elven surnames carry the weight of generations. A wood elf named Bram Thornbow inherits not just a name but the legacy of every ancestor who drew a bow beneath the forest canopy. The surname is a promise, a identity, and a connection to the living world all at once.</p>
+
+          <h3>Structure of Elven Surnames</h3>
+          <p>Elven surnames follow distinct structural patterns that vary by culture but share a common philosophy: every name tells a story.</p>
+          <ul>
+            <li><strong>Nature + Descriptor:</strong> A natural element combined with a characteristic — <span class="phonetic-tag">Moonwhisper</span> <span class="phonetic-tag">Starweaver</span> <span class="phonetic-tag">Forestwalker</span> <span class="phonetic-tag">Riverkeeper</span></li>
+            <li><strong>Celestial + Action:</strong> A star, moon, or sun reference combined with a verb — <span class="phonetic-tag">Dawnbringer</span> <span class="phonetic-tag">Nightbloom</span> <span class="phonetic-tag">Sunbringer</span> <span class="phonetic-tag">Twilightdancer</span></li>
+            <li><strong>Element + Object:</strong> A natural material combined with a crafted item — <span class="phonetic-tag">Silverleaf</span> <span class="phonetic-tag">Crystalheart</span> <span class="phonetic-tag">Ironwood</span> <span class="phonetic-tag">Goldenshield</span></li>
+            <li><strong>Family Deed:</strong> A name commemorating an ancestral achievement — <span class="phonetic-tag">Dragonslayer</span> <span class="phonetic-tag">Demonbane</span> <span class="phonetic-tag">Giantsfriend</span> <span class="phonetic-tag">Stormcaller</span></li>
+          </ul>
+
+          <h3>Common Elven Surname Elements</h3>
+          <p><strong>Nature words:</strong> <span class="phonetic-tag">Moon</span> <span class="phonetic-tag">Star</span> <span class="phonetic-tag">Sun</span> <span class="phonetic-tag">Forest</span> <span class="phonetic-tag">Tree</span> <span class="phonetic-tag">Leaf</span> <span class="phonetic-tag">River</span> <span class="phonetic-tag">Stone</span> <span class="phonetic-tag">Wind</span> <span class="phonetic-tag">Storm</span></p>
+          <p><strong>Descriptor words:</strong> <span class="phonetic-tag">Whisper</span> <span class="phonetic-tag">Walker</span> <span class="phonetic-tag">Weaver</span> <span class="phonetic-tag">Born</span> <span class="phonetic-tag">Song</span> <span class="phonetic-tag">Blade</span> <span class="phonetic-tag">Bow</span> <span class="phonetic-tag">Bloom</span> <span class="phonetic-tag">Keeper</span></p>
+          <p><strong>Celestial words:</strong> <span class="phonetic-tag">Dawn</span> <span class="phonetic-tag">Dusk</span> <span class="phonetic-tag">Twilight</span> <span class="phonetic-tag">Night</span> <span class="phonetic-tag">Light</span> <span class="phonetic-tag">Shadow</span> <span class="phonetic-tag">Sky</span> <span class="phonetic-tag">Eclipse</span></p>
+          <p><strong>Material words:</strong> <span class="phonetic-tag">Silver</span> <span class="phonetic-tag">Crystal</span> <span class="phonetic-tag">Gold</span> <span class="phonetic-tag">Iron</span> <span class="phonetic-tag">Obsidian</span> <span class="phonetic-tag">Ebony</span> <span class="phonetic-tag">Pearl</span> <span class="phonetic-tag">Amber</span></p>
+
+          <h3>General Elf Surnames</h3>
+          <p>General elf surnames blend the traditions of all subraces, creating versatile family names suitable for any elven setting. These surnames emphasize the universal elven connection to nature and magic.</p>
+          <div class="name-example">
+            <strong>Moonwhisper</strong> — <em>Moon</em> (lunar body) + <em>whisper</em> (soft speech)<br>
+            Meaning: A family known for secrets kept under moonlight, or ancestors who could hear the moon's voice
+          </div>
+          <div class="name-example">
+            <strong>Starweaver</strong> — <em>Star</em> (celestial body) + <em>weaver</em> (one who crafts)<br>
+            Meaning: A family of mages or artisans who weave starlight into their craft
+          </div>
+          <div class="name-example">
+            <strong>Dawnbringer</strong> — <em>Dawn</em> (daybreak) + <em>bringer</em> (one who carries)<br>
+            Meaning: A family known for bringing hope, light, or new beginnings to dark times
+          </div>
+
+          <h3>Wood Elf Surnames</h3>
+          <p>Wood elf surnames draw directly from the forest floor and canopy. They reference tangible natural elements — trees, plants, animals, weather, terrain — combined with practical skills and occupations. These are the names of people who live with the forest, not above it.</p>
+          <div class="name-example">
+            <strong>Oakshield</strong> — <em>Oak</em> (mighty tree) + <em>shield</em> (protection)<br>
+            Meaning: A family of protectors, strong and enduring as the ancient oak
+          </div>
+          <div class="name-example">
+            <strong>Thornbow</strong> — <em>Thorn</em> (sharp spine) + <em>bow</em> (weapon)<br>
+            Meaning: A family of skilled archers whose arrows strike like thorns
+          </div>
+          <div class="name-example">
+            <strong>Fernwalker</strong> — <em>Fern</em> (forest plant) + <em>walker</em> (traveler)<br>
+            Meaning: A family of rangers who move silently through the undergrowth
+          </div>
+          <div class="name-example">
+            <strong>Mossgrower</strong> — <em>Moss</em> (forest lichen) + <em>grower</em> (cultivator)<br>
+            Meaning: A family of druids or herbalists who tend the forest floor
+          </div>
+
+          <h3>High Elf Surnames</h3>
+          <p>High elf surnames reach for the celestial and arcane. They reference stars, light, magical traditions, and noble concepts. These are the names of families who have spent centuries perfecting the arts of magic, diplomacy, and scholarship.</p>
+          <div class="name-example">
+            <strong>Spellbinder</strong> — <em>Spell</em> (magical incantation) + <em>binder</em> (one who holds fast)<br>
+            Meaning: A family of mages who bind powerful spells into objects or wards
+          </div>
+          <div class="name-example">
+            <strong>Runemaster</strong> — <em>Rune</em> (magical symbol) + <em>master</em> (expert)<br>
+            Meaning: A family of scholars who have mastered the ancient runic arts
+          </div>
+          <div class="name-example">
+            <strong>Celestialforge</strong> — <em>Celestial</em> (of the heavens) + <em>forge</em> (creation place)<br>
+            Meaning: A family of artificers who craft items using starlight and cosmic energy
+          </div>
+
+          <h3>Dark Elf Surnames</h3>
+          <p>Dark elf (drow) surnames use Underdark imagery — shadow, night, venom, webs, and darkness. In drow society, the surname is the house name, carrying the political weight of centuries of intrigue and power. Drow surnames often include apostrophes reflecting the harsh phonetics of the drow language.</p>
+          <div class="name-example">
+            <strong>Shadowbane</strong> — <em>Shadow</em> (darkness) + <em>bane</em> (destroyer)<br>
+            Meaning: A family known for destroying enemies from the shadows
+          </div>
+          <div class="name-example">
+            <strong>Webwalker</strong> — <em>Web</em> (spider silk) + <em>walker</em> (traveler)<br>
+            Meaning: A family who moves through the spider webs of the Underdark with ease
+          </div>
+          <div class="name-example">
+            <strong>V'lorn</strong> — <em>V'</em> (house prefix) + <em>lorn</em> (ancient root)<br>
+            Meaning: Of House V'lorn, an ancient drow noble family
+          </div>
+          <div class="name-example">
+            <strong>Nightblade</strong> — <em>Night</em> (darkness) + <em>blade</em> (weapon)<br>
+            Meaning: A family of assassins who strike under cover of darkness
+          </div>
+
+          <h3>Naming Patterns in Fantasy Gaming</h3>
+          <p>Elven surnames in fantasy gaming follow distinctive patterns that immediately signal the character's cultural background:</p>
+          <ul>
+            <li><strong>Drow house names:</strong> Use apostrophes and unusual consonant combinations (X, Z, V) to create an alien, dangerous sound. House names like V'lorn and Mez'kavan immediately signal Underdark heritage.</li>
+            <li><strong>Wood elf compound names:</strong> Combine nature words with descriptors — Fernwalker, Oakshield, Thornbow — creating practical, earthy surnames that reflect forest life.</li>
+            <li><strong>High elf celestial names:</strong> Use star, moon, light, and arcane references — Starweaver, Moonwhisper, Spellbinder — creating elegant, scholarly surnames.</li>
+            <li><strong>Dark elf shadow names:</strong> Blend darkness and danger — Shadowwhisper, Nightblade, Obsidianheart — creating surnames that carry menace and mystery.</li>
+          </ul>
+          <p>Our generator creates original surnames following these established patterns while ensuring all names are free to use in your campaigns.</p>
+
+          <h3>How Surnames Are Inherited and Earned</h3>
+          <p>Elven surname traditions vary significantly by culture:</p>
+          <ul>
+            <li><strong>High elves</strong> typically follow patrilineal descent, with children taking the father's surname. Noble houses maintain meticulous genealogies stretching back millennia.</li>
+            <li><strong>Wood elves</strong> often use matronymic traditions, passing the mother's surname to preserve connection to the forest and specific groves.</li>
+            <li><strong>Drow houses</strong> are strictly matriarchal — children take their mother's house name. A drow's surname immediately identifies their political allegiance.</li>
+            <li><strong>Earned names:</strong> An elf who performs a legendary deed may earn a new surname. A wood elf who single-handedly defended a forest pass might become "Thornwall." A drow who escapes their house might abandon their birth name entirely.</li>
+          </ul>
+
+          <h3>Pronunciation Guide</h3>
+          <p>Elven surname pronunciation follows the same rules as first names:</p>
+          <ul>
+            <li><strong>Compound words</strong> are pronounced as two distinct words: <em>Moonwhisper</em> = "MOON-whis-per", <em>Starweaver</em> = "STAR-wee-ver"</li>
+            <li><strong>Apostrophes in drow names</strong> indicate a glottal stop: <em>V'lorn</em> = "vuh [pause] LORN"</li>
+            <li><strong>Longer surnames</strong> maintain rhythmic stress: <em>Celestialforge</em> = "seh-LES-tee-al-FORJ"</li>
+            <li><strong>Nature words</strong> keep their common pronunciation: <em>Oakshield</em> = "OAK-shield", <em>Thornbow</em> = "THORN-bo"</li>
+          </ul>
+
+          <h3>Surname Patterns Across Cultures</h3>
+          <p>Understanding surname patterns helps you create consistent naming across your world:</p>
+          <ul>
+            <li><strong>Wood elf pattern:</strong> [Forest Element] + [Practical Skill/Tool] — Oakshield, Thornbow, Fernwalker, Mossgrower, Brookfischer</li>
+            <li><strong>High elf pattern:</strong> [Celestial Element] + [Magical/Noble Concept] — Starweaver, Spellbinder, Dawnlight, Runemaster, Celestialforge</li>
+            <li><strong>Dark elf pattern:</strong> [Shadow Element] + [Dangerous Concept] — Shadowbane, Webwalker, Nightblade, Duskwalker, Obsidianheart</li>
+            <li><strong>General elf pattern:</strong> [Nature Element] + [Descriptor/Action] — Moonwhisper, Forestwalker, Crystalheart, Windrunner, Silverleaf</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Related Elf Name Generators</h2>
+        <div class="internal-links">
+          <a href="/elf-name-generator/">Elf Name Generator</a>
+          <a href="/wood-elf/">Wood Elf Names</a>
+          <a href="/high-elf/">High Elf Names</a>
+          <a href="/drow-name-generator/">Drow Name Generator</a>
+          <a href="/dwarf-name-generator/">Dwarf Name Generator</a>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>What makes an elf last name sound authentic?</h3>
+          <p>Authentic elf surnames are compound words combining nature elements with descriptors or occupations. They follow patterns like Nature + Action (Moonwhisper, Forestwalker), Celestial + Descriptor (Starweaver, Dawnbringer), or Family Deed (Dragonslayer, Demonbane). Wood elves favor earthy compounds (Oakshield, Thornleaf), high elves prefer celestial terms (Stargazer, Moonborn), and dark elves use shadow imagery (Shadowbane, Webwalker). The name should sound melodic when spoken aloud and tell a miniature story about the family's heritage.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I use these elf surnames for my D&D campaign?</h3>
+          <p>Yes. All generated surnames are free to use in your tabletop RPG campaigns, novels, games, or any creative project. Our names follow established D&D 5e and Pathfinder naming conventions. Each surname comes with an etymology breakdown showing its linguistic roots.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do elven surnames work?</h3>
+          <p>Elven surnames are compressed histories — compound words that describe family heritage, ancestral deeds, natural features near ancestral homes, or notable characteristics of the bloodline. When an elf introduces themselves as Moonwhisper, they are reciting a story that began centuries ago — the ancestor who first heard the moon's voice beside a silver stream. Surnames combine a nature word (Moon, Star, Forest, River) with a descriptor or occupation (Whisper, Weaver, Walker, Keeper). Some elven cultures also use house names with apostrophes (V'lorn) or patronymic forms.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What is the difference between wood elf and high elf surnames?</h3>
+          <p>Wood elf surnames draw from the forest floor and canopy: Oakshield, Thornbow, Mossgrower, Fernwalker, Brookfischer. They reference tangible natural elements and practical skills. High elf surnames reach for the celestial and arcane: Starweaver, Spellbinder, Dawnlight, Runemaster, Celestialforge. They reference abstract concepts, cosmic bodies, and magical traditions. Dark elf surnames use Underdark imagery: Shadowwhisper, Nightblade, Obsidianheart, Veilwalker. The surname immediately tells you which culture an elf belongs to.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What patterns do elven surnames follow in fantasy gaming?</h3>
+          <p>Elven surnames in fantasy gaming follow distinctive patterns: nature-compound names like Oakshield and Fernwalker for wood elves, celestial combinations like Starweaver and Moonwhisper for high elves, and harsh apostrophe-marked house names like V'lorn and Mez'kavan for drow. In all cases, the surname combines evocative natural or magical elements with the elf's cultural identity. Our generator creates original surnames following these established patterns.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How are elven surnames passed down?</h3>
+          <p>Elven surname inheritance varies by culture. High elves typically follow patrilineal descent, with children taking the father's surname. Wood elves often use matronymic traditions, passing the mother's surname to preserve connection to the forest. Drow houses are strictly matriarchal — children take their mother's house name (like V'lorn or Mez'kavan). Some elven cultures allow individuals to earn a personal surname based on a notable deed, replacing or supplementing their birth name.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can elves change their surname?</h3>
+          <p>Yes, in many elven traditions. An elf who performs a legendary deed may earn a new surname that commemorates the act — a wood elf who single-handedly defended a forest pass might become "Thornwall" or "Shieldgrove." Drow who leave their house often abandon their house name entirely, choosing to forge a new identity. Exiled or wandering elves sometimes adopt the name of their homeland or a significant location as a new surname. Our generator can help you create both inherited and earned surnames.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I combine an elf first name with a surname?</h3>
+          <p>Elven full names follow the pattern: [First Name] [Surname]. The surname should complement the first name's sound and meaning. A flowing first name like Aelindor pairs well with a concrete surname like Starweaver (Aelindor Starweaver). A short first name like Bram works with a longer surname like Thornleaf (Bram Thornleaf). Avoid alliteration unless intentional for effect. Use our generator to create first names and surnames separately, then combine them. The etymology breakdown helps ensure the full name tells a coherent story.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Race Generators</h4>
+          <ul>
+            <li><a href="/elf-name-generator/">Elf Name Generator</a></li>
+            <li><a href="/dwarf-name-generator/">Dwarf Name Generator</a></li>
+            <li><a href="/dragon-name-generator/">Dragon Name Generator</a></li>
+            <li><a href="/orc-name-generator/">Orc Name Generator</a></li>
+            <li><a href="/tiefling-name-generator/">Tiefling Name Generator</a></li>
+            <li><a href="/drow-name-generator/">Drow Name Generator</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Elf Subtypes</h4>
+          <ul>
+            <li><a href="/wood-elf/">Wood Elf Names</a></li>
+            <li><a href="/high-elf/">High Elf Names</a></li>
+            <li><a href="/dark-elf/">Dark Elf Names</a></li>
+            <li><a href="/female-elf/">Female Elf Names</a></li>
+            <li><a href="/male-elf/">Male Elf Names</a></li>
+            <li><a href="/elf-last-name/">Elf Last Names</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="/guides/how-to-choose-a-sound-palette/">Sound Palette Guide</a></li>
+            <li><a href="/guides/how-to-name-a-dd-character/">D&amp;D Naming Guide</a></li>
+            <li><a href="/guides/how-to-pronounce-fantasy-names/">Pronunciation Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Tools</h4>
+          <ul>
+            <li><a href="/backstory-generator/">Backstory Generator</a></li>
+            <li><a href="/races/">All Race Generators</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fantasy Name Generator. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/name-generator.js"></script>
+  <script src="/assets/character-generator.js"></script>
+  <script src="/assets/race-page-components.js"></script>
+  <script>
+    // Race mapping: page race key → CharacterData race key
+    const RACE_MAP = {
+      'dragon': { race: 'Dragonborn', subrace: null },
+      'orc': { race: 'Half-Orc', subrace: null },
+      'elf': { race: 'Elf', subrace: null },
+      'wood-elf': { race: 'Elf', subrace: 'Wood Elf' },
+      'high-elf': { race: 'Elf', subrace: 'High Elf' },
+      'dark-elf': { race: 'Elf', subrace: 'Dark Elf (Drow)' },
+      'drow': { race: 'Elf', subrace: 'Dark Elf (Drow)' },
+      'dwarf': { race: 'Dwarf', subrace: null },
+      'tiefling': { race: 'Tiefling', subrace: null }
+    };
+
+    // Global wrapper functions for character generation
+    function generateCharacter(raceKey, gender, className, style, level, background, artStyle) {
+      const mapping = RACE_MAP[raceKey] || { race: raceKey, subrace: null };
+      return RacePageComponents.generateCharacter(mapping.race, {
+        subrace: mapping.subrace,
+        class: className,
+        style: style || 'Tolkien-esque',
+        level: level || 3,
+        background: background,
+        gender: gender === 'random' ? (Math.random() > 0.5 ? 'male' : 'female') : gender,
+        artStyle: artStyle || 'Classic Fantasy'
+      });
+    }
+    function generateBatchChars(raceKey, count, className, style, level, background, artStyle) {
+      const mapping = RACE_MAP[raceKey] || { race: raceKey, subrace: null };
+      return RacePageComponents.generateBatchChars(mapping.race, count, {
+        subrace: mapping.subrace,
+        class: className,
+        style: style || 'Tolkien-esque',
+        level: level || 3,
+        background: background,
+        artStyle: artStyle || 'Classic Fantasy'
+      });
+    }
+    function renderCharCard(result) {
+      return RacePageComponents.renderCharCard(result.char, result.portraitPrompt);
+    }
+    function copyText(text) {
+      RacePageComponents.copyText(text);
+    }
+
+    function switchTab(tabId, btnElement) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      btnElement.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+
+    function generateElfSurnames() {
+      const type = document.getElementById('surname-type').value;
+      const count = parseInt(document.getElementById('surname-count').value);
+      
+      const surnameData = {
+        general: {
+          prefixes: ['Moon', 'Star', 'Sun', 'Forest', 'Dawn', 'Night', 'Silver', 'Crystal', 'Shadow', 'Wind', 'River', 'Glen', 'Sky', 'Light', 'Storm'],
+          suffixes: ['whisper', 'weaver', 'walker', 'bringer', 'bloom', 'leaf', 'heart', 'dance', 'runner', 'shield', 'song', 'keeper', 'bearer', 'watcher', 'seeker']
+        },
+        wood: {
+          prefixes: ['Oak', 'Fern', 'Thorn', 'Moss', 'Brook', 'Glen', 'Cedar', 'Birch', 'Elm', 'Ash', 'Pine', 'Willow', 'Ivy', 'Bramble', 'Heather'],
+          suffixes: ['shield', 'bow', 'walker', 'grower', 'fischer', 'hunter', 'keeper', 'dancer', 'warden', 'root', 'branch', 'leaf', 'bark', 'vine', 'glen']
+        },
+        high: {
+          prefixes: ['Star', 'Sun', 'Moon', 'Dawn', 'Spell', 'Rune', 'Glyph', 'Noble', 'Arcane', 'Celestial', 'Astral', 'Solar', 'Lunar', 'Radiant', 'Golden'],
+          suffixes: ['weaver', 'bringer', 'binder', 'master', 'forge', 'light', 'song', 'keeper', 'ward', 'scribe', 'sage', 'oracle', 'crown', 'throne', 'flame']
+        },
+        dark: {
+          prefixes: ['Shadow', 'Night', 'Dusk', 'Twilight', 'Shade', 'Gloom', 'Raven', 'Obsidian', 'Ebony', 'Veil', 'Shroud', 'Spider', 'Venom', 'Dark', 'Black'],
+          suffixes: ['bane', 'walker', 'weaver', 'blade', 'whisper', 'heart', 'crest', 'mantle', 'wind', 'fang', 'claw', 'web', 'strike', 'hunt', 'dance']
+        }
+      };
+      
+      const data = surnameData[type] || surnameData.general;
+      const names = [];
+      
+      for (let i = 0; i < count; i++) {
+        const prefix = data.prefixes[Math.floor(Math.random() * data.prefixes.length)];
+        const suffix = data.suffixes[Math.floor(Math.random() * data.suffixes.length)];
+        const name = prefix + suffix;
+        
+        const meanings = {
+          whisper: 'known for secrets and subtle influence',
+          weaver: 'crafts intricate works of great beauty',
+          walker: 'travels freely through the domain of their name',
+          bringer: 'heralds the coming of what their name describes',
+          bloom: 'brings beauty and life wherever they go',
+          leaf: 'connected to the forest and its cycles',
+          heart: 'embodies the core essence of their name',
+          dance: 'moves with grace and unpredictability',
+          runner: 'swift messengers or scouts of their people',
+          shield: 'protectors and defenders of their kin',
+          song: 'keepers of oral tradition and history',
+          keeper: 'guardians of ancient knowledge or places',
+          bearer: 'carries the weight and honor of their name',
+          watcher: 'vigilant guardians who see all',
+          seeker: 'searchers for truth and hidden knowledge',
+          bow: 'skilled archers and hunters',
+          grower: 'cultivators of nature and natural magic',
+          fischer: 'providers who draw sustenance from nature',
+          hunter: 'skilled trackers and providers',
+          warden: 'appointed guardians of sacred places',
+          root: 'deeply connected to the earth and ancestry',
+          branch: 'reaching outward while staying connected',
+          bark: 'tough and protective like the forest shell',
+          vine: 'adaptive and far-reaching',
+          glen: 'tied to a specific sacred valley or place',
+          binder: 'one who holds magic or oaths fast',
+          master: 'supreme expert in their field',
+          forge: 'creator of powerful works',
+          light: 'bearer of illumination and truth',
+          ward: 'protector through magical means',
+          scribe: 'recorder of history and knowledge',
+          sage: 'wise keeper of ancient lore',
+          oracle: 'seer of truths hidden from others',
+          crown: 'natural leaders and nobility',
+          throne: 'rulers with ancient authority',
+          flame: 'burning with inner power and passion',
+          bane: 'destroyer of enemies',
+          blade: 'skilled warrior or weapon-maker',
+          crest: 'noble house of high standing',
+          mantle: 'one who takes up responsibility',
+          wind: 'swift and far-traveling',
+          fang: 'fierce and dangerous in combat',
+          claw: 'grappler who holds fast to prey',
+          web: 'one who navigates complex networks',
+          strike: 'swift and decisive in action',
+          hunt: 'relentless pursuer of goals or enemies'
+        };
+        
+        const meaning = meanings[suffix] || `a family known for their connection to ${prefix.toLowerCase()}`;
+        
+        names.push({
+          name: name,
+          meaning: `A ${type === 'wood' ? 'wood elf' : type === 'high' ? 'high elf' : type === 'dark' ? 'dark elf' : 'elven'} family name — ${prefix.toLowerCase()} + ${suffix}: ${meaning}`
+        });
+      }
+      
+      const resultsDiv = document.getElementById('surname-results');
+      
+      resultsDiv.innerHTML = names.map(nameObj => {
+        const parts = nameObj.name.match(/^([A-Z][a-z]+)(.*)/);
+        const etymology = parts 
+          ? `<strong>${parts[1]}</strong> (${parts[1].toLowerCase()}) + <strong>${parts[2].toLowerCase()}</strong> (${parts[2].toLowerCase()}) = "${parts[1].toLowerCase()} ${parts[2].toLowerCase()}"`
+          : `Compound surname: ${nameObj.name}`;
+        
+        return `
+        <div class="name-card">
+          <div>
+            <div class="name-text">${nameObj.name}</div>
+            <div class="name-meaning">${nameObj.meaning}</div>
+            
+            <div class="etymology-box">
+              <strong>Etymology:</strong> ${etymology}
+            </div>
+          </div>
+          <div class="name-actions">
+            <button class="icon-btn" onclick="copyText('${nameObj.name}')" title="Copy">&#128203;</button>
+            <button class="icon-btn" onclick="speakName('${nameObj.name}')" title="Listen">&#128266;</button>
+          </div>
+        </div>
+      `}).join('');
+    }
+    
+    function speakName(name) {
+      if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(name);
+        utterance.rate = 0.8;
+        speechSynthesis.speak(utterance);
+      }
+    }
+
+    function generateElfSurnameCharacter() {
+      const charClass = document.getElementById('char-class').value || undefined;
+      const style = document.getElementById('char-style').value;
+      const level = parseInt(document.getElementById('char-level').value);
+      const background = document.getElementById('char-background').value || undefined;
+      const portraitStyle = document.getElementById('portrait-style').value;
+      const batchMode = document.getElementById('batch-mode').value;
+      
+      let count = 1;
+      if (batchMode === 'party') count = 4;
+      else if (batchMode === 'custom') count = parseInt(prompt('How many characters?', '5')) || 5;
+      
+      const resultsDiv = document.getElementById('char-results');
+      
+      if (count === 1) {
+        const charData = generateCharacter('elf', 'random', charClass, style, level, background, portraitStyle);
+        resultsDiv.innerHTML = renderCharCard(charData);
+      } else {
+        const chars = generateBatchChars('elf', count, charClass, style, level, background, portraitStyle);
+        window._lastBatch = chars;
+        resultsDiv.innerHTML = chars.map((charData, index) => 
+          `<h3>Character ${index + 1}</h3>` + renderCharCard(charData)
+        ).join('<hr style="margin: 2rem 0; border-color: var(--border);">');
+        
+        const exportButtons = `
+          <div class="export-buttons">
+            <button class="btn btn-secondary" onclick="exportAsText(window._lastBatch)">Export as Text</button>
+            <button class="btn btn-secondary" onclick="exportAsJSON(window._lastBatch)">Export as JSON</button>
+          </div>
+        `;
+        resultsDiv.innerHTML += exportButtons;
+      }
+    }
+    
+    window.addEventListener('load', generateElfSurnames);
+  </script>
+</body>
+</html>

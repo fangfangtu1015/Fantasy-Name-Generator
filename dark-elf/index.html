@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Dark Elf Name Generator - Shadow Elf Names for D&D & RPG</title>
+  <meta name="description" content="Generate dark elf names for D&D and fantasy RPGs. Melodic elven first names with shadow-themed compound surnames (Duskvale, Ravenlight, Thornstrike). Character cards, etymology breakdown, and pronunciation guide.">
+  <link rel="canonical" href="https://mythicname.app/dark-elf/">
+  <meta property="og:title" content="Dark Elf Name Generator - Shadow Elf Names for D&D & RPG">
+  <meta property="og:description" content="Generate dark elf names for D&D and fantasy RPGs. Melodic elven first names with shadow-themed compound surnames (Duskvale, Ravenlight, Thornstrike). Character cards, etymology breakdown, and pronunciation guide.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mythicname.app/dark-elf/">
+  <meta property="og:image" content="https://mythicname.app/assets/drow-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dark Elf Name Generator - Shadow Elf Names for D&D & RPG">
+  <meta name="twitter:description" content="Generate dark elf names for D&D and fantasy RPGs. Melodic elven first names with shadow-themed compound surnames (Duskvale, Ravenlight, Thornstrike). Character cards, etymology breakdown, and pronunciation guide.">
+  <meta name="twitter:image" content="https://mythicname.app/assets/drow-hero.jpg">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Dark Elf Name Generator",
+    "description": "Generate dark elf names for D&D and fantasy RPGs. Shadow-themed names with mysterious, dangerous sounds for elves who walk between light and darkness.",
+    "url": "https://mythicname.app/dark-elf/",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I generate a dark elf name that fits my character?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Select your character’s gender, set the count to 5-10, and click Generate. Each name comes with an etymology breakdown showing its root morphemes. Pick the name whose meaning best matches your character’s personality -- a rogue needs a sharper surname than a diplomat. Use the “Match by Character Class” and “Match by Background” guides above to narrow down your selection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What’s the difference between the Quick Names tab and the Character Card tab?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Quick Names tab generates standalone names with etymology breakdowns -- use this when you already have a character and just need a name. The Character Card tab generates a full D&D 5e character (race, class, level, background, ability scores, personality traits, backstory) with a dark elf name integrated -- use this when you need a complete character ready for play. The character card also includes an AI portrait prompt you can use with Midjourney or Stable Diffusion."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between dark elf and drow names?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This generator produces dark elf names: melodic elven first names (Draven, Sylvora, Caelthor) paired with English compound surnames (Duskvale, Ravenlight, Thornstrike). Drow names use harsher phonetics with X, Z, Q consonants and apostrophe constructions (Szordnalzrin H’cath, Vlonn’ter). If you need traditional drow names with Underdark phonetics and house names, use the Drow Name Generator instead."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use these names in my D&D campaign, novel, or game?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. All generated names are original combinations produced by the tool’s phonetic engine. They are not copied from any copyrighted work. You can freely use them in tabletop RPG campaigns, novels, video games, or any creative project -- including commercial work."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I pronounce dark elf names correctly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Click the speaker icon next to any generated name to hear it pronounced at 0.8x speed. General rules: “ae” sounds like “ay” in day, “ie” like “ee” in see, “th” as in thin (voiceless), “v” is soft. Male names stress the first syllable (DRAY-ven), female names stress the middle (sylv-OR-a). Surnames stress the first element (DUSK-vale, RAVEN-blade)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do dark elf surnames work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dark elf surnames are compound words combining a shadow/twilight prefix (Shadow, Dusk, Void, Eclipse, Raven, Obsidian, Moon, Thorn, Venom, Fang, Blade) with a nature/action suffix (walker, whisper, blade, stream, haven, crest, runner, light, fall, strike, song). The surname describes how the bearer moves through the world -- their reputation, their method, or their origin. For example, “Ravenlight” suggests someone who carries knowledge like a raven carries messages, while “Fanghaven” suggests a dangerous place that offers protection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are male and female dark elf names different?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Male first names use shorter prefixes (Adrim, Belvor, Draven, Gorthor) and angular endings (-or, -ven, -thor, -rim). Female first names use longer prefixes (Adrianna, Belvora, Dravenna, Sylvora) and flowing endings (-na, -ra, -via, -ora, -iel, -wen). Both share the same compound surname system. Select the appropriate gender in the generator to get names matching your character."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I generate names for multiple dark elf characters at once?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In the Quick Names tab, set “How many?” to up to 20 and click Generate. For full characters, use the Character Card tab and set “Batch Mode” to “Full Party (4)” or “Custom Count.” This generates multiple complete character cards with names, stats, backgrounds, and portrait prompts. Export as text or JSON to save the entire batch for your campaign or story."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mythicname.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Races",
+      "item": "https://mythicname.app/races/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Dark Elf Names",
+      "item": "https://mythicname.app/dark-elf/"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">
+        <span class="logo-icon">&#9876;</span>
+        Fantasy Name Generator
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/races/">Races</a></li>
+          <li><a href="/backstory-generator/">Backstory Generator</a></li>
+          <li><a href="/guides/">Guides</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>&#8250;</span>
+        <a href="/races/">Races</a>
+        <span>&#8250;</span>
+        <a href="/elf-name-generator/">Elf Name Generator</a>
+        <span>&#8250;</span>
+        Dark Elf Names
+      </div>
+
+      <h1>Dark Elf Name Generator</h1>
+      <h2>Dark Elf Names for Your D&D Campaign</h2>
+      
+      <div class="generator-box">
+        <div class="tab-switcher">
+          <button class="tab-btn active" onclick="switchTab('quick-names', this)">Quick Dark Elf Names</button>
+          <button class="tab-btn" onclick="switchTab('character-card', this)">D&D 5e Dark Elf Character Card</button>
+        </div>
+
+        <!-- Tab 1: Quick Name Generator -->
+        <div id="quick-names" class="tab-content active">
+          <div class="generator-controls">
+            <div class="form-group">
+              <label for="dark-elf-gender">Gender</label>
+              <select id="dark-elf-gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="dark-elf-count">How many?</label>
+              <input type="number" id="dark-elf-count" min="1" max="20" value="5">
+            </div>
+          </div>
+          <button class="btn btn-primary generate-btn" onclick="generateDarkElfNames()">Generate Dark Elf Names</button>
+          <div class="results" id="dark-elf-results"></div>
+        </div>
+
+        <!-- Tab 2: D&D 5e Character Card -->
+        <div id="character-card" class="tab-content">
+          <div id="char-generator">
+            <div class="char-gen-controls">
+              <div class="form-group">
+                <label for="char-class">Class</label>
+                <select id="char-class">
+                  <option value="">Random</option>
+                  <option value="rogue">Rogue</option>
+                  <option value="warlock">Warlock</option>
+                  <option value="ranger">Ranger</option>
+                  <option value="sorcerer">Sorcerer</option>
+                  <option value="fighter">Fighter</option>
+                  <option value="wizard">Wizard</option>
+                  <option value="bard">Bard</option>
+                  <option value="druid">Druid</option>
+                  <option value="monk">Monk</option>
+                  <option value="paladin">Paladin</option>
+                  <option value="cleric">Cleric</option>
+                  <option value="barbarian">Barbarian</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="char-style">Name Style</label>
+                <select id="char-style">
+                  <option value="random">Random</option>
+                  <option value="tolkien">Tolkien-esque</option>
+                  <option value="grrm">GRRM-esque</option>
+                  <option value="elder-scrolls">Elder Scrolls-esque</option>
+                  <option value="wow">WoW-esque</option>
+                  <option value="dark-souls">Dark Souls-esque</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="char-level">Level</label>
+                <input type="number" id="char-level" min="1" max="20" value="1">
+              </div>
+              <div class="form-group">
+                <label for="char-background">Background</label>
+                <select id="char-background">
+                  <option value="">Random</option>
+                  <option value="criminal">Criminal</option>
+                  <option value="charlatan">Charlatan</option>
+                  <option value="hermit">Hermit</option>
+                  <option value="outlander">Outlander</option>
+                  <option value="acolyte">Acolyte</option>
+                  <option value="folk hero">Folk Hero</option>
+                  <option value="noble">Noble</option>
+                  <option value="sage">Sage</option>
+                  <option value="soldier">Soldier</option>
+                  <option value="entertainer">Entertainer</option>
+                  <option value="urchin">Urchin</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="portrait-style">Portrait Style</label>
+                <select id="portrait-style">
+                  <option value="fantasy-art">Fantasy Art</option>
+                  <option value="oil-painting">Oil Painting</option>
+                  <option value="digital-art">Digital Art</option>
+                  <option value="watercolor">Watercolor</option>
+                  <option value="pencil-sketch">Pencil Sketch</option>
+                  <option value="anime">Anime</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="batch-mode">Batch Mode</label>
+                <select id="batch-mode">
+                  <option value="single">Single Character</option>
+                  <option value="party">Full Party (4)</option>
+                  <option value="custom">Custom Count</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn btn-primary generate-btn" onclick="generateDarkElfCharacter()">Generate Character</button>
+            <div id="char-results"></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="mt-2">
+        <h2>How to Choose the Right Dark Elf Name</h2>
+        <p>This generator produces dark elf names with a distinct identity: melodic elven first names paired with shadow-themed compound surnames. The first name combines 2-3 syllables drawn from roots like <em>Drav-</em>, <em>Cael-</em>, <em>Sylv-</em>, <em>Ith-</em>. The surname joins a twilight word (Shadow, Dusk, Void, Eclipse, Raven, Obsidian) with a nature or action word (walker, blade, whisper, stream, haven, crest). The result: names that sound elven but carry an undercurrent of darkness -- like <em>Dravenronrim Duskvale</em> or <em>Sylvoraennarie Ravenlight</em>.</p>
+        <p>Use the guides below to match a generated name to your character's identity.</p>
+        
+        <h3>Match by Character Class</h3>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h4>Rogue / Assassin</h4>
+            <p>Look for names with sharp consonants (V, K, Z, Th) and surnames suggesting stealth or danger.</p>
+            <div class="name-example">
+              <strong>Dravenronrim Duskvale</strong> -- "Duskvale" evokes a shadowed ravine, perfect for a character who strikes from darkness<br>
+              <strong>Belvorzarvek Obsidianstrider</strong> -- "Obsidianstrider" suggests someone who moves through volcanic glass without a sound<br>
+              <strong>Ithvordalbus Ravenblade</strong> -- "Ravenblade" combines the omen-bird with a weapon, ideal for a killer who sees death coming
+            </div>
+          </div>
+          <div class="feature-card">
+            <h4>Wizard / Sorcerer</h4>
+            <p>Choose names with flowing vowels and surnames carrying celestial or arcane weight.</p>
+            <div class="name-example">
+              <strong>Caelthordrakzar Moonstrider</strong> -- "Moonstrider" suggests someone who walks between planes under lunar light<br>
+              <strong>Kaelthornakzon Eclipsestream</strong> -- "Eclipsestream" combines celestial event with flowing water, fitting a diviner<br>
+              <strong>Sylvoraennarie Ravenlight</strong> -- "Ravenlight" is an oxymoron that captures arcane paradox
+            </div>
+          </div>
+          <div class="feature-card">
+            <h4>Ranger</h4>
+            <p>Pick names with nature-shadow surnames that suggest wilderness survival at the edge of darkness.</p>
+            <div class="name-example">
+              <strong>Rythelthalthar Thornstrike</strong> -- "Thornstrike" fits a ranger whose arrows find their mark through any cover<br>
+              <strong>Sylvorgarrim Ravensong</strong> -- "Ravensong" suggests a ranger who communicates through bird calls<br>
+              <strong>Caelthianithi Moonwhisper</strong> -- "Moonwhisper" fits a tracker who moves silently by night
+            </div>
+          </div>
+          <div class="feature-card">
+            <h4>Fighter / Warlock</h4>
+            <p>Select names with hard endings and surnames that convey combat power or infernal pacts.</p>
+            <div class="name-example">
+              <strong>Thalvorthargar Fanghaven</strong> -- "Fanghaven" suggests a fortress built from the bones of enemies<br>
+              <strong>Gorthorzaror Duskstrider</strong> -- "Duskstrider" fits a front-line fighter who owns the battlefield at twilight<br>
+              <strong>Morthalmorzar Moonwind</strong> -- "Moonwind" works for a warlock whose patron speaks through storms
+            </div>
+          </div>
+        </div>
+
+        <h3>Match by Character Background</h3>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h4>Surface Exile</h4>
+            <p>Your dark elf left the Underdark and now lives among surface dwellers. Choose a surname that signals this break.</p>
+            <div class="name-example">
+              <strong>Dravenveknak Moonhaven</strong> -- "Moonhaven" suggests a safe harbor found after leaving the lightless depths<br>
+              <strong>Helvornakrim Moonmend</strong> -- "Moonmend" implies healing from Underdark trauma under open sky<br>
+              <strong>Erebiariewen Starrunner</strong> -- "Starrunner" fits one who fled upward toward the stars
+            </div>
+          </div>
+          <div class="feature-card">
+            <h4>Noble Heritage</h4>
+            <p>Even in exile, some dark elves carry the memory of their house. Longer first names with -thor, -vor, or -ael elements sound aristocratic.</p>
+            <div class="name-example">
+              <strong>Caelthordrakzar Veilbloom</strong> -- the triple-syllable first name and "Veilbloom" surname suggest old money and older secrets<br>
+              <strong>Thalvorrythor Fangdew</strong> -- "Fangdew" is the kind of understated surname a noble family uses to remind you of their bite
+            </div>
+          </div>
+          <div class="feature-card">
+            <h4>Criminal / Underworld</h4>
+            <p>Names with venom, dagger, and obsidian elements fit characters who operate in the shadows of surface cities.</p>
+            <div class="name-example">
+              <strong>Dravennaliathi Venomrunner</strong> -- "Venomrunner" says exactly what this character does: delivers poison, fast<br>
+              <strong>Belvoraennana Shadowlight</strong> -- "Shadowlight" works for a fence who operates between the criminal underground and polite society
+            </div>
+          </div>
+          <div class="feature-card">
+            <h4>Hermit / Wanderer</h4>
+            <p>Quiet, veiled names for dark elves who walk alone. Look for surnames with whisper, veil, or fall.</p>
+            <div class="name-example">
+              <strong>Adriannarieenna Veilfall</strong> -- "Veilfall" suggests someone who disappeared behind a curtain of mist and never returned<br>
+              <strong>Nythalariena Veilfall</strong> -- another "Veilfall" -- these names cluster around the same imagery because the generator draws from a coherent semantic pool
+            </div>
+          </div>
+        </div>
+
+        <h3>Match by Personality</h3>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h4>Dangerous & Lethal</h4>
+            <p>Look for surnames containing: <span class="phonetic-tag">Fang</span> <span class="phonetic-tag">Blade</span> <span class="phonetic-tag">Thorn</span> <span class="phonetic-tag">Venom</span> <span class="phonetic-tag">Strike</span></p>
+            <p><strong>Examples:</strong> Ithvordalbus Ravenblade, Rythelthalthar Thornstrike, Dravennaliathi Venomrunner</p>
+          </div>
+          <div class="feature-card">
+            <h4>Mysterious & Secretive</h4>
+            <p>Look for surnames containing: <span class="phonetic-tag">Whisper</span> <span class="phonetic-tag">Veil</span> <span class="phonetic-tag">Shadow</span> <span class="phonetic-tag">Shroud</span></p>
+            <p><strong>Examples:</strong> Caelthianithi Moonwhisper, Ithvianairie Starwhisper, Adriannarieenna Veilfall</p>
+          </div>
+          <div class="feature-card">
+            <h4>Graceful & Elegant</h4>
+            <p>Female names with <span class="phonetic-tag">-anna</span> <span class="phonetic-tag">-ora</span> <span class="phonetic-tag">-iel</span> <span class="phonetic-tag">-wen</span> endings. Male names with <span class="phonetic-tag">-ael</span> <span class="phonetic-tag">-vor</span> elements.</p>
+            <p><strong>Examples:</strong> Sylvoraennarie Ravenlight, Belvoraennana Shadowlight, Caelthordrakzar Moonstrider</p>
+          </div>
+          <div class="feature-card">
+            <h4>Brooding & Dark</h4>
+            <p>Look for surnames containing: <span class="phonetic-tag">Void</span> <span class="phonetic-tag">Gloom</span> <span class="phonetic-tag">Eclipse</span> <span class="phonetic-tag">Obsidian</span> <span class="phonetic-tag">Onyx</span></p>
+            <p><strong>Examples:</strong> Belvorzarvek Obsidianstrider, Caelthorvenmor Obsidiancrest, Nythalaliaiel Gloomvale</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Understanding Your Generated Name</h2>
+        
+        <h3>Name Structure</h3>
+        <p>Every dark elf name from this generator follows a fixed pattern:</p>
+        <div class="name-example">
+          <strong>[Prefix + Middle + Suffix] + [Shadow-word + Nature-word]</strong><br>
+          First name: 3-part construction from elven-sounding roots (e.g., Drav-en-ron-rim = Draven + ron + rim)<br>
+          Surname: compound of a twilight/shadow prefix + a nature/action suffix (e.g., Dusk + vale, Raven + blade)
+        </div>
+        <p>The first name carries the character's personal identity. The surname describes how the world sees them -- or how they see themselves.</p>
+        
+        <h3>Reading the Etymology</h3>
+        <p>After generating a name, the etymology box breaks down its root morphemes. For example:</p>
+        <ul>
+          <li><strong>Dravenronrim Duskvale:</strong> drav (twilight) + en (belonging) + ron (ward) + rim (strike) -- "Twilight ward who strikes at dusk"</li>
+          <li><strong>Caelthordrakzar Moonstrider:</strong> cael (veil) + thor (deep) + drak (shadow) + zar (shadow) -- "Deep-veiled shadow of the moon"</li>
+          <li><strong>Sylvoraennarie Ravenlight:</strong> sylv (shade) + ora (light) + enna (belonging) + rie (daughter) -- "Shade-daughter who carries raven-light"</li>
+        </ul>
+        <p>These meanings are generated from a morpheme dictionary, not from a real language. Use them as creative prompts for your character's backstory, not as linguistic translations.</p>
+        
+        <h3>Pronunciation Quick Guide</h3>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h4>Vowel Sounds</h4>
+            <p><span class="phonetic-tag">ae</span> = "ay" as in day (Caelthor = KAYL-thor)</p>
+            <p><span class="phonetic-tag">ie</span> = "ee" as in see (Ithvianairie = ith-vee-ah-NAY-ree)</p>
+            <p><span class="phonetic-tag">ea</span> = "eh-ah" (Faenor = FAY-nor)</p>
+          </div>
+          <div class="feature-card">
+            <h4>Consonant Sounds</h4>
+            <p><span class="phonetic-tag">th</span> = voiceless as in thin (Thalvor = THAL-vor, not THAL-war)</p>
+            <p><span class="phonetic-tag">v</span> = soft, almost whispered (Belvor = BEL-vor with gentle v)</p>
+            <p><span class="phonetic-tag">double consonants</span> = held briefly (Dravenna = drah-VEN-na)</p>
+          </div>
+          <div class="feature-card">
+            <h4>Stress Patterns</h4>
+            <p>Male names: stress on first syllable (DRAY-ven, GOR-thor, KAEL-thor)</p>
+            <p>Female names: stress on middle syllable (sylv-OR-a, bel-VOR-a, dra-VEN-na)</p>
+            <p>Surnames: stress on first element (DUSK-vale, RAVEN-blade, SHAD-ow-whisper)</p>
+          </div>
+        </div>
+        <p><em>Tip: Click the speaker icon next to any generated name to hear it pronounced at 0.8x speed.</em></p>
+
+        <h3>Male vs Female Names</h3>
+        <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--border);">
+              <th style="text-align: left; padding: 0.5rem;">Feature</th>
+              <th style="text-align: left; padding: 0.5rem;">Male Names</th>
+              <th style="text-align: left; padding: 0.5rem;">Female Names</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 0.5rem;"><strong>Prefix pool</strong></td>
+              <td style="padding: 0.5rem;">Adrim, Belvor, Draven, Erebus, Gorthor, Caelthor</td>
+              <td style="padding: 0.5rem;">Adrianna, Belvora, Dravenna, Erebia, Faenora, Sylvora</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 0.5rem;"><strong>Endings</strong></td>
+              <td style="padding: 0.5rem;">-or, -ven, -thor, -rim, -bus, -zar, -vek</td>
+              <td style="padding: 0.5rem;">-na, -ra, -via, -ora, -anna, -iel, -wen, -thi</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 0.5rem;"><strong>Sound</strong></td>
+              <td style="padding: 0.5rem;">Angular, hard consonant endings</td>
+              <td style="padding: 0.5rem;">Melodic, flowing vowel endings</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem;"><strong>Real examples</strong></td>
+              <td style="padding: 0.5rem;">Dravenronrim Duskvale, Thalvorthargar Fanghaven, Rythelthalthar Thornstrike</td>
+              <td style="padding: 0.5rem;">Ithvianairie Starwhisper, Sylvoraennarie Ravenlight, Dravennaliathi Venomrunner</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="mt-2">
+        <h2>Complete Character Name Examples</h2>
+        <p>Here are ready-to-use name and character combinations. Each pairing matches the name's sound and meaning to a specific character concept.</p>
+        
+        <div class="feature-grid">
+          <div class="char-card">
+            <h3>Dravenronrim Duskvale</h3>
+            <div class="char-card-section">
+              <h4>Character Concept</h4>
+              <p>Male dark elf Rogue (Assassin), Level 7. Criminal background. Left the Underdark after a failed coup and now works as a bounty hunter on the surface. The name "Duskvale" reflects his habit of operating in the grey hour between day and night.</p>
+            </div>
+            <div class="char-card-section">
+              <h4>Why This Name Works</h4>
+              <p>"Draven" carries the shadow-root <em>drav</em> (twilight). The hard "-ronrim" ending sounds like a blade being drawn. "Duskvale" tells other characters: this is someone who owns the space between light and dark.</p>
+            </div>
+          </div>
+          
+          <div class="char-card">
+            <h3>Sylvoraennarie Ravenlight</h3>
+            <div class="char-card-section">
+              <h4>Character Concept</h4>
+              <p>Female dark elf Wizard (Divination), Level 9. Sage background. Exiled from her noble house for reading forbidden auguries. Now travels the surface, selling prophecies to those who can pay. Ravens follow her because she feeds them -- or because she sees through their eyes.</p>
+            </div>
+            <div class="char-card-section">
+              <h4>Why This Name Works</h4>
+              <p>"Sylvora" opens with the shade-root <em>sylv</em> and flows into "-enna" (belonging) + "-rie" (daughter). The full first name is four syllables of elven elegance. "Ravenlight" is the kind of surname that makes surface dwellers uneasy -- it sounds beautiful but means something watchful.</p>
+            </div>
+          </div>
+          
+          <div class="char-card">
+            <h3>Thalvorthargar Fanghaven</h3>
+            <div class="char-card-section">
+              <h4>Character Concept</h4>
+              <p>Male dark elf Fighter (Battle Master), Level 5. Soldier background. Served as a guard in an Underdark stronghold before being surface-dweller diplomats. Now protects a border town as its captain. "Fanghaven" is what he calls his new home: a place with teeth, but safe.</p>
+            </div>
+            <div class="char-card-section">
+              <h4>Why This Name Works</h4>
+              <p>"Thalvor" uses the deep-root <em>thal</em> + <em>vor</em> (venom), suggesting hidden danger. "-thargar" is percussive and commanding. "Fanghaven" pairs violence (fang) with protection (haven) -- exactly what a border captain embodies.</p>
+            </div>
+          </div>
+          
+          <div class="char-card">
+            <h3>Dravennaliathi Venomrunner</h3>
+            <div class="char-card-section">
+              <h4>Character Concept</h4>
+              <p>Female dark elf Warlock (The Hexblade), Level 6. Charlatan background. Grew up in a surface city's criminal underworld, never knowing the Underdark. Her patron is a sentient blade that chose her for her ruthlessness. "Venomrunner" is the street name she earned delivering poison to rival guild leaders.</p>
+            </div>
+            <div class="char-card-section">
+              <h4>Why This Name Works</h4>
+              <p>"Dravenna" opens with the twilight-root <em>drav</em> and flows through "-liathi" (daughter). The name sounds like a whisper that cuts. "Venomrunner" is not subtle -- it tells every NPC exactly what this character does and how fast she does it.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Using Your Name in Different Scenarios</h2>
+        
+        <h3>D&D 5e Campaign</h3>
+        <div class="feature-card">
+          <h4>Character Creation Workflow</h4>
+          <ol>
+            <li><strong>Generate 5-10 names</strong> using the Quick Names tab with your character's gender</li>
+            <li><strong>Check etymology</strong> for each name — pick one whose meaning fits your character's backstory</li>
+            <li><strong>Test pronunciation</strong> by clicking the speaker icon — make sure you can say it comfortably at the table</li>
+            <li><strong>Generate a character card</strong> using the D&D 5e tab — this gives you a full character with the name integrated</li>
+            <li><strong>Export as text or JSON</strong> to save the character for your campaign</li>
+          </ol>
+        </div>
+
+        <h3>Fantasy Novel / Story</h3>
+        <div class="feature-card">
+          <h4>Naming Multiple Characters</h4>
+          <p>Use batch generation (count = 10-20) to create a consistent naming pool. Then assign names by role:</p>
+          <ul>
+            <li><strong>Noble family members</strong> should share a surname element (all use "Raven-" or "Shadow-")</li>
+            <li><strong>Characters from the same region</strong> will naturally share phonetic patterns because the generator draws from the same root pool</li>
+            <li><strong>Exiles and outcasts</strong> can be distinguished by shorter first names or unusual surname combinations</li>
+          </ul>
+          <p><strong>Example passage:</strong> "Sylvoraennarie Ravenlight did not flinch when the guard asked her business at the gate. Behind her, Thalvorthargar Fanghaven rested one hand on his sword hilt -- not threatening, just present. They had walked out of the Underdark together, and the surface world still smelled wrong to both of them."</p>
+        </div>
+
+        <h3>Video Game / Interactive Fiction</h3>
+        <div class="feature-card">
+          <h4>Player Character Naming</h4>
+          <p>For games like Baldur's Gate 3, Solasta, or your own project:</p>
+          <ul>
+            <li><strong>Keep first names under 3 syllables</strong> for UI readability -- if the generator gives you a 4-syllable name, use a shortened form (Dravenronrim → Draven)</li>
+            <li><strong>Surnames should be compound words</strong> -- this matches how fantasy games typically display NPC names</li>
+            <li><strong>Test the name aloud</strong> -- it should sound natural when spoken by NPCs in dialogue</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Related Generators</h2>
+        <div class="internal-links">
+          <a href="/drow-name-generator/">Drow Name Generator</a>
+          <a href="/wood-elf/">Wood Elf Names</a>
+          <a href="/high-elf/">High Elf Names</a>
+          <a href="/elf-name-generator/">Elf Name Generator</a>
+          <a href="/tiefling-name-generator/">Tiefling Name Generator</a>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>How do I generate a dark elf name that fits my character?</h3>
+          <p>Select your character's gender, set the count to 5-10, and click Generate. Each name comes with an etymology breakdown showing its root morphemes. Pick the name whose meaning best matches your character's personality -- a rogue needs a sharper surname than a diplomat. Use the "Match by Character Class" and "Match by Background" guides above to narrow down your selection.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What's the difference between the Quick Names tab and the Character Card tab?</h3>
+          <p>The Quick Names tab generates standalone names with etymology breakdowns -- use this when you already have a character and just need a name. The Character Card tab generates a full D&D 5e character (race, class, level, background, ability scores, personality traits, backstory) with a dark elf name integrated -- use this when you need a complete character ready for play. The character card also includes an AI portrait prompt you can use with Midjourney or Stable Diffusion.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What is the difference between dark elf and drow names?</h3>
+          <p>This generator produces dark elf names: melodic elven first names (Draven, Sylvora, Caelthor) paired with English compound surnames (Duskvale, Ravenlight, Thornstrike). Drow names use harsher phonetics with X, Z, Q consonants and apostrophe constructions (Szordnalzrin H'cath, Vlonn'ter). If you need traditional drow names with Underdark phonetics and house names, use the <a href="/drow-name-generator/">Drow Name Generator</a> instead.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I use these names in my D&D campaign, novel, or game?</h3>
+          <p>Yes. All generated names are original combinations produced by the tool's phonetic engine. They are not copied from any copyrighted work. You can freely use them in tabletop RPG campaigns, novels, video games, or any creative project -- including commercial work.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I pronounce dark elf names correctly?</h3>
+          <p>Click the speaker icon next to any generated name to hear it pronounced at 0.8x speed. General rules: "ae" sounds like "ay" in day, "ie" like "ee" in see, "th" as in thin (voiceless), "v" is soft. Male names stress the first syllable (DRAY-ven), female names stress the middle (sylv-OR-a). Surnames stress the first element (DUSK-vale, RAVEN-blade).</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do dark elf surnames work?</h3>
+          <p>Dark elf surnames are compound words combining a shadow/twilight prefix (Shadow, Dusk, Void, Eclipse, Raven, Obsidian, Moon, Thorn, Venom, Fang, Blade) with a nature/action suffix (walker, whisper, blade, stream, haven, crest, runner, light, fall, strike, song). The surname describes how the bearer moves through the world -- their reputation, their method, or their origin. For example, "Ravenlight" suggests someone who carries knowledge like a raven carries messages, while "Fanghaven" suggests a dangerous place that offers protection.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Are male and female dark elf names different?</h3>
+          <p>Yes. Male first names use shorter prefixes (Adrim, Belvor, Draven, Gorthor) and angular endings (-or, -ven, -thor, -rim). Female first names use longer prefixes (Adrianna, Belvora, Dravenna, Sylvora) and flowing endings (-na, -ra, -via, -ora, -iel, -wen). Both share the same compound surname system. Select the appropriate gender in the generator to get names matching your character.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I generate names for multiple dark elf characters at once?</h3>
+          <p>In the Quick Names tab, set "How many?" to up to 20 and click Generate. For full characters, use the Character Card tab and set "Batch Mode" to "Full Party (4)" or "Custom Count." This generates multiple complete character cards with names, stats, backgrounds, and portrait prompts. Export as text or JSON to save the entire batch for your campaign or story.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Race Generators</h4>
+          <ul>
+            <li><a href="/elf-name-generator/">Elf Name Generator</a></li>
+            <li><a href="/dwarf-name-generator/">Dwarf Name Generator</a></li>
+            <li><a href="/dragon-name-generator/">Dragon Name Generator</a></li>
+            <li><a href="/orc-name-generator/">Orc Name Generator</a></li>
+            <li><a href="/tiefling-name-generator/">Tiefling Name Generator</a></li>
+            <li><a href="/drow-name-generator/">Drow Name Generator</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Elf Subtypes</h4>
+          <ul>
+            <li><a href="/wood-elf/">Wood Elf Names</a></li>
+            <li><a href="/high-elf/">High Elf Names</a></li>
+            <li><a href="/dark-elf/">Dark Elf Names</a></li>
+            <li><a href="/female-elf/">Female Elf Names</a></li>
+            <li><a href="/male-elf/">Male Elf Names</a></li>
+            <li><a href="/elf-last-name/">Elf Last Names</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="/guides/how-to-choose-a-sound-palette/">Sound Palette Guide</a></li>
+            <li><a href="/guides/how-to-name-a-dd-character/">D&amp;D Naming Guide</a></li>
+            <li><a href="/guides/how-to-pronounce-fantasy-names/">Pronunciation Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Tools</h4>
+          <ul>
+            <li><a href="/backstory-generator/">Backstory Generator</a></li>
+            <li><a href="/races/">All Race Generators</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fantasy Name Generator. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/name-generator.js"></script>
+  <script src="/assets/character-generator.js"></script>
+  <script src="/assets/race-page-components.js"></script>
+  <script>
+    // Race mapping: page race key → CharacterData race key
+    const RACE_MAP = {
+      'dragon': { race: 'Dragonborn', subrace: null },
+      'orc': { race: 'Half-Orc', subrace: null },
+      'elf': { race: 'Elf', subrace: null },
+      'wood-elf': { race: 'Elf', subrace: 'Wood Elf' },
+      'high-elf': { race: 'Elf', subrace: 'High Elf' },
+      'dark-elf': { race: 'Elf', subrace: 'Dark Elf (Drow)' },
+      'drow': { race: 'Elf', subrace: 'Dark Elf (Drow)' },
+      'dwarf': { race: 'Dwarf', subrace: null },
+      'tiefling': { race: 'Tiefling', subrace: null }
+    };
+
+    // Global wrapper functions for character generation
+    function capitalize(str) {
+      return str ? str.charAt(0).toUpperCase() + str.slice(1) : str;
+    }
+    function generateCharacter(raceKey, gender, className, style, level, background, artStyle) {
+      const mapping = RACE_MAP[raceKey] || { race: raceKey, subrace: null };
+      // Handle multi-word backgrounds like "folk hero" -> "Folk Hero"
+      const capBackground = background ? background.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : undefined;
+      return RacePageComponents.generateCharacter(mapping.race, {
+        subrace: mapping.subrace,
+        class: capitalize(className),
+        style: style || 'Tolkien-esque',
+        level: level || 3,
+        background: capBackground,
+        gender: gender === 'random' ? (Math.random() > 0.5 ? 'male' : 'female') : gender,
+        artStyle: artStyle || 'Classic Fantasy'
+      });
+    }
+    function generateBatchChars(raceKey, count, className, style, level, background, artStyle) {
+      const mapping = RACE_MAP[raceKey] || { race: raceKey, subrace: null };
+      const capBackground = background ? background.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : undefined;
+      return RacePageComponents.generateBatchChars(mapping.race, count, {
+        subrace: mapping.subrace,
+        class: capitalize(className),
+        style: style || 'Tolkien-esque',
+        level: level || 3,
+        background: capBackground,
+        artStyle: artStyle || 'Classic Fantasy'
+      });
+    }
+    function renderCharCard(result) {
+      return RacePageComponents.renderCharCard(result.char, result.portraitPrompt);
+    }
+    function copyText(text) {
+      RacePageComponents.copyText(text);
+    }
+
+    function switchTab(tabId, btnElement) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      btnElement.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+
+    function generateDarkElfNames() {
+      const gender = document.getElementById('dark-elf-gender').value;
+      const count = parseInt(document.getElementById('dark-elf-count').value);
+      
+      const names = generateNames('dark-elf', gender, count);
+      const resultsDiv = document.getElementById('dark-elf-results');
+      
+      resultsDiv.innerHTML = names.map(nameObj => {
+        const etymology = generateEtymology(nameObj.name, 'dark-elf');
+        
+        return `
+        <div class="name-card">
+          <div>
+            <div class="name-text">${nameObj.name}</div>
+            <div class="name-meaning">${nameObj.meaning}</div>
+            <div class="etymology-box">
+              <strong>Etymology:</strong> ${etymology}
+            </div>
+          </div>
+          <div class="name-actions">
+            <button class="icon-btn" onclick="copyText('${nameObj.name}')" title="Copy">&#128203;</button>
+            <button class="icon-btn" onclick="speakName('${nameObj.name}')" title="Listen">&#128266;</button>
+          </div>
+        </div>
+      `}).join('');
+    }
+    
+    function speakName(name) {
+      if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(name);
+        utterance.rate = 0.8;
+        speechSynthesis.speak(utterance);
+      }
+    }
+
+    function generateDarkElfCharacter() {
+      const charClass = document.getElementById('char-class').value || undefined;
+      const style = document.getElementById('char-style').value;
+      const level = parseInt(document.getElementById('char-level').value);
+      const background = document.getElementById('char-background').value || undefined;
+      const portraitStyle = document.getElementById('portrait-style').value;
+      const batchMode = document.getElementById('batch-mode').value;
+      
+      let count = 1;
+      if (batchMode === 'party') count = 4;
+      else if (batchMode === 'custom') count = parseInt(prompt('How many characters?', '5')) || 5;
+      
+      const resultsDiv = document.getElementById('char-results');
+      
+      if (count === 1) {
+        const charData = generateCharacter('elf', 'random', charClass, style, level, background, portraitStyle);
+        resultsDiv.innerHTML = renderCharCard(charData);
+      } else {
+        const chars = generateBatchChars('elf', count, charClass, style, level, background, portraitStyle);
+        window._lastBatch = chars;
+        resultsDiv.innerHTML = chars.map((charData, index) => 
+          `<h3>Character ${index + 1}</h3>` + renderCharCard(charData)
+        ).join('<hr style="margin: 2rem 0; border-color: var(--border);">');
+        
+        const exportButtons = `
+          <div class="export-buttons">
+            <button class="btn btn-secondary" onclick="exportAsText(window._lastBatch)">Export as Text</button>
+            <button class="btn btn-secondary" onclick="exportAsJSON(window._lastBatch)">Export as JSON</button>
+          </div>
+        `;
+        resultsDiv.innerHTML += exportButtons;
+      }
+    }
+    
+    window.addEventListener('load', generateDarkElfNames);
+  </script>
+</body>
+</html>

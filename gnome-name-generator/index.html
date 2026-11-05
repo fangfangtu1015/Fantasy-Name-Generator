@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Gnome Name Generator - Tinker Names & Illusionist Names for D&D 5e</title>
+  <meta name="description" content="Generate whimsical gnome names for D&D 5e. Rock gnomes, forest gnomes, deep gnomes with tinker titles, illusionist epithets, character cards, AI portrait prompts, and etymology breakdown.">
+  <link rel="canonical" href="https://mythicname.app/gnome-name-generator/">
+  <meta property="og:title" content="Gnome Name Generator - Tinker Names & Illusionist Names for D&D 5e">
+  <meta property="og:description" content="Generate whimsical gnome names for D&D 5e. Rock gnomes, forest gnomes, deep gnomes with tinker titles, illusionist epithets, character cards, AI portrait prompts, and etymology breakdown.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mythicname.app/gnome-name-generator/">
+  <meta property="og:image" content="https://mythicname.app/assets/gnome-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gnome Name Generator - Tinker Names &amp; Illusionist Names for D&amp;D 5e">
+  <meta name="twitter:description" content="Generate whimsical gnome names for D&D 5e. Rock gnomes, forest gnomes, deep gnomes with tinker titles, illusionist epithets, character cards, AI portrait prompts, and etymology breakdown.">
+  <meta name="twitter:image" content="https://mythicname.app/assets/gnome-hero.jpg">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Gnome Name Generator",
+    "description": "Generate whimsical gnome names for D&D 5e. Rock gnomes, forest gnomes, deep gnomes with tinker titles, illusionist epithets, character cards, and AI portrait prompts.",
+    "url": "https://mythicname.app/gnome-name-generator/",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes a gnome name sound authentic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Authentic gnome names use playful consonants (B, D, F, N, M, L), bright vowels (I, E, A), and whimsical syllable combinations that sound curious and inventive. Rock gnome names often include tinker titles like 'Clockmaker' or 'Tinkertwitch'. Forest gnome names incorporate nature words like 'Fernwhistle' or 'Mosscap'. Deep gnome names are shorter and more guttural, reflecting their Underdark survival."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do gnome naming traditions differ by subrace?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rock gnomes (tinkers) earn professional titles: 'Bimble Clockwork' or 'Nissa Tinkerbot'. Forest gnomes use nature compounds: 'Fernwhistle' or 'Mosscap'. Deep gnomes (svirfneblin) have shorter, harsher names adapted for Underdark survival: 'Durgan Stonecutter' or 'Schnick Shadowdodger'. Each subrace's naming reflects their culture and environment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use these gnome names for my D&D campaign?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. All generated names are free to use in your tabletop RPG campaigns, novels, games, or any creative project. Our names follow established D&D 5e gnome naming conventions and are checked against famous characters like Bimble Tinkertwitch to avoid IP issues."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are gnome tinker titles?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tinker titles are professional epithets earned by rock gnomes through their craft work. Common patterns include [Material] + [Tool]: Clockwork, Tinkerbot, Gearwhiz, Sparkfinger, Cogsworth. A gnome named 'Bimble Clockwork' tells you he's a rock gnome who builds mechanical devices. These titles are earned, not inherited — a gnome might change their title as they master new crafts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do forest gnome names work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Forest gnome names combine nature words with whimsical actions or objects: Fernwhistle, Mosscap, Brookbubble, Leafwhisper, Mushroomcap. These names reflect the forest gnome's deep connection to nature and their role as guardians of woodland secrets. The names sound playful but carry the weight of ancient forest lore."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes deep gnome names different?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Deep gnomes (svirfneblin) live in the dangerous Underdark, so their names are shorter, harder, and more practical: Durgan, Schnick, Blingden, Stonecutter, Shadowdodger. They've adapted to survive among drow and duergar, so their names lack the whimsical flourishes of surface gnomes. A deep gnome named 'Schnick Shadowdodger' tells you he's survived by staying hidden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do gnomes use family names?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gnomes rarely use family surnames in the human sense. Instead, they carry professional titles (rock gnomes), nature compounds (forest gnomes), or clan names (deep gnomes). A gnome's 'surname' often reflects their personal achievements rather than their bloodline. This reflects gnome culture's emphasis on individual creativity over ancestral heritage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long do gnome names typically last?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gnomes live 400-500 years, and their names evolve with them. A young rock gnome might be 'Bimble Tinkerbot' as an apprentice, then earn 'Bimble Clockwork' as a journeyman, and finally become 'Bimble Gearmaster' as a master craftsman. Forest gnomes might change their nature titles seasonally or after major life events. Deep gnomes keep their survival-focused names for life."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mythicname.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Races",
+      "item": "https://mythicname.app/races/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Gnome Name Generator",
+      "item": "https://mythicname.app/gnome-name-generator/"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">
+        <span class="logo-icon">&#9876;</span>
+        Fantasy Name Generator
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/races/">Races</a></li>
+          <li><a href="/backstory-generator/">Backstory Generator</a></li>
+          <li><a href="/guides/">Guides</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="race-hero">
+          <img src="/assets/gnome-hero.jpg" alt="Whimsical gnome tinkerer with clockwork devices and magical tools">
+          <div class="race-hero-overlay">
+            <div class="race-hero-text">
+              <h1>Gnome Name Generator</h1>
+              <p>Generate whimsical gnome names for D&D 5e — rock gnomes with tinker titles, forest gnomes with nature compounds, deep gnomes with survival epithets</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-switcher">
+          <button class="tab-btn active" onclick="switchTab('names')">Name Generator</button>
+          <button class="tab-btn" onclick="switchTab('character')">Character Generator</button>
+        </div>
+
+        <div class="generator-box" id="names-tab">
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="neutral">Neutral</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="subrace">Gnome Subrace</label>
+            <select id="subrace">
+              <option value="rock">Rock Gnome (Tinker)</option>
+              <option value="forest">Forest Gnome (Illusionist)</option>
+              <option value="deep">Deep Gnome (Svirfneblin)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="count">How many?</label>
+            <select id="count">
+              <option value="1">1 name</option>
+              <option value="5">5 names</option>
+              <option value="10" selected>10 names</option>
+              <option value="20">20 names</option>
+            </select>
+          </div>
+          <button class="btn btn-primary generate-btn" onclick="generateNames()">Generate Names</button>
+          <div id="results"></div>
+        </div>
+
+        <div class="generator-box hidden" id="char-generator">
+          <div class="char-gen-controls">
+            <div class="form-group">
+              <label for="char-gender">Gender</label>
+              <select id="char-gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="neutral">Neutral</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="char-subrace">Subrace</label>
+              <select id="char-subrace">
+                <option value="rock">Rock Gnome</option>
+                <option value="forest">Forest Gnome</option>
+                <option value="deep">Deep Gnome</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="char-class">Class</label>
+              <select id="char-class">
+                <option value="Artificer">Artificer</option>
+                <option value="Bard">Bard</option>
+                <option value="Cleric">Cleric</option>
+                <option value="Druid">Druid</option>
+                <option value="Fighter">Fighter</option>
+                <option value="Monk">Monk</option>
+                <option value="Paladin">Paladin</option>
+                <option value="Ranger">Ranger</option>
+                <option value="Rogue">Rogue</option>
+                <option value="Sorcerer">Sorcerer</option>
+                <option value="Warlock">Warlock</option>
+                <option value="Wizard">Wizard</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="char-style">Name Style</label>
+              <select id="char-style">
+                <option value="Tolkien-esque">Tolkien-esque</option>
+                <option value="GRRM-esque">GRRM-esque</option>
+                <option value="Elder Scrolls-esque">Elder Scrolls-esque</option>
+                <option value="WoW-esque">WoW-esque</option>
+                <option value="Dark Souls-esque">Dark Souls-esque</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="char-level">Level</label>
+              <input type="number" id="char-level" min="1" max="20" value="3">
+            </div>
+            <div class="form-group">
+              <label for="char-background">Background</label>
+              <select id="char-background">
+                <option value="">Random</option>
+                <option value="Acolyte">Acolyte</option>
+                <option value="Criminal">Criminal</option>
+                <option value="Folk Hero">Folk Hero</option>
+                <option value="Noble">Noble</option>
+                <option value="Sage">Sage</option>
+                <option value="Soldier">Soldier</option>
+                <option value="Outlander">Outlander</option>
+                <option value="Charlatan">Charlatan</option>
+                <option value="Entertainer">Entertainer</option>
+                <option value="Guild Artisan">Guild Artisan</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="char-portrait-style">Portrait Style</label>
+              <select id="char-portrait-style">
+                <option value="Classic Fantasy">Classic Fantasy</option>
+                <option value="Dark Fantasy">Dark Fantasy</option>
+                <option value="Heroic Portrait">Heroic Portrait</option>
+                <option value="D&D Book Art">D&D Book Art</option>
+                <option value="Ethereal">Ethereal</option>
+                <option value="Battle-Ready">Battle-Ready</option>
+              </select>
+            </div>
+          </div>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:1rem;">
+            <button class="btn btn-primary generate-btn" onclick="generateCharacter()">Generate Character</button>
+            <button class="btn btn-secondary" onclick="generateBatchChars(5)" style="background:rgba(255,255,255,0.1);color:white;border:1px solid rgba(255,255,255,0.3);">Generate 5 (Batch)</button>
+          </div>
+          <div id="char-card-output"></div>
+          <div id="batch-output" class="batch-results hidden"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>The Tinker's Dilemma: Choosing Your Gnome's Naming Tradition</h2>
+        <p>Gnome naming is unique among D&D races because it reflects <strong>professional achievement</strong> rather than bloodline or cultural heritage. A gnome's name tells you what they <em>do</em>, not who their parents were. This creates a fascinating naming system where gnomes literally earn their identities through their work, their art, and their contributions to the world.</p>
+        
+        <p>Understanding this distinction is crucial for creating authentic gnome characters. A rock gnome named <strong>Bimble Clockwork</strong> isn't just carrying a family name — he's announcing his mastery of mechanical devices. A forest gnome called <strong>Fernwhistle</strong> is declaring her connection to woodland magic. A deep gnome known as <strong>Schnick Shadowdodger</strong> is surviving by staying hidden in the Underdark.</p>
+
+        <h3>Three Subraces, Three Naming Systems</h3>
+        <div class="subrace-comparison">
+          <div class="subrace-card">
+            <h3>Rock Gnomes: The Professional Titles</h3>
+            <p>Rock gnomes are tinkerers, inventors, and craftspeople. Their names reflect their trade mastery through compound titles that combine materials, tools, and actions.</p>
+            <ul>
+              <li><strong>Pattern:</strong> [First Name] + [Material/Tool] + [Action]</li>
+              <li><strong>Examples:</strong> Bimble Clockwork, Nissa Tinkerbot, Dorn Gearwhiz</li>
+              <li><strong>Professional Evolution:</strong> Apprentice → Journeyman → Master</li>
+              <li><strong>Common Titles:</strong> Clockwork, Gearmaster, Sparkfinger, Cogsworth, Tinkertwitch</li>
+            </ul>
+            <p><em>Choose rock gnome if your character is an Artificer, Wizard, or Guild Artisan who builds, invents, or repairs.</em></p>
+          </div>
+
+          <div class="subrace-card">
+            <h3>Forest Gnomes: The Nature Compounds</h3>
+            <p>Forest gnomes are illusionists and nature guardians. Their names combine natural elements with whimsical actions, reflecting their deep connection to the woodland and their playful magic.</p>
+            <ul>
+              <li><strong>Pattern:</strong> [Nature Element] + [Action/Object]</li>
+              <li><strong>Examples:</strong> Fernwhistle, Mosscap, Brookbubble, Leafwhisper</li>
+              <li><strong>Seasonal Changes:</strong> Names may shift with seasons or life events</li>
+              <li><strong>Common Elements:</strong> Fern, Moss, Brook, Leaf, Mushroom, Willow, Birch</li>
+            </ul>
+            <p><em>Choose forest gnome if your character is a Druid, Ranger, or Sorcerer who practices illusion magic and guards natural places.</em></p>
+          </div>
+
+          <div class="subrace-card">
+            <h3>Deep Gnomes: The Survival Epithets</h3>
+            <p>Deep gnomes (svirfneblin) live in the dangerous Underdark. Their names are shorter, harder, and more practical — reflecting a life spent dodging drow raids and surviving among hostile creatures.</p>
+            <ul>
+              <li><strong>Pattern:</strong> [Short Name] + [Survival Skill]</li>
+              <li><strong>Examples:</strong> Durgan Stonecutter, Schnick Shadowdodger, Blingden Tunnelrunner</li>
+              <li><strong>Life-Long Names:</strong> Unlike surface gnomes, deep gnomes keep their names for life</li>
+              <li><strong>Common Epithets:</strong> Stonecutter, Shadowdodger, Tunnelrunner, Deepdelver, Darkwalker</li>
+            </ul>
+            <p><em>Choose deep gnome if your character is a Rogue, Fighter, or Warlock who has survived the Underdark and adapted to its dangers.</em></p>
+          </div>
+        </div>
+
+        <h3>The Tinker's Progression: How Rock Gnome Names Evolve</h3>
+        <p>Rock gnomes have the most dynamic naming system because their titles change as they master new crafts. A young rock gnome might start as an apprentice with a simple name, then earn progressively more impressive titles as they prove their skill.</p>
+        
+        <div class="name-example">
+          <strong>Apprentice Stage:</strong> Bimble Tinkerbot — learning basic mechanics, working with simple devices
+        </div>
+        <div class="name-example">
+          <strong>Journeyman Stage:</strong> Bimble Clockwork — mastered clockwork devices, can build complex mechanisms
+        </div>
+        <div class="name-example">
+          <strong>Master Stage:</strong> Bimble Gearmaster — recognized expert, can teach others, creates innovative designs
+        </div>
+        <div class="name-example">
+          <strong>Legendary Stage:</strong> Bimble the Magnificent — famous inventor whose creations are known across the land
+        </div>
+
+        <p>This progression system means your gnome character's name can evolve throughout their career, reflecting their growth and achievements. A level 1 Artificer might be <strong>Tinkertwitch</strong>, but by level 10 they've earned the right to be called <strong>Gearmaster</strong>.</p>
+
+        <h3>Forest Gnome Identity: Names as Nature Connection</h3>
+        <p>Forest gnomes don't use professional titles because their 'profession' is their relationship with nature. A forest gnome named <strong>Fernwhistle</strong> isn't just good at whistling — they can communicate with ferns, understand woodland whispers, and navigate forest paths that others cannot see.</p>
+
+        <p>Forest gnome names often change with the seasons or major life events:</p>
+        <ul>
+          <li><strong>Spring:</strong> Blossomwhisper, Sproutfinder, Dewdrop</li>
+          <li><strong>Summer:</strong> Sunleaf, Brookbubble, Firefly</li>
+          <li><strong>Autumn:</strong> Leafdancer, Acornkeeper, Harvestmoon</li>
+          <li><strong>Winter:</strong> Snowmoss, Icicle, Frostwhisper</li>
+        </ul>
+
+        <p>This seasonal naming reflects the forest gnome's deep connection to natural cycles. A forest gnome character might introduce themselves differently depending on when you meet them, which can be a fun roleplaying element.</p>
+
+        <h3>Deep Gnome Survival: Names as Warning Labels</h3>
+        <p>Deep gnomes live in one of D&D's most dangerous environments — the Underdark. Their names serve as practical warnings to outsiders: <strong>Schnick Shadowdodger</strong> has survived by staying hidden; <strong>Durgan Stonecutter</strong> knows the tunnels better than anyone; <strong>Blingden Tunnelrunner</strong> can escape through narrow passages that would trap other creatures.</p>
+
+        <p>Unlike surface gnomes, deep gnomes rarely change their names because survival in the Underdark is a constant challenge. A deep gnome's name is earned through proven survival skills and maintained throughout their life. This creates a stark contrast between the whimsical, ever-changing names of surface gnomes and the grim, practical names of their Underdark cousins.</p>
+
+        <h3>Common Gnome Naming Mistakes (And How to Avoid Them)</h3>
+        <p>Creating authentic gnome names requires understanding their cultural values. Here are the most common mistakes and how to fix them:</p>
+
+        <div class="feature-card">
+          <h3>Mistake #1: Using Family Surnames</h3>
+          <p><strong>Wrong:</strong> Bimble Tinkertwitch of the Tinkertwitch family</p>
+          <p><strong>Why it's wrong:</strong> Gnomes don't use family surnames. Their titles reflect personal achievement, not bloodline.</p>
+          <p><strong>Fix:</strong> Bimble Tinkertwitch — the name stands alone as a declaration of skill.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Mistake #2: Making Names Too Serious</h3>
+          <p><strong>Wrong:</strong> Grimdark the Destroyer</p>
+          <p><strong>Why it's wrong:</strong> Gnomes are whimsical and playful by nature. Even deep gnomes have a certain dark humor in their naming.</p>
+          <p><strong>Fix:</strong> For rock gnomes: Bimble Sparkfinger. For deep gnomes: Schnick Shadowdodger (still has personality).</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Mistake #3: Ignoring Subrace Differences</h3>
+          <p><strong>Wrong:</strong> Using 'Clockwork' for a forest gnome or 'Fernwhistle' for a rock gnome</p>
+          <p><strong>Why it's wrong:</strong> Each subrace has distinct naming conventions that reflect their culture and environment.</p>
+          <p><strong>Fix:</strong> Match the naming pattern to the subrace: rock gnomes get tinker titles, forest gnomes get nature compounds, deep gnomes get survival epithets.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Mistake #4: Forgetting the Whimsy</h3>
+          <p><strong>Wrong:</strong> Durgan the Serious</p>
+          <p><strong>Why it's wrong:</strong> Even when names are practical (deep gnomes), they should have personality and character.</p>
+          <p><strong>Fix:</strong> Durgan Stonecutter — practical but still has gnome-like charm in the compound structure.</p>
+        </div>
+
+        <h3>Complete Gnome Character Examples</h3>
+        <p>Here are four complete gnome characters showing different subraces, classes, and naming conventions in action:</p>
+
+        <div class="char-card">
+          <h3>Bimble Clockwork</h3>
+          <div class="char-card-section">
+            <h4>Race & Class</h4>
+            <p>Rock Gnome Artificer (Level 5)</p>
+          </div>
+          <div class="char-card-section">
+            <h4>Background</h4>
+            <p>Guild Artisan — Clockmaker's Guild</p>
+          </div>
+          <div class="char-card-section">
+            <h4>Personality</h4>
+            <p>Bimble is obsessed with creating the perfect automaton. He talks to his inventions, names them, and gets upset when they don't respond. His workshop is a chaotic mess of gears, springs, and half-finished projects. He's brilliant but scatterbrained, often forgetting to eat while working on a new design.</p>
+          </div>
+          <div class="char-card-section">
+            <h4>Adventuring Motivation</h4>
+            <p>Seeking rare materials to build the ultimate clockwork companion — a mechanical dragon that can breathe real fire.</p>
+          </div>
+          <div class="etymology-box">
+            <strong>Name Breakdown:</strong> Bimble (playful first name) + Clockwork (master-level tinker title indicating expertise in mechanical devices)
+          </div>
+        </div>
+
+        <div class="char-card">
+          <h3>Fernwhistle</h3>
+          <div class="char-card-section">
+            <h4>Race & Class</h4>
+            <p>Forest Gnome Druid (Level 4)</p>
+          </div>
+          <div class="char-card-section">
+            <h4>Background</h4>
+            <p>Outlander — Forest Guardian</p>
+          </div>
+          <div class="char-card-section">
+            <h4>Personality</h4>
+            <p>Fernwhistle speaks in riddles and communicates with plants more comfortably than people. She changes her name with the seasons — currently 'Autumnleaf' but will become 'Snowmoss' when winter arrives. She's playful and mischievous, using illusion magic to prank travelers who stray from forest paths.</p>
+          </div>
+          <div class="char-card-section">
+            <h4>Adventuring Motivation</h4>
+            <p>A blight is spreading through her forest, killing the ancient trees. She's seeking the source and a way to stop it.</p>
+          </div>
+          <div class="etymology-box">
+            <strong>Name Breakdown:</strong> Fern (nature element) + Whistle (action — can communicate with plants through musical sounds)
+          </div>
+        </div>
+
+        <div class="char-card">
+          <h3>Schnick Shadowdodger</h3>
+          <div class="char-card-section">
+            <h4>Race & Class</h4>
+            <p>Deep Gnome Rogue (Level 6)</p>
+          </div>
+          <div class="char-card-section">
+            <h4>Background</h4>
+            <p>Outlander — Underdark Survivor</p>
+          </div>
+          <div class="char-card-section">
+            <h4>Personality</h4>
+            <p>Schnick is paranoid, quiet, and constantly alert. He's survived three drow raids by hiding in impossible places. He speaks in whispers, moves without sound, and trusts almost no one. Despite his grim exterior, he has a dry sense of humor and occasionally makes jokes that only other deep gnomes find funny.</p>
+          </div>
+          <div class="char-card-section">
+            <h4>Adventuring Motivation</h4>
+            <p>His deep gnome settlement was discovered by drow. He's on the surface seeking allies to help defend his people.</p>
+          </div>
+          <div class="etymology-box">
+            <strong>Name Breakdown:</strong> Schnick (short, practical deep gnome name) + Shadowdodger (survival epithet — has avoided drow patrols by hiding in shadows)
+          </div>
+        </div>
+
+        <div class="char-card">
+          <h3>Nissa Sparkfinger</h3>
+          <div class="char-card-section">
+            <h4>Race & Class</h4>
+            <p>Rock Gnome Wizard (Level 3)</p>
+          </div>
+          <div class="char-card-section">
+            <h4>Background</h4>
+            <p>Sage — Arcane Tinkerer</p>
+          </div>
+          <div class="char-card-section">
+            <h4>Personality</h4>
+            <p>Nissa combines arcane magic with mechanical engineering. Her spellbook is a clockwork device with rotating gears and moving parts. She's curious, energetic, and constantly taking things apart to see how they work. She has burn marks on her fingers from magical experiments gone wrong.</p>
+          </div>
+          <div class="char-card-section">
+            <h4>Adventuring Motivation</h4>
+            <p>Seeking ancient magical artifacts to study and reverse-engineer. She wants to understand how magic and technology can work together.</p>
+          </div>
+          <div class="etymology-box">
+            <strong>Name Breakdown:</strong> Nissa (whimsical gnome first name) + Sparkfinger (apprentice-level tinker title — works with magical energy and electrical devices)
+          </div>
+        </div>
+
+        <h3>Using Gnome Names in Your Campaign</h3>
+        
+        <div class="feature-card">
+          <h3>For Players: Building Your Gnome's Identity</h3>
+          <ol>
+            <li><strong>Choose your subrace first</strong> — this determines your naming convention</li>
+            <li><strong>Pick a first name</strong> — something playful and whimsical (Bimble, Nissa, Dorn, Fern)</li>
+            <li><strong>Earn your title</strong> — based on your class, background, and achievements</li>
+            <li><strong>Let it evolve</strong> — rock gnomes can change titles as they level up; forest gnomes can change with seasons</li>
+            <li><strong>Roleplay the meaning</strong> — your name tells people what you do and what you're good at</li>
+          </ol>
+        </div>
+
+        <div class="feature-card">
+          <h3>For DMs: Gnome NPCs and Plot Hooks</h3>
+          <p>Gnome names create instant plot hooks:</p>
+          <ul>
+            <li><strong>Bimble Gearmaster</strong> — a legendary inventor who can help the party, but only if they retrieve rare materials</li>
+            <li><strong>Fernwhistle</strong> — a forest gnome who knows the secrets of the woods, but speaks in riddles</li>
+            <li><strong>Schnick Shadowdodger</strong> — a deep gnome spy who has information about drow plans, but demands payment</li>
+            <li><strong>Nissa Sparkfinger</strong> — a young gnome whose experiments have gone wrong, creating a magical disaster the party must fix</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3>Names as Character Development</h3>
+          <p>Gnome naming conventions allow for unique character development:</p>
+          <ul>
+            <li><strong>Level 1-4:</strong> Your gnome is an apprentice or journeyman, earning their first title</li>
+            <li><strong>Level 5-10:</strong> They've mastered their craft and earned a more impressive title</li>
+            <li><strong>Level 11-16:</strong> They're recognized as masters, known by reputation across the land</li>
+            <li><strong>Level 17-20:</strong> They're legendary, their name becoming a title in itself ("the Magnificent", "the Wise")</li>
+          </ul>
+          <p>This creates a character arc that's literally written into their name — something unique to gnomes among all D&D races.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-2">
+      <div class="container">
+        <h2>How to Use the Gnome Name Generator</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">&#127919;</div>
+            <h3>Choose Your Subrace</h3>
+            <p>Select rock gnome for tinker titles, forest gnome for nature compounds, or deep gnome for survival epithets. Each subrace has distinct naming conventions that reflect their culture and environment.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">&#128218;</div>
+            <h3>Understand the Etymology</h3>
+            <p>Every generated name includes a breakdown showing how the name was constructed. Learn the meaning behind tinker titles, nature compounds, and survival epithets so you can choose names that fit your character's story.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">&#127922;</div>
+            <h3>Generate Character Cards</h3>
+            <p>Switch to Character Generator mode to create complete gnome characters with class, background, personality traits, and AI portrait prompts. Perfect for players who want a fully realized character concept.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">&#9989;</div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-2">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>What makes a gnome name sound authentic?</h3>
+          <p>Authentic gnome names use playful consonants (B, D, F, N, M, L), bright vowels (I, E, A), and whimsical syllable combinations that sound curious and inventive. Rock gnome names often include tinker titles like 'Clockmaker' or 'Tinkertwitch'. Forest gnome names incorporate nature words like 'Fernwhistle' or 'Mosscap'. Deep gnome names are shorter and more guttural, reflecting their Underdark survival.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do gnome naming traditions differ by subrace?</h3>
+          <p>Rock gnomes (tinkers) earn professional titles: 'Bimble Clockwork' or 'Nissa Tinkerbot'. Forest gnomes use nature compounds: 'Fernwhistle' or 'Mosscap'. Deep gnomes (svirfneblin) have shorter, harsher names adapted for Underdark survival: 'Durgan Stonecutter' or 'Schnick Shadowdodger'. Each subrace's naming reflects their culture and environment.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I use these gnome names for my D&D campaign?</h3>
+          <p>Yes. All generated names are free to use in your tabletop RPG campaigns, novels, games, or any creative project. Our names follow established D&D 5e gnome naming conventions and are checked against famous characters like Bimble Tinkertwitch to avoid IP issues.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What are gnome tinker titles?</h3>
+          <p>Tinker titles are professional epithets earned by rock gnomes through their craft work. Common patterns include [Material] + [Tool]: Clockwork, Tinkerbot, Gearwhiz, Sparkfinger, Cogsworth. A gnome named 'Bimble Clockwork' tells you he's a rock gnome who builds mechanical devices. These titles are earned, not inherited — a gnome might change their title as they master new crafts.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do forest gnome names work?</h3>
+          <p>Forest gnome names combine nature words with whimsical actions or objects: Fernwhistle, Mosscap, Brookbubble, Leafwhisper, Mushroomcap. These names reflect the forest gnome's deep connection to nature and their role as guardians of woodland secrets. The names sound playful but carry the weight of ancient forest lore.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What makes deep gnome names different?</h3>
+          <p>Deep gnomes (svirfneblin) live in the dangerous Underdark, so their names are shorter, harder, and more practical: Durgan, Schnick, Blingden, Stonecutter, Shadowdodger. They've adapted to survive among drow and duergar, so their names lack the whimsical flourishes of surface gnomes. A deep gnome named 'Schnick Shadowdodger' tells you he's survived by staying hidden.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do gnomes use family names?</h3>
+          <p>Gnomes rarely use family surnames in the human sense. Instead, they carry professional titles (rock gnomes), nature compounds (forest gnomes), or clan names (deep gnomes). A gnome's 'surname' often reflects their personal achievements rather than their bloodline. This reflects gnome culture's emphasis on individual creativity over ancestral heritage.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How long do gnome names typically last?</h3>
+          <p>Gnomes live 400-500 years, and their names evolve with them. A young rock gnome might be 'Bimble Tinkerbot' as an apprentice, then earn 'Bimble Clockwork' as a journeyman, and finally become 'Bimble Gearmaster' as a master craftsman. Forest gnomes might change their nature titles seasonally or after major life events. Deep gnomes keep their survival-focused names for life.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Race Generators</h4>
+          <ul>
+            <li><a href="/elf-name-generator/">Elf Name Generator</a></li>
+            <li><a href="/dwarf-name-generator/">Dwarf Name Generator</a></li>
+            <li><a href="/dragon-name-generator/">Dragon Name Generator</a></li>
+            <li><a href="/orc-name-generator/">Orc Name Generator</a></li>
+            <li><a href="/tiefling-name-generator/">Tiefling Name Generator</a></li>
+            <li><a href="/drow-name-generator/">Drow Name Generator</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Elf Subtypes</h4>
+          <ul>
+            <li><a href="/wood-elf/">Wood Elf Names</a></li>
+            <li><a href="/high-elf/">High Elf Names</a></li>
+            <li><a href="/dark-elf/">Dark Elf Names</a></li>
+            <li><a href="/female-elf/">Female Elf Names</a></li>
+            <li><a href="/male-elf/">Male Elf Names</a></li>
+            <li><a href="/elf-last-name/">Elf Last Names</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="/guides/how-to-choose-a-sound-palette/">Sound Palette Guide</a></li>
+            <li><a href="/guides/how-to-name-a-dd-character/">D&amp;D Naming Guide</a></li>
+            <li><a href="/guides/how-to-pronounce-fantasy-names/">Pronunciation Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Tools</h4>
+          <ul>
+            <li><a href="/backstory-generator/">Backstory Generator</a></li>
+            <li><a href="/races/">All Race Generators</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fantasy Name Generator. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/name-generator.js"></script>
+  <script src="/assets/character-generator.js"></script>
+  <script>
+    function switchTab(tab) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.generator-box').forEach(content => {
+        content.classList.remove('active');
+        content.classList.add('hidden');
+      });
+
+      if (tab === 'names') {
+        document.getElementById('names-tab').classList.add('active');
+        document.getElementById('names-tab').classList.remove('hidden');
+        document.querySelector('.tab-btn:first-child').classList.add('active');
+      } else {
+        document.getElementById('char-generator').classList.add('active');
+        document.getElementById('char-generator').classList.remove('hidden');
+        document.querySelector('.tab-btn:last-child').classList.add('active');
+      }
+    }
+
+    function generateNames() {
+      const gender = document.getElementById('gender').value;
+      const subrace = document.getElementById('subrace').value;
+      const count = parseInt(document.getElementById('count').value);
+      
+      const results = [];
+      for (let i = 0; i < count; i++) {
+        const name = generateGnomeName(gender, subrace);
+        results.push(name);
+      }
+      
+      displayResults(results, subrace);
+    }
+
+    function generateGnomeName(gender, subrace) {
+      const firstNames = {
+        male: ['Bimble', 'Dorn', 'Fizzle', 'Gimble', 'Nackle', 'Pock', 'Riddle', 'Schnick', 'Tink', 'Wizzle', 'Zook', 'Blim', 'Dabble', 'Fidget', 'Gizmo', 'Nimble', 'Pip', 'Ratchet', 'Spark', 'Twitch'],
+        female: ['Nissa', 'Bella', 'Cinnamon', 'Daffodil', 'Fern', 'Glimmer', 'Hazel', 'Ivy', 'Jasmine', 'Lily', 'Moss', 'Petal', 'Rose', 'Sage', 'Thistle', 'Willow', 'Blossom', 'Dewdrop', 'Ember', 'Flicker'],
+        neutral: ['Aster', 'Berry', 'Clover', 'Dapple', 'Echo', 'Flutter', 'Glint', 'Hobble', 'Jingle', 'Kettle', 'Linden', 'Merry', 'Nudge', 'Pebble', 'Quill', 'Ripple', 'Skip', 'Tumble', 'Wisp', 'Zephyr']
+      };
+
+      const rockTitles = ['Clockwork', 'Tinkerbot', 'Gearwhiz', 'Sparkfinger', 'Cogsworth', 'Tinkertwitch', 'Gearmaster', 'Boltturner', 'Springwinder', 'Pistonpump', 'Valveturner', 'Wirebender', 'Metalshaper', 'Toolmaker', 'Machinist'];
+      const forestTitles = ['Fernwhistle', 'Mosscap', 'Brookbubble', 'Leafwhisper', 'Mushroomcap', 'Willowwand', 'Birchbark', 'Oakroot', 'Pinecone', 'Thornberry', 'Flowerdancer', 'Treeshadow', 'Windchime', 'Raindrop', 'Sunbeam'];
+      const deepTitles = ['Stonecutter', 'Shadowdodger', 'Tunnelrunner', 'Deepdelver', 'Darkwalker', 'Cavecrawler', 'Rockhopper', 'Gemfinder', 'Orebreaker', 'Tunnelguide', 'Darkseer', 'Stonehand', 'Deepminer', 'Cavernrunner', 'Shadowhide'];
+
+      const firstName = firstNames[gender][Math.floor(Math.random() * firstNames[gender].length)];
+      let title;
+      
+      if (subrace === 'rock') {
+        title = rockTitles[Math.floor(Math.random() * rockTitles.length)];
+      } else if (subrace === 'forest') {
+        title = forestTitles[Math.floor(Math.random() * forestTitles.length)];
+      } else {
+        title = deepTitles[Math.floor(Math.random() * deepTitles.length)];
+      }
+
+      return {
+        name: `${firstName} ${title}`,
+        firstName: firstName,
+        title: title,
+        subrace: subrace
+      };
+    }
+
+    function displayResults(results, subrace) {
+      const resultsDiv = document.getElementById('results');
+      let html = '<div class="name-list">';
+      
+      results.forEach((result, index) => {
+        const etymology = getEtymology(result, subrace);
+        html += `
+          <div class="name-item">
+            <div class="name-text">${result.name}</div>
+            <div class="etymology-box">${etymology}</div>
+          </div>
+        `;
+      });
+      
+      html += '</div>';
+      resultsDiv.innerHTML = html;
+    }
+
+    function getEtymology(result, subrace) {
+      if (subrace === 'rock') {
+        return `<strong>Rock Gnome:</strong> ${result.firstName} (playful first name) + ${result.title} (professional tinker title)`;
+      } else if (subrace === 'forest') {
+        return `<strong>Forest Gnome:</strong> ${result.firstName} (whimsical first name) + ${result.title} (nature compound title)`;
+      } else {
+        return `<strong>Deep Gnome:</strong> ${result.firstName} (practical first name) + ${result.title} (survival epithet)`;
+      }
+    }
+
+    function generateCharacter() {
+      const gender = document.getElementById('char-gender').value;
+      const subrace = document.getElementById('char-subrace').value;
+      const charClass = document.getElementById('char-class').value;
+      const style = document.getElementById('char-style').value;
+      const level = document.getElementById('char-level').value;
+      const background = document.getElementById('char-background').value;
+      const portraitStyle = document.getElementById('char-portrait-style').value;
+
+      const character = generateFullCharacter({
+        race: 'gnome',
+        subrace: subrace,
+        gender: gender,
+        charClass: charClass,
+        style: style,
+        level: level,
+        background: background,
+        portraitStyle: portraitStyle
+      });
+
+      displayCharacterCard(character);
+    }
+
+    function generateBatchChars(count) {
+      const results = [];
+      for (let i = 0; i < count; i++) {
+        const gender = document.getElementById('char-gender').value;
+        const subrace = document.getElementById('char-subrace').value;
+        const charClass = document.getElementById('char-class').value;
+        const style = document.getElementById('char-style').value;
+        const level = document.getElementById('char-level').value;
+        const background = document.getElementById('char-background').value;
+        const portraitStyle = document.getElementById('char-portrait-style').value;
+
+        const character = generateFullCharacter({
+          race: 'gnome',
+          subrace: subrace,
+          gender: gender,
+          charClass: charClass,
+          style: style,
+          level: level,
+          background: background,
+          portraitStyle: portraitStyle
+        });
+
+        results.push(character);
+      }
+
+      displayBatchResults(results);
+    }
+
+    function displayCharacterCard(character) {
+      const outputDiv = document.getElementById('char-card-output');
+      outputDiv.innerHTML = createCharacterCardHTML(character);
+    }
+
+    function displayBatchResults(characters) {
+      const outputDiv = document.getElementById('batch-output');
+      let html = '<h3>Batch Results</h3>';
+      characters.forEach((char, index) => {
+        html += createCharacterCardHTML(char, index + 1);
+      });
+      outputDiv.innerHTML = html;
+      outputDiv.classList.remove('hidden');
+    }
+
+    function createCharacterCardHTML(character, index = null) {
+      const portraitPrompt = generatePortraitPrompt(character);
+      
+      return `
+        <div class="char-card">
+          <h3>${character.name}${index ? ` (#${index})` : ''}</h3>
+          <div class="char-card-section">
+            <h4>Race & Class</h4>
+            <p>${getGnomeSubraceName(character.subrace)} ${character.charClass} (Level ${character.level})</p>
+          </div>
+          <div class="char-card-section">
+            <h4>Background</h4>
+            <p>${character.background}</p>
+          </div>
+          <div class="char-card-section">
+            <h4>Personality</h4>
+            <p>${character.personality}</p>
+          </div>
+          <div class="char-card-section">
+            <h4>Adventuring Motivation</h4>
+            <p>${character.motivation}</p>
+          </div>
+          <div class="char-card-section">
+            <h4>Etymology</h4>
+            <div class="etymology-box">${character.etymology}</div>
+          </div>
+          <div class="char-card-section">
+            <h4>AI Portrait Prompt</h4>
+            <div class="portrait-prompt">${portraitPrompt}</div>
+          </div>
+          
+        </div>
+      `;
+    }
+
+    function getGnomeSubraceName(subrace) {
+      const names = {
+        rock: 'Rock Gnome',
+        forest: 'Forest Gnome',
+        deep: 'Deep Gnome'
+      };
+      return names[subrace] || 'Gnome';
+    }
+
+    function generateFullCharacter(options) {
+      const nameData = generateGnomeName(options.gender, options.subrace);
+      const personality = generateGnomePersonality(options.subrace, options.charClass);
+      const motivation = generateGnomeMotivation(options.subrace, options.charClass);
+      const etymology = generateGnomeEtymology(nameData, options.subrace);
+
+      return {
+        name: nameData.name,
+        race: 'gnome',
+        subrace: options.subrace,
+        charClass: options.charClass,
+        level: options.level,
+        background: options.background || getRandomBackground(),
+        personality: personality,
+        motivation: motivation,
+        etymology: etymology,
+        portraitStyle: options.portraitStyle
+      };
+    }
+
+    function generateGnomePersonality(subrace, charClass) {
+      const personalities = {
+        rock: [
+          'Obsessed with creating the perfect automaton and talks to inventions as if they are alive',
+          'Brilliant but scatterbrained, often forgetting to eat while working on new designs',
+          'Meticulous craftsman who believes every problem can be solved with the right gadget',
+          'Energetic tinkerer who sees potential for improvement in everything they encounter'
+        ],
+        forest: [
+          'Speaks in riddles and communicates with plants more comfortably than people',
+          'Playful and mischievous, using illusion magic to prank travelers who stray from paths',
+          'Quiet guardian who watches over the forest with ancient wisdom beyond their years',
+          'Whimsical dreamer who sees magic in every leaf and song in every breeze'
+        ],
+        deep: [
+          'Paranoid and quiet, constantly alert for dangers that others cannot sense',
+          'Dry sense of humor masked by grim exterior, trusts almost no one completely',
+          'Practical survivor who values efficiency and stealth over flashy displays',
+          'Hardened by Underdark dangers but still maintains gnome-like curiosity about the world'
+        ]
+      };
+
+      const options = personalities[subrace] || personalities.rock;
+      return options[Math.floor(Math.random() * options.length)];
+    }
+
+    function generateGnomeMotivation(subrace, charClass) {
+      const motivations = {
+        rock: [
+          'Seeking rare materials to build the ultimate clockwork companion',
+          'Searching for ancient schematics left by legendary gnome inventors',
+          'Trying to prove that gnome technology can rival elven magic',
+          'Collecting unusual mechanisms from across the world to study and improve'
+        ],
+        forest: [
+          'A blight is spreading through the forest and they must find its source',
+          'Protecting ancient groves from those who would exploit their magic',
+          'Seeking to restore a lost grove that was destroyed centuries ago',
+          'Learning the secrets of nature magic from ancient forest spirits'
+        ],
+        deep: [
+          'Their settlement was discovered by drow and they seek allies to defend their people',
+          'Searching for a safe new home for their clan after fleeing the Underdark',
+          'Hunting the creatures that destroyed their underground community',
+          'Gathering surface-world knowledge to help their people adapt and survive'
+        ]
+      };
+
+      const options = motivations[subrace] || motivations.rock;
+      return options[Math.floor(Math.random() * options.length)];
+    }
+
+    function generateGnomeEtymology(nameData, subrace) {
+      if (subrace === 'rock') {
+        return `<strong>${nameData.name}:</strong> ${nameData.firstName} (playful gnome first name) + ${nameData.title} (professional tinker title indicating expertise in ${nameData.title.toLowerCase()} crafts)`;
+      } else if (subrace === 'forest') {
+        return `<strong>${nameData.name}:</strong> ${nameData.firstName} (whimsical gnome first name) + ${nameData.title} (nature compound reflecting connection to ${nameData.title.toLowerCase()} elements)`;
+      } else {
+        return `<strong>${nameData.name}:</strong> ${nameData.firstName} (practical deep gnome first name) + ${nameData.title} (survival epithet earned through ${nameData.title.toLowerCase()} skills)`;
+      }
+    }
+
+    function generatePortraitPrompt(character) {
+      const subraceDescriptions = {
+        rock: 'a rock gnome tinkerer with goggles, tool belt, and mechanical devices',
+        forest: 'a forest gnome with nature-themed clothing, surrounded by plants and woodland creatures',
+        deep: 'a deep gnome with pale skin, dark clothing, and alert expression'
+      };
+
+      const classDescriptions = {
+        Artificer: 'holding intricate clockwork device',
+        Wizard: 'studying magical tome with moving diagrams',
+        Druid: 'channeling nature magic with plants growing around them',
+        Rogue: 'in shadows with quick, alert posture'
+      };
+
+      const baseDescription = subraceDescriptions[character.subrace] || subraceDescriptions.rock;
+      const classDetail = classDescriptions[character.charClass] || 'adventuring gear';
+      const style = character.portraitStyle || 'Classic Fantasy';
+
+      return `${style} portrait of ${baseDescription}, ${classDetail}, whimsical and curious expression, D&D 5e character art style`;
+    }
+
+    function getRandomBackground() {
+      const backgrounds = ['Guild Artisan', 'Sage', 'Outlander', 'Folk Hero', 'Charlatan'];
+      return backgrounds[Math.floor(Math.random() * backgrounds.length)];
+    }
+
+    
+    function generateGnomeName(gender, subrace) {
+      return generateGnomeName(gender, subrace);
+    }
+  </script>
+</body>
+</html>
