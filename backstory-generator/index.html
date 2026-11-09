@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google Tag Manager -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TQH84Q5Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<!-- End Google Tag Manager -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <title>Backstory Generator - Backstory Generator for D&D 5e</title>
-  <meta name="description" content="Generate rich character backstories for D&D 5e. Create detailed, unique backstory stories with origins, motivations, bonds, flaws, and life events in seconds.">
+  <title>Backstory Generator - Backstory Generator for D&amp;D 5e</title>
+  <meta name="description" content="Generate rich character backstories for D&amp;D 5e using AI. Create detailed, unique backstory stories with origins, motivations, bonds, flaws, and life events in seconds.">
   <link rel="canonical" href="https://fantasyname.net/backstory-generator/">
-  <meta property="og:title" content="D&D Backstory Generator - Backstory Generator for D&D 5e">
-  <meta property="og:description" content="Generate rich character backstories for D&D 5e. Create detailed, unique backstory stories with origins, motivations, bonds, flaws, and life events in seconds.">
+  <meta property="og:title" content="D&amp;D Backstory Generator - Backstory Generator for D&amp;D 5e">
+  <meta property="og:description" content="Generate rich character backstories for D&amp;D 5e using AI. Create detailed, unique backstory stories with origins, motivations, bonds, flaws, and life events in seconds.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://fantasyname.net/backstory-generator/">
   <meta property="og:image" content="https://fantasyname.net/assets/backstory-hero.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="D&D Backstory Generator - Backstory Generator for D&D 5e">
-  <meta name="twitter:description" content="Generate rich character backstories for D&D 5e. Create detailed, unique backstory stories with origins, motivations, bonds, flaws, and life events in seconds.">
+  <meta name="twitter:title" content="D&amp;D Backstory Generator - Backstory Generator for D&amp;D 5e">
+  <meta name="twitter:description" content="Generate rich character backstories for D&amp;D 5e using AI. Create detailed, unique backstory stories with origins, motivations, bonds, flaws, and life events in seconds.">
   <meta name="twitter:image" content="https://fantasyname.net/assets/backstory-hero.jpg">
   <link rel="stylesheet" href="/assets/style.css">
   <script type="application/ld+json">
@@ -212,7 +221,7 @@
         </div>
 
         <button class="generate-btn" onclick="generateBackstory()">
-          Generate Backstory
+          Generate Backstory with AI
         </button>
 
         <div class="result-section" id="result">
@@ -227,7 +236,7 @@
       </div>
 
       <section class="article-content">
-        <h2>How to Create a Compelling D&D Backstory</h2>
+        <h2>How to Create a Compelling D&amp;D Backstory</h2>
         <p>A great backstory gives your character depth, motivation, and connections to the world. Use our AI-powered generator as a starting point, then customize the details to make it uniquely yours.</p>
         
         <h3>Key Elements of a Strong Backstory</h3>
@@ -264,7 +273,7 @@
         
         <details>
           <summary>How does the backstory generator work?</summary>
-          <p>Our system analyzes your character's race, class, background, alignment, and chosen element to generate a unique and coherent backstory. It draws on the established lore and narrative conventions of *Dungeons & Dragons* to craft authentic stories that fit the atmosphere of the fantasy world.</p>
+          <p>Our system analyzes your character's race, class, background, alignment, and chosen element to generate a unique and coherent backstory. It draws on the established lore and narrative conventions of *Dungeons &amp; Dragons* to craft authentic stories that fit the atmosphere of the fantasy world.</p>
         </details>
         
         <details>
@@ -278,8 +287,8 @@
         </details>
         
         <details>
-          <summary>Can I generate backstories for non-D&D games?</summary>
-          <p>While optimized for D&D 5e, the backstories can be adapted for other fantasy RPGs by adjusting race and class names to match your game system.</p>
+          <summary>Can I generate backstories for non-D&amp;D games?</summary>
+          <p>While optimized for D&amp;D 5e, the backstories can be adapted for other fantasy RPGs by adjusting race and class names to match your game system.</p>
         </details>
         
         <details>
@@ -359,7 +368,7 @@
         ? `Additional details: ${params.customDetails}` 
         : '';
 
-      return `You are a creative D&D storyteller. Generate a compelling character backstory for D&D 5e.
+      return `You are a creative D&amp;D storyteller. Generate a compelling character backstory for D&amp;D 5e.
 
 Character details:
 - Name: ${params.name}
@@ -378,7 +387,7 @@ Write a detailed backstory (500-800 words) in second person ("you") that:
 - Includes significant events that shaped them
 - Establishes their motivation for adventuring
 - Creates hooks for future story development
-- Feels authentic to D&D 5e fantasy setting
+- Feels authentic to D&amp;D 5e fantasy setting
 
 Make it engaging, specific, and emotionally resonant. Avoid generic phrases.`;
     }
@@ -443,7 +452,7 @@ Make it engaging, specific, and emotionally resonant. Avoid generic phrases.`;
               messages: [
                 {
                   role: 'system',
-                  content: 'You are a creative D&D storyteller. Generate engaging, detailed character backstories that fit the D&D 5e fantasy setting. Write in second person perspective, addressing the character as "you". Make the backstory compelling with specific details, emotional depth, and hooks for adventure. Keep it between 500-800 words.'
+                  content: 'You are a creative D&amp;D storyteller. Generate engaging, detailed character backstories that fit the D&amp;D 5e fantasy setting. Write in second person perspective, addressing the character as "you". Make the backstory compelling with specific details, emotional depth, and hooks for adventure. Keep it between 500-800 words.'
                 },
                 {
                   role: 'user',
@@ -825,7 +834,7 @@ Make it engaging, specific, and emotionally resonant. Avoid generic phrases.`;
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "Backstory Generator",
-    "description": "Generate rich character backstories for D&D 5e. Create detailed, unique backstory stories with origins, motivations, bonds, flaws, and life events.",
+    "description": "Generate rich character backstories for D&amp;D 5e using AI. Create detailed, unique backstory stories with origins, motivations, bonds, flaws, and life events.",
     "url": "https://fantasyname.net/backstory-generator/",
     "applicationCategory": "GameApplication",
     "operatingSystem": "Web Browser",
@@ -847,7 +856,7 @@ Make it engaging, specific, and emotionally resonant. Avoid generic phrases.`;
         "name": "How does the backstory generator work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our system analyzes your character's race, class, background, alignment, and chosen element to generate a unique and coherent backstory. It draws on the established lore and narrative conventions of Dungeons & Dragons to craft authentic stories that fit the atmosphere of the fantasy world."
+          "text": "Our system analyzes your character's race, class, background, alignment, and chosen element to generate a unique and coherent backstory. It draws on the established lore and narrative conventions of Dungeons &amp; Dragons to craft authentic stories that fit the atmosphere of the fantasy world."
         }
       },
       {
@@ -868,10 +877,10 @@ Make it engaging, specific, and emotionally resonant. Avoid generic phrases.`;
       },
       {
         "@type": "Question",
-        "name": "Can I generate backstories for non-D&D games?",
+        "name": "Can I generate backstories for non-D&amp;D games?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "While optimized for D&D 5e, the backstories can be adapted for other fantasy RPGs by adjusting race and class names to match your game system."
+          "text": "While optimized for D&amp;D 5e, the backstories can be adapted for other fantasy RPGs by adjusting race and class names to match your game system."
         }
       },
       {
