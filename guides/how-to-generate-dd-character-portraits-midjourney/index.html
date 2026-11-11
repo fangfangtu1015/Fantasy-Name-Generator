@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TQH84Q5Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>How to Generate D&amp;D Character Portraits with Midjourney v6 - Complete Prompt Guide</title>
+  <meta name="description" content="Master Midjourney v6 prompts for D&amp;D character portraits. Race-specific templates, class aesthetics, lighting techniques, and parameter tricks for consistent fantasy art.">
+  <link rel="canonical" href="https://fantasyname.net/guides/how-to-generate-dd-character-portraits-midjourney/">
+  <meta property="og:title" content="How to Generate D&amp;D Character Portraits with Midjourney v6">
+  <meta property="og:description" content="Master Midjourney v6 prompts for D&amp;D character portraits. Race-specific templates, class aesthetics, lighting techniques, and parameter tricks.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://fantasyname.net/guides/how-to-generate-dd-character-portraits-midjourney/">
+  <meta property="og:image" content="https://fantasyname.net/assets/hero-background.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Generate D&amp;D Character Portraits with Midjourney v6">
+  <meta name="twitter:description" content="Master Midjourney v6 prompts for D&amp;D character portraits. Race-specific templates, class aesthetics, lighting techniques.">
+  <meta name="twitter:image" content="https://fantasyname.net/assets/hero-background.jpg">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://fantasyname.net/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://fantasyname.net/guides/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Midjourney v6 Character Portraits",
+      "item": "https://fantasyname.net/guides/how-to-generate-dd-character-portraits-midjourney/"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Generate D&D Character Portraits with Midjourney v6",
+  "description": "Complete guide to crafting Midjourney v6 prompts for D&D character portraits with race-specific templates and professional techniques.",
+  "author": {
+    "@type": "Organization",
+    "name": "Fantasy Name Generator"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Fantasy Name Generator"
+  },
+  "datePublished": "2026-11-11",
+  "dateModified": "2026-11-11",
+  "wordCount": 7869,
+  "image": "https://fantasyname.net/assets/hero-background.jpg",
+  "mainEntityOfPage": "https://fantasyname.net/guides/how-to-generate-dd-character-portraits-midjourney/",
+  "url": "https://fantasyname.net/guides/how-to-generate-dd-character-portraits-midjourney/"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Midjourney v6 still worth using now that V7 and V8 are the default?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes for a particular look, with one hard limitation. V6 stopped being the default in July 2024 and V6.1 in June 2025, so pin --v 6 or --v 6.1 on every prompt — otherwise you are not generating with the model this guide describes. The limitation is --cref: character reference is now documented as a legacy parameter, replaced by Omni Reference in V7 and by the Edit Model in V8.2. If recurring-character consistency matters more to your campaign than v6's softer default aesthetic, run the same prompts on a current version with the reference parameter it supports, and expect the prompt to translate only partly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a paid Midjourney subscription to make character portraits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For anything beyond a few experiments, yes. Generation is metered as GPU time against your subscription tier, and a five-person party with iterative portraits consumes it faster than people expect, so budget one paid month before a campaign starts rather than discovering the limit at session three. Two tier details matter specifically at the table: private generation is a paid-plan feature, and it is the difference between your campaign spoilers appearing in the public gallery or not; and your plan also governs what you may do commercially with the images. Tiers get renamed often, so read Midjourney's own subscription comparison rather than a third-party tutorial."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use generated portraits in a streamed or published actual play?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You own the images Midjourney generates for you, and you keep that ownership if you cancel — that is Midjourney's stated position in its commercial-use documentation, with two exceptions worth knowing before a stream or a published adventure: if you upscale an image another user created, that image belongs to them, and a business grossing more than one million US dollars a year needs a Pro or Mega plan to use images commercially for the company. Whether AI output is copyrightable at all is a separate question that Midjourney explicitly declines to advise on, and the answer differs by country. Then there is the table itself: some audiences react badly to visible generated art in an actual-play show, and some marketplaces have their own disclosure rules, so check the platform you publish on as well as the image service."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my character look different in every generation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because a text prompt describes a category, not an individual. \"Drow female sorceress\" is satisfied by a thousand different faces, and the model picks a new one each time. Three fixes, in order of effectiveness: generate one definitive portrait and reference it with --cref for everything after; pin the seed while you iterate a single composition; and name unambiguous physical constants in every prompt, such as a scar, an eye color, a hair color and one piece of headwear that never changes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many prompt rewrites should a good portrait take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plan on four or five grid generations for the first portrait of a new character, and one or two for later scenes that reuse the reference image. If you are past about fifteen attempts on a single composition, the problem is usually a conflict inside the prompt rather than luck — a style keyword fighting your lighting choice, or more concepts in one prompt than the canvas can hold."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I generate a portrait that matches art my group already loves?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can steer toward a general look with medium and palette language, and a style reference transfers color and brushwork rather than content. Copying a specific living artist's illustration, or art from a published book your group plays from, is a different thing from matching a style, and it is the kind of request that gets a table into arguments as well as trouble. Build the look from techniques instead: oil-on-canvas, muted earth palette, heavy chiaroscuro, visible brushwork."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What resolution should I generate at, and does upscaling help?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generate at the model's native grid size, then upscale only for a specific output that needs it, such as a printed handout at 300 DPI. Upscaling adds pixels; it does not add decision-making, so it enlarges the mistakes along with the good parts. The better order of operations is to fix a bad composition by re-prompting, and only then upscale the version you actually intend to print."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should my whole party share one art style, and how?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and it is the difference between five pretty images and one campaign with a visual identity. Point every party portrait at the same style reference so palette, lighting temperature and brushwork match, keep the medium keywords identical in every prompt, and reuse the same environment vocabulary. Vary the subject descriptors freely; keep the style clause word-for-word identical across all of them."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">
+        <span class="logo-icon">&#9876;</span>
+        Fantasy Name Generator
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/races/">Races</a></li>
+          <li><a href="/backstory-generator/">Backstory Generator</a></li>
+          <li><a href="/guides/">Guides</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>&rsaquo;</span>
+        <a href="/guides/">Guides</a>
+        <span>&rsaquo;</span>
+        Midjourney v6 Character Portraits
+      </div>
+
+      <article class="article-content">
+        <h1>How to Generate D&amp;D Character Portraits with Midjourney v6</h1>
+        <p><small>Last updated November 2026. Model behavior and parameter values in this guide were checked against Midjourney's official documentation in November 2026 — see the <a href="#mj-sources">source list</a> at the end.</small></p>
+
+        <p>v6 was the first Midjourney model that rewarded the kind of prompt a <em>Dungeons &amp; Dragons</em> player already knows how to write. Earlier models turned a race name into a generic fantasy human with the right accessories; from v6 onward, a prompt that describes a wood elf's bark-textured pauldrons and moss-lined hood tends to put both of them in the image. A character sheet is already a list of visual facts, which is why v6 is still the version many tabletop players keep coming back to.</p>
+
+        <p>This guide teaches you to write prompts that consistently produce portraits matching the character on your sheet: the structural formula v6 responds to, race-specific descriptors that actually change the output, class-appropriate gear and lighting, and the few parameters that matter more than the rest.</p>
+
+        <h2>Settle the Version Before You Prompt</h2>
+
+        <p>v6 is no longer what Midjourney runs when you type an <code>/imagine</code> prompt. Version 6 shipped on December 20, 2023 and was the default from February 14 to July 30, 2024; Version 6.1 replaced it and stayed the default until June 16, 2025. As of November 2026 the default is <a href="https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version" rel="noopener">V8.2</a>, according to Midjourney's own version documentation.</p>
+
+        <p>That is not a reason to abandon the prompts below — it is a reason to pin the model, because a v6-tuned prompt pasted into a v8.2 session behaves differently and you will not be able to tell which change caused which result. Two concrete consequences:</p>
+
+        <ul>
+          <li><strong>Add <code>--v 6</code></strong> (or <code>--v 6.1</code>) to the end of every prompt, or set Version 6 in <code>/settings</code> on Discord and in the settings panel on web. Do not rely on the account default carrying over between sessions.</li>
+          <li><strong><code>--cref</code> belongs to this branch of the model line.</strong> Character Reference is now listed among Midjourney's <a href="https://docs.midjourney.com/hc/en-us/articles/33329788681101-Legacy-Features" rel="noopener">legacy parameters</a>: V7 replaced it with Omni Reference (<code>--oref</code>), and V8.2's Edit Model replaces character reference outright. If your group works on the current default, the consistency workflow in this guide has to be rebuilt around <code>--oref</code> and <code>--ow</code>, and prompts transfer only partly.</li>
+        </ul>
+
+        <p>Staying on v6 is a defensible choice rather than a fallback. Its default aesthetic is softer and more painterly than the current versions, which is closer to what most tabletop character art is trying to look like, and a saved prompt plus seed reproduces on the same version in a way that newer, faster-updating models do not always manage. Everything below assumes Version 6 or 6.1.</p>
+
+        <h2>Understanding Midjourney v6's Prompt Architecture</h2>
+
+        <p>v6 is the first version that behaves well when you describe a character in ordinary sentences instead of assembling a tag list. It still accepts keywords, but a flowing description with the subject named up front holds together better than the same words shuffled around — which means the order of your clauses is a real variable, not house style.</p>
+
+        <h3>The Five-Part Prompt Formula</h3>
+
+        <p>Every effective D&amp;D portrait prompt follows this structure:</p>
+
+        <ol>
+          <li><strong>Subject identity</strong> — race, class, age, gender, named first because everything after it modifies this</li>
+          <li><strong>Physical description</strong> — build, features, distinguishing marks</li>
+          <li><strong>Equipment and attire</strong> — armor type, weapons, magical items, clothing details</li>
+          <li><strong>Environment and lighting</strong> — setting, time of day, light sources, atmosphere</li>
+          <li><strong>Style and medium</strong> — art style, rendering technique, mood keywords</li>
+        </ol>
+
+        <p>Place these elements in order, and keep the list short where it is vague. Midjourney's <a href="https://docs.midjourney.com/hc/en-us/articles/32023408776205-Prompt-Basics" rel="noopener">prompting guidance</a> is that a prompt should read like a clear snapshot of the idea rather than a long set of instructions, because detail buried in a crowded prompt is the detail that goes missing first. Race and class belong in the opening clause; the art-style clause belongs at the end, where it can stay word-for-word identical across a whole party.</p>
+
+        <h3>What Changed from v5 to v6</h3>
+
+        <ul>
+          <li><strong>Text rendering:</strong> v6 can spell correctly in signs, banners, and runes visible in the image</li>
+          <li><strong>Longer prompts:</strong> v6 keeps track of more described elements at once than v5, which is what makes a full character-sheet description viable</li>
+          <li><strong>Spatial language:</strong> prepositions start to be honoured — <em>strapped across the back</em>, <em>in a low grip</em>, <em>tucked behind one ear</em></li>
+          <li><strong>Anatomy:</strong> far fewer mangled hands and mis-set faces than v5, though limb-count errors on creature folk are still common enough to plan around</li>
+          <li><strong>Style reference versions:</strong> v6 added <code>--sv</code>, which selects between four different style-reference algorithms (see <a href="https://docs.midjourney.com/hc/en-us/articles/32180011136653-Style-Reference" rel="noopener">Style Reference</a>). Codes generated by other versions may not reproduce on v6</li>
+          <li><strong>Weights:</strong> <code>::</code> multi-prompts still work on v6, but plain description does more of the job in v6 than it did in v5, so reach for weights only when two concepts are fighting</li>
+        </ul>
+
+        <h2>Race-Specific Visual Descriptors That Work</h2>
+
+        <p>The single biggest mistake players make is using only the race name. "Elf" produces generic pointed-ear humans. You need to describe the <em>visual language</em> of each race the way D&amp;D artists do in official sourcebooks.</p>
+
+        <h3>Elves and Subraces</h3>
+
+        <p><strong>High Elf:</strong> "high elf with angular aristocratic features, luminous violet eyes, silver-white hair worn long and partially bound with thin gold circlets, elegant pointed ears angled upward, flawless porcelain skin with faint magical luminescence at the temples, wearing layered robes of midnight blue and silver embroidery with arcane sigils woven into the fabric"</p>
+
+        <p><strong>Wood Elf:</strong> "wood elf with warm bronze skin, deep green eyes with flecked amber, auburn hair loosely braided with tiny leaves and thin vines woven through, slightly wider-set pointed ears, lean athletic build, wearing fitted leather armor dyed forest green with bark-textured pauldrons and a hood of woven moss and spider silk"</p>
+
+        <p><strong>Drow (Dark Elf):</strong> "drow dark elf with ashen grey skin, vivid crimson eyes with slit pupils, stark white hair cropped short in a warrior's style, sharp angular cheekbones, elegant pointed ears angled outward, wearing form-fitting black chainmail with silver filigree spider motifs, a delicate crown of obsidian spikes, and twin hand crossbows at the hip"</p>
+
+        <p><strong>Eladrin:</strong> "eladrin elf whose appearance shifts with the season, currently autumn-touched with amber-gold skin, copper hair that moves like flame, eyes of deep russet, wearing robes of layered fall-colored silk in burgundy and gold, with tiny autumn leaves perpetually spiraling in the air around them"</p>
+
+        <h3>Dwarves</h3>
+
+        <p><strong>Hill Dwarf:</strong> "hill dwarf with weathered ruddy skin, a thick braided auburn beard woven with small iron rings, deep-set dark brown eyes, broad flat nose, muscular compact frame with thick forearms, wearing a leather miner's apron over a chainmail shirt, a warhammer with a worn wooden grip slung across the back, and a brass lantern hanging from a belt loop"</p>
+
+        <p><strong>Mountain Dwarf:</strong> "mountain dwarf with a magnificent full beard of dark iron-grey braided into three thick plaques with gold clasps, piercing blue eyes, a scarred forehead, wearing full plate armor engraved with geometric mountain patterns, a tower shield bearing a clan sigil of crossed hammers, and a battleaxe with a runic inscription glowing faintly blue"</p>
+
+        <p><strong>Duergar (Deep Dwarf):</strong> "duergar deep dwarf with pale grey ashen skin, completely eyeless smooth face with only faint ridges where eyes should be, a shaved head with intricate geometric tattoos in phosphorescent blue ink, wearing dark grey scale armor with no visible seams, carrying a pickaxe with a faintly glowing crystal tip"</p>
+
+        <h3>Halflings</h3>
+
+        <p><strong>Lightfoot Halfling:</strong> "lightfoot halfling with warm peach-toned skin, curly chestnut hair, large expressive hazel eyes, a cheerful round face with slight freckles, bare feet with toughened soles, wearing a comfortable quilted vest over a cream linen shirt, practical trousers tucked into soft leather boots, a small round shield and a short sword at the hip, and a pipe tucked behind one ear"</p>
+
+        <p><strong>Stout Halfling:</strong> "stout halfling with ruddy cheeks, thick dark hair, strong build for their height, wearing a heavy wool cloak clasped with a bronze brooch, a leather jerkin over chainmail, carrying a well-worn longbow and a quiver of ash arrows, with a thick belt holding a pouch of trail rations and a small hand axe"</p>
+
+        <h3>Dragonborn</h3>
+
+        <p><strong>Red Dragonborn:</strong> "red dragonborn with scales of deep vermillion fading to burnt orange at the edges, a powerful tail resting on the ground, amber slit-pupil eyes, horns curving backward from a broad skull, wearing heavy scale mail armor with blackened metal edges, a greatsword strapped across the back, and faint wisps of smoke curling from slightly parted jaws"</p>
+
+        <p><strong>Silver Dragonborn:</strong> "silver dragonborn with metallic blue-grey scales that catch light like polished steel, luminous pale blue eyes, elegant swept-back horns, wearing ornate plate armor engraved with flowing script, a shield bearing a crescent moon emblem, and a mace with a silver head that glows with faint cold energy"</p>
+
+        <h3>Tieflings</h3>
+
+        <p><strong>Infernal Heritage:</strong> "tiefling with deep crimson skin, backward-curving obsidian horns rising from a shaved head, a long thin tail with a spade tip, glowing amber eyes with vertical pupils, wearing dark leather armor with brass buckles, a pair of curved daggers at the belt, and a faint sulfurous haze around the hands"</p>
+
+        <p><strong>Virtue Name Tiefling:</strong> "tiefling with soft lavender skin, small elegant horns decorated with tiny gold bands, a heart-tipped tail curling around one leg, kind violet eyes, wearing a scholar's academic robe of deep purple with silver trim, carrying a leather satchel of books and a quill tucked behind one pointed ear"</p>
+
+        <h3>Other Races</h3>
+
+        <p><strong>Half-Orc:</strong> "half-orc with green-grey skin, prominent lower tusks protruding from the jaw, a shaved head with a topknot of coarse black hair, a battle-scarred face with a broken nose, muscular powerful build, wearing mismatched scavenged armor with a fur pauldron on one shoulder, a greataxe with a worn grip, and a tribal totem necklace of bone and iron"</p>
+
+        <p><strong>Genasi (Fire):</strong> "fire genasi with skin of dark charcoal that glows with molten orange cracks along the arms and neck, hair of living flame that shifts between red and gold, eyes like white-hot coals, wearing fire-hardened leather armor with ember patterns, and a faint heat shimmer distorting the air around the shoulders"</p>
+
+        <p><strong>Gnome (Rock):</strong> "rock gnome with a clever wrinkled face, a magnificent handlebar mustache waxed to sharp points, bright curious eyes behind round brass-rimmed spectacles, silver-white hair pulled back in a practical bun, wearing a heavy leather artisan's apron covered in tiny tools, a gear-shaped pendant, and oil-stained fingers"</p>
+
+        <p><strong>Tabaxi:</strong> "tabaxi catfolk with tawny spotted fur, a lean sinuous build, large round golden eyes with dilated pupils, a long striped tail curled with curiosity, rounded ears that swivel toward sounds, wearing a traveling cloak of patchwork colors, a collection of small trinkets and curiosities hanging from a belt, and a short curved blade at the hip"</p>
+
+        
+
+        <h3>Aasimar and Celestial Heritage</h3>
+
+        <p><strong>Protector Aasimar:</strong> "aasimar with warm bronze skin, faint golden luminescence along the cheekbones and temples, hair the color of pale sunlight pulled into a long braid, eyes entirely gold with no visible white, small feathered markings at the base of the neck, wearing layered cream and gold vestments with engraved celestial script, a faint halo of light hovering just behind the head"</p>
+
+        <p><strong>Scourge Aasimar:</strong> "aasimar whose skin glows with an intense white-gold inner light that makes features slightly hard to look at directly, hair lifted as if weightless, eyes blazing with flame, expression of severe judgment, wearing scorched ceremonial armor with light spilling from every seam"</p>
+
+        <p><strong>Fallen Aasimar:</strong> "aasimar with dull grey-tinged skin, shadowed hollows where light once gathered, dull leaden wings folded against the back, matted dark hair, eyes the color of tarnished silver, wearing torn and faded vestments of a former holy order"</p>
+
+        <h3>Firbolg and Giant-Blooded Frames</h3>
+
+        <p><strong>Firbolg:</strong> "firbolg standing eight feet tall with long shaggy hair the color of birch bark and moss, antlers of real wood growing from the temples, broad gentle hands with thick fingers, wearing a patched coat of undyed wool over soft leather, a staff of living ash carved with runic marks, a mushroom-and-herb satchel across the chest"</p>
+
+        <h3>Small Races Beyond Halfling</h3>
+
+        <p><strong>Forest Gnome:</strong> "forest gnome with a weathered mischievous face, a beard braided with tiny twigs and blue feathers, moss growing on the shoulders of a cloak woven from leaves, wearing earth-brown leathers with bone buttons, holding a small carved flute and a mushroom lantern"</p>
+
+        <p><strong>Deep Gnome (Svirfneblin):</strong> "deep gnome with ashen grey skin, large pale eyeless-looking eyes adapted to darkness, coarse white hair, fingers long and stained with stone dust, wearing tight layered grey leathers with many small pouches, a cruel thin knife held in a low grip, lit only by a captured glow-moth in a glass jar"</p>
+
+        <p><strong>Kobold:</strong> "kobold with rust-red scaled skin, a lean rat-like face with large amber eyes and a chipped horn crest, wearing oversized scavenged armor strapped together with cord and wire, carrying a spear twice their height and a cracked shield painted with a crude dragon sigil"</p>
+
+        <h3>Monstrous Humanoid Cultures</h3>
+
+        <p><strong>Orc:</strong> "orc with moss-green skin, heavy brow ridge, lower tusks longer than the upper teeth and bound with thin iron rings, a shaved head with a single black scalp queue, ritual scarification across one cheek, wearing patched plate over a wolf-pelt mantle, a notched greataxe and a necklace of finger bones"</p>
+
+        <p><strong>Goblin:</strong> "goblin with yellowish-brown skin, a pointed vulpine face, oversized ears, a wiry asymmetrical build, wearing a mismatched harness of stolen buckles with a too-large helmet dented on one side, holding a shortbow made from a bent branch and a sack of suspicious-looking tools"</p>
+
+        <p><strong>Lizardfolk:</strong> "lizardfolk with deep green scales fading to yellow at the throat, a long crocodilian snout with visible teeth, a frilled crest flattened back along the skull, slit-pupiled amber eyes, clawed hands gripping a bone-tipped spear, wearing a belt of woven reeds and a pouch of dried swamp herbs"</p>
+
+        <p><strong>Half-Elf:</strong> "half-elf with a face that reads as human at first glance and elven on closer look, slightly pointed ears with a broad human jaw, warm hazel eyes, hair worn in a practical warrior's braid, wearing well-fitted leathers with an elven-clasped cloak and a human-style sword belt"</p>
+
+        <h3>Humans and the Problem of Specificity</h3>
+
+        <p>Human is the hardest race to prompt well, because "human" carries no visual constraints at all. The model fills the gap with its default bias, which is why human portraits come out looking generically stock-photo. Replace the race with a culture and a trade: <code>human horse-archer of a steppe confederacy</code>, <code>human harbor-mistress from a salt-worn trading city</code>, or <code>human pilgrim with sun-blackened skin and a travel-worn hood</code>. Region, occupation, and one physical tell will do more work than any adjective.</p>
+
+        <h3>Anatomy Notes That Prevent Malformed Results</h3>
+
+        <p>Non-humanoid anatomy is where models fail most often. Rather than describing an effect ("scary dragon person"), name the parts and their count so the model has something to satisfy: <code>two wings with four joints each</code>, <code>a single broad tail base thick at the hip</code>, <code>four arms, two holding weapons and two holding tools</code>, <code>mandibles hinged at the sides of the jaw, not below it</code>. Then constrain the camera: a tight bust crop to the shoulders hides limb-counting errors entirely, which is why most successful creature-folk portraits are head-and-shoulders shots.</p>
+
+<h2>Class-Specific Equipment and Aesthetics</h2>
+
+        <p>After establishing race, the class defines the equipment, pose, and magical effects visible in the portrait.</p>
+
+        <h3>Martial Classes</h3>
+
+        <p><strong>Fighter:</strong> "wearing a well-maintained suit of half-plate armor with a practical scarred shield, a longsword and a shortbow across the back, standing in a confident ready stance with weight balanced evenly"</p>
+
+        <p><strong>Barbarian:</strong> "bare-chested with ritual scars across the torso, wearing only a fur loincloth and greaves, a massive greataxe resting on one shoulder, wild-eyed with rage, faint spectral bear totem shimmering behind"</p>
+
+        <p><strong>Paladin:</strong> "wearing full radiant plate armor engraved with holy symbols, a glowing shield bearing a solar emblem, a longsword wreathed in faint golden light, standing in a righteous pose with one hand raised in blessing"</p>
+
+        <p><strong>Ranger:</strong> "wearing weathered studded leather armor with a green hooded cloak, a longbow drawn slightly with an arrow nocked, a quiver of specialized arrows, a small animal companion perched on one shoulder, standing in a forest clearing"</p>
+
+        <p><strong>Rogue:</strong> "wearing dark fitted leather armor with multiple hidden compartments visible, twin daggers in a reverse grip, a hood pulled low casting the eyes in shadow, a set of lockpicks dangling from one finger, in a crouched ready position"</p>
+
+        <h3>Spellcasting Classes</h3>
+
+        <p><strong>Wizard:</strong> "wearing elaborate layered robes with arcane geometric patterns embroidered in silver thread, a pointed hat with a tiny pinned star chart, a spellbook floating open beside one hand, arcane runes orbiting the other hand, standing in a candlelit study filled with scrolls"</p>
+
+        <p><strong>Sorcerer:</strong> "wearing practical adventuring clothes that are slightly singed or frost-rimed depending on origin, hands crackling with raw uncontrolled magical energy, eyes glowing with the sorcerous source, standing in a pose of barely contained power"</p>
+
+        <p><strong>Warlock:</strong> "wearing dark robes with an otherworldly pattern that seems to shift when viewed directly, a pact token glowing at the chest, eyes with an unnatural depth, faint tentacle or shadow-like energy emanating from behind, a ritual dagger in one hand"</p>
+
+        <p><strong>Cleric:</strong> "wearing ceremonial vestments over chainmail, a holy symbol prominently displayed and glowing with divine light, a mace in one hand and a prayer book in the other, standing in a pose of serene authority with faint golden light radiating outward"</p>
+
+        <p><strong>Druid:</strong> "wearing armor crafted from living wood and woven leaves, an oak staff topped with a glowing green crystal, antlers integrated into a hood of moss and lichen, small animals (birds, squirrels) perched nearby, standing in a natural clearing with vines growing at the feet"</p>
+
+        <p><strong>Bard:</strong> "wearing an elegant outfit that mixes practical adventuring gear with theatrical flair — a colorful coat, boots with small bells, a lute or violin held ready, a confident performance pose with one hand gesturing mid-story, surrounded by faint musical note sparkles"</p>
+
+        <p><strong>Monk:</strong> "wearing simple wrapped cloth garments and prayer beads, bare feet in a grounded stance, hands in a martial position with faint ki energy visible as pale blue wisps, shaved head or topknot, an aura of perfect calm in the center of motion"</p>
+
+        <h2>Lighting and Environment</h2>
+
+        <p>The background and lighting set the emotional tone and make the portrait feel like a real character rather than a floating figure.</p>
+
+        <h3>Effective Lighting Keywords</h3>
+
+        <ul>
+          <li><strong>rim lighting</strong> — creates a glowing edge around the silhouette, excellent for dramatic characters</li>
+          <li><strong>Rembrandt lighting</strong> — classic portrait triangle of shadow under one eye, painterly feel</li>
+          <li><strong>chiaroscuro</strong> — strong contrast between light and dark, dramatic and moody</li>
+          <li><strong>golden hour</strong> — warm low-angle sunlight, ideal for heroes and outdoor scenes</li>
+          <li><strong>bioluminescent glow</strong> — blue-green magical light from below, perfect for Underdark or Feywild</li>
+          <li><strong>torchlight</strong> — warm flickering orange light with dancing shadows, dungeon atmosphere</li>
+          <li><strong>moonlight</strong> — cool blue-silver light from above, mysterious and ethereal</li>
+          <li><strong>divine radiance</strong> — golden-white light emanating from the character, for clerics and paladins</li>
+        </ul>
+
+        <h3>Environment Templates</h3>
+
+        <p><strong>Dungeon:</strong> "standing in a torchlit stone corridor, ancient brick walls with moss and dripping water, a faint mist on the floor, the warm orange glow of a single torch casting long shadows"</p>
+
+        <p><strong>Tavern:</strong> "seated at a scarred wooden table in a warm tavern, mugs of ale and a candle nearby, blurred patrons in the background, golden warm interior lighting with smoke haze"</p>
+
+        <p><strong>Wilderness:</strong> "standing on a windswept cliff overlooking a vast forest canopy, dramatic storm clouds parting to reveal golden light, wind catching the cloak and hair"</p>
+
+        <p><strong>Urban:</strong> "in a cobblestone market square at dawn, colorful awnings and stone buildings, a fountain nearby, soft morning light with long shadows, other figures blurred in the background"</p>
+
+        <p><strong>Magical:</strong> "in a floating arcane chamber with glowing geometric patterns in the air, books and orbs orbiting slowly, a crystalline floor reflecting purple and blue light from multiple sources"</p>
+
+        <h2>Style and Medium Keywords</h2>
+
+        <p>The final section of your prompt determines the artistic rendering style.</p>
+
+        <h3>For Table-Authentic Art</h3>
+
+        <ul>
+          <li><strong>"tabletop RPG character concept art, painted miniature aesthetic"</strong> — closest to the look of a modern rulebook page</li>
+          <li><strong>"digital fantasy painting, highly detailed character concept art"</strong> — clean professional look</li>
+          <li><strong>"oil painting style, classical fantasy portraiture"</strong> — traditional painterly feel</li>
+          <li><strong>"watercolor illustration, soft edges, storybook quality"</strong> — lighter, more whimsical</li>
+          <li><strong>"pencil sketch with ink linework, crosshatching"</strong> — classic bestiary engraving feel</li>
+          <li><strong>"cinematic concept art, matte painting background"</strong> — movie-quality rendering</li>
+        </ul>
+
+        <h3>Mood Keywords</h3>
+
+        <ul>
+          <li><strong>"heroic and noble"</strong> — upright posture, warm lighting, confident expression</li>
+          <li><strong>"brooding and mysterious"</strong> — shadowed face, cool tones, turned away slightly</li>
+          <li><strong>"ferocious and battle-ready"</strong> — dynamic pose, aggressive expression, warm tones</li>
+          <li><strong>"serene and wise"</strong> — calm expression, soft lighting, composed posture</li>
+          <li><strong>"mischievous and playful"</strong> — slight grin, raised eyebrow, dynamic angle</li>
+        </ul>
+
+        <h2>Essential Parameters</h2>
+
+        <p>Midjourney parameters go at the end of your prompt, after two hyphens.</p>
+
+        <h3>Aspect Ratio (--ar)</h3>
+
+        <p>V6 accepts almost any width:height pair, with a documented maximum of 14:1, and the default is 1:1. The practical choice is not about what the model allows but about where the image has to be displayed:</p>
+
+        <ul>
+          <li><code>--ar 1:1</code> — square, and the only ratio that survives a virtual tabletop token or a VTT character-sheet avatar without cropping</li>
+          <li><code>--ar 2:3</code> — printed character cards and sleeve-sized handouts</li>
+          <li><code>--ar 4:5</code> — the ratio most social profiles and sidebars display without cutting a head off</li>
+          <li><code>--ar 16:9</code> — full-body scenes, party group shots, campaign cover slides</li>
+        </ul>
+
+        <h3>Stylize (--s)</h3>
+
+        <ul>
+          <li><code>--s 0</code> — most literal reading of your words; useful for consistency tests, can look flat</li>
+          <li><code>--s 100</code> — the documented default, and the right place to start for character work</li>
+          <li><code>--s 250-350</code> — adds painterly interest while keeping described gear readable</li>
+          <li><code>--s 600-1000</code> — the model starts inventing details you did not ask for and dropping the ones you did</li>
+        </ul>
+
+        <p>The range is 0 to 1000. If a portrait has lost a distinguishing feature — the scar, the broken tusk, the specific helmet — lower <code>--s</code> before you rewrite the adjective, because high stylize is the usual suspect.</p>
+
+        <h3>Quality (--q)</h3>
+
+        <p>Quality controls how much GPU time the first render gets. It does not change the resolution of the output, and per the <a href="https://docs.midjourney.com/hc/en-us/articles/32176522101773-Quality" rel="noopener">Quality documentation</a> it affects only the initial set of four images — not variations, inpainting/outpainting, or upscales. On V6 the accepted values are 0.5, 1 and 2, with 1 as the default; the original 6.0 release accepted 0.25, 0.5 and 1 and rounded anything higher down to 1, which is why tutorials disagree about whether <code>--q 2</code> does anything at all. Check which one your account is on before spending time on it.</p>
+
+        <ul>
+          <li><code>--q 0.5</code> — half the GPU time, faster iteration, visibly less texture detail. Use it for composition hunting</li>
+          <li><code>--q 1</code> — default, and what almost every prompt in this guide should end with</li>
+          <li><code>--q 2</code> — more detail in textures such as mail, fur and engraving, at roughly double the cost, with a real chance of looser prompt adherence</li>
+        </ul>
+
+        <p>The order that saves time: explore at 0.5, settle the prompt, then run the final version at 1 and only reach for 2 on the one image you are going to print.</p>
+
+        <h3>Character Reference (--cref)</h3>
+
+        <p>The parameter that turns four random attractive people into one recurring character. Generate your best portrait, take its image URL (it has to be hosted somewhere public — a Discord or Imgur link both work), and append <code>--cref URL</code> to every later prompt for that character. V6 also accepts several references at once — <code>--cref URL1 URL2</code> — and blends the information between them, which is how party group shots stay recognizable.</p>
+
+        <p>Pair it with <code>--cw</code> (character weight, 0 to 100, default 100). At 100 the model carries across face, hair and clothing; at 0 it holds on to the face only, which is what you want when the character changes armor between levels. The common mistake is running <code>--cw 100</code> on a level-up portrait and then concluding the model ignores equipment descriptions — it is not ignoring them, it is obeying the old reference too faithfully.</p>
+
+        <p>Two limits worth knowing before you build a campaign on it: <code>--cref</code> works best on characters that came from Midjourney images in the first place, and it is not a likeness lock — real people, photographs, and existing art by another artist are distorted the way ordinary image prompts distort them. Fine identifiers such as a specific scar pattern or a sigil on a tabard drift between generations.</p>
+
+        <h3>Style Reference (--sref)</h3>
+
+        <p>Use <code>--sref URL</code> to transfer the look of an image — palette, lighting temperature, brushwork — without transferring its content. Several URLs separated by spaces blend styles, and each can carry a weight with <code>::</code>. Point it at work you have the right to use: a piece you commissioned for this character, a public-domain engraving, or the strongest portrait from your own earlier generations. Once the party has a look you like, that one image becomes the style reference for everything that follows.</p>
+
+        <p>V6 has four different style-reference algorithms, selected with <code>--sv</code> and documented on the <a href="https://docs.midjourney.com/hc/en-us/articles/32180011136653-Style-Reference" rel="noopener">Style Reference</a> page, with <code>--sv 4</code> as the default. This matters in one specific situation: if a saved prompt produces a different look than it did months ago, or if you copied style codes from another player's shared prompt, set <code>--sv</code> explicitly rather than assuming your account default matches theirs.</p>
+
+        <h3>Parameters Quick Reference</h3>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Parameter</th>
+                <th>Range on V6</th>
+                <th>What It Controls</th>
+                <th>Portrait Setting</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><code>--v</code></td><td>6 or 6.1</td><td>Which model actually runs the prompt</td><td>Set explicitly; the account default is no longer v6</td></tr>
+              <tr><td><code>--ar</code></td><td>any, up to 14:1; default 1:1</td><td>Output canvas shape</td><td>1:1 for VTT tokens, 2:3 for cards, 16:9 for group shots</td></tr>
+              <tr><td><code>--s</code> / <code>--stylize</code></td><td>0-1000, default 100</td><td>How much artistic license the model takes</td><td>100-350 keeps gear legible; 600+ starts inventing details you did not ask for</td></tr>
+              <tr><td><code>--q</code></td><td>0.5, 1, 2 (default 1)</td><td>GPU time spent on the first render only</td><td>0.5 while exploring, 1 for the definitive portrait</td></tr>
+              <tr><td><code>--cref</code></td><td>one or more image URLs</td><td>Face, hair and clothing lock to a source image</td><td>Always set for recurring characters</td></tr>
+              <tr><td><code>--cw</code></td><td>0-100, default 100</td><td>100 carries face + hair + clothes; 0 carries the face only</td><td>100 for the same outfit, 0-50 for level-ups and costume changes</td></tr>
+              <tr><td><code>--sref</code></td><td>one or more image URLs</td><td>Transfers palette and brushwork, not content</td><td>Set once per party so all portraits share a look</td></tr>
+              <tr><td><code>--sv</code></td><td>1-6; V6 default 4</td><td>Which style-reference algorithm interprets your <code>--sref</code></td><td>Pin it when a shared prompt stops matching</td></tr>
+              <tr><td><code>--seed</code></td><td>0 to 4294967295</td><td>Starting noise pattern for the grid</td><td>Fix it while iterating one composition</td></tr>
+              <tr><td><code>--no</code></td><td>term list</td><td>Weak negative steering, read word by word</td><td>See the negative prompt library below</td></tr>
+              <tr><td><code>--chaos</code></td><td>0-100, default 0</td><td>Variation between the four grid results</td><td>0 for consistency tests, 25-40 when exploring</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Two of these are worth more than the rest. <code>--cref</code> is what turns four random pretty people into one recognizable character across a campaign, and <code>--stylize</code> is what keeps a chainmail hauberk readable as chainmail instead of decorative filigree. Set both before you spend time on adjective hunting.</p>
+
+<h2>Complete Prompt Examples</h2>
+
+        <h3>Example 1: Level 1 Character Introduction</h3>
+
+        <p><code>A young half-elf female ranger with warm tan skin, green eyes, auburn hair in a practical braid with small leather ties, slightly pointed ears, wearing a well-worn green hooded cloak over studded leather armor, a longbow and quiver on her back, a short sword at her hip, standing nervously at the edge of a dark forest at golden hour, Rembrandt lighting, digital fantasy painting style, highly detailed character concept art --ar 2:3 --s 250 --q 1 --v 6</code></p>
+
+        <h3>Example 2: Level 20 Epic Character</h3>
+
+        <p><code>An ancient high elf male wizard with flowing silver hair to his waist, deep violet eyes with centuries of knowledge, angular aristocratic features, long pointed ears with tiny silver earrings, wearing elaborate midnight-blue robes with animated golden constellations moving across the fabric, a staff of twisted pale wood topped with a captured star, floating spellbooks orbiting him, standing in a planar observatory with multiple moons visible through crystalline windows, bioluminescent glow, cinematic concept art, matte painting background --ar 2:3 --s 500 --q 1 --v 6</code></p>
+
+        <h3>Example 3: Villain Portrait</h3>
+
+        <p><code>A drow female archvillain with ashen grey skin, immaculate white hair in an elaborate updo with obsidian pins, vivid red eyes with cold calculation, sharp elegant features, wearing a gown of living shadows that moves like smoke over black scale armor, a whip of crystallized darkness coiled at her waist, a crown of spider-shaped obsidian, standing in a vast throne room of black marble with purple magical braziers, chiaroscuro lighting, oil painting style, classical fantasy portraiture, brooding and mysterious --ar 2:3 --s 400 --q 1 --v 6</code></p>
+
+        <h3>Example 4: Party Group Shot</h3>
+
+        <p><code>A group of five D&amp;D adventurers standing together in a torchlit dungeon corridor: a dwarf cleric in the center with a glowing holy symbol, a human rogue slightly behind with daggers drawn, a tiefling sorcerer with crackling hands, a halfling ranger with a bow ready, and a dragonborn fighter with shield raised, warm torchlight with dancing shadows, heroic and battle-ready mood, digital fantasy painting, highly detailed character concept art --ar 16:9 --s 250 --q 1 --v 6</code></p>
+
+        <p>Notice what each one does and does not name. The style clause is one medium keyword plus one lighting keyword — never both a painterly and a photographic anchor — and no prompt here asks for a publisher's house look. Descriptors such as "official art style" steer toward a specific company's copyrighted illustration practice, which is fine inside a private campaign and a liability the moment a portrait appears in something you sell or stream. Describe technique instead of attribution: <code>visible brushwork, muted earth palette, single warm key light</code> gets you closer to the look you actually want than a brand name does.</p>
+
+        <h2>Common Mistakes and Fixes</h2>
+
+        <h3>Mistake 1: Generic Results</h3>
+        <p><strong>Problem:</strong> "elf warrior" produces a generic human with pointy ears.</p>
+        <p><strong>Fix:</strong> Add specific physical descriptors. Instead of "elf warrior," write "wood elf with bronze skin, amber-flecked green eyes, auburn braided hair with woven leaves, lean athletic build, wearing bark-textured leather armor."</p>
+
+        <h3>Mistake 2: Inconsistent Characters</h3>
+        <p><strong>Problem:</strong> Each generation produces a completely different-looking character.</p>
+        <p><strong>Fix:</strong> Use <code>--cref</code> with your best output URL. Also, save your exact prompt and only change the environment or pose portion.</p>
+
+        <h3>Mistake 3: Equipment Ignored</h3>
+        <p><strong>Problem:</strong> The character is missing weapons, armor details, or magical items.</p>
+        <p><strong>Fix:</strong> Describe equipment with spatial language: "a longsword strapped across the back," "twin daggers in a belt at the hip," "a glowing ring on the left hand." v6 understands spatial relationships.</p>
+
+        <h3>Mistake 4: Too Many Concepts</h3>
+        <p><strong>Problem:</strong> The image becomes chaotic when you describe everything about the character.</p>
+        <p><strong>Fix:</strong> Generate in layers. First: face and head. Second: full body with armor. Third: add environment. Use variations and inpainting to refine each layer.</p>
+
+        <h3>Mistake 5: Style Conflicts</h3>
+        <p><strong>Problem:</strong> Mixing "photorealistic" with "watercolor" produces muddy results.</p>
+        <p><strong>Fix:</strong> Choose one style anchor. "Digital painting" and "concept art" work together. "Photorealistic" and "oil painting" conflict. Pick one rendering medium and describe lighting in terms that suit it.</p>
+
+        <h2>Workflow for a Complete Campaign</h2>
+
+        <h3>Step 1: Generate Your Character's "Definitive Portrait"</h3>
+        <p>Write your full prompt with race, class, and personality. Generate four variations at <code>--q 0.5</code> so the exploration is cheap. Pick the one that best matches your mental image, re-run it once at <code>--q 1</code> if you want it cleaner, then save the image, its URL, the exact prompt and the seed — that bundle is the reference everything else in the campaign hangs from.</p>
+
+        <h3>Step 2: Generate Level-Up Variants</h3>
+        <p>Keep the same <code>--cref</code> but drop <code>--cw</code> to around 30, otherwise the reference drags the old outfit along with the face and the new armor never lands. Then modify the equipment description. At level 5, add "now wearing finer armor." At level 11, add "a magical item glows at the chest." At level 17, add "an aura of legendary power surrounds the figure."</p>
+
+        <h3>Step 3: Generate Scene Portraits</h3>
+        <p>Use <code>--cref</code> at full weight with different environments — the outfit should stay put here, so this is the case for leaving <code>--cw</code> at 100. "standing in a burning village" for the backstory scene. "seated at a tavern table" for a roleplay moment. "facing a dragon" for the climactic battle.</p>
+
+        <h3>Step 4: Generate Party Consistency</h3>
+        <p>Generate each party member individually with their own <code>--cref</code>. Then create group shots using all character URLs: <code>--cref url1 url2 url3 url4 url5 --ar 16:9</code>.</p>
+
+        <h2>Advanced Techniques</h2>
+
+        <h3>Multi-Image Blending</h3>
+        <p>Use two image prompts separated by a space to blend elements. Combine a character portrait URL with an environment URL to place your character in a specific scene while maintaining facial consistency.</p>
+
+        <h3>Inpainting for Detail</h3>
+        <p>When a portrait is 90% correct but one element is wrong (a missing scar, wrong eye color), use the editor tool to select that region and type a focused prompt: "left eye with a vertical scar across it" or "eyes of deep amber color."</p>
+
+        <h3>Negative Prompting</h3>
+        <p>Use <code>--no</code> to exclude unwanted elements — <code>--no smile, watch, denim</code> for a villain, <code>--no plate, mail</code> for a monk — but write the terms as single words. Midjourney's <a href="https://docs.midjourney.com/hc/en-us/articles/32173351982093-No" rel="noopener">No parameter documentation</a> is explicit that every word after <code>--no</code> is read independently, so <code>--no modern clothing</code> is parsed as "no modern" plus "no clothing", and <code>--no heavy armor</code> as "no heavy" plus "no armor". That splitting not only weakens the exclusion; the documentation notes that certain word combinations can trip the moderation system and flag a prompt you did not mean to be provocative. Describe the absence positively as well: if you want a monk without mail, saying <code>simple wrapped cloth garments, no metal fastenings</code> in the body of the prompt does more work than a negative list.</p>
+
+        <h3>Web Parameter for Consistency</h3>
+        <p>When working on Midjourney Web rather than Discord, you can save prompts as templates and reuse them with minor modifications. This ensures your character's core description never drifts between sessions.</p>
+
+        
+        <h2>Preparing Portraits for Your Table</h2>
+
+        <p>A generated image is not a finished asset. Before it is useful at the table it has to survive three things: a square crop, a small display size, and being looked at for four hours straight. Plan the crop before you prompt, not after.</p>
+
+        <h3>Choosing an Aspect Ratio That Survives Cropping</h3>
+
+        <p>Virtual tabletops display tokens in a square, and most character-sheet layouts are also square or 4:5. If you generate 2:3 and force it to 1:1, the model's careful placement of the face gets sliced at the edges. Two reliable fixes:</p>
+
+        <ul>
+          <li><strong>Prompt for headroom.</strong> Add <code>headroom above the crown of the helmet</code> and <code>framed from the chest up, small figure in frame</code>. A generated portrait with generous empty space above and beside the head crops cleanly to any ratio.</li>
+          <li><strong>Generate at 1:1 from the start for tokens</strong>, and separately generate the 2:3 version for print handouts. The two canvases compose differently; trying to serve both from one image is the most common reason a token looks like a badly cropped screenshot.</li>
+        </ul>
+
+        <h3>Display Size and Readability Checks</h3>
+
+        <p>Zoom the image down to how it will actually be seen before you approve it:</p>
+
+        <ul>
+          <li><strong>64x64 pixels</strong> — the typical token footprint on a battle map at normal zoom. If the character is not identifiable as the same figure at this size, the portrait has failed its main job. High-contrast silhouettes, one bold color, and one distinctive head shape survive; fine filigree does not.</li>
+          <li><strong>128x128</strong> — the player-facing avatar in most VTT character sheets.</li>
+          <li><strong>512x512 and larger</strong> — handouts, session-zero slides, and the file you upload to the VTT. Upload the largest version you have; the VTT scales down, and scaling up a small JPEG is how portraits turn to mush on the big screen.</li>
+        </ul>
+
+        <h3>Export Settings by Destination</h3>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Destination</th>
+                <th>Ratio</th>
+                <th>Working Size</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Foundry VTT actor token</td><td>1:1</td><td>512x512</td><td>Keep the face centered; ring borders crop the outer 10 percent</td></tr>
+              <tr><td>Roll20 character avatar</td><td>1:1</td><td>512x512</td><td>Displayed small in the initiative tray, so contrast matters more than detail</td></tr>
+              <tr><td>Printed character card</td><td>2:3 or 3:4</td><td>Upscaled, 300 DPI</td><td>Print shops and card makers have different bleed rules; check before cropping</td></tr>
+              <tr><td>Discord server or profile avatar</td><td>1:1</td><td>256-512</td><td>Circular mask hides corners, so keep horns and pauldrons inside the center circle</td></tr>
+              <tr><td>Session-zero slide / campaign cover</td><td>16:9</td><td>Native grid size upscaled</td><td>Leave the upper third empty for title text, or inpaint it later</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Naming and Version Control for a Party</h3>
+
+        <p>A campaign accumulates portraits fast, and the failure mode is not bad images but losing track of which image is the canon one. One convention that scales:</p>
+
+        <ul>
+          <li>Keep one <strong>definitive portrait</strong> per character in a folder named for the character, not the player: <code>/brunhilda/definitive.png</code>.</li>
+          <li>Store the <strong>exact prompt and seed</strong> beside it in a text file. Six months later you will not be able to reproduce a favorite portrait from memory, and re-rolling it is not the same as having the reference.</li>
+          <li>Name variants by role: <code>token-square.png</code>, <code>card-2x3.png</code>, <code>level-5-armor.png</code>, <code>injured.png</code>.</li>
+          <li>Record the character-reference URL used with <code>--cref</code>. When the reference image is deleted or replaced, every later generation drifts, and the drift is invisible until the party looks wrong in a group shot.</li>
+        </ul>
+
+        <h3>Agreement With Your Table Before You Start</h3>
+
+        <p>Two quick conversations prevent most of the friction around AI portraits at a real table. First, check whether your group wants AI-generated art at all; some tables have players who draw, commission, or simply dislike generated imagery, and a portrait the table rejects is wasted work regardless of quality. Second, agree in advance that portraits are <strong>illustrations of a character, not the character's canon</strong>. When a portrait shows a scar nobody described and a sword nobody chose, decide whether that is now canon or just a picture. Writing the answer down once means you never have to renegotiate it at session eleven.</p>
+
+        
+        <h2>Negative Prompt Library</h2>
+
+        <p>The <code>--no</code> parameter is a weak signal, not a hard exclusion. It will nudge results away from a term but cannot guarantee absence, and listing too many terms dilutes the whole prompt. Use two or four of the most specific items below rather than a wall of negatives — and keep every term to a single word, because Midjourney reads each word after <code>--no</code> on its own. The fourth column below is what that looks like in practice: a two-word phrase is two unrelated exclusions.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Problem</th>
+                <th>Single-word exclusions</th>
+                <th>Why the obvious phrasing backfires</th>
+                <th>What Usually Fixes It</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Modern or anachronistic clothing</td><td><code>--no zipper, watch, denim, sneakers</code></td><td><code>--no modern clothing</code> excludes "modern" and "clothing" — the second word asks for a naked figure</td><td>Specify fastenings positively: <code>leather lace closure, brooch clasp, bone buttons</code></td></tr>
+              <tr><td>Plastic, airbrushed skin</td><td><code>--no plastic, glamour, mannequin</code></td><td><code>--no smooth plastic skin</code> puts <em>skin</em> in the exclusion list, which is not what you meant</td><td>Add skin texture: <code>visible pores, weathered skin, stubble, scars</code></td></tr>
+              <tr><td>Text, sigils and watermarks in frame</td><td><code>--no watermark, signature, lettering</code></td><td><code>--no text, letters</code> works, but v6 can spell, so legible in-world writing is often worth keeping</td><td>Move any lettering out of the shot and describe it as an unreadable engraved pattern</td></tr>
+              <tr><td>Crowded, meaningless background</td><td><code>--no clutter, crowd, furniture</code></td><td><code>--no busy background</code> excludes "background", which invites a blank studio void</td><td>Name one background and one light source instead of asking for nothing</td></tr>
+              <tr><td>Duplicated faces in party shots</td><td><code>--no twins, clone, mirror</code></td><td><code>--no identical faces</code> excludes "faces"</td><td>Give each figure a distinct age, skin tone and headwear in the same prompt</td></tr>
+              <tr><td>Over-rendered decorative armor</td><td><code>--no filigree, jeweled, baroque</code></td><td><code>--no ornate baroque</code> is two style exclusions that the model interprets loosely</td><td>Describe construction: <code>riveted links, functional straps, field repairs</code></td></tr>
+              <tr><td>Extra fingers and mangled hands</td><td>nothing useful</td><td><code>--no extra fingers</code> reads as "no fingers" — the worst possible instruction for a portrait</td><td>Crop below the hands, or hide them: <code>arms folded in a cloak</code></td></tr>
+              <tr><td>Washed-out flat lighting</td><td><code>--no overexposed, silhouette</code></td><td><code>--no flat lighting</code> excludes "lighting", and the model responds by dropping your key light</td><td>Force one key light and one rim light from the lighting section</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Where <code>--no</code> fails, subtraction in the prompt itself usually works better. If a portrait keeps producing a torch-lit cave when you wanted a temple, the problem is not the absence of the word <em>cave</em> in your negative list — it is that <em>clerical vestments</em> and <em>ancient stone</em> already imply a dungeon. Break the association by naming the architecture: <code>open-air courtyard, marble colonnade, midday sky visible above</code>.</p>
+
+        <h2>Building a Character Visual Identity</h2>
+
+        <p>The best portraits tell a story in a single image. Before writing your prompt, answer these questions:</p>
+
+        <ul>
+          <li><strong>What is the one detail that defines this character?</strong> A scar? A glowing eye? A specific piece of jewelry? Lead with it.</li>
+          <li><strong>What emotion do you want the viewer to feel?</strong> Fear? Admiration? Curiosity? This determines lighting and expression.</li>
+          <li><strong>What does this character's gear say about their journey?</strong> Pristine armor means a rookie. Scratched, dented, repaired armor means survival. A missing button and a wine stain mean personality.</li>
+          <li><strong>What is the character doing in this exact moment?</strong> Not "standing" but "checking a blade's edge" or "squinting at a distant tower" or "mid-laugh with head thrown back."</li>
+        </ul>
+
+        <p>When you combine these answers with the structural formula above, your prompts produce portraits that feel like they belong to a specific person rather than a generic fantasy archetype.</p>
+
+        <h2 id="mj-sources">Sources and How This Guide Was Checked</h2>
+
+        <p>Every version date, parameter value and licensing statement above came from Midjourney's official help center, which was read on 11 November 2026. Those pages change often — the Quality article now describes values that did not exist when v6 shipped — so re-check the page relevant to your problem before trusting a tutorial, including this one.</p>
+
+        <ul>
+          <li><a href="https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version" rel="noopener">Version</a> — release and default periods for V6, V6.1, V7, V8.1 and V8.2, plus the cross-version feature compatibility table.</li>
+          <li><a href="https://docs.midjourney.com/hc/en-us/articles/32023408776205-Prompt-Basics" rel="noopener">Prompt Basics</a> — the recommendation to describe the image in a short, specific phrase rather than a long list of instructions.</li>
+          <li><a href="https://docs.midjourney.com/hc/en-us/articles/32176522101773-Quality" rel="noopener">Quality</a> — accepted <code>--q</code> values, and that quality applies to the initial grid only.</li>
+          <li><a href="https://docs.midjourney.com/hc/en-us/articles/32173351982093-No" rel="noopener">No</a> — <code>--no</code> is parsed word by word, which is why multi-word negative phrases backfire.</li>
+          <li><a href="https://docs.midjourney.com/hc/en-us/articles/32180011136653-Style-Reference" rel="noopener">Style Reference</a> — <code>--sref</code> URL syntax, weighting, and the four <code>--sv</code> style-reference algorithms on V6.</li>
+          <li><a href="https://docs.midjourney.com/hc/en-us/articles/31894244298125-Aspect-Ratio" rel="noopener">Aspect Ratio</a> — ratio syntax and why aspect ratio is not the same thing as image dimensions.</li>
+          <li><a href="https://docs.midjourney.com/hc/en-us/articles/33329788681101-Legacy-Features" rel="noopener">Legacy Features</a> — where <code>--cref</code> and <code>--cw</code> now sit, plus documented default parameter values.</li>
+          <li><a href="https://docs.midjourney.com/hc/en-us/articles/27870375276557-Using-Images-Videos-Commercially" rel="noopener">Using Images &amp; Videos Commercially</a> — ownership of what you generate, and the revenue threshold that changes which subscription you need.</li>
+        </ul>
+
+        <p>The race, subrace, class and equipment descriptions are this site's own editorial work, written from the visual conventions of published <em>Dungeons &amp; Dragons</em> material rather than copied from an artist or a module. D&amp;D and Dungeons &amp; Dragons are trademarks of Wizards of the Coast, LLC; this guide is independent and unaffiliated.</p>
+      </article>
+
+      <section class="mt-2">
+        
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <h3>Is Midjourney v6 still worth using now that V7 and V8 are the default?</h3>
+          <p>Yes for a particular look, with one hard limitation. V6 stopped being the default in July 2024 and V6.1 in June 2025, so pin <code>--v 6</code> or <code>--v 6.1</code> on every prompt — otherwise you are not generating with the model this guide describes. The limitation is <code>--cref</code>: character reference is now documented as a legacy parameter, replaced by Omni Reference in V7 and by the Edit Model in V8.2. If recurring-character consistency matters more to your campaign than v6's softer default aesthetic, run the same prompts on a current version with the reference parameter it supports, and expect the prompt to translate only partly.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do I need a paid Midjourney subscription to make character portraits?</h3>
+          <p>For anything beyond a few experiments, yes. Generation is metered as GPU time against your subscription tier, and a five-person party with iterative portraits consumes it faster than people expect, so budget one paid month before a campaign starts rather than discovering the limit at session three. Two tier details matter specifically at the table: private generation is a paid-plan feature, and it is the difference between your campaign spoilers appearing in the public gallery or not; and your plan also governs what you may do commercially with the images. Tiers get renamed often, so read Midjourney's own subscription comparison rather than a third-party tutorial.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I use generated portraits in a streamed or published actual play?</h3>
+          <p>You own the images Midjourney generates for you, and you keep that ownership if you cancel — that is Midjourney's stated position in its commercial-use documentation, with two exceptions worth knowing before a stream or a published adventure: if you upscale an image another user created, that image belongs to them, and a business grossing more than one million US dollars a year needs a Pro or Mega plan to use images commercially for the company. Whether AI output is copyrightable at all is a separate question that Midjourney explicitly declines to advise on, and the answer differs by country. Then there is the table itself: some audiences react badly to visible generated art in an actual-play show, and some marketplaces have their own disclosure rules, so check the platform you publish on as well as the image service.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Why does my character look different in every generation?</h3>
+          <p>Because a text prompt describes a category, not an individual. "Drow female sorceress" is satisfied by a thousand different faces, and the model picks a new one each time. Three fixes, in order of effectiveness: generate one definitive portrait and reference it with <code>--cref</code> for everything after; pin the seed while you iterate a single composition; and name unambiguous physical constants in every prompt, such as a scar, an eye color, a hair color and one piece of headwear that never changes.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How many prompt rewrites should a good portrait take?</h3>
+          <p>Plan on four or five grid generations for the first portrait of a new character, and one or two for later scenes that reuse the reference image. If you are past about fifteen attempts on a single composition, the problem is usually a conflict inside the prompt rather than luck — a style keyword fighting your lighting choice, or more concepts in one prompt than the canvas can hold.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I generate a portrait that matches art my group already loves?</h3>
+          <p>You can steer toward a general look with medium and palette language, and a style reference transfers color and brushwork rather than content. Copying a specific living artist's illustration, or art from a published book your group plays from, is a different thing from matching a style, and it is the kind of request that gets a table into arguments as well as trouble. Build the look from techniques instead: oil-on-canvas, muted earth palette, heavy chiaroscuro, visible brushwork.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What resolution should I generate at, and does upscaling help?</h3>
+          <p>Generate at the model's native grid size, then upscale only for a specific output that needs it, such as a printed handout at 300 DPI. Upscaling adds pixels; it does not add decision-making, so it enlarges the mistakes along with the good parts. The better order of operations is to fix a bad composition by re-prompting, and only then upscale the version you actually intend to print.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Should my whole party share one art style, and how?</h3>
+          <p>Yes, and it is the difference between five pretty images and one campaign with a visual identity. Point every party portrait at the same style reference so palette, lighting temperature and brushwork match, keep the medium keywords identical in every prompt, and reuse the same environment vocabulary. Vary the subject descriptors freely; keep the style clause word-for-word identical across all of them.</p>
+        </div>
+
+        <h2>Related Guides</h2>
+        <div class="internal-links">
+          <a href="/guides/how-to-name-a-dd-character/">How to Name a D&amp;D Character</a>
+          <a href="/guides/how-to-choose-a-sound-palette/">How to Choose a Sound Palette</a>
+          <a href="/guides/how-to-pronounce-fantasy-names/">How to Pronounce Fantasy Names</a>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Try Our Character Tools</h2>
+        <div class="internal-links">
+          <a href="/elf-name-generator/">Elf Name Generator</a>
+          <a href="/dwarf-name-generator/">Dwarf Name Generator</a>
+          <a href="/dragonborn-name-generator/">Dragonborn Name Generator</a>
+          <a href="/tiefling-name-generator/">Tiefling Name Generator</a>
+          <a href="/backstory-generator/">Backstory Generator</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Race Generators</h4>
+          <ul>
+            <li><a href="/elf-name-generator/">Elf Name Generator</a></li>
+            <li><a href="/dwarf-name-generator/">Dwarf Name Generator</a></li>
+            <li><a href="/dragon-name-generator/">Dragon Name Generator</a></li>
+            <li><a href="/orc-name-generator/">Orc Name Generator</a></li>
+            <li><a href="/tiefling-name-generator/">Tiefling Name Generator</a></li>
+            <li><a href="/drow-name-generator/">Drow Name Generator</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Elf Subtypes</h4>
+          <ul>
+            <li><a href="/wood-elf/">Wood Elf Names</a></li>
+            <li><a href="/high-elf/">High Elf Names</a></li>
+            <li><a href="/dark-elf/">Dark Elf Names</a></li>
+            <li><a href="/female-elf/">Female Elf Names</a></li>
+            <li><a href="/male-elf/">Male Elf Names</a></li>
+            <li><a href="/elf-last-name/">Elf Last Names</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="/guides/how-to-choose-a-sound-palette/">Sound Palette Guide</a></li>
+            <li><a href="/guides/how-to-name-a-dd-character/">D&amp;D Naming Guide</a></li>
+            <li><a href="/guides/how-to-pronounce-fantasy-names/">Pronunciation Guide</a></li>
+            <li><a href="/guides/how-to-generate-dd-character-portraits-midjourney/">Midjourney Portrait Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Tools</h4>
+          <ul>
+            <li><a href="/backstory-generator/">Backstory Generator</a></li>
+            <li><a href="/races/">All Race Generators</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fantasy Name Generator. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
