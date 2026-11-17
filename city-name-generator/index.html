@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TQH84Q5Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>City Name Generator - Fantasy Town, Settlement &amp; Metropolis Names</title>
+  <meta name="description" content="Generate city names with the founding trade behind them, the short form locals actually use, ward names and a landmark. Built on real settlement toponymy: fords, burhs, camps and ports.">
+  <link rel="canonical" href="https://fantasyname.net/city-name-generator/">
+  <meta property="og:title" content="City Name Generator - Fantasy Town, Settlement &amp; Metropolis Names">
+  <meta property="og:description" content="Generate city names with the founding trade behind them, the short form locals use, ward names and a landmark.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fantasyname.net/city-name-generator/">
+  <meta property="og:image" content="https://fantasyname.net/assets/city-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="City Name Generator - Fantasy Town, Settlement &amp; Metropolis Names">
+  <meta name="twitter:description" content="Generate city names with the founding trade behind them, the short form locals use, ward names and a landmark.">
+  <meta name="twitter:image" content="https://fantasyname.net/assets/city-hero.jpg">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "City Name Generator",
+    "description": "Generate fantasy city, town and port names, each paired with the trade that founded it, the shortened name locals use, ward names and a landmark. Includes toponymy tables for settlement suffixes and naming layers.",
+    "url": "https://fantasyname.net/city-name-generator/",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I name a fantasy city?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start with the fact that made people stand there: a crossing, a camp, a mill, a wall, a market day, a well or a seam of ore. Attach the suffix that records that fact, then decide who arrived second and what they renamed. A name built this way carries an economy, a defence and a politics, so you can describe the city by reading its own name back to the players."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What do endings like -bury and -caster mean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A fortified hill place and a military camp respectively, in the naming language that survived in Europe. In practice the difference is visible on the ground: a hill fort grows upward from a defended core with irregular alleys, while a camp city has a grid, straight axes and a wall rectangle that later builders pretended to respect. Other common endings record a farm, a ford, a bridge, a river mouth, a trading beach or an outlying dependent hamlet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should my city have both an official name and a spoken name?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, unless the city is very new or very controlled. Real cities accumulate a formal name from whoever last paid for a document and a clipped spoken name from whoever last worked the docks. Writing both costs you one line of text and instantly tells players who is in the room when a particular form is used."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I name wards, gates and streets?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use different systems for each, because they were named by different people. Wards take the trade that worked there. Gates take the destination the road leads to, not the district behind them. Streets take the trade or the building that dominated them, and get renamed when that trade is expelled. Keep one sound palette per district so an old quarter sounds older than a planned one."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use these city names in my own project?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every name is an original combination of invented elements and common settlement suffixes, and nothing here is a real place. Use them in campaigns, novels, games, maps or streams without credit or payment."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fantasyname.net/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tools",
+        "item": "https://fantasyname.net/#tools"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "City Name Generator",
+        "item": "https://fantasyname.net/city-name-generator/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">
+        <span class="logo-icon">&#9876;</span>
+        Fantasy Name Generator
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/races/">Races</a></li>
+          <li><a href="/backstory-generator/">Backstory Generator</a></li>
+          <li><a href="/guides/">Guides</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="race-hero">
+          <img src="/assets/city-hero.jpg" alt="Walled city at a river crossing with bridges, quays and a market square">
+          <div class="race-hero-overlay">
+            <div class="race-hero-text">
+              <h1>City Name Generator</h1>
+              <p>A settlement name plus the trade that founded it, the short form locals use, wards and a landmark</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>&#8250;</span>
+        <a href="/#tools">Tools</a>
+        <span>&#8250;</span>
+        City Name Generator
+      </div>
+
+      <h2>Names Built From Crossings, Camps and Quays</h2>
+
+      <div class="generator-box">
+        <div class="tab-switcher">
+          <button class="tab-btn active" onclick="switchTab('quick-names', this)">City Names</button>
+          <button class="tab-btn" onclick="switchTab('city-sheet', this)">Full City Sheet</button>
+        </div>
+
+        <div id="quick-names" class="tab-content active">
+          <div class="generator-controls">
+            <div class="form-group">
+              <label for="ct-site">Founding site</label>
+              <select id="ct-site">
+                <option value="any">Any</option>
+                <option value="crossing">River crossing or ford</option>
+                <option value="port">Port, quay or estuary</option>
+                <option value="fort">Fort, watch or wall</option>
+                <option value="market">Market, fair or mill</option>
+                <option value="religious">Shrine, tomb or holy well</option>
+                <option value="extract">Mine, quarry or salt works</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ct-age">Naming layer</label>
+              <select id="ct-age">
+                <option value="any">Mixed</option>
+                <option value="old">Oldest: farm, ford, fort</option>
+                <option value="empire">Imperial: camp, road, garrison</option>
+                <option value="planned">Planned: founder, ideal, number</option>
+                <option value="trade">Late trade: warehouse, exchange, strand</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ct-scale">Scale</label>
+              <select id="ct-scale">
+                <option value="any">Any</option>
+                <option value="hamlet">Hamlet</option>
+                <option value="town">Town</option>
+                <option value="city">City</option>
+                <option value="metropolis">Metropolis</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ct-count">How many?</label>
+              <input type="number" id="ct-count" min="1" max="20" value="5">
+            </div>
+          </div>
+          <button class="btn btn-primary generate-btn" onclick="generateCities()">Generate City Names</button>
+          <div class="results" id="ct-results"></div>
+        </div>
+
+        <div id="city-sheet" class="tab-content">
+          <p>A city sheet: who founded it and why, what it is called on a map versus in speech, its wards and gates, market day, and the one thing it cannot feed itself.</p>
+          <button class="btn btn-primary generate-btn" onclick="generateCitySheet()">Roll a City Sheet</button>
+          <div id="sheet-out"></div>
+        </div>
+      </div>
+
+      <section class="mt-2">
+        <h2>A Settlement Is Named for What It Did Before It Was Famous</h2>
+        <p>Old city names are almost never celebrations. They are invoices. A name records the reason a bunch of people stood in one muddy place: a crossing, a camp, a mill, a wall, a market day, a holy well, a seam in the rock. Once you know which fact a name is holding onto, you can generate settlement names that carry a plausible economic history, and you can read your own map for free: every functional suffix is a claim about where the water, the road or the tax came from.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Element</th>
+                <th>Original fact</th>
+                <th>What the city still is, structurally</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>-ton / -ham / -stead</strong></td>
+                <td>A farm, an enclosed home, a standing place</td>
+                <td>Grew from one household. Expect an old core, a church or shrine at its centre, and narrow streets that were once field boundaries.</td>
+              </tr>
+              <tr>
+                <td><strong>-bury / -borough / -berg</strong></td>
+                <td>A fortified place, a hill with a wall on it</td>
+                <td>Defence drove the siting. The high ground is the prestige address and the walls are still property lines.</td>
+              </tr>
+              <tr>
+                <td><strong>-caster / -chester</strong></td>
+                <td>A military camp with a grid and a road to it</td>
+                <td>Planned inside. Straight axes, a walled rectangle, and a modern mess of alleys that grew outside it.</td>
+              </tr>
+              <tr>
+                <td><strong>-ford / -bridge</strong></td>
+                <td>The place you cross, and whoever controls it charges</td>
+                <td>Toll money built the town. Two halves on opposite banks, one bridge, and a permanent argument about which side pays.</td>
+              </tr>
+              <tr>
+                <td><strong>-mouth / -strand / -wick</strong></td>
+                <td>River mouth, beach, or a trading and dairy place</td>
+                <td>Water did the hiring. Warehouses nearest the quays, the wealthier houses uphill and away from the smell.</td>
+              </tr>
+              <tr>
+                <td><strong>-by / -thorpe</strong></td>
+                <td>A settlement, and an outlying dependent hamlet</td>
+                <td>Junior status is in the name. A "-thorpe" is a place that belongs to somebody else's larger town.</td>
+              </tr>
+              <tr>
+                <td><strong>-mere / -pool / -well</strong></td>
+                <td>Standing water, or a water with a reputation</td>
+                <td>Water was the reason and often the religion. Pilgrims, then markets, then a city that forgot why.</td>
+              </tr>
+              <tr>
+                <td><strong>-field / -worth / -minter</strong></td>
+                <td>Open ground used regularly, an enclosed holding, a mint</td>
+                <td>Periodic use, private holding, or state money. Fairground, estate, or treasury town.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="etymology-box">
+          <strong>Use it in play.</strong> When the party arrives, the founding fact is the first thing you describe and the first thing you can threaten. A ford can be flooded, a bridge can be taxed or burned, a camp can be excavated, a holy well can run dry, and a mine can be closed. Functional names hand you a plot instead of a postcard.
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Layers: Who Renamed It, and What Survived</h2>
+        <p>Most real cities are a negotiation between whoever arrived second and whoever was already there. The older layer rarely disappears; it moves. Conquest tends to replace the front half of a name and keep the back half, or replace the official name and leave the spoken one alone, so that a document and a dockworker describe the same place with different words.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Layer</th>
+                <th>What it contributes</th>
+                <th>Where it survives</th>
+                <th>Story it implies</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Oldest spoken layer</strong></td>
+                <td>Water, hill, wood, ford</td>
+                <td>In the short name and in field names nobody official reads</td>
+                <td>Nobody remembers what the first word means, and everybody uses it anyway</td>
+              </tr>
+              <tr>
+                <td><strong>Imperial layer</strong></td>
+                <td>Camp, road, colony, garrison grid</td>
+                <td>Street plan, city walls, anything measured</td>
+                <td>The straight streets are somebody else's order, still obeyed</td>
+              </tr>
+              <tr>
+                <td><strong>Faith layer</strong></td>
+                <td>A saint, a shrine, a relic, a well</td>
+                <td>Wards, gates, market days and hospital names</td>
+                <td>The calendar of the city was set by a building, not a ruler</td>
+              </tr>
+              <tr>
+                <td><strong>Trade layer</strong></td>
+                <td>Exchange, strand, ware, tally, guildhall</td>
+                <td>The newest and richest districts</td>
+                <td>Money arrived late and immediately bought the good addresses</td>
+              </tr>
+              <tr>
+                <td><strong>Founder layer</strong></td>
+                <td>A name, a vow, or a number</td>
+                <td>Documents, coins, the seal on the gate</td>
+                <td>Someone paid for this city and intends to be thanked for it</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>The Mismatch Is the Point</h3>
+        <p>Give a city an official name from the newest layer and a spoken name from the oldest, and you get a place with a politics. Outsiders write the founding honourific on treaties; cart-loaders use a clipped version of something much older. Anyone who uses the wrong one in the wrong room has just revealed where they are from, which is the most useful thing a name can do at a table.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>Planned Cities: Honour, Ideal, or Number</h2>
+        <p>When a city is founded on purpose rather than grown, its naming register tells you who paid and how much they cared about being liked. Three registers cover almost every invented foundation, and they are easy to distinguish even before you know the history.</p>
+        <ul>
+          <li><strong>The honourific register.</strong> A ruler's name plus a land or city suffix, usually chosen by a court rather than by the residents. It sounds permanent and it is the first name changed after a revolution, which is why so many real cities have been renamed three times.</li>
+          <li><strong>The ideal register.</strong> A virtue plus a settlement suffix: goodness, concord, union, providence, hope, plenty. Optimistic, plain-spoken, and slightly embarrassing to the second generation, who rename it to something shorter out of irritation.</li>
+          <li><strong>The numeric register.</strong> Wards, lots, gates, streets or even whole towns named by order: Third Ward, Ninth Gate, Number Street. It implies a survey and a state, and it is the cheapest way to make a city feel administered rather than inherited.</li>
+        </ul>
+
+        <h3>Which Register Your Setting Can Support</h3>
+        <p>A city founded by an empire gets a grid and an honourific name. A city founded by refugees gets an ideal name and no grid. A city founded by a guild gets a trade name and a ledger. If your city has none of these and is named for a person who was not a ruler, it grew around somebody's farm, and the "-ton" or "-ham" ending should be doing that work.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>Naming Inside the City</h2>
+        <p>The parts of a city follow four rules, and applying them consistently is what separates a city with three sentences of description from one the party can navigate.</p>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>Wards are named for what happened there</h3>
+            <p>Tannage, salt, grain, iron, fish, wool, candles. A ward name is a job, and if the job is gone the name survives as an insult or a joke. Five wards gives you five industries and therefore five sources of tension.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Gates are named for the road they face</h3>
+            <p>The gate takes the destination's name, not its own. That means a gate can be renamed when a trade route shifts, and that a party asking for "the North Gate" is asking the wrong question if the road moved.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Streets change when a guild falls</h3>
+            <p>Streets carry the trade of the people who lived on them. When an industry is expelled, banned or bought out, the street name either freezes as a memorial or is renamed by whoever replaced it. Both are political acts.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Each district keeps one sound palette</h3>
+            <p>Old quarters share old sounds; new quarters share flat, administrative ones. If every district in a city uses the same syllables, your map is one neighbourhood wearing four hats.</p>
+          </div>
+        </div>
+
+        <h3>Map Labels and the Two-Word Rule</h3>
+        <p>Whatever the city is called in full, the map label must survive being written twice in ink at half an inch high. The practical limit is one word, two at most, and the longer civic name belongs in the journal, not on the parchment. If your generated name needs three elements to work, shorten it before you draw the map, then let the archive keep the long form.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>Eight Kinds of City, and Each One Names Things Differently</h2>
+        <p>The single fastest way to make a fantasy city feel specific is to decide which kind of city it is, because the type determines who has the authority to name anything. A university town names its halls after founders and its alleys after dropped exams. A garrison names everything after roads and captains. Choose the type and the vocabulary arrives with it, including the parts you will not have to invent.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>City type</th>
+                <th>Its native vocabulary</th>
+                <th>Who gets things named</th>
+                <th>First thing a visitor notices</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Episcopal seat</strong></td>
+                <td>Close, minster, almonry, vestry, sanctum, bell, cross</td>
+                <td>A chapter that has been here 200 years and fears nobody</td>
+                <td>Two clocks disagreeing, and every second building has a gate</td>
+              </tr>
+              <tr>
+                <td><strong>Garrison town</strong></td>
+                <td>Barrier, mount, parade, store, drawbridge, quarter</td>
+                <td>An officer whose name is a street and a debt</td>
+                <td>Prices double inside the walls and soldiers are served first</td>
+              </tr>
+              <tr>
+                <td><strong>Deep-water port</strong></td>
+                <td>Quay, key, strand, wharf, lighters, bond, slip</td>
+                <td>A customs house and the tide, in that order</td>
+                <td>Goods exist here before they are legally owned anywhere</td>
+              </tr>
+              <tr>
+                <td><strong>Mining boom town</strong></td>
+                <td>Shaft, adit, level, dump, flume, claim, pit</td>
+                <td>Whoever holds the water right, this season</td>
+                <td>Streets laid out for a city of fifty thousand that is currently ten</td>
+              </tr>
+              <tr>
+                <td><strong>University town</strong></td>
+                <td>Hall, college, close, lane, schoole, divinity, gate</td>
+                <td>Founders, then donors, then the people the students mock</td>
+                <td>Two laws in force and the town loses whichever one is tested</td>
+              </tr>
+              <tr>
+                <td><strong>Free or charter city</strong></td>
+                <td>Hall, weigh house, tally, chamber, burg, franchise</td>
+                <td>A council elected by the guilds, which means by money</td>
+                <td>Nobody outside the walls can sell here, and everybody knows who is angry</td>
+              </tr>
+              <tr>
+                <td><strong>Spa or pilgrimage city</strong></td>
+                <td>Well, bath, garden, walk, terrace, hostelry, shrine</td>
+                <td>Whoever profits from the water, and whoever claims the saint</td>
+                <td>Rents vary by season and the poor live in the flood plain out of sight</td>
+              </tr>
+              <tr>
+                <td><strong>Citadel-subject city</strong></td>
+                <td>Fort, hill, upper, lower, gate, sally, ditch</td>
+                <td>The commander, and always on the map's upper half</td>
+                <td>One word, "up", does all the work in every direction given</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Ask Who Has Authority to Name Anything</h3>
+        <p>That question is the whole method. Name-giving authority is how a city's real power shows up in ordinary conversation, and it is cheaper to dramatise than any guard patrol. In an episcopal city a street cannot be renamed without the chapter's consent, so a new name is an act of defiance. In a boom town the name of a claim changes every season with the water right, so nobody remembers what anything is called. In a garrison the commander renames things for propaganda, badly and quickly, and the townspeople keep using the old name purely to be difficult. Pick one city, give one name to the wrong authority, and watch a session fill itself.</p>
+
+        <div class="etymology-box">
+          <strong>Mix two types, not one.</strong> Most memorable cities are a pair: a port that became a pilgrimage site, a garrison that became a university town, a mine that became a spa. Each half contributes its own vocabulary layer, and the argument between the two sets of names is the city's history told in street signs. The type table above is a menu for exactly that kind of combination.
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Five Mouths, Five Names</h2>
+        <p>Inside the walls a city argues about official names and spoken names. Outside the walls, nobody argues: each group that deals with the city has its own word for it, and none of those words were chosen by the city. This is free material, because an outsider name tells you who is speaking before they say anything else. Use it in the scene where the party hires a boat, asks for directions at a crossroads, or hands a letter to a clerk.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Who says it</th>
+                <th>The name they use</th>
+                <th>Why</th>
+                <th>What it buys in a scene</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Boatmen and porters</td>
+                <td>A word for the landing, not the town: the Stairs, the Long Wharf, the Lower Stage</td>
+                <td>They never see more than the water line, and their pay depends on which step they tie up at.</td>
+                <td>A boatman who says "the Stairs" while your map says the city's formal name is telling you he has never been past the customs house.</td>
+              </tr>
+              <tr>
+                <td>Road traffic</td>
+                <td>A distance word: the two-day town, the last milk, the toll end</td>
+                <td>Travellers name places by what they cost, not by what they are.</td>
+                <td>Every waystation conversation is a schedule. "Two days out" also tells the party how far help is.</td>
+              </tr>
+              <tr>
+                <td>The cathedral</td>
+                <td>A saint word, usually older than the city's current name</td>
+                <td>The church kept its own records through every conquest and never bothered to update them.</td>
+                <td>A priest uses a name nobody else uses, and the party can date a document by which of the two the writer chose.</td>
+              </tr>
+              <tr>
+                <td>The tax office of a bigger neighbour</td>
+                <td>A register form: the district name, a number, or a province word that swallows the city</td>
+                <td>Assessment needs categories, and categories erase identity.</td>
+                <td>The city does not exist in that paperwork. Finding your district in a foreign ledger is a whole session.</td>
+              </tr>
+              <tr>
+                <td>Upriver or rival quarter</td>
+                <td>A slur, a joke, or the name the city had before it got rich</td>
+                <td>Neighbours remember your old status and resent your new one.</td>
+                <td>Using the wrong version starts a fight in a tavern with no dice involved.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Pick the Name by the Room You Are In</h3>
+        <p>Decide which version the party hears in each scene and you have decided whose interests are in the room. A customs clerk uses the register form. A dock worker uses the water word. A pilgrim uses the saint word. A smuggler uses whichever one the others will not repeat in front of a guard. Once you have chosen four outsider names for one city, you can run a whole arrival without inventing anything: the party is handed a different name every time they ask a question, and the confusion is the lesson.</p>
+
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h4>One outsider name per group</h4>
+            <p>Do not let the same group use two forms. Consistency is what makes the pattern readable to players.</p>
+          </div>
+          <div class="tip-card">
+            <h4>Distance names travel furthest</h4>
+            <p>A road name can be understood three hundred miles away, which makes it the best word to put in a rumour.</p>
+          </div>
+          <div class="tip-card">
+            <h4>Slurs have a date</h4>
+            <p>Say when a mocking name was coined. Whoever remembers the reason is old, bitter, and useful.</p>
+          </div>
+          <div class="tip-card">
+            <h4>Write the register name on the map</h4>
+            <p>Maps are drawn by officials. Put the spoken and outsider names in your notes, where players have to earn them.</p>
+          </div>
+        </div>
+
+        <div class="etymology-box">
+          <strong>Quick test:</strong> if every character in your session calls the city the same thing, you have lost the cheapest worldbuilding on the page. Give the water, the road, the church and the tax office their own words, and let the party work out who is talking.
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Related Generators</h2>
+        <div class="internal-links">
+          <a href="/tavern-name-generator/">Tavern Name Generator</a>
+          <a href="/kingdom-name-generator/">Kingdom Name Generator</a>
+          <a href="/npc-name-generator/">NPC Name Generator</a>
+          <a href="/guild-name-generator/">Guild Name Generator</a>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>How do I name a fantasy city?</h3>
+          <p>Start with the fact that made people stand there: a crossing, a camp, a mill, a wall, a market day, a well or a seam of ore. Attach the suffix that records that fact, then decide who arrived second and what they renamed. A name built this way carries an economy, a defence and a politics, so you can describe the city by reading its own name back to the players.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What do endings like -bury and -caster mean?</h3>
+          <p>A fortified hill place and a military camp respectively, in the naming language that survived in Europe. In practice the difference is visible on the ground: a hill fort grows upward from a defended core with irregular alleys, while a camp city has a grid, straight axes and a wall rectangle that later builders pretended to respect. Other common endings record a farm, a ford, a bridge, a river mouth, a trading beach or an outlying dependent hamlet.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Should my city have both an official name and a spoken name?</h3>
+          <p>Yes, unless the city is very new or very controlled. Real cities accumulate a formal name from whoever last paid for a document and a clipped spoken name from whoever last worked the docks. Writing both costs you one line of text and instantly tells players who is in the room when a particular form is used.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I name wards, gates and streets?</h3>
+          <p>Use different systems for each, because they were named by different people. Wards take the trade that worked there. Gates take the destination the road leads to, not the district behind them. Streets take the trade or the building that dominated them, and get renamed when that trade is expelled. Keep one sound palette per district so an old quarter sounds older than a planned one.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I use these city names in my own project?</h3>
+          <p>Yes. Every name is an original combination of invented elements and common settlement suffixes, and nothing here is a real place. Use them in campaigns, novels, games, maps or streams without credit or payment.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Race Generators</h4>
+          <ul>
+            <li><a href="/elf-name-generator/">Elf Name Generator</a></li>
+            <li><a href="/dwarf-name-generator/">Dwarf Name Generator</a></li>
+            <li><a href="/dragon-name-generator/">Dragon Name Generator</a></li>
+            <li><a href="/orc-name-generator/">Orc Name Generator</a></li>
+            <li><a href="/tiefling-name-generator/">Tiefling Name Generator</a></li>
+            <li><a href="/drow-name-generator/">Drow Name Generator</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Elf Subtypes</h4>
+          <ul>
+            <li><a href="/wood-elf/">Wood Elf Names</a></li>
+            <li><a href="/high-elf/">High Elf Names</a></li>
+            <li><a href="/dark-elf/">Dark Elf Names</a></li>
+            <li><a href="/female-elf/">Female Elf Names</a></li>
+            <li><a href="/male-elf/">Male Elf Names</a></li>
+            <li><a href="/elf-last-name/">Elf Last Names</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="/guides/how-to-choose-a-sound-palette/">Sound Palette Guide</a></li>
+            <li><a href="/guides/how-to-name-a-dd-character/">D&amp;D Naming Guide</a></li>
+            <li><a href="/guides/how-to-pronounce-fantasy-names/">Pronunciation Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Tools</h4>
+          <ul>
+            <li><a href="/backstory-generator/">Backstory Generator</a></li>
+            <li><a href="/races/">All Race Generators</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fantasy Name Generator. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/name-generator.js"></script>
+  <script src="/assets/race-page-components.js"></script>
+  <script>
+    const STEMS = {
+      crossing: ["Bram", "Dunh", "Cold", "Fen", "Marl", "Wend", "Ald", "Broc", "Hollow", "Grey"],
+      port: ["Skal", "Vel", "Cors", "Ostr", "Nar", "Tess", "Brine", "Hav", "Lur", "Salt"],
+      fort: ["Karn", "Thar", "Bast", "Grim", "Vor", "Stane", "Calh", "Redoubt", "Strand", "Watch"],
+      market: ["Moot", "Fair", "Cheap", "Ledger", "Wool", "Groat", "Tarn", "Mead", "Sack", "Cress"],
+      religious: ["Sanct", "Kirk", "Cell", "Well", "Relic", "Vigil", "Alms", "Cael", "Ord", "Shrine"],
+      extract: ["Deep", "Smelt", "Pit", "Seam", "Ore", "Quarry", "Delv", "Coal", "Salt", "Iron"]
+    };
+
+    const FUNCTION = {
+      crossing: ["ford", "bridge", "ferry", "strand", "causeway"],
+      port: ["mouth", "haven", "quay", "wick", "cote"],
+      fort: ["bury", "borough", "caster", "chester", "stead", "gard"],
+      market: ["market", "thorpe", "worth", "field", "ton"],
+      religious: ["well", "minster", "kirk", "abbey", "shrine"],
+      extract: ["delving", "hollow", "pit", "seam", "works"]
+    };
+
+    const SUFFIX_READ = {
+      ford: "the crossing was the toll", bridge: "one span and two halves of a town", ferry: "water owned by whoever rowed first",
+      strand: "the shore road, and the tide setting the rent", causeway: "dry ground in a wet place", mouth: "where the river met the sea and the money", haven: "shelter sold at a price",
+      quay: "built for cargo, not for walking", wick: "a trading place that outgrew its shed", cote: "a harbour shed that became a district",
+      bury: "a wall on high ground", borough: "a privileged wall, with a charter to prove it", caster: "a camp grid somebody still follows",
+      chester: "the oldest straight streets in the city", stead: "someone stood here and stayed", gard: "an enclosure with a homeland complex",
+      market: "the fair made the town", thorpe: "a dependent hamlet that resents it", worth: "a holding that was always private",
+      field: "open ground used on a schedule", ton: "a farm that got crowded", well: "water with a reputation",
+      minster: "a church that attracted a town", kirk: "a parish that became an address", abbey: "land owned by nobody and everybody",
+      shrine: "relics, and the road they brought", delving: "a hole in the hill that pays for everything", hollow: "worked out and left behind",
+      pit: "one entrance, one economy, one accident away from ruin", seam: "a line of wealth with a strike on it", works: "state machinery, with housing attached"
+    };
+
+    const PLANNED = {
+      honourific: [["Aurelia", "the court's word for a swamp"], ["Valdoris", "named before anybody agreed"], ["Konstgrad", "a seat planted on a border"], ["Severine", "a ruler's daughter, a city's problem"]],
+      ideal: [["Concord", "founded on a promise it has not kept"], ["Providence", "planned by people who had never wintered here"], ["Plenty", "an ironic name since the second harvest"], ["Vermillion", "chosen for how it looked on a seal"]],
+      numeric: [["Third Standing", "surveyed, lot-allocated, soul-less"], ["Ninth Ward", "the number is the address"], ["Quarter Six", "nobody calls it by its charter name"], ["The Second Planting", "the first one failed and is still on the maps"]]
+    };
+
+    const WARDS = ["Tannage", "Salt", "Grain", "Iron", "Wool", "Fish", "Candle", "Glass", "Hide", "Ash", "Coopers", "Fullers"];
+    const GATE_DEST = ["the Kiln Road", "the Low Bridge", "the Salt Road", "the Old Market", "the Ferry", "the Shrine", "the Deep Gate", "the North Planting"];
+    const LANDMARKS = ["the Long Stair", "Nine Arches", "the Hollow Bell", "the Tally Stone", "the Sunken Court", "the Weaver's Wall", "the Two Fountains", "the Charter Oak", "the Low Clock", "the Ash Column"];
+    const KNOWN_FOR = ["grain it cannot eat and ships it does not own", "a fair that outlasts its own season", "the only bridge for ninety miles", "glass, and the smoke that comes with it", "a relic nobody believes in and everybody pays to see", "coin minted from ore that runs out", "a university and the riots it hires", "warehousing, and the fact that nobody lives here anymore"];
+    const TROUBLE = ["the toll farm was sold twice in one year", "the lower ward floods and has been promised a wall for a decade", "two guilds claim the same gate and the same fee", "the charter names a ruler nobody has seen in thirty years", "the market day moved, and the farmers did not agree", "the aqueduct runs under ground another family owns"];
+    const CHARTER_WORDS = ["the Borough", "the Charter Town", "the Free City", "the Garrison", "the See"];
+    const SHORT_RULES = {
+      head: ["drop everything after the first element", c => cap(c.head)],
+      tail: ["keep only the functional half", c => cap(c.tail)],
+      article: ["add an article and use the first element", c => "the " + c.head.toLowerCase()],
+      charter: ["call it by its charter word, not its name", () => pick(CHARTER_WORDS)]
+    };
+
+    function switchTab(tabId, btn) {
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+      btn.classList.add("active");
+      document.getElementById(tabId).classList.add("active");
+    }
+    function pick(a) { return a[Math.floor(Math.random() * a.length)]; }
+    function pickN(a, n) {
+      const c = a.slice();
+      const out = [];
+      while (out.length < n && c.length) out.push(c.splice(Math.floor(Math.random() * c.length), 1)[0]);
+      return out;
+    }
+    function bankFor(sel, banks) { return sel === "any" ? Object.keys(banks).reduce((acc, k) => acc.concat(banks[k]), []) : banks[sel]; }
+
+    function pickSitePair(s) {
+      const stems = STEMS[s], funcs = FUNCTION[s];
+      for (let i = 0; i < 60; i++) {
+        const st = pick(stems), fn = pick(funcs), ls = st.toLowerCase();
+        if (ls === fn || ls.indexOf(fn) >= 0 || fn.indexOf(ls) >= 0) continue;
+        if (ls.slice(-1) === fn.charAt(0) || ls.slice(-2) === fn.slice(0, 2)) continue;
+        return [st, fn];
+      }
+      return [pick(stems), pick(funcs)];
+    }
+
+    function buildCity(site, age, scale) {
+      let s = site === "any" ? pick(Object.keys(STEMS)) : site;
+      let name, fn, register, stem = "";
+
+      if (age === "planned" || (age === "any" && Math.random() < 0.22)) {
+        const kind = pick(Object.keys(PLANNED));
+        const p = pick(PLANNED[kind]);
+        name = p[0];
+        stem = name.replace(/^The /, "").split(" ")[0];
+        fn = kind === "numeric" ? "an ordinal, which is a survey and a receipt" : "a founder's word, chosen on paper";
+        register = kind + " register: " + p[1];
+        s = kind === "honourific" ? "fort" : kind === "ideal" ? "market" : "extract";
+      } else {
+        const pair = pickSitePair(s);
+        stem = pair[0]; fn = pair[1];
+        name = stem + fn;
+        if (Math.random() < 0.3) name = name + "'s " + pick(["Cross", "Keel", "Moot", "Ward"]);
+        register = age === "any" ? pick(["oldest spoken layer", "imperial layer", "faith layer", "late trade layer"]) : { old: "oldest spoken layer", empire: "imperial layer", trade: "late trade layer", planned: "founder layer" }[age];
+      }
+
+      const scaleWord = scale === "any" ? pick(["hamlet", "town", "city", "metropolis"]) : scale;
+      const tail = s && FUNCTION[s].indexOf(fn) >= 0 ? fn : (name.replace(/^The /, "").split(" ")[1] || "");
+      const keys = ["head", "article", "charter"].concat(tail ? ["tail"] : []);
+      const ruleKey = pick(keys);
+      const spoken = SHORT_RULES[ruleKey][1]({ head: stem, tail: tail });
+      const shortRule = SHORT_RULES[ruleKey][0];
+      const formal = pick(["The Free City of", "The Borough of", "The See of", "The Charter Town of", "The Garrison of", "The Commonwealth of"]) + " " + name;
+
+      return { name, fn, register, scale: scaleWord, spoken, formal, wards: pickN(WARDS, 3), gate: pick(GATE_DEST), landmark: pick(LANDMARKS), known: pick(KNOWN_FOR), trouble: pick(TROUBLE), shortRule: shortRule, siteKey: s };
+    }
+
+    function generateCities() {
+      const site = document.getElementById("ct-site").value;
+      const age = document.getElementById("ct-age").value;
+      const scale = document.getElementById("ct-scale").value;
+      const count = Math.min(20, Math.max(1, parseInt(document.getElementById("ct-count").value) || 5));
+
+      const used = new Set();
+      const list = [];
+      let guard = 0;
+      while (list.length < count && guard++ < count * 30) {
+        const c = buildCity(site, age, scale);
+        if (used.has(c.name)) continue;
+        used.add(c.name);
+        list.push(c);
+      }
+
+      document.getElementById("ct-results").innerHTML = list.map(c => `
+        <div class="name-card">
+          <div>
+            <div class="name-text">${c.name}</div>
+            <div class="name-meaning">${c.formal} &middot; a ${c.scale} known for ${c.known}</div>
+            <div class="etymology-box"><strong>Founded on:</strong> ${c.fn ? c.fn + " &mdash; " + (SUFFIX_READ[c.fn] || "the site chose it") : c.register}<br><strong>Layer:</strong> ${c.register}<br><strong>Locals say:</strong> "${c.spoken}" (${c.shortRule})<br><strong>Wards:</strong> ${c.wards.join(", ")} &middot; gate: ${c.gate} &middot; landmark: ${c.landmark}</div>
+          </div>
+          <div class="name-actions">
+            <button class="icon-btn" onclick="copyText('${c.name.replace(/'/g, "\\'")}')" title="Copy name">C</button>
+            <button class="icon-btn" onclick="copyText('${(c.formal + " - wards " + c.wards.join(", ") + " - " + c.known).replace(/'/g, "\\'")}')" title="Copy full entry">F</button>
+          </div>
+        </div>`).join("");
+    }
+
+    function generateCitySheet() {
+      const c = buildCity(document.getElementById("ct-site").value, document.getElementById("ct-age").value, document.getElementById("ct-scale").value);
+      document.getElementById("sheet-out").innerHTML = `
+        <div class="char-card">
+          <h3>${c.name}</h3>
+          <div class="char-card-section"><h4>On paper and in speech</h4><p>Documents read "${c.formal}". Everyone else says "${c.spoken}" &mdash; ${c.shortRule}.</p></div>
+          <div class="char-card-section"><h4>Why it exists here</h4><p>${c.fn ? "Built on " + withArticle(c.fn) + ": " + (SUFFIX_READ[c.fn] || "a decision with a date on it, not a habit") + "." : c.register + "."}</p></div>
+          <div class="char-card-section"><h4>Wards</h4><p>${c.wards.map(w => "the Ward of " + w).join(", ")}. Each still pays its own night watch, and each still resents the others.</p></div>
+          <div class="char-card-section"><h4>Gates and landmarks</h4><p>People enter by ${c.gate} and meet at ${c.landmark}, which ${pick(["has not been cleaned in a generation", "is older than the wall it stands inside", "has a bench, and therefore a politics", "was moved eleven paces to make a road"])}</p></div>
+          <div class="char-card-section"><h4>What it is known for</h4><p>${cap(c.known)}.</p></div>
+          <div class="char-card-section"><h4>Market day</h4><p>${pick(["Third bell after dawn, and the toll starts at the gate, not the square", "Dusk on the strand, because the boats decide the hour", "Every sixth day, and the country traders arrive the day before to sleep cheap", "Two days: one for citizens, one for everyone else"])}</p></div>
+          <div class="char-card-section"><h4>The trouble</h4><p>${cap(c.trouble)}.</p></div>
+          <div class="result-actions"><button class="btn btn-secondary" onclick="copyText(document.querySelector('#sheet-out .char-card').innerText)">Copy City Sheet</button></div>
+        </div>`;
+    }
+    function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+    function withArticle(p) {
+      const head = String(p).trim().split(/\s+/)[0].toLowerCase().replace(/[^a-z]/g, "");
+      return head === "a" || head === "an" || head === "the" ? p : "a " + p;
+    }
+
+    window.addEventListener("load", generateCities);
+  </script>
+</body>
+</html>

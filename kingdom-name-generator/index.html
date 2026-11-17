@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TQH84Q5Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Kingdom Name Generator - Fantasy Realm &amp; Empire Names</title>
+  <meta name="description" content="Generate kingdom names with a government type, capital, ruling house, demonym and motto. Learn the three sources of state names and why a realm's name survives its dynasty.">
+  <link rel="canonical" href="https://fantasyname.net/kingdom-name-generator/">
+  <meta property="og:title" content="Kingdom Name Generator - Fantasy Realm &amp; Empire Names">
+  <meta property="og:description" content="Generate kingdom names with a government type, capital, ruling house, demonym and motto, plus the naming rules behind real state names.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fantasyname.net/kingdom-name-generator/">
+  <meta property="og:image" content="https://fantasyname.net/assets/kingdom-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kingdom Name Generator - Fantasy Realm &amp; Empire Names">
+  <meta name="twitter:description" content="Generate kingdom names with a government type, capital, ruling house, demonym and motto.">
+  <meta name="twitter:image" content="https://fantasyname.net/assets/kingdom-hero.jpg">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Kingdom Name Generator",
+    "description": "Generate names for fantasy kingdoms, empires and city-states, each paired with a government type, capital, ruling house, demonym and motto. Includes reference tables on state-name suffixes and political title registers.",
+    "url": "https://fantasyname.net/kingdom-name-generator/",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I name a kingdom for a fantasy setting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Decide what the name is claiming before you choose sounds. A dynastic name says the land is property, a geographic name says the land came first, and an ethnic name says belonging precedes government. Then attach a suffix that matches the politics you picked: a borderland takes a march ending, a single fortified town takes a town ending, and a surveyed taxable region takes an administrative one."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between a kingdom and an empire?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A kingdom rules regions that share a crown and usually a people, and it leaves local custom largely alone. An empire rules several peoples, at least one of them unwilling, and keeps conquered elites in place as employees of the centre. The practical test at the table is autonomy: if a province can refuse a tax and negotiate, you are writing a kingdom; if a governor is appointed and rotated, you are writing an empire."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does a march ending mean in a realm name?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It marks a borderland whose job is to absorb the first attack. Marches are therefore poorer, more armed and more proud than the heartland they protect, and they expect to be paid for it in attention. The same logic applies to enclosures and fortified-town endings: the suffix tells a reader whether the realm is a frontier, a homeland, a city with a countryside, or a district that has already been surveyed and taxed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should my kingdom have a different name in other countries?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, if you want the map to feel used. Most real realms have an endonym, the name citizens use, and at least one exonym, the name neighbours use, and the two can be completely unrelated. A realm known only by its own name has either imposed it on everyone for centuries or is too new for neighbours to have learned it, and both of those are useful things for a setting to mean."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use these kingdom names in my own project?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The names are original combinations of invented roots and common land suffixes, and place names of this shape are not owned by anyone. Use them in campaigns, novels, games, maps or streams without credit or payment."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fantasyname.net/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tools",
+        "item": "https://fantasyname.net/#tools"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Kingdom Name Generator",
+        "item": "https://fantasyname.net/kingdom-name-generator/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">
+        <span class="logo-icon">&#9876;</span>
+        Fantasy Name Generator
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/races/">Races</a></li>
+          <li><a href="/backstory-generator/">Backstory Generator</a></li>
+          <li><a href="/guides/">Guides</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="race-hero">
+          <img src="/assets/kingdom-hero.jpg" alt="Banner over a walled city on a ridge, with farmland and a road below">
+          <div class="race-hero-overlay">
+            <div class="race-hero-text">
+              <h1>Kingdom Name Generator</h1>
+              <p>A realm name plus its government, capital, ruling house, demonym and motto in one roll</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>&#8250;</span>
+        <a href="/#tools">Tools</a>
+        <span>&#8250;</span>
+        Kingdom Name Generator
+      </div>
+
+      <h2>Roll a Realm With Its Whole Lineage</h2>
+
+      <div class="generator-box">
+        <div class="tab-switcher">
+          <button class="tab-btn active" onclick="switchTab('quick-names', this)">Realm Names</button>
+          <button class="tab-btn" onclick="switchTab('realm-sheet', this)">Full Realm Sheet</button>
+        </div>
+
+        <div id="quick-names" class="tab-content active">
+          <div class="generator-controls">
+            <div class="form-group">
+              <label for="kd-flavour">Language flavour</label>
+              <select id="kd-flavour">
+                <option value="any">Any</option>
+                <option value="northern">Northern and hard</option>
+                <option value="classical">Latinised and formal</option>
+                <option value="steppe">Open-road and horse-borne</option>
+                <option value="desert">Arid and mercantile</option>
+                <option value="maritime">Coastal and island</option>
+                <option value="theocratic">Priestly and archaic</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="kd-size">Polity size</label>
+              <select id="kd-size">
+                <option value="any">Any</option>
+                <option value="city">City-state</option>
+                <option value="county">County or march</option>
+                <option value="kingdom">Kingdom</option>
+                <option value="empire">Empire of many peoples</option>
+                <option value="confederacy">Confederacy of rivals</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="kd-source">Named after</label>
+              <select id="kd-source">
+                <option value="any">Anything</option>
+                <option value="dynastic">A ruler or dynasty</option>
+                <option value="geographic">Land or water</option>
+                <option value="ethnic">A people</option>
+                <option value="ideal">An ambition or vow</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="kd-count">How many?</label>
+              <input type="number" id="kd-count" min="1" max="20" value="5">
+            </div>
+          </div>
+          <button class="btn btn-primary generate-btn" onclick="generateRealms()">Generate Kingdom Names</button>
+          <div class="results" id="kd-results"></div>
+        </div>
+
+        <div id="realm-sheet" class="tab-content">
+          <p>A realm sheet for a map or a campaign bible: name, formal treaty title, what neighbours call it, capital, house, succession problem, and one thing the treasury is short of.</p>
+          <button class="btn btn-primary generate-btn" onclick="generateRealmSheet()">Roll a Realm Sheet</button>
+          <div id="sheet-out"></div>
+        </div>
+      </div>
+
+      <section class="mt-2">
+        <h2>Every State Name Comes From One of Three Places</h2>
+        <p>Real polities are named by people who were not trying to sound impressive. They were trying to say who ruled, where the land was, or whose people lived there, and those three impulses produce three distinguishable name shapes. Pick your source deliberately and the realm name carries a political theory with it, which is exactly what a campaign map needs.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Source</th>
+                <th>How it forms</th>
+                <th>What it claims</th>
+                <th>What breaks it</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Dynastic</strong></td>
+                <td>Ruler or family root + land suffix</td>
+                <td>The land is property. The name is a receipt.</td>
+                <td>A dynasty dies and the name outlives it, or a revolution deletes it overnight.</td>
+              </tr>
+              <tr>
+                <td><strong>Geographic</strong></td>
+                <td>River, ridge, sea, cardinal direction</td>
+                <td>The land came first and the crown is a recent tenant.</td>
+                <td>Nothing much. These are the most durable names on any map.</td>
+              </tr>
+              <tr>
+                <td><strong>Ethnic</strong></td>
+                <td>People's self-name + land suffix</td>
+                <td>Belonging precedes government. Anyone of the people may claim it.</td>
+                <td>Neighbours spell it differently, and the people split into factions who each claim the name.</td>
+              </tr>
+              <tr>
+                <td><strong>Ideal</strong> (the fourth, rare)</td>
+                <td>A vow, virtue or program</td>
+                <td>The state exists for a purpose, which means it can be judged against it.</td>
+                <td>Irony. A realm called for a promise is measured by it every generation.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>The Dynasty Test</h3>
+        <p>Ask one question about any realm name on your map: <em>does the name survive a change of rulers?</em> If the answer is no, the name is dynastic, and your history writes itself. The ruling family changes, the state is renamed, and every document from the previous century now has an obsolete country on it. That single mechanic gives a continent a sense of time passing without a paragraph of lore. If the answer is yes, the name is older than the crown, and the crown is negotiating with the land instead of owning it.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>Suffixes Do the Political Work</h2>
+        <p>The ending of a state name tells a literate reader what kind of place it is before the first word lands. This is why "-mark" realms feel militarised and "-ia" realms feel like someone else's word for them. Use the endings below as a control surface rather than decoration.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Suffix</th>
+                <th>Original meaning</th>
+                <th>Reading a realm this way implies</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>-mark / -march / -marches</strong></td>
+                <td>Borderland, boundary zone</td>
+                <td>A frontier with a duty: it exists to absorb the first attack. Marches are poor, armed and proud.</td>
+              </tr>
+              <tr>
+                <td><strong>-gard / -heim / -ham / -stead</strong></td>
+                <td>Enclosure, dwelling place</td>
+                <td>An interior that assumes outsiders. Defensive, homogeneous, suspicious of roads.</td>
+              </tr>
+              <tr>
+                <td><strong>-grad / -burgh / -bury / -minster</strong></td>
+                <td>Fortified place, town</td>
+                <td>A state that is really one town with a countryside attached. City-state energy.</td>
+              </tr>
+              <tr>
+                <td><strong>-ia / -ea / -ium</strong></td>
+                <td>Latinised "land of"</td>
+                <td>Someone educated named it. Often an exonym that the locals later accepted because treaties were written in that language.</td>
+              </tr>
+              <tr>
+                <td><strong>-land</strong></td>
+                <td>Land of a people</td>
+                <td>Belonging by descent, not by crown. Plainer and older-feeling than "-ia".</td>
+              </tr>
+              <tr>
+                <td><strong>-shire / -wick / -ing / -county</strong></td>
+                <td>Administrative division; -ing means a founder's people</td>
+                <td>A place that has been surveyed and taxed. Bureaucracy already arrived.</td>
+              </tr>
+              <tr>
+                <td><strong>-fell / -hold / -reach</strong></td>
+                <td>High ground, kept place, expanse</td>
+                <td>Feudal or geographic scale. "-reach" suits a realm defined by a river or a coast rather than a border.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Endonym, Exonym, and the Bridge Test</h3>
+        <p>Almost every real realm has two names: the one its own people use and the one neighbours use. They can be unrelated, and the mismatch is free worldbuilding. Walk across a bridge, a mountain pass or a sea and the country's name changes in your mouth. If your realm is called the same thing by everyone on the map, either it has been the dominant power for centuries and forced its own word on everyone, or it is a new state that nobody has learned yet. Both are stories. The realm sheet tab on this page produces the neighbour's version of the name on purpose so you can decide which of those two you are telling.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>Title Register: Kingdom Is Not the Only Word</h2>
+        <p>The political noun in front of the name is a claim about size, legitimacy and internal freedom. Players who have read any history will hear the difference immediately, and you can use it to set expectations about how much autonomy a province gets.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>What it actually controls</th>
+                <th>Internal freedom</th>
+                <th>How the name is written formally</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>City-state</strong></td>
+                <td>One town, its harbour or valley, and its bills</td>
+                <td>Everyone is a citizen or nobody is</td>
+                <td>"The Free City of", "The Commonwealth of"</td>
+              </tr>
+              <tr>
+                <td><strong>County / March</strong></td>
+                <td>A region held by one title-holder for a crown</td>
+                <td>The count rules locally, owes levies upward</td>
+                <td>"The County of", "The March of"</td>
+              </tr>
+              <tr>
+                <td><strong>Kingdom</strong></td>
+                <td>Several regions under one crowned house</td>
+                <td>Custom and charters survive; the crown negotiates</td>
+                <td>"The Kingdom of", "The Crown of"</td>
+              </tr>
+              <tr>
+                <td><strong>Empire</strong></td>
+                <td>Many peoples, at least some of them unwilling</td>
+                <td>Local rulers kept in place as employees</td>
+                <td>"The Empire of", "The Dominion of"</td>
+              </tr>
+              <tr>
+                <td><strong>Confederacy</strong></td>
+                <td>A treaty between equals who keep their own armies</td>
+                <td>Maximum local power; slow joint decisions</td>
+                <td>"The League of", "The Compact of"</td>
+              </tr>
+              <tr>
+                <td><strong>Theocracy</strong></td>
+                <td>A religious claim that outranks any family</td>
+                <td>Doctrine is law; officials are appointed, not inherited</td>
+                <td>"The See of", "The Holy Seat of"</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>The Capital and the Realm Trade Names</h3>
+        <p>Two directions exist and each implies a different history. Either the capital gives the realm its name, which means the city was the fact and the kingdom grew around it, or the realm gives the capital its name, which means a dynasty founded a seat on purpose and told the countryside what to call it. The first produces map labels that feel inherited; the second produces a capital that feels like a statement. When both are true, a capital has been renamed by a new regime, and the old name survives in the countryside out of spite. That is a whole region's attitude in one detail.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>Naming the Parts of a Realm</h2>
+        <p>A kingdom that feels real has internal names built by a different system from its own. Provinces are usually administrative, so they are named mechanically: direction plus core ("Northmarch", "Nether Wold"), capital plus relation ("the King's Chase", "the Cathedral Lands"), or office plus function ("the Salt Bailiwick"). Rivers are the oldest layer on any map and are frequently reused, so a province named after a river sounds older than a province named after a count.</p>
+
+        <h3>Three Checks Before You Commit a Realm Name</h3>
+        <ul>
+          <li><strong>The treaty test.</strong> Write the name at full formal length on a document, then cross out everything except the core word. If the core word is awkward to say alone, players will never use the realm in conversation, and it will not stick.</li>
+          <li><strong>The neighbour test.</strong> Have one adjacent power spell it differently. A realm with only one spelling is a realm nobody has argued about, which is a claim about its history whether you meant it or not.</li>
+          <li><strong>The coin test.</strong> A realm's own money carries its name in the shortest form available plus the ruler's mark. If your name cannot be abbreviated onto a coin, it is a historian's name, not a citizen's.</li>
+        </ul>
+        <div class="etymology-box">
+          <strong>Pair it with the settlement layer.</strong> A realm name says who rules; the <a href="/city-name-generator/">city names</a> inside it say what the land has been doing for far longer. If your realm is grand and its cities are functional, you get the most realistic combination available: an idea on top of a farm.
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Two Realms, One Name: What Mergers Do to a Map</h2>
+        <p>Most campaigns start a session inside a merged state and never explain how it got its name. The mechanism is worth knowing because each kind of union leaves a different fossil in the name, and a literate player can read the fossil and tell you what happened, who won, and who is still annoyed about it.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Union type</th>
+                <th>What the name does</th>
+                <th>Example shape</th>
+                <th>What it tells a careful reader</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Personal union</strong></td>
+                <td>Both names survive, side by side, in a fixed order</td>
+                <td>the Crown of Ormsley and Vessine</td>
+                <td>One marriage, two tax systems, and a lawyer in each capital arguing about which name comes first on a seal</td>
+              </tr>
+              <tr>
+                <td><strong>Inheritance with absorption</strong></td>
+                <td>The elder name is kept and the younger is dropped from documents</td>
+                <td>Vessine, formerly of Ormsley</td>
+                <td>Somebody remembers, and the older records in the second capital are already being quietly recopied</td>
+              </tr>
+              <tr>
+                <td><strong>Conquest and rename</strong></td>
+                <td>The victor's dynastic name is imposed on the loser's geography</td>
+                <td>the Northmarch, lately Ormsley</td>
+                <td>An administration that needs money: renamed places appear first on toll boards, then nowhere else</td>
+              </tr>
+              <tr>
+                <td><strong>Confederation</strong></td>
+                <td>A new neutral coinage, deliberately boring</td>
+                <td>the United Septs, the League of Nine Holdings</td>
+                <td>Nobody trusted the old names enough to keep either, and everyone signed a document instead</td>
+              </tr>
+              <tr>
+                <td><strong>Federation by decree</strong></td>
+                <td>An ideal name replacing several ethnic ones</td>
+                <td>the Concord, the Free Land</td>
+                <td>A revolution that had to be named before it had an army; the old names are not dead, merely unwritten</td>
+              </tr>
+              <tr>
+                <td><strong>Vassalage</strong></td>
+                <td>The overlord's name is prefixed, and the local name survives in speech</td>
+                <td>Ormsley under the Khanate, the Vessine Provinces</td>
+                <td>Tribute is paid and nothing else changed; the map lies in one direction only</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Use the Order of the Names as a Weapon</h3>
+        <p>In a personal union the sequence is the politics. An ambassador who writes "Vessine and Ormsley" instead of "Ormsley and Vessine" has just made a claim about which crown is senior, and every clerk in the room will notice before the monarch does. Give the party one document with the wrong order on it and you have created a diplomatic incident that costs you nothing to run: no stat block, no lair, one noun phrase in the wrong sequence.</p>
+
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>Old names go underground</h3>
+            <p>Renamed provinces keep their previous name in speech for two generations, then only in fieldwork: a map drawn by outsiders uses the new name, a map drawn by a local surveyor uses the old one, and the difference tells you who paid.</p>
+          </div>
+          <div class="tip-card">
+            <h3>The church forgets last</h3>
+            <p>Religious registers date by rulers and feast days, so they lag the state by decades. A wedding entry three provinces over may still name the kingdom that ceased to exist, which is why an inquiry clerk becomes your best source of trouble.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Coins keep the oldest claim</h3>
+            <p>A ruler's coin legend states what they believe they rule, in a fixed order, with a date. Old coin circulates longer than new law, so a party carrying good money is walking around with the previous regime's politics in a purse.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>What a Succession Crisis Does to a Name</h2>
+        <p>A realm's name is a legal argument, and arguments get rewritten when the throne changes hands. This is why dynastic history shows up in your map: a country can keep its spoken name for eight centuries while its written name changes four times in a decade. If your campaign includes a contested crown, decide in advance which of the four behaviours below applies, because each one gives the players a different way to be wrong in public.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>What the name does</th>
+                <th>What the players can read from it</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>New house, same laws</td>
+                <td>The realm name survives; only the style changes. The Crown of one house replaces the Crown of another, and the country is still called the same thing.</td>
+                <td>Nothing has happened that the lawyers missed. Officials keep their seals, and the old house's name survives only in tavern signs and one disgraced province.</td>
+              </tr>
+              <tr>
+                <td>Conquest with a claim</td>
+                <td>The conquered name stays in the poor quarters and the harbour; the new name appears on coins, writs and garrison records.</td>
+                <td>The map is a legal argument. Using the old name is not nostalgia, it is a statement, and somebody has been fined for it.</td>
+              </tr>
+              <tr>
+                <td>Two heirs, two chanceries</td>
+                <td>The same province is recorded under different names by each court, and each one dates its own way.</td>
+                <td>Which name a character writes down decides which side they are on. A treaty with the wrong word in it is a confession.</td>
+              </tr>
+              <tr>
+                <td>Restoration</td>
+                <td>The old name returns deliberately, and the recent one is treated as a slur rather than an error.</td>
+                <td>The present tense is a reaction. Anything dated inside the interrupted period is suspect, including land sales.</td>
+              </tr>
+              <tr>
+                <td>Elected crown</td>
+                <td>The realm keeps its own name and the house disappears from it. The style names the office, never the family.</td>
+                <td>The bureaucracy is older than the throne, which means the paperwork can outlive the king and embarrass him.</td>
+              </tr>
+              <tr>
+                <td>Regency or minority</td>
+                <td>Formal names freeze and nicknames take over in speech, including for the realm itself.</td>
+                <td>The country is being talked about like a household, which tells you who is actually deciding things.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Use the Name Layer to Date a Document</h3>
+        <p>Hand the party a paper and let the realm's name on it do the work. A deed written in the old style predates the crisis. A writ in the new style with the old date beside it was drafted by someone who hedged, which means they expected the other side to win. A letter using the province's folk name instead of the chancery name was written by somebody from there, or for somebody from there. None of this needs a check roll: the players read the name and draw the conclusion, and you only have to decide afterwards whether the conclusion is true.</p>
+
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h4>Coins change fastest</h4>
+            <p>The new house puts its name on money within a season, because minting is a claim of power and the metal is already there.</p>
+          </div>
+          <div class="tip-card">
+            <h4>The church changes slowest</h4>
+            <p>Prayers, dedications and calendar saints keep the old name for generations. A priest is the safest person to ask what a place used to be called.</p>
+          </div>
+          <div class="tip-card">
+            <h4>Tax rolls are the tiebreaker</h4>
+            <p>Whatever name appears on the assessment list is the name the state is prepared to enforce. Everything else is opinion.</p>
+          </div>
+          <div class="tip-card">
+            <h4>Armies invent their own</h4>
+            <p>Campaign names are short, rude and practical. If your soldiers call the realm something nobody else uses, that is a unit history you can mine for scenes.</p>
+          </div>
+        </div>
+
+        <div class="etymology-box">
+          <strong>One rule for dynasties:</strong> a house can rename the government, the capital and the currency, but it cannot rename the countryside. If a name sounds like it belongs to the land rather than the throne, it is older than every claim on the throne.
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Related Generators</h2>
+        <div class="internal-links">
+          <a href="/city-name-generator/">City Name Generator</a>
+          <a href="/dungeon-name-generator/">Dungeon Name Generator</a>
+          <a href="/guild-name-generator/">Guild Name Generator</a>
+          <a href="/tavern-name-generator/">Tavern Name Generator</a>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>How do I name a kingdom for a fantasy setting?</h3>
+          <p>Decide what the name is claiming before you choose sounds. A dynastic name says the land is property, a geographic name says the land came first, and an ethnic name says belonging precedes government. Then attach a suffix that matches the politics you picked: a borderland takes a march ending, a single fortified town takes a town ending, and a surveyed taxable region takes an administrative one.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What is the difference between a kingdom and an empire?</h3>
+          <p>A kingdom rules regions that share a crown and usually a people, and it leaves local custom largely alone. An empire rules several peoples, at least one of them unwilling, and keeps conquered elites in place as employees of the centre. The practical test at the table is autonomy: if a province can refuse a tax and negotiate, you are writing a kingdom; if a governor is appointed and rotated, you are writing an empire.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What does a march ending mean in a realm name?</h3>
+          <p>It marks a borderland whose job is to absorb the first attack. Marches are therefore poorer, more armed and more proud than the heartland they protect, and they expect to be paid for it in attention. The same logic applies to enclosures and fortified-town endings: the suffix tells a reader whether the realm is a frontier, a homeland, a city with a countryside, or a district that has already been surveyed and taxed.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Should my kingdom have a different name in other countries?</h3>
+          <p>Yes, if you want the map to feel used. Most real realms have an endonym, the name citizens use, and at least one exonym, the name neighbours use, and the two can be completely unrelated. A realm known only by its own name has either imposed it on everyone for centuries or is too new for neighbours to have learned it, and both of those are useful things for a setting to mean.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I use these kingdom names in my own project?</h3>
+          <p>Yes. The names are original combinations of invented roots and common land suffixes, and place names of this shape are not owned by anyone. Use them in campaigns, novels, games, maps or streams without credit or payment.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Race Generators</h4>
+          <ul>
+            <li><a href="/elf-name-generator/">Elf Name Generator</a></li>
+            <li><a href="/dwarf-name-generator/">Dwarf Name Generator</a></li>
+            <li><a href="/dragon-name-generator/">Dragon Name Generator</a></li>
+            <li><a href="/orc-name-generator/">Orc Name Generator</a></li>
+            <li><a href="/tiefling-name-generator/">Tiefling Name Generator</a></li>
+            <li><a href="/drow-name-generator/">Drow Name Generator</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Elf Subtypes</h4>
+          <ul>
+            <li><a href="/wood-elf/">Wood Elf Names</a></li>
+            <li><a href="/high-elf/">High Elf Names</a></li>
+            <li><a href="/dark-elf/">Dark Elf Names</a></li>
+            <li><a href="/female-elf/">Female Elf Names</a></li>
+            <li><a href="/male-elf/">Male Elf Names</a></li>
+            <li><a href="/elf-last-name/">Elf Last Names</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="/guides/how-to-choose-a-sound-palette/">Sound Palette Guide</a></li>
+            <li><a href="/guides/how-to-name-a-dd-character/">D&amp;D Naming Guide</a></li>
+            <li><a href="/guides/how-to-pronounce-fantasy-names/">Pronunciation Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Tools</h4>
+          <ul>
+            <li><a href="/backstory-generator/">Backstory Generator</a></li>
+            <li><a href="/races/">All Race Generators</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fantasy Name Generator. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/name-generator.js"></script>
+  <script src="/assets/race-page-components.js"></script>
+  <script>
+    const ROOTS = {
+      northern: ["Vharn", "Skarn", "Hlith", "Ravn", "Thorl", "Grimn", "Volsk", "Aldrek", "Svarn", "Iskold"],
+      classical: ["Aurel", "Vald", "Sevr", "Corin", "Lavin", "Osrin", "Tellum", "Norvan", "Cass", "Sabin"],
+      steppe: ["Karas", "Tungur", "Arlat", "Khov", "Sair", "Orun", "Bekt", "Tengri", "Nogul", "Kyzl"],
+      desert: ["Zafir", "Qasr", "Nur", "Sahel", "Ifrin", "Rhad", "Talq", "Saber", "Saffar", "Barun"],
+      maritime: ["Marn", "Falr", "Thess", "Drav", "Skal", "Velmar", "Cors", "Iskar", "Tralin", "Sarn"],
+      theocratic: ["Sanct", "Ordem", "Caele", "Sacer", "Prael", "Thron", "Amen", "Celest", "Sabel", "Lumen"]
+    };
+
+    const SUFFIXES = {
+      mark: ["mark", "march", "marches"],
+      home: ["heim", "gard", "stead", "ham"],
+      town: ["grad", "burgh", "bury", "minster"],
+      latin: ["ia", "ea", "ium"],
+      people: ["land", "wick", "shire", "ing"],
+      expanse: ["reach", "fell", "hold", "expanse"]
+    };
+
+    const WHOLE_ENDS = ["marches", "reach", "hold", "expanse"];
+
+    const END_READ = {
+      mark: "a border district whose job is to take the first blow",
+      march: "the same border duty, spoken by the chancery rather than the garrison",
+      marches: "several border districts ruled as one because the war made them one",
+      heim: "an interior that assumes outsiders and remembers them",
+      gard: "an enclosure with a wall you can see from the road",
+      stead: "a place that stayed put while the map around it changed",
+      ham: "a home stead: a dwelling first, a border only later",
+      grad: "a fortified place, spelled the way the neighbouring empire spelled it",
+      burgh: "a town that thinks of itself as the whole country",
+      bury: "the same fortified town, worn down by centuries of quick speech",
+      minster: "a church town first and a garrison second",
+      ia: "an educated neighbour's spelling that became official",
+      ea: "the same Latin hand, older and vaguer",
+      ium: "a cartographer's Latin, usually drawn before anyone living there agreed to it",
+      land: "belonging by descent rather than by crown",
+      wick: "a trading place that outgrew the farm it was named after",
+      shire: "a district that has been surveyed, taxed and rides to a county town",
+      ing: "the people of a founder, gathered into a place word",
+      reach: "a realm defined by a river, a coast or a road instead of a border",
+      fell: "high ground that nobody has ever properly surveyed",
+      hold: "a kept place, held by force and named for the holding",
+      expanse: "a claim on distance rather than on people"
+    };
+
+    const END2FAM = {};
+    Object.keys(SUFFIXES).forEach(k => SUFFIXES[k].forEach(e => { END2FAM[e] = k; }));
+    const ROOT2FAM = {};
+    Object.keys(ROOTS).forEach(k => ROOTS[k].forEach(r => { ROOT2FAM[r] = k; }));
+    const GEO_ENDS = ["shire", "ia", "land", "march", "marches", "burgh", "bury", "wick"];
+
+    const GEO_FEATURES = ["Ashford", "Greyfell", "Longmarsh", "Saltwold", "Blackwater", "Coldbasin", "Twindelta", "Whitescarp", "Rivenmouth", "Mudgate"];
+    const IDEALS = ["Vigil", "Covenant", "Charter", "Oath", "Providence", "Concord", "Ward", "Testament"];
+    const HOUSES = ["Vharn", "Aldrek", "Sabel", "Karas", "Nur", "Corvain", "Thess", "Ismar", "Ravn", "Osrune", "Volmar", "Tengri"];
+    const CAP_FUSE = ["burg", "grad", "gard", "minster", "court", "fell"];
+    const EXO_ENDS = ["ia", "y", "ene", "land", "march", "ium"];
+
+    const DEMONYM_TAILS = { northern: "born", classical: "ic", steppe: "ul", desert: "ati", maritime: "folk", theocratic: "ate" };
+    const TITLES = {
+      city: ["Free City of", "Commonwealth of", "Dominion of"],
+      county: ["County of", "March of", "Bailiwick of"],
+      kingdom: ["Kingdom of", "Crown of", "Realm of"],
+      empire: ["Empire of", "Dominion of", "Hegemony of"],
+      confederacy: ["League of", "Compact of", "Confederacy of"]
+    };
+    const SIZE_NOUN = { city: "Free City", county: "County", kingdom: "Kingdom", empire: "Empire", confederacy: "League" };
+
+    const SUCCESSION = [
+      "two heirs hold the same coronation oath and different copies of it",
+      "the crown is elected by seven offices and four of them disagree",
+      "the last ruler adopted an heir the army has never sworn to",
+      "a province has stopped answering letters and calls it weather",
+      "the treasury and the chancery are keeping different dates for the same war",
+      "a deposed house still mints in a border town and nobody objects aloud"
+    ];
+    const SHORTFALLS = [
+      "coin to pay the border garrison past autumn",
+      "grain in the years the river runs low",
+      "a fleet, which everyone in the council pretends is not the same sentence as a war",
+      "writs that the western provinces will accept",
+      "an heir, which the treaty did not anticipate",
+      "salt, and the road that carries it"
+    ];
+    const MOTTO_FORMS = [
+      "%V% and Ward", "By Vigil, %V%", "One %V%, One Crown", "Held by %V%", "%V% Without End", "Thus We Keep %V%"
+    ];
+    const VIRTUES = ["Light", "Oath", "Steel", "Seed", "Kin", "Harbour", "Flame", "Truth", "Yoke", "Stone"];
+
+    function switchTab(tabId, btn) {
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+      btn.classList.add("active");
+      document.getElementById(tabId).classList.add("active");
+    }
+
+    function pick(a) { return a[Math.floor(Math.random() * a.length)]; }
+    function bankFor(sel, banks) {
+      return sel === "any" ? Object.keys(banks).reduce((acc, k) => acc.concat(banks[k]), []) : banks[sel];
+    }
+    function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+    function joinRoot(base, tail) {
+      if (/^[aeiou]/i.test(tail) && /[aeiou]$/i.test(base)) base = base.slice(0, -1);
+      if (base.slice(-1).toLowerCase() === tail.charAt(0).toLowerCase()) base = base.slice(0, -1);
+      return base + tail;
+    }
+    function bind(base, tail) {
+      const t = String(tail).toLowerCase();
+      return WHOLE_ENDS.indexOf(t) >= 0 ? cap(base) + " " + cap(t) : cap(joinRoot(base, t));
+    }
+    function exonymFor(base, notEnding) {
+      const ends = EXO_ENDS.filter(e => e !== notEnding);
+      return cap(joinRoot(base.replace(/q$/i, "c"), pick(ends.length ? ends : EXO_ENDS)));
+    }
+    function capitalFor() {
+      const r = pick(bankFor("any", ROOTS));
+      const form = pick(["fuse", "fuse", "upper", "nether", "seat", "wharf", "bridge"]);
+      if (form === "upper") return "Upper " + cap(r);
+      if (form === "nether") return "Nether " + cap(r);
+      if (form === "seat") return "The " + cap(r) + " Seat";
+      if (form === "wharf") return cap(r) + " Wharf";
+      if (form === "bridge") return cap(r) + "bridge";
+      return bind(r, pick(CAP_FUSE));
+    }
+
+    function shortForm(name) {
+      const of = name.match(/^The\s+.*\sof\s+(.+)$/);
+      return of ? of[1] : name.replace(/^The\s+/, "");
+    }
+
+    function titleFor(size, name) {
+      const lower = name.toLowerCase();
+      const opts = TITLES[size === "any" ? "kingdom" : size].filter(t => {
+        const noun = t.replace(/\s+of(\s+the)?$/i, "").toLowerCase();
+        return lower.indexOf(noun) < 0;
+      });
+      return (opts.length ? pick(opts) : "Realm of") + " " + name;
+    }
+
+    function buildRealm(flavour, size, source) {
+      const root = pick(bankFor(flavour, ROOTS));
+      const fam = ROOT2FAM[root] || "northern";
+      let suffixFam = pick(Object.keys(SUFFIXES));
+      if (size === "city") suffixFam = "town";
+      if (size === "county") suffixFam = "mark";
+      if (size === "empire") suffixFam = pick(["latin", "expanse", "people"]);
+      if (size === "confederacy") suffixFam = pick(["expanse", "people", "home"]);
+
+      let kind = source;
+      if (kind === "any") {
+        const roll = Math.random();
+        kind = roll < 0.3 ? "dynastic" : roll < 0.6 ? "geographic" : roll < 0.72 ? "ideal" : "ethnic";
+      }
+
+      const s = kind === "geographic" ? pick(GEO_ENDS) : pick(SUFFIXES[suffixFam]);
+      let name, pattern, formal;
+      let ending = null;
+      let endingShort = "none at all";
+      let endingNote = "";
+      if (kind === "dynastic") {
+        name = bind(pick(HOUSES), s);
+        pattern = "dynastic: a family name plus a land ending, so the realm is a deed";
+        formal = titleFor(size, name);
+        ending = END_READ[s];
+      } else if (kind === "geographic") {
+        const gf = pick(GEO_FEATURES);
+        const landed = Math.random() < 0.6;
+        name = landed ? bind(gf, s) : gf;
+        pattern = "geographic: the land was named first and the crown arrived later";
+        formal = titleFor(size, name);
+        if (landed) {
+          suffixFam = END2FAM[s];
+          ending = END_READ[s];
+        } else {
+          suffixFam = null;
+          endingShort = "none: the feature is the whole name";
+          endingNote = "There is no land ending in it because the map came first: the water, the ford or the ridge was named long before a crown needed a title for it.";
+        }
+      } else if (kind === "ideal") {
+        const ideal = pick(IDEALS);
+        name = "The " + ideal + " of " + cap(root);
+        pattern = "ideal: the state is named for a promise, which means the name can be judged and revoked";
+        formal = "The " + (SIZE_NOUN[size] || SIZE_NOUN.kingdom) + " of the " + cap(root) + " " + ideal;
+        suffixFam = null;
+        endingShort = "none: the promise is the classifier";
+        endingNote = "There is no land ending in it because the promise is doing that job, which is exactly what makes the name revocable.";
+      } else {
+        name = bind(root, s);
+        pattern = "ethnic: a people's own word plus a land ending, so belonging outranks rule";
+        formal = titleFor(size, name);
+        ending = END_READ[s];
+      }
+      if (ending !== null) {
+        endingShort = ending;
+        endingNote = "The ending reads as " + ending + ".";
+      }
+
+      const capital = capitalFor();
+      const demonym = cap(joinRoot(root, DEMONYM_TAILS[fam] || "born"));
+      const exonym = exonymFor(root, kind === "ideal" ? null : s);
+      const house = "House " + pick(HOUSES);
+      const motto = pick(MOTTO_FORMS).replace("%V%", pick(VIRTUES));
+
+      return { name, formal, pattern, capital, demonym, exonym, house, motto, size, suffixFam, endingNote, endingShort };
+    }
+
+    function generateRealms() {
+      const flavour = document.getElementById("kd-flavour").value;
+      const size = document.getElementById("kd-size").value;
+      const source = document.getElementById("kd-source").value;
+      const count = Math.min(20, Math.max(1, parseInt(document.getElementById("kd-count").value) || 5));
+
+      const used = new Set();
+      const list = [];
+      let guard = 0;
+      while (list.length < count && guard++ < count * 30) {
+        const r = buildRealm(flavour, size, source);
+        if (used.has(r.name)) continue;
+        used.add(r.name);
+        list.push(r);
+      }
+
+      document.getElementById("kd-results").innerHTML = list.map(r => `
+        <div class="name-card">
+          <div>
+            <div class="name-text">${r.name}</div>
+            <div class="name-meaning">${r.formal} &middot; capital ${r.capital} &middot; the people are ${r.demonym}</div>
+            <div class="etymology-box"><strong>Source:</strong> ${r.pattern}<br><strong>Ending:</strong> ${r.endingShort}<br><strong>Neighbours write it:</strong> ${r.exonym}<br><strong>Arms:</strong> ${r.house}, motto "${r.motto}"</div>
+          </div>
+          <div class="name-actions">
+            <button class="icon-btn" onclick="copyText('${r.name.replace(/'/g, "\\'")}')" title="Copy name">C</button>
+            <button class="icon-btn" onclick="copyText('${(r.formal + ", capital " + r.capital + ", " + r.house + " \u2014 " + r.motto).replace(/'/g, "\\'")}')" title="Copy formal title">F</button>
+          </div>
+        </div>`).join("");
+    }
+
+    function generateRealmSheet() {
+      const r = buildRealm(
+        document.getElementById("kd-flavour").value,
+        document.getElementById("kd-size").value === "any" ? pick(Object.keys(TITLES)) : document.getElementById("kd-size").value,
+        document.getElementById("kd-source").value
+      );
+      document.getElementById("sheet-out").innerHTML = `
+        <div class="char-card">
+          <h3>${r.name}</h3>
+          <div class="char-card-section"><h4>Title on paper</h4><p>${r.formal}. Citizens say "${shortForm(r.name)}" and mean the same thing with less respect.</p></div>
+          <div class="char-card-section"><h4>How the name was made</h4><p>${r.pattern}. ${r.endingNote}</p></div>
+          <div class="char-card-section"><h4>Other names for it</h4><p>Neighbours across the ${pick(["water", "ridge", "customs line", "desert road"])} write <strong>${r.exonym}</strong>, which is ${pick(["a trade spelling nobody here would use", "an older word the realm has forgotten", "deliberately wrong, on purpose, in a treaty"])}.</p></div>
+          <div class="char-card-section"><h4>Seat and house</h4><p>Capital at ${r.capital}. The crown is carried by ${r.house}, whose arms bear the motto "${r.motto}".</p></div>
+          <div class="char-card-section"><h4>Who is the people</h4><p>They call themselves ${r.demonym}. ${pick(["Which includes three provinces that would not have picked the same word a generation ago.", "Which the border provinces accept, grudgingly, for tax purposes.", "Which excludes, quietly, everyone east of the toll road."])}</p></div>
+          <div class="char-card-section"><h4>Succession</h4><p>The realm's real problem: ${pick(SUCCESSION)}.</p></div>
+          <div class="char-card-section"><h4>Short of</h4><p>Short of ${pick(SHORTFALLS)}.</p></div>
+          <div class="result-actions"><button class="btn btn-secondary" onclick="copyText(document.querySelector('#sheet-out .char-card').innerText)">Copy Realm Sheet</button></div>
+        </div>`;
+    }
+
+    window.addEventListener("load", generateRealms);
+
+  </script>
+</body>
+</html>

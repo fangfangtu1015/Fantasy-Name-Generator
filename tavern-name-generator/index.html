@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TQH84Q5Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Tavern Name Generator - Inns &amp; Pub Names for D&amp;D Campaigns</title>
+  <meta name="description" content="Generate tavern names with the keeper, sign, specialty drink and reputation that go with them. Built on real public-house naming history, plus inn versus tavern guidance for RPG settings.">
+  <link rel="canonical" href="https://fantasyname.net/tavern-name-generator/">
+  <meta property="og:title" content="Tavern Name Generator - Inns &amp; Pub Names for D&amp;D Campaigns">
+  <meta property="og:description" content="Generate tavern names with the keeper, sign, specialty drink and reputation that go with them. Built on real public-house naming history.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fantasyname.net/tavern-name-generator/">
+  <meta property="og:image" content="https://fantasyname.net/assets/tavern-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tavern Name Generator - Inns &amp; Pub Names for D&amp;D Campaigns">
+  <meta name="twitter:description" content="Generate tavern names with the keeper, sign, specialty drink and reputation that go with them.">
+  <meta name="twitter:image" content="https://fantasyname.net/assets/tavern-hero.jpg">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Tavern Name Generator",
+    "description": "Generate tavern, inn and public house names for tabletop RPGs, each paired with a keeper, hanging sign, specialty drink and reputation. Includes naming-pattern reference tables and establishment-type guidance.",
+    "url": "https://fantasyname.net/tavern-name-generator/",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I name a tavern for a D&D campaign?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pick a sign noun first, because the noun is the picture painted over the door: anvil, boar, eel, bell, anchor, crown. Then add one modifier that implies a history rather than a mood, such as Broken, Lesser, Brazen or Cold. Finally decide who runs it and whether the locals drop the word \"The\" when they say it. Three decisions, made in that order, produce a name you can describe in one sentence."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between an inn and a tavern?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An inn sells lodging and stabling, so it needs a yard, rooms and feed, and it sits on a travel route. A tavern sells drink and company, and it may have a room above stairs but does not promise one. A public house sells drink to regulars. If the party needs to sleep and their horses need to eat, name an inn; if you need them to overhear something, name a tavern."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do tavern names start with \"The\"?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Because customers historically identified the house by pointing at its sign rather than reading its name, so the spoken form was \"the house with the kettle on it.\" The article is a fossil of that gesture. Regulars usually drop it, which is why \"Kettle\" and \"the Oar\" sound like insider speech while \"The Copper Kettle\" sounds like a charter, a tax notice or an outsider talking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I make a tavern name sound old without saying \"Ye Olde\"?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use a name whose original meaning has been forgotten. \"The King's Head\" survives because the head is still on the board, but \"Carry On Coil\" and \"Trusty Boar\" sound centuries old precisely because nobody working there knows what the phrase referred to. A trade noun that no longer describes the neighbourhood, a Ropey near a dry dock, does the same job."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use these tavern names in my own game or book?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every name the generator produces is an original combination of common words, and house names of this shape are not owned by anyone. Use them in campaigns, novels, video games, maps or streams without credit and without payment."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fantasyname.net/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tools",
+        "item": "https://fantasyname.net/#tools"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Tavern Name Generator",
+        "item": "https://fantasyname.net/tavern-name-generator/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">
+        <span class="logo-icon">&#9876;</span>
+        Fantasy Name Generator
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/races/">Races</a></li>
+          <li><a href="/backstory-generator/">Backstory Generator</a></li>
+          <li><a href="/guides/">Guides</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="race-hero">
+          <img src="/assets/tavern-hero.jpg" alt="Lit tavern at dusk with a hanging wooden sign above a heavy door">
+          <div class="race-hero-overlay">
+            <div class="race-hero-text">
+              <h1>Tavern Name Generator</h1>
+              <p>Name a tavern and get its keeper, hanging sign, house drink and local reputation in one roll</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>&#8250;</span>
+        <a href="/#tools">Tools</a>
+        <span>&#8250;</span>
+        Tavern Name Generator
+      </div>
+
+      <h2>Names That Come With a Keeper, a Sign and a Rumour</h2>
+
+      <div class="generator-box">
+        <div class="tab-switcher">
+          <button class="tab-btn active" onclick="switchTab('quick-names', this)">Tavern Names</button>
+          <button class="tab-btn" onclick="switchTab('tavern-sheet', this)">Full Tavern Sheet</button>
+        </div>
+
+        <div id="quick-names" class="tab-content active">
+          <div class="generator-controls">
+            <div class="form-group">
+              <label for="tv-kind">Establishment</label>
+              <select id="tv-kind">
+                <option value="any">Any</option>
+                <option value="tavern">Tavern (drink and music)</option>
+                <option value="inn">Inn (beds and stabling)</option>
+                <option value="pub">Public house (locals only)</option>
+                <option value="roadhouse">Roadhouse (coach stop)</option>
+                <option value="cellar">Cellar (hidden, after hours)</option>
+                <option value="hall">Festhall (feasts and hire)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="tv-setting">Neighbourhood</label>
+              <select id="tv-setting">
+                <option value="any">Any</option>
+                <option value="docks">Docks and river trade</option>
+                <option value="market">Market square</option>
+                <option value="crossroads">Crossroads and outskirts</option>
+                <option value="temple">Temple district</option>
+                <option value="camp">Mining or frontier camp</option>
+                <option value="noble">Noble quarter</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="tv-tone">Tone</label>
+              <select id="tv-tone">
+                <option value="any">Any</option>
+                <option value="cozy">Cosy and welcoming</option>
+                <option value="seedy">Seedy and cheap</option>
+                <option value="grand">Grand and expensive</option>
+                <option value="ominous">Ominous</option>
+                <option value="comic">Comic</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="tv-count">How many?</label>
+              <input type="number" id="tv-count" min="1" max="20" value="5">
+            </div>
+          </div>
+          <button class="btn btn-primary generate-btn" onclick="generateTaverns()">Generate Tavern Names</button>
+          <div class="results" id="tv-results"></div>
+        </div>
+
+        <div id="tavern-sheet" class="tab-content">
+          <p>A session-ready sheet: name, keeper, sign, card and coin, house drink, a rumour on the table, and the hook that gets the party through the door.</p>
+          <button class="btn btn-primary generate-btn" onclick="generateTavernSheet()">Roll a Tavern Sheet</button>
+          <div id="sheet-out"></div>
+        </div>
+      </div>
+
+      <section class="mt-2">
+        <h2>The Grammar of a Tavern Name</h2>
+        <p>English-speaking pubs, inns and taverns have followed one grammar for roughly five centuries, and it is the reason a generated name either sounds like a real place or sounds like a video game. The template is short: <strong>article, modifier, sign noun</strong>. "The Copper Kettle." "The Broken Oar." "The Slaughtered Lamb." Almost every traditional house name you can think of fits it, and once you understand why, you can name a hundred taverns without reaching for adjectives like "Mystic" or "Ancient."</p>
+
+        <h3>Why "The" Is There at All</h3>
+        <p>The article survives from a period when most customers could not read. Licensing authorities required taverns to display a sign, and the sign carried a picture, not words. So the house was described rather than spelled: this is <em>the</em> house with the kettle, <em>the</em> house with the broken oar. The word "the" is a fossil of that pointing gesture. When you write "The Copper Kettle" you are writing the phrase a customer used while pointing at the board swinging over the door.</p>
+        <p>Two useful consequences for a campaign:</p>
+        <ul>
+          <li><strong>Locals drop the article.</strong> Regulars say "Kettle," "the Oar," or "see you at the Kettle." A formal charter, a tax notice or a magistrate's report restores "The." Writing both forms makes a city feel documented.</li>
+          <li><strong>A house with no article is usually new or trying to be grand.</strong> "Emberhouse," "Salt &amp; Nail," "Vellum" read as recent, fashionable, or owned by someone who chose the name for how it looks on a painted panel rather than for how it points at a picture.</li>
+        </ul>
+
+        <h3>The Sign Noun Does the Real Work</h3>
+        <p>The noun is the picture. It is chosen from a small set of families: animals, working tools, objects of trade, regalia, landscape features, and vessels. The modifier only narrows which picture: "Copper" tells you the kettle is a good one, "Broken" tells you the oar has a story. A tavern whose name has no visible noun ("The Happy Place") feels modern precisely because there is nothing to paint on a board.</p>
+        <p>This is why generated names that stack abstractions fail. "The Mystic Adventure Lounge" has no noun to draw. "The Brazen Anvil" has a sign, a smell, and a reason the floor is scorched.</p>
+
+        <h3>The "Ye Olde" Trap</h3>
+        <p>Plenty of real houses are called "Ye Olde" something, and almost none of them were ever addressed that way in period. The <em>ye</em> spelling comes from a misreading: medieval documents used the letter thorn (&#55341;&#56412;) for the "th" sound in "the," and early printers, lacking the glyph, substituted "ye." So "Ye Olde Tavern" was always pronounced "The Old Tavern." Use the spelling if you want a self-consciously fake-antique, touristy, overpriced house, which is a genuinely fun detail, but do not use it as evidence of age. If you want an old-sounding name without the tourist sheen, prefer the plain article plus a trade noun plus a modifier that has outlived its meaning ("The Bell &amp; Crown," "The King's Head").</p>
+
+        <div class="etymology-box">
+          <strong>Try it aloud.</strong> Say the candidate name twice at conversational speed, then say it as an order: "a room at the ___," "meet me at the ___," "another at the ___." A tavern name that breaks in your mouth mid-sentence will not survive your next session, no matter how good it looks written down.
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Six Naming Patterns Behind Every Good House Name</h2>
+        <p>Reference tables are fine, but patterns are what let you improvise at the table. These six cover nearly every traditional name, and each one tells the party something different about who runs the place and who is allowed inside.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Pattern</th>
+                <th>Structure</th>
+                <th>Examples</th>
+                <th>What it signals to the party</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Sign noun</strong></td>
+                <td>The + [modifier] + [drawn object]</td>
+                <td>The Brazen Anvil, The Lesser Boar, The Gilded Eel</td>
+                <td>Ordinary trade house. Anyone can enter. The cheapest reliable name for a starting location.</td>
+              </tr>
+              <tr>
+                <td><strong>Keeper's name</strong></td>
+                <td>[Owner] + 's + [noun or nothing]</td>
+                <td>Maggie's, Barnaby's Cup, Hessa's Rest</td>
+                <td>Small, personal, reputation depends entirely on one person. Kill the keeper and the name changes within a year.</td>
+              </tr>
+              <tr>
+                <td><strong>Deed or promise</strong></td>
+                <td>[Verb] + the + [noun]</td>
+                <td>Carry On Coil, Trusty Boar, Still and Will</td>
+                <td>Old, quirky, often a guild or religious pageant name survived into a pub sign. Great for a house with history it never explains.</td>
+              </tr>
+              <tr>
+                <td><strong>Trade adjacency</strong></td>
+                <td>[Nearby thing] + [relationship]</td>
+                <td>The Farrier's Rest, Salters' Arms, Bell &amp; Tally</td>
+                <td>Names where the money comes from. Tells you the clientele before you open the door.</td>
+              </tr>
+              <tr>
+                <td><strong>Regalia</strong></td>
+                <td>[Ruler, office or heraldic part] + [head, arms, crest]</td>
+                <td>The King's Head, Queen's Arms, The Ruby Crown</td>
+                <td>Loyalist, civic, or licensed by a noble house. Expect tax collectors and soldiers at the bar.</td>
+              </tr>
+              <tr>
+                <td><strong>Downgrade</strong></td>
+                <td>Formal name shrinks in local speech</td>
+                <td>"The Anchor and Challenge" becomes "Anchor and"; "The Green Dragon" becomes "Dragons"</td>
+                <td>Proof a neighbourhood has decades of regulars. Instant depth for free.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Combine Two Families, Not Three</h3>
+        <p>The strongest names use two loaded words. "Anchor and Challenge" pairs a trade object with an institution; "Bell &amp; Tally" pairs a signal with an accounting device. Three-element names, "The Anchor, Bell and Crown," exist and were usually mergers, two houses bought by one owner who kept both signs. That history is worth stealing: a merged name implies a neighbourhood that consolidated, which implies rents rising and old regulars leaving unhappy.</p>
+
+        <h3>What Not to Reach For</h3>
+        <p>Three habits flatten a tavern name, and generators that output them should be distrusted: stacked mysticism ("The Arcane Griffin Tavern &amp; Inn"), genre labels used as nouns ("Tavern," "Lounge," "Eatery," "Adventurer's Rest"), and unmodified animal names ("The Wolf"). A wolf is not a house. A <em>brass</em> wolf, a <em>hungry</em> wolf, a <em>wolf's head</em> or <em>wolf's tooth</em> is.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>Inn, Tavern, Public House, Roadhouse: What Each Name Promises</h2>
+        <p>Searchers routinely want "tavern name" and get one word for every purpose, but these establishments sold different things and charged differently. Choose the word deliberately and the name does half your description work.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Word</th>
+                <th>What it sells</th>
+                <th>Beds</th>
+                <th>Expected party behaviour</th>
+                <th>Best in-fiction use</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Inn</strong></td>
+                <td>Lodging, stabling, feed</td>
+                <td>Yes, and a yard for horses</td>
+                <td>Pay before you sleep; ask the ostler about the roads</td>
+                <td>A stop on a travel route. Rooms, coin, and a reason the party is not camping.</td>
+              </tr>
+              <tr>
+                <td><strong>Tavern</strong></td>
+                <td>Drink, often food, sometimes music</td>
+                <td>Occasionally, above stairs</td>
+                <td>Buy a round, hire a musician, listen</td>
+                <td>The social engine of a scene. Best place for a rumour, an argument or a hire.</td>
+              </tr>
+              <tr>
+                <td><strong>Public house / pub</strong></td>
+                <td>Drink, at length, to regulars</td>
+                <td>Rarely</td>
+                <td>Behave like a neighbour or leave</td>
+                <td>Where locals get suspicious of strangers. Highest social friction, lowest coin.</td>
+              </tr>
+              <tr>
+                <td><strong>Roadhouse</strong></td>
+                <td>Everything, at a price, to travellers</td>
+                <td>Yes, and a guard on the yard</td>
+                <td>Keep weapons visible, expect to be cheated</td>
+                <td>Outside town walls. Good place to introduce a threat the town will not follow.</td>
+              </tr>
+              <tr>
+                <td><strong>Cellar / tap house</strong></td>
+                <td>One drink, one room, no sign</td>
+                <td>No</td>
+                <td>Know the word or don't knock</td>
+                <td>Unlicensed, smuggler-run, or after-hours. Perfect for a contact scene.</td>
+              </tr>
+              <tr>
+                <td><strong>Festhall</strong></td>
+                <td>Board, ale and hire at length</td>
+                <td>Open floor</td>
+                <td>Sit where you are placed; be seen</td>
+                <td>Noble or guild household economics. Where patrons openly hire.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>The Word in the Name Is a Lie Worth Checking</h3>
+        <p>A house advertises one thing and does another constantly. "The Gilded Stag, Inn" that has four rooms and no stable. "The Drunkard's Cup, tavern" whose real business is a back-room auction. When you generate a name and a reputation, the mismatch between the advertised word and the actual trade is the single cheapest source of an adventure hook in a city scene, and the sheet tab on this page builds that mismatch deliberately.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>Matching the Name to Your Campaign Register</h2>
+        <p>The same town with different adjectives produces a different game. Decide your register before you generate, because register controls three things at once: which nouns appear, how long the name is, and whether the modifier is a compliment or a warning.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Register</th>
+                <th>Noun preference</th>
+                <th>Modifier style</th>
+                <th>Length</th>
+                <th>Sample output</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Gritty / low fantasy</strong></td>
+                <td>Working tools, parts of animals, body</td>
+                <td>Damage, absence, or a number</td>
+                <td>Two words, hard consonants</td>
+                <td>The Bent Nail, Cold Hound, The Lesser Boar</td>
+              </tr>
+              <tr>
+                <td><strong>High fantasy</strong></td>
+                <td>Regalia, heraldic charges, vessels</td>
+                <td>Metal, colour, office</td>
+                <td>Three or four words, paired</td>
+                <td>The Argent Hart &amp; Charter, Queen's Cup, The Gilded Eel</td>
+              </tr>
+              <tr>
+                <td><strong>Maritime / river</strong></td>
+                <td>Rigging, cargo, water features</td>
+                <td>Direction, depth, condition</td>
+                <td>Short, often clipped</td>
+                <td>Old Ropey, The Salt Kedge, Three Buoys</td>
+              </tr>
+              <tr>
+                <td><strong>Frontier / camp</strong></td>
+                <td>Dugouts, claims, one-room facts</td>
+                <td>Possessive, or a promise</td>
+                <td>Named for a person, not a picture</td>
+                <td>Hessa's, Last Chance, The Found Claim</td>
+              </tr>
+              <tr>
+                <td><strong>Comic / pulp</strong></td>
+                <td>Incongruous pairings</td>
+                <td>Adjective that argues with the noun</td>
+                <td>Punch lands on the last word</td>
+                <td>The Polite Bear, Drunken Snail, The Very Good Boat</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>One District, One Trade Cluster</h3>
+        <p>A city reads as designed when each neighbourhood recycles the same noun family. Docks: rope, anchor, salt, tar, keel, eel. Market: bell, scale, tally, boar, sack. Temple district: lamb, crown, angel, charter, oil. Mining camp: lamp, seam, pick, canary, coin. Generate five taverns per district from one family and the neighbourhood becomes legible without a single paragraph of description. This is the constraint the Neighbourhood control on this page applies.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>Naming the Rest of the Room</h2>
+        <p>A name alone gives you a sign. Four small decisions after it give you a place the party can spend money in.</p>
+
+        <h3>The Keeper</h3>
+        <p>Keepers are named by the same pattern the house uses, one step down. If the house is a sign noun, the keeper gets a plain given name plus an occupational or physical epithet: "Maggie Two-Kegs," "Barnaby the Quiet." If the house is already named for a person, do not name the keeper for that person; the house was bought, and the gap between the painted sign and the actual owner is a scene waiting to happen. The sheet tab produces this mismatch on purpose.</p>
+
+        <h3>The House Drink</h3>
+        <p>One drink with a name is worth three paragraphs of decor, because it is portable: the party can order it in another city and be annoyed. Build it as <em>[container or vessel] + [seasoning or quality]</em>: "a brassikin of peppered brown," "the long claret," "cold needle beer." Keep it to two words. If the drink has a regional name, the tavern gets a reputation for importing, which tells the party about trade routes.</p>
+
+        <h3>Prices That Talk</h3>
+        <p>Have the bar answer with numbers rather than adjectives. A shared table costs one thing, a private room another, a bed a third, and a horse a fourth, and the ratio between those four tells you what kind of house it is. A roadhouse charges for stabling more than for ale; a cellar charges for silence; a festhall charges for being seen. When the keeper quotes a "musician's rate" or a "second breakfast," the house has an economy.</p>
+
+        <h3>The Rumour on the Table</h3>
+        <p>Give every named house exactly one rumour that is not about the house. A tavern is a delivery mechanism for information the party can use elsewhere: a road closed, a price spike, a body found, a hireling who did not come back. When you later need a scene in that tavern, the rumour is your opening line and the players already trust the location because they got something from it last time.</p>
+
+        <div class="tip-card">
+          <h3>Naming Consistency Check</h3>
+          <p>Before you run the scene, read every house name in your city aloud in one breath. If two names share a first word, or the same modifier appears twice, change one. Repeats inside one settlement read as a list rather than a place, and it is the failure mode that gives generated names their reputation.</p>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Rooms, Yard and Field: The Names Inside a House</h2>
+        <p>A house is not one space, and the words for its parts are some of the most usable vocabulary in a campaign. Being shown into a different room tells a player everything about how they are being treated, and it costs you one noun. Learn the six spaces below and your descriptions of the same tavern change register instantly, without renaming the building.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Space</th>
+                <th>What it is for</th>
+                <th>Who is admitted</th>
+                <th>What being sent there communicates</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Bar or taproom</strong></td>
+                <td>Standing drinking, short trades, noise</td>
+                <td>Anyone with a penny</td>
+                <td>You are a customer and nothing more; expect to be overheard</td>
+              </tr>
+              <tr>
+                <td><strong>Parlour or best room</strong></td>
+                <td>Sitting, eating, a fire, a cloth on the table</td>
+                <td>People the keeper already knows, or who pay for the privilege</td>
+                <td>You are being taken seriously, or being separated from your company</td>
+              </tr>
+              <tr>
+                <td><strong>Long room or billiard room</strong></td>
+                <td>Gaming, music, meetings of a trade</td>
+                <td>Regulars and anyone introduced by one</td>
+                <td>Somebody has promised you will not be cheated, which is a real claim</td>
+              </tr>
+              <tr>
+                <td><strong>The yard</strong></td>
+                <td>Carts, horses, cargo, waiting for a company</td>
+                <td>Drivers, porters, anyone whose business is in motion</td>
+                <td>You are luggage until somebody has time; also where eavesdropping is cheapest</td>
+              </tr>
+              <tr>
+                <td><strong>The ship</strong></td>
+                <td>A long gallery, a balcony or a rafters room over the yard</td>
+                <td>Young people, servants, and anyone the keeper wants out of the ground floor</td>
+                <td>You are tolerated; expect a loose board and a clear view of every door</td>
+              </tr>
+              <tr>
+                <td><strong>Orchard, field or garden</strong></td>
+                <td>Summer drinking, drying hemp, a maypole, a hanging tree</td>
+                <td>Everyone, in the right season</td>
+                <td>Business is being done away from walls that carry sound</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Name the Rooms Only Once Each</h3>
+        <p>Interior spaces get named after their fixture or their view rather than their function: the Blue Room after its wallpaper, the Hay Loft after what it looks onto, the Armill after the sign it shares with the yard. That is why two houses in the same town can both have a "parlour" and neither is confusing, because nobody says the word in public; they say "out the back", "up the ship", or "in the room with the green cloth". Put one of those three phrases in your read-aloud text and the building acquires a floor plan for free. The exception worth writing down: the room a guild always books, and the room the watch always takes when it is in town, because those two are not really rooms any more, and the party will find that out the hard way.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>Related Generators</h2>
+        <div class="internal-links">
+          <a href="/npc-name-generator/">NPC Name Generator</a>
+          <a href="/city-name-generator/">City Name Generator</a>
+          <a href="/guild-name-generator/">Guild Name Generator</a>
+          <a href="/dungeon-name-generator/">Dungeon Name Generator</a>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>How do I name a tavern for a D&amp;D campaign?</h3>
+          <p>Pick a sign noun first, because the noun is the picture painted over the door: anvil, boar, eel, bell, anchor, crown. Then add one modifier that implies a history rather than a mood, such as Broken, Lesser, Brazen or Cold. Finally decide who runs it and whether the locals drop the word "The" when they say it. Three decisions, made in that order, produce a name you can describe in one sentence.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What is the difference between an inn and a tavern?</h3>
+          <p>An inn sells lodging and stabling, so it needs a yard, rooms and feed, and it sits on a travel route. A tavern sells drink and company, and it may have a room above stairs but does not promise one. A public house sells drink to regulars. If the party needs to sleep and their horses need to eat, name an inn; if you need them to overhear something, name a tavern.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Why do tavern names start with "The"?</h3>
+          <p>Because customers historically identified the house by pointing at its sign rather than reading its name, so the spoken form was "the house with the kettle on it." The article is a fossil of that gesture. Regulars usually drop it, which is why "Kettle" and "the Oar" sound like insider speech while "The Copper Kettle" sounds like a charter, a tax notice or an outsider talking.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I make a tavern name sound old without saying "Ye Olde"?</h3>
+          <p>Use a name whose original meaning has been forgotten. "The King's Head" survives because the head is still on the board, but "Carry On Coil" and "Trusty Boar" sound centuries old precisely because nobody working there knows what the phrase referred to. A trade noun that no longer describes the neighbourhood, a Ropey near a dry dock, does the same job.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I use these tavern names in my own game or book?</h3>
+          <p>Yes. Every name the generator produces is an original combination of common words, and house names of this shape are not owned by anyone. Use them in campaigns, novels, video games, maps or streams without credit and without payment.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Race Generators</h4>
+          <ul>
+            <li><a href="/elf-name-generator/">Elf Name Generator</a></li>
+            <li><a href="/dwarf-name-generator/">Dwarf Name Generator</a></li>
+            <li><a href="/dragon-name-generator/">Dragon Name Generator</a></li>
+            <li><a href="/orc-name-generator/">Orc Name Generator</a></li>
+            <li><a href="/tiefling-name-generator/">Tiefling Name Generator</a></li>
+            <li><a href="/drow-name-generator/">Drow Name Generator</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Elf Subtypes</h4>
+          <ul>
+            <li><a href="/wood-elf/">Wood Elf Names</a></li>
+            <li><a href="/high-elf/">High Elf Names</a></li>
+            <li><a href="/dark-elf/">Dark Elf Names</a></li>
+            <li><a href="/female-elf/">Female Elf Names</a></li>
+            <li><a href="/male-elf/">Male Elf Names</a></li>
+            <li><a href="/elf-last-name/">Elf Last Names</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="/guides/how-to-choose-a-sound-palette/">Sound Palette Guide</a></li>
+            <li><a href="/guides/how-to-name-a-dd-character/">D&amp;D Naming Guide</a></li>
+            <li><a href="/guides/how-to-pronounce-fantasy-names/">Pronunciation Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Tools</h4>
+          <ul>
+            <li><a href="/backstory-generator/">Backstory Generator</a></li>
+            <li><a href="/races/">All Race Generators</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fantasy Name Generator. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/name-generator.js"></script>
+  <script src="/assets/race-page-components.js"></script>
+  <script>
+    const SETTING_NOUNS = {
+      docks: ["Rope", "Anchor", "Kedge", "Eel", "Tar Pot", "Buoy", "Hawser", "Ballast", "Cask", "Hook", "Sail Loft", "Long Oar"],
+      market: ["Boar", "Bell", "Scale", "Tally", "Sack", "Anvil", "Kettle", "Sieve", "Ledger", "Groat", "Gridiron", "Twin Scales"],
+      crossroads: ["Stone", "Milepost", "Cross", "Hitching Post", "Lantern", "Weary Horse", "Gate", "Fork", "Coach Wheel", "Stumbling Block"],
+      temple: ["Lamb", "Crown", "Angel", "Charter", "Oil Lamp", "Alms Bowl", "Vigil", "Bells", "Censer", "Pilgrim"],
+      camp: ["Lamp", "Seam", "Pick", "Canary", "Claim", "Flask", "Pan", "Drum", "Craddle", "Blackened Pot", "Windfall"],
+      noble: ["Hart", "Sable", "Coronet", "Crane", "Sterling", "Serpent", "Marble Cup", "Tyger", "Ermine", "Silver Crest"]
+    };
+
+    const TONE_MODS = {
+      cozy: ["Warm", "Honeyed", "Little", "Fat", "Bright", "Kindly", "Roasted", "Sunday"],
+      seedy: ["Broken", "Leaky", "Black", "Crooked", "Rotten", "Lesser", "Cold", "Mouldy"],
+      grand: ["Gilded", "Argent", "Royal", "Emerald", "Silver", "Sable", "Crowned"],
+      ominous: ["Hungry", "Hollow", "Grinning", "Sunken", "Widow", "Bleeding", "Last"],
+      comic: ["Polite", "Drunken", "Unlucky", "Punctual", "Lazy", "Very Good", "Wrong"]
+    };
+
+    const REGALIA = ["King's Head", "Queen's Arms", "Prince's Feather", "Duke's Boot", "Magistrate's Wand", "Charter Oak", "Crown &amp; Tally"];
+    const DEEDS = ["Carry On Coil", "Trusty Boar", "Still and Will", "Rise and Roast", "Buy the Lamb", "Fast Horse", "Come Again", "Sleep Soundly"];
+    const PAIRED = ["Anchor and Challenge", "Bell and Tally", "Crown and Anchor", "Lamp and Ledger", "Hart and Horn", "Kettle and Cap", "Sable and Six", "Boar and Barrel"];
+
+    const KEEPERS = ["Maggie", "Barnaby", "Hessa", "Doll", "Corwin", "Pell", "Ottoline", "Garret", "Nessa", "Tam", "Ilric", "Juna", "Rook", "Bess", "Marrow", "Hob", "Vetil", "Cori", "Nim", "Sable"];
+    const KEEPER_TAGS = {
+      cozy: ["Two-Kegs", "Goodweather", "the Warm", "Half-Pint", "Bright Eyes"],
+      seedy: ["One-Eye", "the Quiet", "Crooked Finger", "Short Weight", "the Late"],
+      grand: ["the First", "Velvet Coat", "the Alderman's", "Silver Thumb", "the Charter'd"],
+      ominous: ["the Unmoving", "Grave Mouth", "the Long Watch", "No Name", "Ash Hand"],
+      comic: ["Lucky Fall", "Twice-Billed", "the Punctual", "Wrong Turn", "Small Talk"]
+    };
+
+    const DRINKS = {
+      docks: ["peppered brown", "tar-ale", "the long claret", "cold needle beer", "hold-plug stout"],
+      market: ["miller's mild", "two-shilling porter", "groat and honey", "brassikin of red", "barley hard cider"],
+      crossroads: ["coachman's fistful", "spiced milk", "the yard ale", "turnpike gin", "boiled dark"],
+      temple: ["charter wine", "fast beer", "aniseed and honey", "the vigil cup", "communion claret"],
+      camp: ["pan liquor", "claim jumper's whiskey", "black pot brew", "windfall rum", "meltwater gin"],
+      noble: ["the silver pour", "imported vermillion", "cellar claret", "honeyed wine, chilled", "the first pressing"]
+    };
+
+    const VESSELS = ["brassikin", "pin", "gill", "tankard", "horn", "pewter cup", "half-measure"];
+
+    const REPUTATIONS = {
+      cozy: ["clean benches, and a fire that is lit before you ask", "the keeper remembers what you drank last time", "children are allowed until dusk"],
+      seedy: ["nobody here will give your name to the watch", "the second floor is rented by the hour", "watered, cheap, and enough of it"],
+      grand: ["a room you must book a week ahead, and pay for twice", "soldiers of the garrison drink at the far end, by rule", "the sign is repainted every spring, at expense"],
+      ominous: ["two parties have slept in the yard. Neither left at dawn", "the ale arrives from somewhere that is not on any road", "the keeper answers questions twice as often as needed"],
+      comic: ["the house has never once served a full measure, and is loved for it", "a bad joke painted on a good board, held open by regulars", "the sign is upside down and has been since before anyone asked"]
+    };
+
+    const PRICE_LINES = {
+      inn: ["bed 2 sp, shared table 6 cp, horse and hay 1 sp", "room with a lock 3 sp, room without 1 sp, stable 1 sp"],
+      tavern: ["ale 2 cp, round for the house 1 sp, private room 2 sp", "wine 4 cp, music extra, food at the hour bell"],
+      pub: ["no rooms, no credit, ale 1 cp to regulars", "one bar, one price, and a short list of who qualifies"],
+      roadhouse: ["stabling costs more than the ale, and both cost more at night", "guard on the yard at 2 sp, meal included or not"],
+      cellar: ["the first measure is the password. Ask for the second", "no board, no sign, and prices that change with the season"],
+      hall: ["long board at 1 sp, sit where you are placed", "hire fees at the door, meal included, sleep on the floor"]
+    };
+
+    const RUMOURS = [
+      "a barge went down loaded with salt and nobody has asked for it",
+      "the road past the second milestone has been re-cut twice this season",
+      "a hireling walked out of a contract on the far bank and never came back",
+      "the alms house is short by an amount somebody has counted exactly",
+      "grain prices move every time a certain ship takes on cargo",
+      "a seam was found by accident and is now being kept secret",
+      "someone in the night watch has been swapping the rounds order",
+      "a family that left the district a decade ago is buying land back quietly",
+      "the toll on the lower bridge was raised without any posted notice",
+      "a courier rode through at speed and left a horse but took the saddlebags",
+      "two guild apprentices are missing and only one report has been filed",
+      "the wells in the lower quarter taste of iron two days out of three"
+    ];
+
+    const HOOKS = [
+      "the keeper needs the yard cleared of a cargo that is not listed on any manifest",
+      "a regular has stopped coming, and left a tab and a sealed letter",
+      "the house is being bought by someone who will not give a name in person",
+      "a room was rented for a week by a party of five and used by one",
+      "the musician's contract is due and the last two were not paid",
+      "somebody is serving an unlabeled cask in the back at half price",
+      "the stable hand swears the horses were brought in already saddled",
+      "a notice board has been torn down twice in three nights"
+    ];
+
+    function switchTab(tabId, btn) {
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+      btn.classList.add("active");
+      document.getElementById(tabId).classList.add("active");
+    }
+
+    function pick(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function bankFor(sel, banks) {
+      if (sel !== "any") return banks[sel];
+      return Object.keys(banks).reduce((acc, k) => acc.concat(banks[k]), []);
+    }
+
+    function shortForm(name) {
+      const core = name.replace(/^The /, "");
+      const first = core.split(/[^A-Za-z]+/)[0];
+      return pick([first, core, "the " + first.toLowerCase()]);
+    }
+
+    function buildTavern(kind, setting, tone) {
+      let t = rollTavern(kind, setting, tone);
+      for (let i = 0; i < 8 && /\b(\w+)\s+\1\b/i.test(t.name); i++) t = rollTavern(kind, setting, tone);
+      return t;
+    }
+
+    function rollTavern(kind, setting, tone) {
+      const nouns = bankFor(setting, SETTING_NOUNS);
+      const mods = bankFor(tone, TONE_MODS);
+      const roll = Math.random();
+      let name, pattern;
+
+      if (roll < 0.46) {
+        name = "The " + pick(mods) + " " + pick(nouns);
+        pattern = "sign noun plus a modifier that implies history rather than mood";
+      } else if (roll < 0.62) {
+        const k = pick(KEEPERS);
+        name = k + "'s " + pick(["Cup", "Rest", "Board", "Table", "Lamp", ""]);
+        pattern = "keeper's name, so the house only lasts as long as the owner";
+      } else if (roll < 0.76) {
+        name = "The " + pick(PAIRED);
+        pattern = "two houses merged under one licence; both signs still hang";
+      } else if (roll < 0.88) {
+        name = "The " + pick(DEEDS);
+        pattern = "a surviving phrase whose original meaning has been forgotten";
+      } else {
+        name = "The " + pick(REGALIA);
+        pattern = "regalia, which means civic licence and a soldier at the bar";
+      }
+
+      name = name.replace(/\s+/g, " ").replace(/ $/, "");
+      const tag = pick(bankFor(tone, KEEPER_TAGS));
+      const keeper = pick(KEEPERS) + " " + tag;
+      const drink = pick(VESSELS) + " of " + pick(bankFor(setting, DRINKS));
+      const rep = pick(bankFor(tone, REPUTATIONS));
+
+      return { name, pattern, keeper, drink, rep, spoken: shortForm(name), kind, tone };
+    }
+
+    function kindWord(kind) {
+      return { tavern: "Tavern", inn: "Inn", pub: "Public house", roadhouse: "Roadhouse", cellar: "Cellar", hall: "Festhall" }[kind] || "House";
+    }
+
+    function generateTaverns() {
+      const kind = document.getElementById("tv-kind").value;
+      const setting = document.getElementById("tv-setting").value;
+      const tone = document.getElementById("tv-tone").value;
+      const count = Math.min(20, Math.max(1, parseInt(document.getElementById("tv-count").value) || 5));
+
+      const used = new Set();
+      const list = [];
+      let guard = 0;
+      while (list.length < count && guard++ < count * 25) {
+        const k = kind === "any" ? pick(["tavern", "inn", "pub", "roadhouse", "cellar", "hall"]) : kind;
+        const t = buildTavern(k, setting, tone);
+        if (used.has(t.name)) continue;
+        used.add(t.name);
+        list.push(t);
+      }
+
+      document.getElementById("tv-results").innerHTML = list.map(t => `
+        <div class="name-card">
+          <div>
+            <div class="name-text">${t.name}</div>
+            <div class="name-meaning">${kindWord(t.kind)} &middot; keeper: ${t.keeper} &middot; house drink: ${t.drink}</div>
+            <div class="etymology-box"><strong>Pattern:</strong> ${t.pattern}<br><strong>Locals say:</strong> "${t.spoken}"<br><strong>Reputation:</strong> ${t.rep}</div>
+          </div>
+          <div class="name-actions">
+            <button class="icon-btn" onclick="copyText('${t.name.replace(/'/g, "\\'")}')" title="Copy name">C</button>
+            <button class="icon-btn" onclick="copyText('${(t.name + " - keeper " + t.keeper + " - " + t.drink + " - " + t.rep).replace(/'/g, "\\'")}')" title="Copy full entry">F</button>
+          </div>
+        </div>`).join("");
+    }
+
+    function generateTavernSheet() {
+      const kind = document.getElementById("tv-kind").value === "any" ? pick(["tavern", "inn", "pub", "roadhouse", "cellar", "hall"]) : document.getElementById("tv-kind").value;
+      const setting = document.getElementById("tv-setting").value === "any" ? pick(Object.keys(SETTING_NOUNS)) : document.getElementById("tv-setting").value;
+      const tone = document.getElementById("tv-tone").value === "any" ? pick(Object.keys(TONE_MODS)) : document.getElementById("tv-tone").value;
+      const t = buildTavern(kind, setting, tone);
+
+      const advertised = kindWord(kind);
+      const mismatch = Math.random() < 0.4;
+      const actual = mismatch
+        ? pick(["sells no rooms despite the board", "makes its real money in a back room", "has been quietly under new ownership for a year", "caters to one trade only, and turns others away"])
+        : "does exactly what the sign says, which is rarer than it should be";
+
+      document.getElementById("sheet-out").innerHTML = `
+        <div class="char-card">
+          <h3>${t.name}</h3>
+          <div class="char-card-section"><h4>Sign</h4><p>A painted ${pick(SETTING_NOUNS[setting]).toLowerCase()} on a swung board, ${pick(["one corner cracked and glued", "newly varnished and too bright for the street", "faded until the outline is guesswork", "hanging from a crooked wrought bracket"])}. Locals call it "${t.spoken}".</p></div>
+          <div class="char-card-section"><h4>Keeper</h4><p>${t.keeper}, who ${pick(["wipes the same cup three times before serving", "knows every debt in the parish and collects none of them", "came up from a trade and never fully left it", "has hired the same musician for nine seasons"])}. ${kindWord(kind)} on the board; ${actual}.</p></div>
+          <div class="char-card-section"><h4>Card and coin</h4><p>${pick(PRICE_LINES[kind])}.</p></div>
+          <div class="char-card-section"><h4>House drink</h4><p>${t.drink}, poured in ${pick(["the heavy cups kept for regulars", "measures that have been re-banded twice", "a clean glass, which is a statement"])}. ${t.rep}.</p></div>
+          <div class="char-card-section"><h4>Rumour at the bar</h4><p>That ${pick(RUMOURS)}.</p></div>
+          <div class="char-card-section"><h4>Way in</h4><p>${(() => { const h = pick(HOOKS); return h.charAt(0).toUpperCase() + h.slice(1); })()}.</p></div>
+          <div class="result-actions"><button class="btn btn-secondary" onclick="copyText(document.querySelector('#sheet-out .char-card').innerText)">Copy Sheet</button></div>
+        </div>`;
+    }
+
+    window.addEventListener("load", generateTaverns);
+  </script>
+</body>
+</html>

@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TQH84Q5Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Guild Name Generator - Merchant, Craft, Thief and Order Names</title>
+  <meta name="description" content="Generate guild names as two forms: the charter name on a contract and the short name people actually use. Includes craft, arcane, mercenary and front organisations, with ranks, dues and sigils.">
+  <link rel="canonical" href="https://fantasyname.net/guild-name-generator/">
+  <meta property="og:title" content="Guild Name Generator - Merchant, Craft, Thief and Order Names">
+  <meta property="og:description" content="Charter name plus street name for craft, trade, arcane, mercenary and criminal guilds, with sigil, dues, rank ladder and the gate each one controls.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fantasyname.net/guild-name-generator/">
+  <meta property="og:image" content="https://fantasyname.net/assets/guild-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Guild Name Generator - Merchant, Craft, Thief and Order Names">
+  <meta name="twitter:description" content="Charter name and street name for guilds, companies, orders and fronts.">
+  <meta name="twitter:image" content="https://fantasyname.net/assets/guild-hero.jpg">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Guild Name Generator",
+    "description": "Generate names for guilds, companies, orders, leagues and front organisations, each with a charter form, a spoken short form, a sigil, dues and a rank ladder. Includes tables on charter versus street naming and organisational forms.",
+    "url": "https://fantasyname.net/guild-name-generator/",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between a guild, a company and an order?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A guild controls who is allowed to practise a trade, so its power is over its own members. A company exists to make money on a venture and admits anyone who buys a share, so its power is over a market. An order is held together by vows and obedience, which means it can own nothing individually and still outspend both of them. Pick the form first and the naming grammar follows."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I name a thieves' guild without it sounding like a joke?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Give it a charitable or municipal front name and keep the menacing version internal, if you use one at all. Real illegal bodies hide inside dull legitimate categories: burial clubs, porters' associations, salvage buyers, lamplighting contracts. \"The Porters' Friendly Society\" is far more frightening than an invented name with teeth, because it implies a membership list, dues, and a reason for forty people to meet weekly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should a guild name include the trade?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In the charter form, yes, because the whole purpose of the document is to state what the body claims a monopoly over. In the spoken form, usually no: members shorten to the sigil, the hall, the number or a single word. Writing both forms costs you nothing and makes the institution feel older than your notes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I make a guild feel like it has real power in my city?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Attach it to one physical gate and one fee. Decide what cannot legally be sold, shipped, struck or buried without the body's mark on it, then set the price and the punishment. Power in fiction is not an army; it is the ability to make an ordinary transaction illegal on a Tuesday."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use these guild names in my game or published module?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The generator combines ordinary historical trade words, invented figure names and heraldic phrasing, so results are free to use in tabletop sessions, published adventures, fiction, games, streams or videos with no credit and no fee."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fantasyname.net/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tools",
+        "item": "https://fantasyname.net/#tools"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guild Name Generator",
+        "item": "https://fantasyname.net/guild-name-generator/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">
+        <span class="logo-icon">&#9876;</span>
+        Fantasy Name Generator
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/races/">Races</a></li>
+          <li><a href="/backstory-generator/">Backstory Generator</a></li>
+          <li><a href="/guides/">Guides</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="race-hero">
+          <img src="/assets/guild-hero.jpg" alt="A guild hall interior with a counting desk, hanging trade banner and ranked seating">
+          <div class="race-hero-overlay">
+            <div class="race-hero-text">
+              <h1>Guild Name Generator</h1>
+              <p>A charter name for the contract, a short name for the street, plus sigil, dues and the gate it controls</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>&#8250;</span>
+        <a href="/#tools">Tools</a>
+        <span>&#8250;</span>
+        Guild Name Generator
+      </div>
+
+      <h2>A Guild Is a Monopoly, and Its Name Is the Invoice</h2>
+
+      <div class="generator-box">
+        <div class="tab-switcher">
+          <button class="tab-btn active" onclick="switchTab('quick-names', this)">Guild Names</button>
+          <button class="tab-btn" onclick="switchTab('charter-sheet', this)">Full Charter Sheet</button>
+        </div>
+
+        <div id="quick-names" class="tab-content active">
+          <div class="generator-controls">
+            <div class="form-group">
+              <label for="gd-sector">What it controls</label>
+              <select id="gd-sector">
+                <option value="any">Any</option>
+                <option value="craft">Craft and making</option>
+                <option value="maritime">Shipping, cartage, water</option>
+                <option value="money">Money, credit, assay</option>
+                <option value="arcane">Magic, records, teaching</option>
+                <option value="faith">Religious observance and burial</option>
+                <option value="arms">Arms, hiring out force</option>
+                <option value="gray">Unlicensed or criminal work</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="gd-form">Organisational form</label>
+              <select id="gd-form">
+                <option value="any">Any form</option>
+                <option value="company">Company, worshipful</option>
+                <option value="guild">Guild, mystery</option>
+                <option value="order">Order, obedience</option>
+                <option value="league">League, alliance</option>
+                <option value="circle">Circle, closed membership</option>
+                <option value="brotherhood">Brotherhood, sworn body</option>
+                <option value="wardens">Wardens, office holders</option>
+                <option value="mask">Mask, front organisation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="gd-law">Standing before the law</label>
+              <select id="gd-law">
+                <option value="any">Any standing</option>
+                <option value="chartered">Chartered by the crown or council</option>
+                <option value="unlicensed">Operating without a licence</option>
+                <option value="front">Legitimate shell for other work</option>
+                <option value="farmed">Tax or toll farmed by contract</option>
+                <option value="banned">Formally forbidden, still meeting</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="gd-count">How many?</label>
+              <input type="number" id="gd-count" min="1" max="20" value="5">
+            </div>
+          </div>
+          <button class="btn btn-primary generate-btn" onclick="generateGuilds()">Generate Guild Names</button>
+          <div class="results" id="gd-results"></div>
+        </div>
+
+        <div id="charter-sheet" class="tab-content">
+          <p>A charter sheet for prep: both names, the sigil drawn in one line of blazon, the rank ladder, the dues, the gate the body actually controls, and the dispute the founding date implies.</p>
+          <button class="btn btn-primary generate-btn" onclick="generateCharter()">Roll a Charter Sheet</button>
+          <div id="sheet-out"></div>
+        </div>
+      </div>
+
+      <section class="mt-2">
+        <h2>Two Names, Used by Two Different Sets of People</h2>
+        <p>This is the single thing that separates a guild name from every other name on this site: a guild always carries a legal name and a spoken name, and they are used by different people for different purposes. The charter name goes on a contract, a bond, a court filing or a toll board. The spoken name is what a worker uses, and what a threat uses. Getting both makes the organisation feel like it has paperwork, which is how you make an institution feel real faster than any description.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Form</th>
+                <th>Typical shape</th>
+                <th>Who uses it</th>
+                <th>What it is for</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Charter name</strong></td>
+                <td>Qualifiers, then the people, then the trade, then the place</td>
+                <td>Clerks, magistrates, insurers, foreign buyers</td>
+                <td>Binding money: the name a debt is registered under</td>
+              </tr>
+              <tr>
+                <td><strong>Street name</strong></td>
+                <td>One word, or the trade plus a possessive</td>
+                <td>Members, rivals, anyone arguing in a market</td>
+                <td>Pointing: who to look for, who to complain to, who to avoid</td>
+              </tr>
+              <tr>
+                <td><strong>Hall name</strong></td>
+                <td>The object, not the people: the Tallow Hall, the Long Counting House</td>
+                <td>Everyone, when giving an address</td>
+                <td>Location and status; the building is older than the charter</td>
+              </tr>
+              <tr>
+                <td><strong>Exonym</strong></td>
+                <td>Whatever outsiders chose to call them, often insulting</td>
+                <td>People the guild excludes</td>
+                <td>Sometimes the only name the party has heard, which is itself a clue</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="etymology-box">
+          <strong>The gap is the plot.</strong> When the charter name and the street name disagree, ask who benefits from the difference. A body chartered as "the Company of Carriers" and known as "the River Men" is claiming a water monopoly it has never been granted in writing, and that single mismatch is an adventure without any monsters in it.
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Eight Forms, and Each One's Name Makes a Different Promise</h2>
+        <p>Players who have run games for years react to the form word before they react to the trade word. "Company" means you can buy your way in and the door is commercial. "Order" means vows, and therefore a rule that will cost a character something. "Circle" means the membership is small and knows each other by face, which reads as arcane or as conspiracy. Choose the form deliberately: it is a promise about how the party can get inside.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Form</th>
+                <th>Membership logic</th>
+                <th>What the name promises</th>
+                <th>What the name hides</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Company</td>
+                <td>Shares, admission fees, hired staff</td>
+                <td>You can be bought, and so can they</td>
+                <td>Who actually holds the shares</td>
+              </tr>
+              <tr>
+                <td>Guild or mystery</td>
+                <td>Apprenticeship, then a masterpiece, then a seat</td>
+                <td>Quality control and a closed trade</td>
+                <td>How many members are too old to work</td>
+              </tr>
+              <tr>
+                <td>Order</td>
+                <td>Vows, obedience, houses in different cities</td>
+                <td>Discipline, and money that is not anyone's</td>
+                <td>That the rule applies to the rich differently</td>
+              </tr>
+              <tr>
+                <td>League</td>
+                <td>Separate bodies pooled for one purpose</td>
+                <td>A common enemy or a common toll</td>
+                <td>That it dissolves the moment the purpose ends</td>
+              </tr>
+              <tr>
+                <td>Circle</td>
+                <td>Nominated, capped, unlisted</td>
+                <td>Access through a person, not a fee</td>
+                <td>What happens when one member dies</td>
+              </tr>
+              <tr>
+                <td>Brotherhood</td>
+                <td>Sworn equals, often with a shared grave or fund</td>
+                <td>Loyalty stronger than a contract</td>
+                <td>That the fund is the real product</td>
+              </tr>
+              <tr>
+                <td>Wardens</td>
+                <td>Office holders elected annually by a group that cannot meet</td>
+                <td>A duty over a place or a thing</td>
+                <td>That the office outlasted the thing it guarded</td>
+              </tr>
+              <tr>
+                <td>Mask</td>
+                <td>Whatever membership the front can prove on paper</td>
+                <td>A respectability it is trading for</td>
+                <td>Everything, deliberately, in plain sight</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Four Ways a Guild Acquires Its Name</h2>
+        <p>Real trade bodies name themselves by four mechanisms, and each one tells you something the party can use before they walk in.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Pattern</th>
+                <th>How it forms</th>
+                <th>What it implies about the trade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Trade plus people word</strong></td>
+                <td>Chandlers, Ferriers, Weavers, or a verb turned into a noun</td>
+                <td>The product is the identity; quality is enforceable and marked</td>
+              </tr>
+              <tr>
+                <td><strong>Patron or observance</strong></td>
+                <td>Named for a venerated figure, a chapel, or a burial custom</td>
+                <td>The guild doubles as a funeral club and a mutual fund; leaving is socially expensive</td>
+              </tr>
+              <tr>
+                <td><strong>Sigil first</strong></td>
+                <td>Called after the mark on their goods: the Three Shuttles, the Black Hook</td>
+                <td>The stamp matters more than the maker, so the guild is really a standards authority</td>
+              </tr>
+              <tr>
+                <td><strong>Number or sequence</strong></td>
+                <td>the Second, Nine Houses, Lot and Ward numbering, the Sixth Company</td>
+                <td>A merger, a split, or a body that has been re-founded after being banned once</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Numbers Lie Beautifully</h3>
+        <p>A numbering pattern is the cheapest institution-building device available. "The Second Chandlers' Company" states, without any exposition, that the first one ended badly; that somebody kept the name; and that the current holders are worried about the difference. Write the founding date on the charter and you have created a dispute for free: dates that are too recent for the trade mean someone bought the right to say they are old.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>Criminal Guilds Deliberately Borrow Civic Vocabulary</h2>
+        <p>Illegal bodies almost never call themselves anything menacing, because menacing names attract the watch. They take the vocabulary of legitimate mutual aid and bury themselves in it. A "Porters' Friendly Society" holding a weekly meeting of forty men is invisible; the same forty men meeting as "the Black Hand" is a raid within a month. If you write your thieves' guild with a boring, charitable-sounding name, you get realism and a much better reveal.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Front name</th>
+                <th>What is filed</th>
+                <th>What actually moves</th>
+                <th>How the party finds out</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Friendly societies and burial clubs</td>
+                <td>Funeral subscriptions for dock labour</td>
+                <td>Enforced dues, protection on the wharf</td>
+                <td>Widows being paid on time, and nobody asking whose money</td>
+              </tr>
+              <tr>
+                <td>Secondhand and salvage trade</td>
+                <td>Buying damaged goods at auction</td>
+                <td>Fencing; the ledger lists one item twice</td>
+                <td>A stolen object appearing legitimately, at the same price</td>
+              </tr>
+              <tr>
+                <td>Porters, messengers and carriers</td>
+                <td>Human carriage of parcels</td>
+                <td>Drugs, letters, small stolen goods, information</td>
+                <td>A courier who arrives before the letter he is carrying</td>
+              </tr>
+              <tr>
+                <td>Lamplighters, sweeps, water carriers</td>
+                <td>Municipal service by contract</td>
+                <td>Access to every building in the ward, and a map of who is in</td>
+                <td>Burglaries only in streets that were serviced that week</td>
+              </tr>
+              <tr>
+                <td>Alms, charity and hospital support</td>
+                <td>Gifts and legacies</td>
+                <td>Laundering, and a list of everyone who owes a favour</td>
+                <td>A donation the size of the crime that produced it</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>Keep the register boring</h3>
+            <p>The more frightening the operation, the duller the name should be. "The Widows' Almshouse Committee" is a hundred times worse in play than a name with teeth in it.</p>
+          </div>
+          <div class="tip-card">
+            <h3>One honest name each</h3>
+            <p>Give a front body exactly one internal name the members use, and keep it short. That is the moment the party learns the two-layer structure, and it lands better than a monologue.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Make the paperwork visible</h3>
+            <p>Let them find the licence, the bond, or the subscription book rather than the weapon. Institutional evidence reads as bigger than the room it sits in.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Price the betrayal</h3>
+            <p>Every guild name is worth something to somebody. Decide what it costs to be expelled, and you have decided how badly a member will lie to protect the body.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Ranks and Dues: Why the Name Matters to Anyone</h2>
+        <p>Nobody inside a guild cares about its name; they care about what the name lets it do to their income. Put a ladder and a fee in your notes and the institution becomes concrete in one sentence.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Addressed as</th>
+                <th>What the body controls over them</th>
+                <th>Entry cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Apprentice</td>
+                <td>By the master's name, not their own</td>
+                <td>Where they live, who they may marry, how long</td>
+                <td>A premium paid by the family, and years of labour</td>
+              </tr>
+              <tr>
+                <td>Journeyman</td>
+                <td>By name, no title</td>
+                <td>Whether they may take work in this ward at all</td>
+                <td>A piece of work judged by three masters</td>
+              </tr>
+              <tr>
+                <td>Master or Fellow</td>
+                <td>Master, or Goodman</td>
+                <td>The right to trade, to vote, and to be tried by peers</td>
+                <td>A masterpiece, a fee, and a banquet nobody can afford</td>
+              </tr>
+              <tr>
+                <td>Warden or Deacon</td>
+                <td>Sir, or by office</td>
+                <td>Inspection, seizures, and the guild's key</td>
+                <td>Election by the full body, usually unpaid and unwanted</td>
+              </tr>
+              <tr>
+                <td>Clerk or Assayer</td>
+                <td>By office, always</td>
+                <td>The records, which means the truth</td>
+                <td>Appointment, and a lifetime of being distrusted</td>
+              </tr>
+              <tr>
+                <td>Factor or Agent</td>
+                <td>Not at all, in public</td>
+                <td>Nothing, and knows where everything is</td>
+                <td>Hired at distance, paid a percentage</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>The reason this is worth two minutes of preparation: a player who is told "you may not sell that here without a fellow's ticket" instantly understands the city better than any amount of describing buildings. The guild name is what they will use to negotiate with that rule, which is the moment your naming work pays off.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>Four Instruments, and the Name Is Only One of Them</h2>
+        <p>A guild's power is exercised through four physical objects, and each one carries a different version of the body's name. That is useful because it lets you communicate an institution's reach through inventory: what the party is shown, and what they are asked to produce. Once a player has been fined for a missing ticket, they understand the guild better than any description of its offices could teach them.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Instrument</th>
+                <th>What it does</th>
+                <th>Which name it carries</th>
+                <th>What it is worth to the party</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>The mark</strong></td>
+                <td>Struck into or painted on goods to certify who made them</td>
+                <td>The sigil, and nothing else; no words, so it works on a foreign quay</td>
+                <td>A blank one is a criminal business; an old one in a cellar is a whole adventure</td>
+              </tr>
+              <tr>
+                <td><strong>The seal</strong></td>
+                <td>Closes a document and makes it enforceable against anybody</td>
+                <td>The full charter name, in a ring of letters</td>
+                <td>Whoever holds it can bind the body, whether or not the body agreed</td>
+              </tr>
+              <tr>
+                <td><strong>The ticket</strong></td>
+                <td>Records that a fee was paid for a specific load, gate or shift</td>
+                <td>The hall name and a number, written in the clerk's hand</td>
+                <td>Forged by the thousand; the cheapest forgery in the city and the easiest to check</td>
+              </tr>
+              <tr>
+                <td><strong>The search</strong></td>
+                <td>The right to enter a workshop, inspect and seize</td>
+                <td>No name at all; two wardens and a witness is the whole authority</td>
+                <td>An unaccompanied search is void, which means a witness is worth rescuing</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>What the Party Can Forge, Steal or Buy</h3>
+        <p>Set the difficulty of each instrument by what it proves. A ticket proves a payment and is worthless without the counterfoil, so it is easy to copy and hard to use. A mark proves workmanship and travels, which makes a stolen mark the most valuable forgery in the setting and the one the guild will pursue personally rather than through the watch. A seal proves consent, so stealing it does not defraud anyone: it binds the whole body to whatever the thief wrote, which is why the seal is kept by three people who dislike each other. Once the party understands that the least impressive object in the room is the one with real authority, they have learned your city's actual power structure without a lecture.</p>
+
+        <div class="etymology-box">
+          <strong>Answer one question per guild and you can run it:</strong> which of these four instruments does it own outright, and which one does it have to borrow from somebody else? A body that must borrow its seal from a temple, or rent its mark from a richer company, is not as powerful as its charter name claims, and that gap is where an adventuring party fits.
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Related Generators</h2>
+        <div class="internal-links">
+          <a href="/city-name-generator/">City Name Generator</a>
+          <a href="/tavern-name-generator/">Tavern Name Generator</a>
+          <a href="/kingdom-name-generator/">Kingdom Name Generator</a>
+          <a href="/npc-name-generator/">NPC Name Generator</a>
+          <a href="/dungeon-name-generator/">Dungeon Name Generator</a>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>What is the difference between a guild, a company and an order?</h3>
+          <p>A guild controls who is allowed to practise a trade, so its power is over its own members. A company exists to make money on a venture and admits anyone who buys a share, so its power is over a market. An order is held together by vows and obedience, which means it can own nothing individually and still outspend both of them. Pick the form first and the naming grammar follows.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I name a thieves' guild without it sounding like a joke?</h3>
+          <p>Give it a charitable or municipal front name and keep the menacing version internal, if you use one at all. Real illegal bodies hide inside dull legitimate categories: burial clubs, porters' associations, salvage buyers, lamplighting contracts. "The Porters' Friendly Society" is far more frightening than an invented name with teeth, because it implies a membership list, dues, and a reason for forty people to meet weekly.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Should a guild name include the trade?</h3>
+          <p>In the charter form, yes, because the whole purpose of the document is to state what the body claims a monopoly over. In the spoken form, usually no: members shorten to the sigil, the hall, the number or a single word. Writing both forms costs you nothing and makes the institution feel older than your notes.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I make a guild feel like it has real power in my city?</h3>
+          <p>Attach it to one physical gate and one fee. Decide what cannot legally be sold, shipped, struck or buried without the body's mark on it, then set the price and the punishment. Power in fiction is not an army; it is the ability to make an ordinary transaction illegal on a Tuesday.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I use these guild names in my game or published module?</h3>
+          <p>Yes. The generator combines ordinary historical trade words, invented figure names and heraldic phrasing, so results are free to use in tabletop sessions, published adventures, fiction, games, streams or videos with no credit and no fee.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Race Generators</h4>
+          <ul>
+            <li><a href="/elf-name-generator/">Elf Name Generator</a></li>
+            <li><a href="/dwarf-name-generator/">Dwarf Name Generator</a></li>
+            <li><a href="/dragon-name-generator/">Dragon Name Generator</a></li>
+            <li><a href="/orc-name-generator/">Orc Name Generator</a></li>
+            <li><a href="/tiefling-name-generator/">Tiefling Name Generator</a></li>
+            <li><a href="/drow-name-generator/">Drow Name Generator</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Elf Subtypes</h4>
+          <ul>
+            <li><a href="/wood-elf/">Wood Elf Names</a></li>
+            <li><a href="/high-elf/">High Elf Names</a></li>
+            <li><a href="/dark-elf/">Dark Elf Names</a></li>
+            <li><a href="/female-elf/">Female Elf Names</a></li>
+            <li><a href="/male-elf/">Male Elf Names</a></li>
+            <li><a href="/elf-last-name/">Elf Last Names</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="/guides/how-to-choose-a-sound-palette/">Sound Palette Guide</a></li>
+            <li><a href="/guides/how-to-name-a-dd-character/">D&amp;D Naming Guide</a></li>
+            <li><a href="/guides/how-to-pronounce-fantasy-names/">Pronunciation Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Tools</h4>
+          <ul>
+            <li><a href="/backstory-generator/">Backstory Generator</a></li>
+            <li><a href="/races/">All Race Generators</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fantasy Name Generator. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/name-generator.js"></script>
+  <script src="/assets/race-page-components.js"></script>
+  <script>
+    const FORM_KEYS = ["company", "guild", "order", "league", "circle", "brotherhood", "wardens", "mask"];
+    const SECTOR_KEYS = ["craft", "maritime", "money", "arcane", "faith", "arms", "gray"];
+    const LAW_KEYS = ["chartered", "unlicensed", "front", "farmed", "banned"];
+
+    const PLACES = ["the Ward of Bellons", "Lowgate", "Scale Sluice", "Nine Locks", "the Charter Side", "Kettle Burg", "Fishmongers' Row", "Harting Street", "Mill End", "Widow's Point", "Culver Quay", "Two Bridges", "the Old Tallow Quarter", "the Sheep Track"];
+
+    const PATRONS = ["Saint Ansley", "the Blessed Orra", "Saint Vavel", "the Quiet Saint Ilga", "Corven of the Third Seat", "Halic the Measure-Kept", "the Nine Bells", "Saint Kess of the Ford", "Old Reverence"];
+
+    const SECTORS = {
+      craft: {
+        people: ["Chandlers", "Weavers", "Fullers", "Coopers", "Joiners", "Glaziers", "Saddlers", "Brazers", "Cordwainers", "Slaters", "Tallow-Cutters", "Turners"],
+        claim: ["the making and selling of candles", "the finishing of cloth", "the joining of stairs and frames", "the hooping of every vessel in the ward", "shoes, and only shoes", "window glass and its carriage", "saddles and harness", "roofing slates and their laying"],
+        marks: ["three shuttles sable", "a hooked knife argent", "nine nails pale", "a pair of shears proper", "two hoops and a star", "the long shuttle", "a bell with one clasp"]
+      },
+      maritime: {
+        people: ["Carriers", "Lighters", "Ballasters", "Ferrymen", "Netmakers", "Wharfingers", "Pilots", "Ropemen"],
+        claim: ["all cartage within the walls", "the lightering of every ship before the tide turns", "ballast drawing and dumping", "the ferry at the lower crossing", "the mending of nets on the north shore", "mooring rights at the long wharf"],
+        marks: ["an anchor without rope", "two oars in saltire", "a hook and a star", "the long keel", "three waves and a bar"]
+      },
+      money: {
+        people: ["Exchangers", "Goldsmiths", "Scriveners", "Assayers", "Tellers", "Bondbrokers", "Weighers"],
+        claim: ["the exchange of foreign coin", "the assay of every marked metal", "the copying and keeping of deeds", "the weighing of bullion in the market", "bonds and sureties under seal"],
+        marks: ["a balance with one pan missing", "nine counters", "a seal and a knife", "the long tally", "two rings and a wart"]
+      },
+      arcane: {
+        people: ["Copyists", "Cartographers", "Alchemical Fellows", "Astronomers", "Ciphers", "Watchers", "Sealers"],
+        claim: ["the copying of books for pay", "the drawing of charts and the warranty of them", "the sale of prepared medicines", "the casting of hours for hire", "the sealing of charms before they leave the shop"],
+        marks: ["a lamp with three wicks", "nine stars set unevenly", "an open book without writing", "a key and a flame", "the eye within a bar"]
+      },
+      faith: {
+        people: ["Sextons", "Bearers", "Almoners", "Candle-Bearers", "Gravediggers", "Vestry Men", "Singers"],
+        claim: ["the burial of the dead in this ward", "the candles kept burning in the chapel", "the distribution of alms", "the ringing of the hours and the passing bell", "the upkeep of the vestry and its roof"],
+        marks: ["a bell", "three candles guttering", "a spade and a crown", "the folded cloth", "two keys in saltire"]
+      },
+      arms: {
+        people: ["Billmen", "Crossbow-Men", "Harness-Makers", "Farriers of the Yard", "Watchmen", "Spearmen"],
+        claim: ["the hiring out of a guard for a night", "the repair of harness and bridle", "the sale of bolts and heads", "the watch over three gates"],
+        marks: ["three bolts", "a hooked pole", "two swords under a hood", "the closed visor", "a spur and a bar"]
+      },
+      gray: {
+        people: ["Porters", "Sweeps", "Lamplighters", "Water-Carriers", "Salvage Buyers", "Secondhand Men", "Movers", "Ropemen"],
+        claim: ["night scavenging contracts", "the purchase of damaged goods at auction", "human carriage of parcels", "every lamp in the ward after the bell", "the moving of households", "salvage from the beach"],
+        marks: ["a black hook", "four nails", "a lantern without a light", "the folded rope", "a broom bound twice"]
+      }
+    };
+
+    const FORM_BUILD = {
+      company: {
+        make: p => "The " + pick(["Worshipful", "Ancient", "Honourable", "Free", "Standing"]) + " Company of " + p + " in " + pick(PLACES),
+        note: "A company: shares, an admission fee and hired staff. The name promises that you can buy your way in."
+      },
+      guild: {
+        make: p => "The Guild and Mystery of the " + p + " in " + pick(PLACES),
+        note: "A guild or mystery: apprenticeship, masterpiece, seat. The name promises quality control and a closed trade."
+      },
+      order: {
+        make: p => "The Order of " + pick(PATRONS) + " and its " + p + " in " + pick(PLACES),
+        note: "An order: vows and obedience, houses in other cities, money that belongs to nobody individually."
+      },
+      league: {
+        make: p => "The " + plainPlace() + " League of " + p,
+        note: "A league: separate bodies pooled for one purpose. The name promises a common enemy or a common toll."
+      },
+      circle: {
+        make: p => "The Circle of " + pick(["Nine", "Seven", "Twelve", "Sixteen"]) + " " + p,
+        note: "A circle: capped, nominated, unlisted. The name promises access through a person rather than a fee."
+      },
+      brotherhood: {
+        make: p => "The Brotherhood of " + p + " and " + pick(PATRONS),
+        note: "A brotherhood: sworn equals with a shared fund or grave. The name promises loyalty stronger than a contract."
+      },
+      wardens: {
+        make: p => "The Wardens of the " + pick(["Nine Stairs", "Lower Gate", "Long Counting House", "Chapel Yard", "Two Bridges", "Weigh House"]) + " and the " + p,
+        note: "Wardens: office holders elected by a body that cannot easily meet. The name promises a duty over a place."
+      },
+      mask: {
+        make: p => "The " + (/s$/.test(p) ? p + "'" : p + "'s") + " " + pick(["Friendly Society", "Benevolent Fund", "Burial Club", "Improvement Committee", "Charitable Association"]),
+        note: "A mask or front: filed as something dull and true. The name promises respectability, which is what it is trading for."
+      }
+    };
+
+    const LAW_NOTE = {
+      chartered: "Charter enrolled at the ward court, so a magistrate will enforce it and a clerk can be bribed to produce it.",
+      unlicensed: "No enrolment at all. The body collects anyway and settles with whoever holds the watch that week.",
+      front: "Filed for one purpose and used for another; the filed purpose is boring, accurate and entirely deliberate.",
+      farmed: "Revenue collected by contract for the crown or the council. They keep the surplus, which is why the trade hates them.",
+      banned: "Forbidden by name after an inquiry, still meeting under the old one. The sigil survives painted on walls nobody scrubs."
+    };
+
+    const GATES = {
+      craft: ["no cloth may be sold in the ward unless it carries their mark", "no candle may be burnt in a shop that has not been viewed this year", "no piece may be finished by anyone outside the body after the bell"],
+      maritime: ["no vessel may be loaded before a ticketed lighter has been paid", "no bale crosses the quay without a searcher's countersign", "no ship departs without a pilot hired through the lodge"],
+      money: ["no metal may be tried outside their house, so no sale is final without them", "no bond is enforceable unless it was sealed at the Long Counting House", "no foreign coin changes hands without the day's table rate"],
+      arcane: ["no charm leaves a shop unsealed and uncounted", "no book may be copied without the licence fee per leaf", "no hour may be cast for hire by an unlisted hand"],
+      faith: ["no body may be buried in the ward without a bearer's fee", "no candle burns in the chapel that the vestry has not paid for", "no alms are distributed without the clerk's tally"],
+      arms: ["no gate opens after the bell unless a watch hire is recorded", "no horse leaves the yard unshod and unmarked", "no blade is sold without a fee and a witness"],
+      gray: ["no salvage may be offered at auction for nine days", "no parcel moves after dark without a porter's ticket", "no lamp is lit in a street that has not been contracted"]
+    };
+
+    const FEES = [
+      "freedom costs eleven pounds, an oath and a banquet the new member cannot afford",
+      "a journeyman's ticket is two shillings and three witnesses who are all members",
+      "the seal on a bale costs a penny, of which the clerk keeps a third",
+      "the widow's subscription is a halfpenny weekly and a funeral she did not choose",
+      "the night licence is renewed at each Michaelmas and priced by how much the ward earned",
+      "admission by nomination costs nothing and therefore everything"
+    ];
+
+    const PUNISH = [
+      "for a first offence the goods are burned in the street and the maker is made to watch",
+      "for a second the trade is closed here for a year and a day",
+      "for unticketed work the watch breaks the shop sign and leaves the shop standing",
+      "for repeated cheating the clerk simply stops writing your name down, which is the same as the ability to earn",
+      "for forging the mark, the hand, and then nobody who needs a repair will employ the owner"
+    ];
+
+    const DISPUTES = [
+      "the first body of this name was dissolved for weighing short, and the second kept the name anyway",
+      "the charter is dated before the ward it claims existed, which is a question for somebody else",
+      "two halls, one office, and no agreement about which of them has the key",
+      "the wardens cannot agree who elected them, and the ledger is missing the page",
+      "the assay seal was rented to someone outside the body for eleven months and is still in use",
+      "membership has fallen to nine, but the fees are still assessed against forty houses",
+      "the numbered form claims to be the Sixth, and everyone alive remembers only this one"
+    ];
+
+    const MOTTOS = ["By the Measure", "One Hand, One Toll", "Weight True", "The Rope Holds", "Pay and Pass", "Sealed and Counted", "Not Before Dawn", "Twice Told and Once Paid", "Nothing Outward Unmarked"];
+    const HALLS = ["the Tallow Hall", "the Long Counting House", "the Bell House", "Nine Locks Hall", "the Crooked Hall", "the Weigh House", "the Old Guildhall behind the chapel", "the House of Nine Windows"];
+    const EXONYMS = ["the Mark Men", "the Counters", "the Bellmob", "the Long Hand", "the Ticket Men", "the Sealed", "Nine Fingers", "the Hall Clique", "the Tollbirds"];
+    const MEETS = [
+      "meets on the Thursday after the bell, in a room above a house that is not theirs",
+      "meets in the chapel loft, and the vicar is paid to be deaf",
+      "meets at the weigh house, where the party can obtain a seat if they bring a member",
+      "meets twice a year and by letter the rest of the time, which is how it stays out of the papers",
+      "has no fixed meeting place; a chalk mark on a door means the office sits there that night"
+    ];
+
+    const RANK_LADDER = [
+      ["Apprentice", "by the master's name", "nothing; the master controls where they sleep", "a premium and seven years"],
+      ["Journeyman", "by name, no title", "the right to be hired in this ward at all", "a piece of work judged by three masters"],
+      ["Master or Fellow", "Master, or Goodman", "a vote, a seat, and trial by peers", "a masterpiece, a fine and a banquet"],
+      ["Warden or Deacon", "Sir, or by office", "inspection, seizure and the guild key", "unpaid election that nobody wants"],
+      ["Clerk or Assayer", "by office, always", "the records, which is the same as the truth", "appointment and lifelong distrust"]
+    ];
+
+    function switchTab(tabId, btn) {
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+      btn.classList.add("active");
+      document.getElementById(tabId).classList.add("active");
+    }
+
+    function pick(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function cap(s) {
+      return s.charAt(0).toUpperCase() + s.slice(1);
+    }
+
+    function plainPlace() {
+      const raw = pick(PLACES).replace(/^the /i, "");
+      return raw.charAt(0).toUpperCase() + raw.slice(1);
+    }
+
+    function shortOf(people) {
+      const p = people.replace(/s$/, "");
+      const pos = /s$/.test(people) ? people + "'" : people + "'s";
+      return pick(["the " + people.toLowerCase(), "the " + p.toLowerCase(), "the " + pos.toLowerCase() + " Hall"]);
+    }
+
+    function sigilShort(mark) {
+      return "the " + mark.replace(/^(a|an|the)\s+/i, "").split(" ").slice(0, 2).join(" ").toLowerCase();
+    }
+
+    function buildGuild(sector, form, law) {
+      const sec = sector === "any" ? pick(SECTOR_KEYS) : sector;
+      const frm = form === "any" ? pick(FORM_KEYS) : form;
+      const standing = law === "any" ? pick(LAW_KEYS) : law;
+      const bank = SECTORS[sec];
+      const people = pick(bank.people);
+      const charter = FORM_BUILD[frm].make(people);
+      const sigil = pick(bank.marks);
+      const spoken = Math.random() < 0.4 ? sigilShort(sigil) : shortOf(people);
+
+      return {
+        sec, frm, standing, people,
+        charter: charter.replace(/\s+/g, " ").replace(/,,/g, ","),
+        spoken: spoken.replace(/\s+/g, " ").trim(),
+        hall: pick(HALLS),
+        exonym: pick(EXONYMS),
+        sigil,
+        claim: pick(bank.claim),
+        gate: pick(GATES[sec]),
+        fee: pick(FEES),
+        punish: pick(PUNISH),
+        dispute: pick(DISPUTES),
+        motto: pick(MOTTOS),
+        meets: pick(MEETS),
+        patternNote: FORM_BUILD[frm].note,
+        lawNote: LAW_NOTE[standing]
+      };
+    }
+
+    function generateGuilds() {
+      const sector = document.getElementById("gd-sector").value;
+      const form = document.getElementById("gd-form").value;
+      const law = document.getElementById("gd-law").value;
+      const count = Math.min(20, Math.max(1, parseInt(document.getElementById("gd-count").value) || 5));
+
+      const used = new Set();
+      const list = [];
+      let guard = 0;
+      while (list.length < count && guard++ < count * 25) {
+        const g = buildGuild(sector, form, law);
+        if (used.has(g.charter)) continue;
+        used.add(g.charter);
+        list.push(g);
+      }
+
+      document.getElementById("gd-results").innerHTML = list.map(g => `
+        <div class="name-card">
+          <div>
+            <div class="name-text">${g.charter}</div>
+            <div class="name-meaning">On the street: ${g.spoken} &middot; meets at ${g.hall} &middot; sigil: ${g.sigil}</div>
+            <div class="etymology-box"><strong>Charter claims:</strong> ${g.claim}<br><strong>Naming form:</strong> ${g.patternNote}<br><strong>Standing:</strong> ${g.lawNote}<br><strong>Outsiders call them:</strong> ${g.exonym}<br><strong>Dues:</strong> ${g.fee}</div>
+          </div>
+          <div class="name-actions">
+            <button class="icon-btn" onclick="copyText('${g.charter.replace(/'/g, "\\'")}')" title="Copy charter name">C</button>
+            <button class="icon-btn" onclick="copyText('${(g.charter + " - called " + g.spoken + " - " + g.hall + " - " + g.sigil + " - " + g.claim).replace(/'/g, "\\'")}')" title="Copy full entry">F</button>
+          </div>
+        </div>`).join("");
+    }
+
+    function generateCharter() {
+      const g = buildGuild(document.getElementById("gd-sector").value, document.getElementById("gd-form").value, document.getElementById("gd-law").value);
+      const ranks = RANK_LADDER.slice(0, 3 + Math.floor(Math.random() * 3)).map(r => `
+        <tr>
+          <td><strong>${r[0]}</strong></td>
+          <td>${r[1]}</td>
+          <td>${r[2]}</td>
+          <td>${r[3]}</td>
+        </tr>`).join("");
+
+      document.getElementById("sheet-out").innerHTML = `
+        <div class="char-card">
+          <h3>${g.charter}</h3>
+          <div class="char-card-section"><h4>Charter versus street</h4><p>Filed and enforced as <strong>${g.charter}</strong>. Called in the ward as <strong>${g.spoken}</strong>, and addressed as ${g.hall}. People who owe them money say <strong>${g.exonym}</strong>, and mean it badly. ${g.patternNote}</p></div>
+          <div class="char-card-section"><h4>Sigil, in one line</h4><p>${cap(g.sigil)}, struck on every piece they certify. The mark is the product; the members are interchangeable.</p></div>
+          <div class="char-card-section"><h4>Motto</h4><p>"${g.motto}", which is either a principle or an instruction depending on who is paying.</p></div>
+          <div class="char-card-section"><h4>The gate it controls</h4><p>${cap(g.gate)}. Punishment: ${g.punish}.</p></div>
+          <div class="char-card-section"><h4>Dues</h4><p>${cap(g.fee)}. ${g.lawNote}</p></div>
+          <div class="char-card-section">
+            <h4>Rank ladder</h4>
+            <div class="comparison-table-wrap">
+              <table class="comparison-table wrap-cells">
+                <thead>
+                  <tr><th>Rank</th><th>Addressed as</th><th>What the body controls</th><th>Cost of entry</th></tr>
+                </thead>
+                <tbody>${ranks}</tbody>
+              </table>
+            </div>
+          </div>
+          <div class="char-card-section"><h4>Where they meet</h4><p>${cap(g.meets)}.</p></div>
+          <div class="char-card-section"><h4>The trouble the name implies</h4><p>${cap(g.dispute)}. ${cap(g.claim)} is what they will fight about in court; ${g.exonym} is what the party will hear first.</p></div>
+          <div class="result-actions"><button class="btn btn-secondary" onclick="copyText(document.querySelector('#sheet-out .char-card').innerText)">Copy Charter</button></div>
+        </div>`;
+    }
+
+    window.addEventListener("load", generateGuilds);
+
+  </script>
+</body>
+</html>

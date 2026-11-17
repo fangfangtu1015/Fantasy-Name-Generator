@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TQH84Q5Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>NPC Name Generator - Names for Villagers, Traders and Guards</title>
+  <meta name="description" content="Generate NPC names with a trade, a sound palette and a tier that matches how often the name is said aloud. Build a whole village roster that stays distinguishable mid-session.">
+  <link rel="canonical" href="https://fantasyname.net/npc-name-generator/">
+  <meta property="og:title" content="NPC Name Generator - Names for Villagers, Traders and Guards">
+  <meta property="og:description" content="NPC names with a trade hook, a shared settlement palette and a distinctness check, plus the three-tier naming ladder for table use.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fantasyname.net/npc-name-generator/">
+  <meta property="og:image" content="https://fantasyname.net/assets/npc-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NPC Name Generator - Names for Villagers, Traders and Guards">
+  <meta name="twitter:description" content="NPC names with a trade hook, a settlement palette and a distinctness check.">
+  <meta name="twitter:image" content="https://fantasyname.net/assets/npc-hero.jpg">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "NPC Name Generator",
+    "description": "Generate names for non-player characters with an occupation, a settlement sound palette, a tier and a relation scaffold. Includes tables on name tiers, occupational surnames and village coherence.",
+    "url": "https://fantasyname.net/npc-name-generator/",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I name an NPC quickly at the table?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pick the tier first, not the name. If you will say it once, take any two-syllable name from a single palette and move on; if you will say it thirty times, attach a trade to it, because the trade makes the name recallable. Having a rule for tiers removes the hesitation more effectively than having a good list of names."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do NPC names have to match the character's race?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, and the table will not check. What the table does check is pronounceability and distinctness. Use the race generators when ancestry is part of the character's role in the scene, and otherwise favour a settlement palette, since people who live together sound like they live together."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should NPCs have last names?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Only working and recurring NPCs. A surname on a walk-on is dead preparation, and a surname on a recurring character is a promise you should keep. When you do use one, prefer an occupational or locative form, because those carry information the party can act on."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many NPCs does a village need?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Six to eight named, plus a handful of roles that only ever get an office. That is enough for any party to bump into three of them by accident, and small enough that you can keep the initials distinct without a spreadsheet. More than ten named people in one settlement is a roster problem, not a flavour one."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use these NPC names in my game or published module?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The output combines ordinary historical English surnames with invented given names, so you may use them in tabletop sessions, published adventures, fiction, streams or games with no credit and no fee."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fantasyname.net/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tools",
+        "item": "https://fantasyname.net/#tools"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "NPC Name Generator",
+        "item": "https://fantasyname.net/npc-name-generator/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">
+        <span class="logo-icon">&#9876;</span>
+        Fantasy Name Generator
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/races/">Races</a></li>
+          <li><a href="/backstory-generator/">Backstory Generator</a></li>
+          <li><a href="/guides/">Guides</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="race-hero">
+          <img src="/assets/npc-hero.jpg" alt="A market street of ordinary people talking, each with a trade sign above their stall">
+          <div class="race-hero-overlay">
+            <div class="race-hero-text">
+              <h1>NPC Name Generator</h1>
+              <p>A name, a trade, a tier and a shared village palette that keeps twelve people distinguishable</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>&#8250;</span>
+        <a href="/#tools">Tools</a>
+        <span>&#8250;</span>
+        NPC Name Generator
+      </div>
+
+      <h2>The Real Problem Is Twelve Names in Six Seconds</h2>
+
+      <div class="generator-box">
+        <div class="tab-switcher">
+          <button class="tab-btn active" onclick="switchTab('quick-names', this)">Single Names</button>
+          <button class="tab-btn" onclick="switchTab('roster', this)">Village Roster</button>
+        </div>
+
+        <div id="quick-names" class="tab-content active">
+          <div class="generator-controls">
+            <div class="form-group">
+              <label for="np-palette">Settlement sound palette</label>
+              <select id="np-palette">
+                <option value="any">Any</option>
+                <option value="market">Market town, blunt consonants</option>
+                <option value="coast">Coastal, liquid sounds</option>
+                <option value="march">Border march, hard k and g</option>
+                <option value="oldcity">Old city, long latinate names</option>
+                <option value="highland">Highland, aspirated and open</option>
+                <option value="river">River trade, mixed and shortened</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="np-role">Standing</label>
+              <select id="np-role">
+                <option value="any">Any</option>
+                <option value="trade">Craft or trade</option>
+                <option value="labour">Labourer, porter, field</option>
+                <option value="authority">Minor authority, guard, bailiff</option>
+                <option value="service">Inn, stable, dock, household</option>
+                <option value="learned">Scribe, healer, priest, teacher</option>
+                <option value="landed">Landed family, minor gentry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="np-tier">How often is it said aloud?</label>
+              <select id="np-tier">
+                <option value="any">Any tier</option>
+                <option value="walk">Walk-on, named once</option>
+                <option value="working">Working, used this session</option>
+                <option value="recurring">Recurring, remembered next month</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="np-count">How many?</label>
+              <input type="number" id="np-count" min="1" max="20" value="5">
+            </div>
+          </div>
+          <button class="btn btn-primary generate-btn" onclick="generateNpcs()">Generate NPC Names</button>
+          <div class="results" id="np-results"></div>
+        </div>
+
+        <div id="roster" class="tab-content">
+          <p>A roster for one settlement: a single palette, no two people sharing an initial and a syllable count, the trades the party will actually go looking for, and the family scaffolds that turn three names into a street.</p>
+          <button class="btn btn-primary generate-btn" onclick="generateRoster()">Roll a Village Roster</button>
+          <div id="sheet-out"></div>
+        </div>
+      </div>
+
+      <section class="mt-2">
+        <h2>Three Tiers of NPC, and What Each Name Has to Carry</h2>
+        <p>Most naming advice treats all non-player characters as the same job. They are not, and the difference is measurable: how many times you will say the name out loud. That single number decides how much syllable the name can afford, whether it needs a surname, and whether a nickname is doing the work instead.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Tier</th>
+                <th>Times said aloud</th>
+                <th>What the name must carry</th>
+                <th>Typical shape</th>
+                <th>Failure mode</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Walk-on</strong></td>
+                <td>Once, maybe twice in a scene</td>
+                <td>Nothing but a human being standing there</td>
+                <td>One given name, two syllables at most</td>
+                <td>A grand name that the party tries to remember, then never does</td>
+              </tr>
+              <tr>
+                <td><strong>Working</strong></td>
+                <td>Ten to thirty times this session</td>
+                <td>A cue for what this person does and who they answer to</td>
+                <td>Given name plus occupational or locative surname</td>
+                <td>Two working NPCs with the same first letter and the same rhythm</td>
+              </tr>
+              <tr>
+                <td><strong>Recurring</strong></td>
+                <td>Every session for a year</td>
+                <td>Relationship, history and a hook in the name itself</td>
+                <td>Given name, surname, nickname or byname, relation</td>
+                <td>A name that cannot be shortened, so players invent one for you</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="etymology-box">
+          <strong>Spend the name where it earns rent.</strong> A walk-on carrying a four-syllable name with a compound surname steals attention from the recurring character sitting next to them. The most common table mistake with NPC names is not a bad name; it is a name with the wrong weight class.
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Occupational Surnames Do Half Your Prep</h2>
+        <p>English surnames are mostly frozen job descriptions, and that is directly useful at a table. If the blacksmith is Hob Bellows and the tanner is Ness Fothergill, the party can find the right person by asking for a trade rather than remembering your notes. It also gives you free competence: a player who asks "who else works leather around here?" gets an answer from the naming system itself.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Trade</th>
+                <th>Surname you can use</th>
+                <th>Who complains to them</th>
+                <th>The smell or sound that sells it</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fuller (cleans and thickens cloth)</td>
+                <td>Tucker, Fuller, Walker</td>
+                <td>Weavers, dyers, anyone whose cloth shrank</td>
+                <td>Stale urine and hot water; the building is always damp</td>
+              </tr>
+              <tr>
+                <td>Tanner (cures hides)</td>
+                <td>Tanner, Barker, Fothergill</td>
+                <td>Cobblers, saddlers, the neighbourhood downstream</td>
+                <td>Dog-tight stench; tanners sit at the far end of town, always</td>
+              </tr>
+              <tr>
+                <td>Cooper (makes vessels)</td>
+                <td>Cooper, Hoop, Barrelman</td>
+                <td>Brewers, salters, anyone moving liquid or grain</td>
+                <td>Rhythmic tapping at every hour; shavings in the gutter</td>
+              </tr>
+              <tr>
+                <td>Wright (builds and repairs generally)</td>
+                <td>Wright, Arkwright, Joiner</td>
+                <td>Carters, farmers, the shipyard, the mill</td>
+                <td>Green timber smell; a yard full of half-finished things</td>
+              </tr>
+              <tr>
+                <td>Chandler (makes and sells candles, soap, tallow)</td>
+                <td>Chandler, Licht, Tallow</td>
+                <td>Temples, taverns, every household in winter</td>
+                <td>Greasy smoke and a sweetness that clings to your sleeve</td>
+              </tr>
+              <tr>
+                <td>Carter (hauls by road)</td>
+                <td>Carter, Haulk, Wheelwright</td>
+                <td>Anyone whose goods missed the season</td>
+                <td>Cracked wheels, loud opinions about road surfaces</td>
+              </tr>
+              <tr>
+                <td>Miller (grinds grain, controls a water right)</td>
+                <td>Miller, Milburn, Thresh</td>
+                <td>Every farmer in the valley, and the miller's own accountant</td>
+                <td>Flour dust in every seam of clothing; a miller is never poor</td>
+              </tr>
+              <tr>
+                <td>Ferrier and farrier (shoes horses)</td>
+                <td>Forrer, Ferrier, Shoe</td>
+                <td>Cavalry, carters, anyone who buys a horse too cheaply</td>
+                <td>Scorch of hot iron on wet hoof; horses calm down when they smell it</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>The Hook Hidden in Frozen Surnames</h3>
+        <p>Because these names are inherited rather than chosen, they lie. A Cooper who has never made a barrel, a Tanner family now too respectable to touch hides, a Miller who lost the water right three generations ago: all of those are one sentence of backstory, and they arrive for free the moment you use a real occupational surname. This is why the form is worth more than a decorative fantasy last name.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>One Village, One Sound Palette, Eight Distinguishable Names</h2>
+        <p>A settlement feels real when its names share a sound palette, and it feels like a bad session when its names share a shape. Both are cheap to control. Pick one palette per place, then break the names apart by initial letter, by syllable count, and by which syllable is stressed. That is the whole technique.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Palette</th>
+                <th>Sound rules</th>
+                <th>Sample given names</th>
+                <th>What breaks it</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Market town</strong></td>
+                <td>One or two syllables, blunt endings, no apostrophes</td>
+                <td>Hob, Nell, Brock, Maud, Tib, Garret</td>
+                <td>Anything with an elision or a double vowel</td>
+              </tr>
+              <tr>
+                <td><strong>Coastal</strong></td>
+                <td>Liquids and nasals, open final vowels</td>
+                <td>Lina, Nello, Alis, Solenne, Illo</td>
+                <td>Hard stops like k, tch, dg</td>
+              </tr>
+              <tr>
+                <td><strong>Border march</strong></td>
+                <td>Initial k and g, clipped final consonants</td>
+                <td>Kessa, Gorrit, Brokk, Tennek, Olka</td>
+                <td>Names of three or more syllables</td>
+              </tr>
+              <tr>
+                <td><strong>Old city</strong></td>
+                <td>Three or four syllables, internal vowels, family names first</td>
+                <td>Aurelia Ventin, Sabba Orine, Casilane</td>
+                <td>Monosyllables, which read as servants or outsiders</td>
+              </tr>
+              <tr>
+                <td><strong>Highland</strong></td>
+                <td>Aspirates, broad vowels, names that end in a breath</td>
+                <td>Hamha, Rhua, Eocaan, Ulaith</td>
+                <td>Latinate endings and diminutive suffixes</td>
+              </tr>
+              <tr>
+                <td><strong>River trade</strong></td>
+                <td>Shortened, mixed origins, jobs used as names</td>
+                <td>Two-Ropes, Sable, Half-Pell, Clerk</td>
+                <td>Full formal names, which mark you as new on the water</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>Initials audit</h3>
+            <p>Before a session, check the first letters of everyone you plan to voice. Two Bs or two Ms in one scene is where players start saying "the other one", which is how an NPC stops existing.</p>
+          </div>
+          <div class="tip-card">
+            <h3>The shout test</h3>
+            <p>Say the name across a table while somebody else is talking. If you cannot land it, it is a walk-on name doing recurring work. Shorten it now and write down the short form.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Spelling trap</h3>
+            <p>Players will ask how a name is said roughly once in five. Keep one pronunciation note per unusual name in your roster; the alternative is improvising it differently each time and losing the character.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Reuse trap</h3>
+            <p>Never hand a walk-on the name you were saving for the villain. Reusing a strong name later makes the new character feel like a retread, and players who remember the first one will tell you so.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Scaffolds: One Name Becomes a Family, Then a Street</h2>
+        <p>The cheapest way to populate a village is not more names. It is relations attached to names you already have, because each scaffold answers a question the party was about to ask.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Scaffold</th>
+                <th>Example</th>
+                <th>What it implies without a word of exposition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Patronymic</td>
+                <td>Hobb the Younger, son of Hob Bellows</td>
+                <td>A trade is held in a family; two people share a shop and a grudge</td>
+              </tr>
+              <tr>
+                <td>Locative</td>
+                <td>Nell at the Ford, Tib behind the Mill</td>
+                <td>Where the party finds them, and that nobody has house numbers here</td>
+              </tr>
+              <tr>
+                <td>Marital or widow form</td>
+                <td>Maud, Bellows' widow</td>
+                <td>Who runs the shop now, and who resents it</td>
+              </tr>
+              <tr>
+                <td>Comparative byname</td>
+                <td>Tennek the Less, Brokk Twice</td>
+                <td>A naming collision happened and the village solved it rudely</td>
+              </tr>
+              <tr>
+                <td>Office as name</td>
+                <td>The Bailiff, Clerk, Watchman Perris</td>
+                <td>Authority is smaller than the office holding it</td>
+              </tr>
+              <tr>
+                <td>Reputation phrase</td>
+                <td>Garret-Who-Paid, Sable Nine-Fingers</td>
+                <td>One past event defines a person permanently in a small town</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Run three names and three scaffolds and you have nine people, all of them related to each other, none of them requiring preparation. Related NPCs are also how you make a village feel older than the session: "no, that's the other Miller, the one who lost the water right" costs you one sentence.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>Six Names in One Scene, Said Out Loud, Under Pressure</h2>
+        <p>Naming is the easy half. The hard half is producing the name verbally while a player is talking at you, and holding six of them distinct across a twenty-minute scene. Working memory at a table carries about four names reliably; the fifth is where players start saying "the innkeeper", which is how a prepared NPC disappears. Everything below exists to keep the count down and the distinctness up.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Moment at the table</th>
+                <th>What you actually have to produce</th>
+                <th>Technique that works</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Someone walks in and asks a question</td>
+                <td>One name, said once</td>
+                <td>Take a walk-on from the palette; never invent on the spot</td>
+                <td>"Nell. Nell wants to know who broke the gate."</td>
+              </tr>
+              <tr>
+                <td>Someone bargains or is threatened</td>
+                <td>A name the party will reuse within ten minutes</td>
+                <td>Use the surname as the handle, since it is shorter and means something</td>
+                <td>"Tell the Tucker that the cloth is not leaving the ward unpaid for."</td>
+              </tr>
+              <tr>
+                <td>The same person returns next session</td>
+                <td>A name plus a relationship</td>
+                <td>Attach one scaffold and it stops being a new person</td>
+                <td>"Hobb the Younger. Son of the Bellows. Same shop."</td>
+              </tr>
+              <tr>
+                <td>Three people in one room</td>
+                <td>Three names that never sound alike</td>
+                <td>Vary the initial and the syllable count; two-syllable, then one, then three</td>
+                <td>Brock, Nell, Aurelia</td>
+              </tr>
+              <tr>
+                <td>A crowd, a queue, a market</td>
+                <td>No names at all</td>
+                <td>Trades only, in the plural, which reads as bigger than any roster</td>
+                <td>"Two coopers and a carrier are already arguing about the loading order."</td>
+              </tr>
+              <tr>
+                <td>A name the players mishear</td>
+                <td>A correction that does not embarrass them</td>
+                <td>Have the short form ready; players always prefer the shorter one</td>
+                <td>"Aurelia Ventin. Everyone says Venn."</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Three Emergency Methods When Nobody Is Named Yet</h3>
+        <p>Keep these in reserve for the moment a player asks about the person you did not prepare. First, name by trade with no given name at all: "the Ferrier", "the Clerk". It is honest, it takes one second, and it is a better clue than a fantasy word, because a trade tells the party where to find that person again. Second, derive from the palette you are already using rather than from nothing: take a name you have said already, keep its first syllable and change the ending, and you have produced a sibling, a cousin or a rival with an audible family resemblance. Third, borrow a real surname off any object in your room and adjust one letter; nobody at the table can tell, and the shape of a genuine surname is exactly what invented ones usually fail to imitate.</p>
+
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>One physical detail per name</h3>
+            <p>Players recall a name when it is stapled to something: a sleeve, a limp, a smell, an habit of speech. One detail buys you three sessions of recall on a name you spent no preparation on.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Give the palette a voice, not each NPC</h3>
+            <p>Slow the rate for long latinate names, clip the march names, and keep everything else at normal speed. One rule per settlement is sustainable; one rule per character is not.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Write names the players will not have to read</h3>
+            <p>If a name only exists in your notes, it does not matter how it is spelled. If it goes on a handout, it must be spellable after one hearing, or you will be spelling it out for the rest of the campaign.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Retire names on purpose</h3>
+            <p>When a walk-on unexpectedly matters, rename them properly and say the new form twice. Players accept it, and you keep your strong names for the characters who earned them.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Related Generators</h2>
+        <div class="internal-links">
+          <a href="/tavern-name-generator/">Tavern Name Generator</a>
+          <a href="/city-name-generator/">City Name Generator</a>
+          <a href="/guild-name-generator/">Guild Name Generator</a>
+          <a href="/dungeon-name-generator/">Dungeon Name Generator</a>
+          <a href="/races/">Race Name Generators</a>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>How do I name an NPC quickly at the table?</h3>
+          <p>Pick the tier first, not the name. If you will say it once, take any two-syllable name from a single palette and move on; if you will say it thirty times, attach a trade to it, because the trade makes the name recallable. Having a rule for tiers removes the hesitation more effectively than having a good list of names.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do NPC names have to match the character's race?</h3>
+          <p>No, and the table will not check. What the table does check is pronounceability and distinctness. Use the race generators when ancestry is part of the character's role in the scene, and otherwise favour a settlement palette, since people who live together sound like they live together.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Should NPCs have last names?</h3>
+          <p>Only working and recurring NPCs. A surname on a walk-on is dead preparation, and a surname on a recurring character is a promise you should keep. When you do use one, prefer an occupational or locative form, because those carry information the party can act on.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How many NPCs does a village need?</h3>
+          <p>Six to eight named, plus a handful of roles that only ever get an office. That is enough for any party to bump into three of them by accident, and small enough that you can keep the initials distinct without a spreadsheet. More than ten named people in one settlement is a roster problem, not a flavour one.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I use these NPC names in my game or published module?</h3>
+          <p>Yes. The output combines ordinary historical English surnames with invented given names, so you may use them in tabletop sessions, published adventures, fiction, streams or games with no credit and no fee.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Race Generators</h4>
+          <ul>
+            <li><a href="/elf-name-generator/">Elf Name Generator</a></li>
+            <li><a href="/dwarf-name-generator/">Dwarf Name Generator</a></li>
+            <li><a href="/dragon-name-generator/">Dragon Name Generator</a></li>
+            <li><a href="/orc-name-generator/">Orc Name Generator</a></li>
+            <li><a href="/tiefling-name-generator/">Tiefling Name Generator</a></li>
+            <li><a href="/drow-name-generator/">Drow Name Generator</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Elf Subtypes</h4>
+          <ul>
+            <li><a href="/wood-elf/">Wood Elf Names</a></li>
+            <li><a href="/high-elf/">High Elf Names</a></li>
+            <li><a href="/dark-elf/">Dark Elf Names</a></li>
+            <li><a href="/female-elf/">Female Elf Names</a></li>
+            <li><a href="/male-elf/">Male Elf Names</a></li>
+            <li><a href="/elf-last-name/">Elf Last Names</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="/guides/how-to-choose-a-sound-palette/">Sound Palette Guide</a></li>
+            <li><a href="/guides/how-to-name-a-dd-character/">D&amp;D Naming Guide</a></li>
+            <li><a href="/guides/how-to-pronounce-fantasy-names/">Pronunciation Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Tools</h4>
+          <ul>
+            <li><a href="/backstory-generator/">Backstory Generator</a></li>
+            <li><a href="/races/">All Race Generators</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fantasy Name Generator. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/name-generator.js"></script>
+  <script src="/assets/race-page-components.js"></script>
+  <script>
+    const PALETTES = {
+      market: {
+        gives: ["Hob", "Nell", "Brock", "Maud", "Tib", "Garret", "Doll", "Pell", "Rook", "Bess", "Nim", "Tam", "Cobb", "Gudrun"],
+        shape: "one or two syllables, blunt endings",
+        place: ["Cobb's Cross", "Mill End", "Two Bridges", "Harting Street"],
+        wrong: ["Aurelia", "Eocaan", "Solenne"]
+      },
+      coast: {
+        gives: ["Lina", "Nello", "Alis", "Solenne", "Illo", "Elane", "Nerine", "Lorcan", "Ala", "Salina", "Ilane", "Ondine", "Maelis", "Cassel", "Ferrin", "Ylane"],
+        shape: "liquids and nasals, open final vowels",
+        place: ["Kettle Haven", "The Schott", "Widow's Point", "Culver Quay"],
+        wrong: ["Brokk", "Tennek", "Gorrit"]
+      },
+      march: {
+        gives: ["Kessa", "Gorrit", "Brokk", "Tennek", "Olka", "Katne", "Grick", "Tarn", "Bessa", "Kess", "Orran", "Halk", "Dask", "Rikk", "Vess", "Torrin"],
+        shape: "initial k and g, clipped final consonants",
+        place: ["Narrow Gate", "Kettle Burg", "The Long Post", "Tennek's Rest"],
+        wrong: ["Solenne", "Aurelia Ventin", "Ulaith"]
+      },
+      oldcity: {
+        gives: ["Aurelia Ventin", "Sabba Orine", "Casilane", "Dominic Farrow", "Peretta Alboin", "Lucanne", "Verino", "Ottolein", "Sabra Mince", "Cassiel"],
+        shape: "three or four syllables, family name carrying the weight",
+        place: ["the Ward of Bellons", "Old Tallow Quarter", "Fishmongers' Row", "the Charter Side"],
+        wrong: ["Hob", "Tib", "Nim"]
+      },
+      highland: {
+        gives: ["Hamha", "Rhua", "Eocaan", "Ulaith", "Odrum", "Neha", "Aillinn", "Breoc", "Euhan", "Mahha", "Illar"],
+        shape: "aspirates, broad vowels, ends on a breath",
+        place: ["Whitekettle", "The Hamh Fold", "Glen of Nine", "Ulaith's Stair"],
+        wrong: ["Cassiel", "Scrivener", "Tib"]
+      },
+      river: {
+        gives: ["Two-Ropes", "Sable", "Half-Pell", "Clerk", "Barge", "Nim the Short", "Tallow", "Kedge", "Slate", "Ferry"],
+        shape: "shortened, jobs used as names, origins mixed",
+        place: ["Scale Sluice", "Nine Locks", "the Wharf Side", "Barley Water"],
+        wrong: ["Aurelia Ventin", "Eocaan", "Dominic Farrow"]
+      }
+    };
+
+    const SURNAMES = {
+      trade: ["Tucker", "Tanner", "Cooper", "Wright", "Chandler", "Carter", "Miller", "Ferrier", "Thresh", "Licht", "Hoop", "Joiner", "Dyer", "Barker", "Sallow"],
+      labour: ["Milburn", "Snowman", "Fold", "Greenway", "Orman", "Field", "Shurt", "Hasker", "Appleyard", "Noll", "Barrell", "Sedge"],
+      authority: ["Reeves", "Bailley", "Serjeant", "Toll", "Kepp", "Alderman", "Mote", "Warden", "Vandergrift", "Cordway"],
+      service: ["Portman", "Harker", "Larder", "Scull", "Stevener", "Butler", "Hynde", "Fisher", "Kettle", "Oates"],
+      learned: ["Clarke", "Scrivener", "Sexton", "Reader", "Almoner", "Barber", "Physek", "Line", "Cass", "Soler"],
+      landed: ["Vane", "Ashcombe", "Merivel", "Lowdish", "Stane", "Burchard", "Venables", "Of Wren Cross", "Cantlebury", "Dorrin"]
+    };
+
+    const ROLE_LINE = {
+      trade: ["works leather", "keeps the cloth yard", "makes and mends vessels", "builds anything out of green timber", "sells tallow, soap and candles", "hauls by road", "grinds grain and holds a water right", "shoes horses", "cuts stone", "spins and weaves", "dyes cloth, badly"],
+      labour: ["carries for a wage", "works the common fields", "digs peat in winter", "mends roads when ordered", "hauls water for the quarter", "tends another man's flock", "cuts reeds on the marsh", "rows at the ferry", "works the salt pans", "waits for a hire at the cross"],
+      authority: ["collects on behalf of someone else", "holds the ward key", "walks the night round", "keeps the market measures honest", "serves writs nobody thanks them for", "counts the toll at the gate", "reads the proclamation and is blamed for it", "arbitrates fences and is believed by neither side"],
+      service: ["opens the door and remembers who came", "keeps the cellar and skims nothing", "mucks out the yard at dawn", "drives the coal cart", "answers the bell at any hour", "cooks for a house that is not theirs", "holds the horse while you go in", "rows the packet across at off hours"],
+      learned: ["copies deeds for a fee", "rings the hours and knows everyone's business", "sells physic and prayers together", "keeps the alms ledger", "reads letters to those who cannot", "sets bones and asks no questions", "teaches two children at a time", "buried the last plague year and counted them"],
+      landed: ["rents out three houses and lives in one", "has a title no office will confirm", "lost the family water right", "marries for a boundary stone", "keeps a seat in the ward court", "sends a cousin to the guild", "has not been to the city in nine years", "collects a rent that no longer exists"]
+    };
+
+    const RELATIONS = ["son of %", "daughter of %", "nephew of %", "widow of %", "apprentice to %", "the second of that name", "cousin to %", "married into the % family"];
+    const BYNAMES = ["the Younger", "the Less", "the Elder", "Twice", "Who-Paid", "Nine-Fingers", "at the Ford", "behind the Mill", "the Quiet", "Half-Acre", "of the Third Ward"];
+    const FINDERS = ["ask for the trade, not the name", "found by following the smell", "found by the noise coming out of the yard", "the only house with a painted sign", "hired by the hour at the cross on market day", "named on the door, in someone else's handwriting", "knows nothing until you mention the toll", "will come out if you say you are late with money"];
+    const OUTSIDER = ["the only family here that buries its dead facing the other way", "a name that appears in the ledger only this season", "came with the last cargo and stayed", "not in the ward book, and the clerk knows why", "speaks the local vowels wrong on purpose"];
+    const MISSING_TRADE = ["no chandler in a town of forty houses, so candles come from one neighbour who has a monopoly", "no ferrier, which is why the horses at the cross are all lame", "no cooper: every liquid here is carried in someone else's barrel", "no scrivener, so every contract is witnessed by whoever is loudest", "no midwife on the roster, which is a story", "no one who mends nets, next to a river full of nets"];
+
+    const SYLL = w => Math.max(1, (w.toLowerCase().match(/[aeiouy]+/g) || []).length);
+    const INITIAL = w => w.trim().charAt(0).toUpperCase();
+
+    function switchTab(tabId, btn) {
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+      btn.classList.add("active");
+      document.getElementById(tabId).classList.add("active");
+    }
+
+    function pick(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function cap(s) {
+      return s.charAt(0).toUpperCase() + s.slice(1);
+    }
+
+    function bankFor(sel, banks) {
+      if (sel !== "any") return banks[sel];
+      const keys = Object.keys(banks);
+      return keys.reduce((acc, k) => acc.concat(banks[k]), []);
+    }
+
+    function paletteName(pal) {
+      return pick(PALETTES[pal].gives);
+    }
+
+    function buildNpc(pal, role, tier) {
+      const palette = pal === "any" ? pick(Object.keys(PALETTES)) : pal;
+      const standing = role === "any" ? pick(Object.keys(SURNAMES)) : role;
+      const tierRoll = Math.random();
+      const grade = tier === "any"
+        ? (tierRoll < 0.45 ? "walk" : tierRoll < 0.8 ? "working" : "recurring")
+        : tier;
+
+      const given = paletteName(palette);
+      const sur = pick(SURNAMES[standing]);
+      const doing = pick(ROLE_LINE[standing]);
+
+      let name, tierNote;
+      if (grade === "walk") {
+        name = given;
+        tierNote = "Walk-on: one word, no surname, and it will be forgotten by the next scene, which is correct.";
+      } else if (grade === "working") {
+        name = given + " " + sur;
+        tierNote = "Working: the surname is a job description, so the party can find this person by asking for a trade.";
+      } else {
+        name = given + " " + sur + ", " + pick(BYNAMES);
+        tierNote = "Recurring: a byname plus a relation, because a name said every session needs a story attached to it.";
+      }
+
+      const spoken = grade === "walk" ? given : (SYLL(given) > 2 ? given.slice(0, Math.min(4, given.length - 2)) : given.toLowerCase());
+      const needsNote = /[aeiouy]{2}|[^a-zA-Z -]/.test(given) || SYLL(given) > 2;
+      const kin = PALETTES[palette].gives.filter(g => g !== given);
+      const syll = SYLL(given);
+
+      return {
+        name, given, sur, standing, grade, palette, doing, tierNote, needsNote,
+        finder: pick(FINDERS),
+        relation: pick(RELATIONS).replace("%", pick(kin)),
+        spoken,
+        shape: syll + (syll > 1 ? " syllables, " : " syllable, ") + "stress on the " + (syll > 1 ? "first" : "only")
+      };
+    }
+
+    function generateNpcs() {
+      const pal = document.getElementById("np-palette").value;
+      const role = document.getElementById("np-role").value;
+      const tier = document.getElementById("np-tier").value;
+      const count = Math.min(20, Math.max(1, parseInt(document.getElementById("np-count").value) || 5));
+
+      const used = new Set();
+      const list = [];
+      let guard = 0;
+      while (list.length < count && guard++ < count * 25) {
+        const n = buildNpc(pal, role, tier);
+        if (used.has(n.name)) continue;
+        used.add(n.name);
+        list.push(n);
+      }
+
+      document.getElementById("np-results").innerHTML = list.map(n => `
+        <div class="name-card">
+          <div>
+            <div class="name-text">${n.name}</div>
+            <div class="name-meaning">${n.standing} &middot; ${n.doing} &middot; short form: ${n.spoken}</div>
+            <div class="etymology-box"><strong>Tier:</strong> ${n.tierNote}<br><strong>Palette:</strong> ${PALETTES[n.palette].shape} (${n.shape})<br><strong>Pronunciation:</strong> ${n.needsNote ? "Say it as \"" + n.spoken + "\"" : "Self-evident; no note required"}<br><strong>Relation scaffold:</strong> ${n.relation}<br><strong>How the party finds them:</strong> ${n.finder}</div>
+          </div>
+          <div class="name-actions">
+            <button class="icon-btn" onclick="copyText('${n.name.replace(/'/g, "\\'")}')" title="Copy name">C</button>
+            <button class="icon-btn" onclick="copyText('${(n.name + " - " + n.standing + " - " + n.doing + " - short " + n.spoken + " - " + n.relation).replace(/'/g, "\\'")}')" title="Copy full entry">F</button>
+          </div>
+        </div>`).join("");
+    }
+
+    function distinctRoster(pal, size) {
+      const rows = [];
+      const initials = new Set();
+      const shapes = new Set();
+      const names = new Set();
+      let guard = 0;
+      while (rows.length < size && guard++ < 300) {
+        const n = buildNpc(pal, "any", "working");
+        const i = INITIAL(n.given);
+        if (initials.has(i) || shapes.has(SYLL(n.given) + i) || names.has(n.sur)) continue;
+        rows.push(n);
+        initials.add(i);
+        shapes.add(SYLL(n.given) + i);
+        names.add(n.sur);
+      }
+      guard = 0;
+      let filler = 0;
+      while (rows.length < size && guard++ < 300) {
+        const n = buildNpc(pal, "any", "working");
+        if (names.has(n.name) || names.has(n.sur)) continue;
+        if (initials.has(INITIAL(n.given)) && filler++ < 12) continue;
+        rows.push(n);
+        names.add(n.name);
+        names.add(n.sur);
+        initials.add(INITIAL(n.given));
+        filler = 0;
+      }
+      return rows;
+    }
+
+    function collisionReport(rows) {
+      const byInitial = {};
+      const byShape = {};
+      rows.forEach(n => {
+        const i = INITIAL(n.given);
+        const s = SYLL(n.given) + i;
+        byInitial[i] = (byInitial[i] || 0) + 1;
+        byShape[s] = (byShape[s] || 0) + 1;
+      });
+      const dupI = Object.keys(byInitial).filter(k => byInitial[k] > 1);
+      const dupS = Object.keys(byShape).filter(k => byShape[k] > 1);
+      if (!dupI.length && !dupS.length) {
+        return "Clean. No two names share an initial, and no two share an initial plus a syllable count, so nobody in the party will ever have to say \"the other one\".";
+      }
+      const fixes = [];
+      if (dupI.length) fixes.push("shared initials " + dupI.join(", "));
+      if (dupS.length) fixes.push("same initial and same syllable count as another name " + dupS.map(k => k.charAt(k.length - 1)).join(", "));
+      return "Collisions: " + fixes.join(" and ") + ". In a real roster you would rename one of each pair before the session, because this is the exact pair players mix up six minutes later.";
+    }
+
+    function generateRoster() {
+      const pal = document.getElementById("np-palette").value;
+      const palette = pal === "any" ? pick(Object.keys(PALETTES)) : pal;
+      const rows = distinctRoster(palette, 8);
+      const place = pick(PALETTES[palette].place);
+      const offPalette = pick(PALETTES[palette].wrong);
+
+      const lines = rows.map(n => `
+        <tr>
+          <td><strong>${n.name}</strong></td>
+          <td>${n.doing}</td>
+          <td>${n.spoken}</td>
+          <td>${n.relation}</td>
+        </tr>`).join("");
+
+      document.getElementById("sheet-out").innerHTML = `
+        <div class="char-card">
+          <h3>Roster for ${place}</h3>
+          <p>Palette: ${PALETTES[palette].shape}. Eight people drawn from it, then checked against each other rather than against your memory.</p>
+          <div class="char-card-section">
+            <h4>Named eight</h4>
+            <div class="comparison-table-wrap">
+              <table class="comparison-table wrap-cells">
+                <thead>
+                  <tr><th>Name</th><th>What they do</th><th>Locals say</th><th>Attached to</th></tr>
+                </thead>
+                <tbody>${lines}</tbody>
+              </table>
+            </div>
+          </div>
+          <div class="char-card-section"><h4>Distinctness check</h4><p>${collisionReport(rows)}</p></div>
+          <div class="char-card-section"><h4>Trade coverage and the gap</h4><p>${cap(pick(MISSING_TRADE))}.</p></div>
+          <div class="char-card-section"><h4>The one name that does not belong here</h4><p>There is a <strong>${offPalette}</strong> in this village, and it is not a mistake: ${pick(OUTSIDER)}.</p></div>
+          <div class="char-card-section"><h4>Three names, one street</h4><p>${rows.slice(0, 3).map(n => n.given + " " + n.sur).join(", ")}: ${rows.slice(0, 3).map(n => n.relation).join("; ")}. Nine people, none of them prepared.</p></div>
+          <div class="char-card-section"><h4>Who answers for the village</h4><p>${(() => { const a = rows.find(r => r.standing === "authority") || rows[0]; return cap(a.name) + ", who " + a.doing + "; " + pick(FINDERS) + "."; })()}</p></div>
+          <div class="result-actions"><button class="btn btn-secondary" onclick="copyText(document.querySelector('#sheet-out .char-card').innerText)">Copy Roster</button></div>
+        </div>`;
+    }
+
+    window.addEventListener("load", generateNpcs);
+
+  </script>
+</body>
+</html>

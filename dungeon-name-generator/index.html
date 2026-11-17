@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TQH84Q5Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Dungeon Name Generator - Fantasy Underground Sites &amp; Tomb Names</title>
+  <meta name="description" content="Generate dungeon names with the person who named the site, its original purpose, a signature hazard and a two-word map label. Learn why tombs, mines and sewers sound different.">
+  <link rel="canonical" href="https://fantasyname.net/dungeon-name-generator/">
+  <meta property="og:title" content="Dungeon Name Generator - Fantasy Underground Sites &amp; Tomb Names">
+  <meta property="og:description" content="Generate dungeon names with the namer, original purpose, signature hazard and map label, plus the naming logic of buried places.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fantasyname.net/dungeon-name-generator/">
+  <meta property="og:image" content="https://fantasyname.net/assets/dungeon-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dungeon Name Generator - Fantasy Underground Sites &amp; Tomb Names">
+  <meta name="twitter:description" content="Generate dungeon names with the namer, original purpose, signature hazard and map label.">
+  <meta name="twitter:image" content="https://fantasyname.net/assets/dungeon-hero.jpg">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Dungeon Name Generator",
+    "description": "Generate names for fantasy dungeons, tombs, mines and catacombs, each paired with the group who named it, its original purpose, a signature hazard and a short map label. Includes tables on site vocabulary and naming lifecycle.",
+    "url": "https://fantasyname.net/dungeon-name-generator/",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I name a dungeon?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Decide who is doing the naming before you choose words. Neighbours name what they can see from the entrance, so they produce a condition plus a structure. Antiquaries name what they think it was for, so they produce a structure of an entity. A licensed company names ownership, so it produces a person and a number. Each choice also tells the players how much of the map to trust."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between a crypt, a barrow and an ossuary?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A crypt is a stone chamber built to hold the dead, usually under or beside a building, so it implies architecture and a community above it. A barrow is a mound raised over a burial, which implies an older culture, an open field, and one grave rather than many. An ossuary holds relocated bones, which implies a decision was made to move the dead, often for space, often by people who were not the mourners. Each one changes what you find on the way in."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should a dungeon have more than one name?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Give it a map label short enough to be drawn, a spoken name short enough to be shouted, and a record name long enough to be filed. The three forms disagree by design, and the disagreement tells players which kind of document they are holding and who benefits from that version."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I make a dungeon name frightening without sounding silly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Describe an event instead of a mood. The Hungry Vault announces a feeling and invites laughter; Where the Lamp Went Out announces something that happened to a specific person and cannot be argued with. Equally, a boring administrative name over a terrible site is one of the strongest pairings available: a numbered lot with a fee schedule is scarcer sounding than a demon, and much stranger."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use these dungeon names for my adventure or module?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every output is an original combination of ordinary English nouns and invented names, so you can use them in tabletop sessions, published adventures, fiction, games, maps or streams without credit or payment."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fantasyname.net/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tools",
+        "item": "https://fantasyname.net/#tools"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Dungeon Name Generator",
+        "item": "https://fantasyname.net/dungeon-name-generator/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">
+        <span class="logo-icon">&#9876;</span>
+        Fantasy Name Generator
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/races/">Races</a></li>
+          <li><a href="/backstory-generator/">Backstory Generator</a></li>
+          <li><a href="/guides/">Guides</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="race-hero">
+          <img src="/assets/dungeon-hero.jpg" alt="Stone stair descending into a lit underground chamber with carved niches">
+          <div class="race-hero-overlay">
+            <div class="race-hero-text">
+              <h1>Dungeon Name Generator</h1>
+              <p>A site name plus whoever named it, its original purpose, a signature hazard and a map label</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>&#8250;</span>
+        <a href="/#tools">Tools</a>
+        <span>&#8250;</span>
+        Dungeon Name Generator
+      </div>
+
+      <h2>Buried Places Are Named by the People Above Them</h2>
+
+      <div class="generator-box">
+        <div class="tab-switcher">
+          <button class="tab-btn active" onclick="switchTab('quick-names', this)">Site Names</button>
+          <button class="tab-btn" onclick="switchTab('site-sheet', this)">Full Site Sheet</button>
+        </div>
+
+        <div id="quick-names" class="tab-content active">
+          <div class="generator-controls">
+            <div class="form-group">
+              <label for="dg-class">Site vocabulary</label>
+              <select id="dg-class">
+                <option value="any">Any</option>
+                <option value="funerary">Funerary: crypt, barrow, ossuary</option>
+                <option value="industry">Worked: mine, quarry, delving</option>
+                <option value="civic">Under the city: sewer, cistern, vault</option>
+                <option value="faith">Religious: sanctum, reliquary, atrium</option>
+                <option value="natural">Natural: throat, sink, geode</option>
+                <option value="ruined">Collapsed: stair, cellar, underkeep</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="dg-namer">Named by</label>
+              <select id="dg-namer">
+                <option value="any">Anyone</option>
+                <option value="locals">Neighbours, from above</option>
+                <option value="scholars">Antiquaries and mappers</option>
+                <option value="guild">A licensed exploring company</option>
+                <option value="survivors">People who got out</option>
+                <option value="builders">Whoever dug it first</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="dg_state">Clearance stage</label>
+              <select id="dg_state">
+                <option value="any">Any</option>
+                <option value="rumour">Never entered</option>
+                <option value="partial">Partly cleared, map unreliable</option>
+                <option value="registered">Registered, fee-charging</option>
+                <option value="picked">Picked clean and quarrelled over</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="dg-count">How many?</label>
+              <input type="number" id="dg-count" min="1" max="20" value="5">
+            </div>
+          </div>
+          <button class="btn btn-primary generate-btn" onclick="generateSites()">Generate Dungeon Names</button>
+          <div class="results" id="dg-results"></div>
+        </div>
+
+        <div id="site-sheet" class="tab-content">
+          <p>A site sheet for prep: who calls it what, the entry terms, the last party's fate, the hazard the name is actually describing, and the way out nobody has tested.</p>
+          <button class="btn btn-primary generate-btn" onclick="generateSiteSheet()">Roll a Site Sheet</button>
+          <div id="sheet-out"></div>
+        </div>
+      </div>
+
+      <section class="mt-2">
+        <h2>Five Groups Name a Buried Place, and Each One Lies Differently</h2>
+        <p>A hole in the ground does not have a name. It has as many names as there are people with a reason to talk about it, and that is the single most useful fact for naming dungeons. Decide who is doing the naming and the shape of the name follows automatically, along with what the party can believe about the dangers inside.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Namer</th>
+                <th>Name shape</th>
+                <th>What it is really saying</th>
+                <th>How reliable the map is</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Neighbours</strong></td>
+                <td>Condition plus structure, no owner</td>
+                <td>What they have seen from the top: sound, smell, weather, one body</td>
+                <td>Accurate about the entrance, useless about anything below it</td>
+              </tr>
+              <tr>
+                <td><strong>Antiquaries</strong></td>
+                <td>Structure of an entity, dates, citations</td>
+                <td>Who built it and what it was for, argued from a doorway</td>
+                <td>Good on purpose, wrong on what is down there now</td>
+              </tr>
+              <tr>
+                <td><strong>A licensed company</strong></td>
+                <td>Owner plus numbering</td>
+                <td>Someone has a deed, a fee schedule and an insurance problem</td>
+                <td>Excellent where the ropes are, fictional where the money is</td>
+              </tr>
+              <tr>
+                <td><strong>Survivors</strong></td>
+                <td>An event, phrased like a sentence</td>
+                <td>Something happened to a specific person, and it is the whole name now</td>
+                <td>Vivid, narrow, and usually about one room</td>
+              </tr>
+              <tr>
+                <td><strong>Original builders</strong></td>
+                <td>Functional words in a dead language</td>
+                <td>A work order: storage, tomb, water works, quarry</td>
+                <td>The only names that describe the place as it was designed, which is not as it is</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="etymology-box">
+          <strong>Run two names at once.</strong> The most economical trick here: give a site a scholarly name that appears on a purchased map and a village name that appears when you ask at the tavern. The mismatch tells the party, without a single dice roll, that the people who sold them the map have not been down there.
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Structure Words Decide What Lives There</h2>
+        <p>The noun you pick is a promise about content, and players who have run games for years will cash it in immediately. A crypt invites funerary monsters and cursed grave goods. A mine invites collapse, gas, and something that was already working when everyone fled. Pick the class first, then the modifier, and the site designs itself.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Words</th>
+                <th>Plausible residents</th>
+                <th>Plausible treasure</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Funerary</strong></td>
+                <td>crypt, barrow, ossuary, charnel house, tomb, relief chamber</td>
+                <td>Undead, guardians bound by oath, mourners who never left</td>
+                <td>Grave goods, inscribed objects, family seals, nothing liquid</td>
+              </tr>
+              <tr>
+                <td><strong>Worked ground</strong></td>
+                <td>mine, shaft, delving, quarry, sump, adit, level</td>
+                <td>Things that eat rock or light, cave fauna, the abandoned crew</td>
+                <td>Ore, tools, unpaid wages, a sealed seam nobody is told about</td>
+              </tr>
+              <tr>
+                <td><strong>Civic underbelly</strong></td>
+                <td>sewer, cistern, culvert, undercroft, vault, stock tunnel</td>
+                <td>Slime and life, refugees, the city's own dumped problems</td>
+                <td>What the city threw away, and what it lost while doing so</td>
+              </tr>
+              <tr>
+                <td><strong>Religious</strong></td>
+                <td>sanctum, reliquary, atrium, oratory, cloister, tithe cellar</td>
+                <td>Clerics who stayed, vows given flesh, an order that failed</td>
+                <td>Relics with paperwork, plate, indulgence ledgers</td>
+              </tr>
+              <tr>
+                <td><strong>Natural</strong></td>
+                <td>throat, sink, swallet, geode, karst, fissure</td>
+                <td>Animals, not builders: things that nest, hunt or hibernate</td>
+                <td>Whatever fell in, and nothing that was placed</td>
+              </tr>
+              <tr>
+                <td><strong>Ruined</strong></td>
+                <td>stair, cellar, underkeep, submerged hall, fall</td>
+                <td>Whoever is squatting, whoever is hiding, whoever is stuck</td>
+                <td>Salvage, and a story about the day the roof came down</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Why "Natural" Names Are the Hardest to Sell</h3>
+        <p>A natural site has no architect, so no one can honestly claim to know what is in it, and no treasure can be implied. That is a feature: a cave named for a geological action, with no owner and no builder, reads as the one place on the map where your clues stop working. If you want the players to feel genuinely uninformed, remove the possessive from the name.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>The Name Changes as the Site Is Cleared</h2>
+        <p>Places acquire and lose names as their reputation moves. Track the stage and you get both a name and a price, and the party learns the site's history from paperwork instead of a monologue.</p>
+        <ol>
+          <li><strong>Rumour stage.</strong> Named by fear and by an event: the Weeping Stair, Where the Lamp Went Out. Nobody claims to have reached the bottom, so the name is a warning and the entrance is free.</li>
+          <li><strong>Company stage.</strong> Somebody has a rope, a licence and a debt: named for an owner and numbered by level. A fee appears, a guide appears, and the map stops being honest about the deep parts.</li>
+          <li><strong>Registered stage.</strong> The site is entered in an office as a lot, a ward or a claim number. Now the local event name survives only in the tavern, and the office name survives on receipts.</li>
+          <li><strong>Picked-clean stage.</strong> It is "the empty delving", "the flooded cellar", a shortcut. Danger has left, ownership has not, and the interesting conflict becomes who profits from a place that no longer has anything in it.</li>
+        </ol>
+        <p>The Clearance stage control on this page produces the naming for each phase, because the same site at stage one and stage three should not be called the same thing.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>Two Words on the Map, One Sentence in the Journal</h2>
+        <p>A site usually carries three names at once and each has a length limit. Keep them separate and the place becomes usable:</p>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>Map label</h3>
+            <p>One or two words, no possessive if the owner is disputed. On parchment, "Barrow Nine" beats "The Barrow of the Ninth Voice" every time, because the label has to fit between a river and a road.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Spoken name</h3>
+            <p>Whatever locals shorten it to, and it will be shorter than the label. This is the form that appears in an interrogation, a joke or an order, so it must be sayable in one breath.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Record name</h3>
+            <p>Full, dated, and attributed: the entry a scholar, a guild office or a temple would file. Long is fine here, because nobody reads it aloud.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Adventure title</h3>
+            <p>Not an in-world name at all. A title is a promise to the player, so it may say too much: the in-world record says "Vault 12", the title says "The Thing in Vault 12 Came Out".</p>
+          </div>
+        </div>
+        <p>If you take one thing from this page, take this: generate the in-world name, then write a different title for the session, and let the gap between them be the joke or the dread.</p>
+      </section>
+
+      <section class="mt-2">
+        <h2>How the Party Learns the Name on the Way There</h2>
+        <p>A site reaches a table through four sources in a fixed order, and each one hands over a different form of the same name. Run them in sequence and the players learn the dungeon's whole history from paperwork, without you describing a single corridor. The trick is not to give them the name; it is to give them four incompatible names and let them notice.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Beat</th>
+                <th>Who speaks</th>
+                <th>Name form they use</th>
+                <th>What they add or subtract</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. At the bar</strong></td>
+                <td>Neighbours, from above</td>
+                <td>Condition plus structure, or an event sentence</td>
+                <td>Adds one true sensory detail from the mouth and a warning that is really about a person, not the site</td>
+                <td>A drink, and a name they will not repeat outside</td>
+              </tr>
+              <tr>
+                <td><strong>2. In the office</strong></td>
+                <td>Clerk, registrar, surveyor</td>
+                <td>Lot, claim or parcel number</td>
+                <td>Subtracts every warning and adds a liability clause; the map here is neat and unvisited</td>
+                <td>A search fee, and a copy drawn by someone who has not been</td>
+              </tr>
+              <tr>
+                <td><strong>3. From the guide</strong></td>
+                <td>A licensed company's employee</td>
+                <td>Owner plus numbering, with rope terminology</td>
+                <td>Adds accurate detail down to the depth they have personally worked and nothing below it</td>
+                <td>Hire, and a percentage of whatever comes up</td>
+              </tr>
+              <tr>
+                <td><strong>4. At the mouth</strong></td>
+                <td>Carved, painted or scratched marks</td>
+                <td>The builders' functional term, or a survivor's tally</td>
+                <td>Adds the only version nobody contradicts, because it was written by someone who died there</td>
+                <td>Nothing. It is the reason to have bought nothing else</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Running the Sequence at the Table</h3>
+        <p>Give beats one and two in the same session, deliberately: hand over the office map with its numbered lots while the bar name is still in the players' notes. Within two minutes somebody asks why the documents disagree, and from then on the players are investigating the site rather than entering it. At beat three, let the guide use the company's numbering fluently and stumble the moment a player describes something that matches the bar version; that is the entire performance. At beat four, allow one carved mark that supports the oldest version of all, and the party will begin to suspect that the scholarly attribution, the office number and the company's claim are all recent inventions sitting on top of something that was named for a work order.</p>
+
+        <div class="etymology-box">
+          <strong>One rule for the rooms below.</strong> Room names inside a site should come from a different hand than the site name. A place called by an office number should have chambers named by whoever worked, buried or worshipped there, because no clerk invents a room name. If your rooms carry numbered labels and the site carries an event name, that tells the party a company got here first, whatever the tavern says.
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>What the Site Was Before It Was a Dungeon</h2>
+        <p>Nearly every buried place in a campaign was built for something else. A temple becomes a sewer, a mine becomes a refuge, a granary becomes a hermitage and then a lair. Archaeologists call this secondary use, and it is the most reliable source of a strong dungeon name because it hands you two naming layers at once: the word the builders used and the word the later users used. The friction between those two layers is where the atmosphere lives. A site named by one group in one decade sounds like a label. A site named twice, by people who disagreed, sounds old.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table wrap-cells">
+            <thead>
+              <tr>
+                <th>Built as</th>
+                <th>Used later as</th>
+                <th>What the name keeps</th>
+                <th>What that buys you at the table</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Temple</td>
+                <td>Sewer, then hiding place</td>
+                <td>The god's name in the first element, a filthy word in the second</td>
+                <td>The holy name is still on the door lintel while the street uses a joke. Players hear the insult and know the faith lost an argument.</td>
+              </tr>
+              <tr>
+                <td>Tomb</td>
+                <td>Pilgrimage stop</td>
+                <td>The dead person's name plus a visit word: saint, kneel, candle</td>
+                <td>Locals light candles in the entrance hall and refuse to go past the second door. You get reverence and dread in the same room.</td>
+              </tr>
+              <tr>
+                <td>Mine</td>
+                <td>Refuge, then abandoned</td>
+                <td>The company name and a lot or shaft number</td>
+                <td>Paperwork still exists. Claims are still valid. A deed found down there is a legal weapon, not a trinket.</td>
+              </tr>
+              <tr>
+                <td>Fortress</td>
+                <td>Market, then ruin</td>
+                <td>Garrison words frozen as room names</td>
+                <td>The rooms still sound military while the town above uses trade names, so the site reads as an occupation the locals got over.</td>
+              </tr>
+              <tr>
+                <td>Granary or cellar</td>
+                <td>Hermitage, then lair</td>
+                <td>Words for volume: bushel, tub, measure, bin</td>
+                <td>Room names that make no sense for worship tell observant players the truth: this place stored grain, so the floors are strong and the vents exist.</td>
+              </tr>
+              <tr>
+                <td>Natural cave</td>
+                <td>Boundary marker, then oath site</td>
+                <td>A law word: markstone, moot, oathhole</td>
+                <td>The site is a legal document. Trespass has a penalty, and someone still enforces it.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>The Reuse Test: Three Questions Before You Name It</h3>
+        <p>Ask who maintained the site, who pays for it now, and who is embarrassed by it. If nobody maintained it, every name in use is a folk name and none of them are consistent. If somebody still pays for it, there is a register, a survey and a keeper with keys, and the official name will be the boring one. If somebody is embarrassed by it, the official name is a euphemism, and the euphemism is the clue: a site called "the Quiet Houses" is hiding something specific, and the party can find out what by asking who changed the sign.</p>
+
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h4>Date the layers, not the site</h4>
+            <p>Say how long each use lasted. A temple for four centuries with a sewer for twenty years reads very differently from the reverse, and the ratio decides which name wins.</p>
+          </div>
+          <div class="tip-card">
+            <h4>One room keeps the oldest name</h4>
+            <p>Let a single door, well or stair carry the builder's word while everything around it has been renamed. That room is now a plot hook with no rolling required.</p>
+          </div>
+          <div class="tip-card">
+            <h4>Euphemism is a clue</h4>
+            <p>A polite name on an impolite site means someone with money objects to the plain word. Name the objector, and you have named the antagonist.</p>
+          </div>
+          <div class="tip-card">
+            <h4>The reuse explains the layout</h4>
+            <p>Storage sites have wide stairs and small doors. Worship sites have processional axes. Whatever the site was, the architecture is still arguing for it.</p>
+          </div>
+        </div>
+
+        <div class="etymology-box">
+          <strong>Rule of thumb:</strong> name the site for its first use and the rooms for its last one. That mismatch is what makes a place feel excavated rather than designed, and it costs you one word per room.
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Related Generators</h2>
+        <div class="internal-links">
+          <a href="/city-name-generator/">City Name Generator</a>
+          <a href="/kingdom-name-generator/">Kingdom Name Generator</a>
+          <a href="/npc-name-generator/">NPC Name Generator</a>
+          <a href="/guild-name-generator/">Guild Name Generator</a>
+        </div>
+      </section>
+
+      <section class="mt-2">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>How do I name a dungeon?</h3>
+          <p>Decide who is doing the naming before you choose words. Neighbours name what they can see from the entrance, so they produce a condition plus a structure. Antiquaries name what they think it was for, so they produce a structure of an entity. A licensed company names ownership, so it produces a person and a number. Each choice also tells the players how much of the map to trust.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What is the difference between a crypt, a barrow and an ossuary?</h3>
+          <p>A crypt is a stone chamber built to hold the dead, usually under or beside a building, so it implies architecture and a community above it. A barrow is a mound raised over a burial, which implies an older culture, an open field, and one grave rather than many. An ossuary holds relocated bones, which implies a decision was made to move the dead, often for space, often by people who were not the mourners. Each one changes what you find on the way in.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Should a dungeon have more than one name?</h3>
+          <p>Yes. Give it a map label short enough to be drawn, a spoken name short enough to be shouted, and a record name long enough to be filed. The three forms disagree by design, and the disagreement tells players which kind of document they are holding and who benefits from that version.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I make a dungeon name frightening without sounding silly?</h3>
+          <p>Describe an event instead of a mood. The Hungry Vault announces a feeling and invites laughter; Where the Lamp Went Out announces something that happened to a specific person and cannot be argued with. Equally, a boring administrative name over a terrible site is one of the strongest pairings available: a numbered lot with a fee schedule is scarcer sounding than a demon, and much stranger.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I use these dungeon names for my adventure or module?</h3>
+          <p>Yes. Every output is an original combination of ordinary English nouns and invented names, so you can use them in tabletop sessions, published adventures, fiction, games, maps or streams without credit or payment.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Race Generators</h4>
+          <ul>
+            <li><a href="/elf-name-generator/">Elf Name Generator</a></li>
+            <li><a href="/dwarf-name-generator/">Dwarf Name Generator</a></li>
+            <li><a href="/dragon-name-generator/">Dragon Name Generator</a></li>
+            <li><a href="/orc-name-generator/">Orc Name Generator</a></li>
+            <li><a href="/tiefling-name-generator/">Tiefling Name Generator</a></li>
+            <li><a href="/drow-name-generator/">Drow Name Generator</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Elf Subtypes</h4>
+          <ul>
+            <li><a href="/wood-elf/">Wood Elf Names</a></li>
+            <li><a href="/high-elf/">High Elf Names</a></li>
+            <li><a href="/dark-elf/">Dark Elf Names</a></li>
+            <li><a href="/female-elf/">Female Elf Names</a></li>
+            <li><a href="/male-elf/">Male Elf Names</a></li>
+            <li><a href="/elf-last-name/">Elf Last Names</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="/guides/how-to-choose-a-sound-palette/">Sound Palette Guide</a></li>
+            <li><a href="/guides/how-to-name-a-dd-character/">D&amp;D Naming Guide</a></li>
+            <li><a href="/guides/how-to-pronounce-fantasy-names/">Pronunciation Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Tools</h4>
+          <ul>
+            <li><a href="/backstory-generator/">Backstory Generator</a></li>
+            <li><a href="/races/">All Race Generators</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fantasy Name Generator. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/name-generator.js"></script>
+  <script src="/assets/race-page-components.js"></script>
+  <script>
+    const CLASS_KEYS = ["funerary", "industry", "civic", "faith", "natural", "ruined"];
+    const NAMER_KEYS = ["locals", "scholars", "guild", "survivors", "builders"];
+    const STAGES = ["rumour", "partial", "registered", "picked"];
+
+    const STRUCTURE = {
+      funerary: ["crypt", "barrow", "ossuary", "charnel house", "tomb", "relief chamber"],
+      industry: ["mine", "shaft", "delving", "quarry", "sump", "adit", "level"],
+      civic: ["sewer", "cistern", "culvert", "undercroft", "vault", "stock tunnel"],
+      faith: ["sanctum", "reliquary", "atrium", "oratory", "cloister", "tithe cellar"],
+      natural: ["throat", "sink", "swallet", "geode", "karst", "fissure"],
+      ruined: ["stair", "cellar", "underkeep", "hall", "fall"]
+    };
+
+    const OBSERVED = ["Weeping", "Humming", "Whistling", "Black Wind", "Dripping", "Warm Air", "Grinding", "Blue Light", "Half-Open", "Singing", "Frozen", "Foul Air", "Two Voice", "Stumbling"];
+    const LOCAL_PLACES = ["the Mill Dike", "the Common", "Lowgate", "the Second Field", "Hollow Brook", "the Old Tithing", "Wren Cross", "the Long Acre", "the Sheep Track"];
+
+    const ENTITIES = ["the Ninth Voice", "Saint Corven", "the Long Court", "Kessa the Unburied", "the Amber Choir", "Vaelin Marrow", "the Ten Who Stayed", "the Glass Patriarch", "Halic of the Third Seat", "the Quiet King", "the Salt Mother", "Orrun Twice-Buried", "the Last Bailiff", "the Nine Bells"];
+
+    const EVENTS = ["Where the Lamp Went Out", "Where the Boy Came Back", "The Level That Took the Rope", "Where Six Went In", "The Room That Moved", "Where the Rope Was Cut", "What Fell Down the Third Shaft", "The Night the Timbers Let Go", "Where the Dog Would Not Follow", "The Stair with the Seventh Landing"];
+
+    const COMPANIES = ["Marrow Ridge Delving", "the Six-Rope Company", "Lowwater Delving", "Pell and Vant", "the Deeping Association", "Kettle Bottom Works", "the Adventurers Register", "Nine-Shaft Shipping"];
+    const LOTS = ["Lot 12", "Claim 7", "Shaft Nine", "Vault 12", "Level the Third", "Number Fourteen", "Parcel 3", "Pit 6", "Ward Lot 2"];
+    const OFFICES = ["the Ward Court", "the Minerals Office", "the Tithe Registry", "the Delving Register", "the City Survey", "the Underfield Board"];
+
+    const BUILDER_FORMS = [
+      { word: "Kessrun", gloss: "a grain store cut into sound rock" },
+      { word: "Oduum", gloss: "the water cut, dug to lower a seam" },
+      { word: "Vhelach", gloss: "workers gate, the side a crew entered by" },
+      { word: "Tarrmarn", gloss: "the sealed seam, closed on purpose" },
+      { word: "Nimgil", gloss: "tithe of stone, a rent paid in cut blocks" },
+      { word: "Ruoth", gloss: "the deep bench, where the best vein was found" },
+      { word: "Solvael", gloss: "boundary cut, marking who dug here first" },
+      { word: "Baelteth", gloss: "salt hold, lined to keep moisture out" },
+      { word: "Unnkil", gloss: "masons lodging, built for a crew that never finished" }
+    ];
+
+    const HAZARD = {
+      funerary: ["the dead were buried twice, and the second burial was hurried", "a guardian that answers to a family line still standing above", "niches that are numbered past the number of bodies", "the air in the lowest chamber does not move"],
+      industry: ["an unsupported level that is only supported by habit", "a seam that was abandoned rather than worked out", "standing water with a depth nobody has measured twice", "a crew that is still down there in the payroll ledger"],
+      civic: ["what the city put down there is still down there", "the tide sets the entrance for four hours a day", "a population that pays no rates and has its own tolls", "the plans stop at the ward boundary"],
+      faith: ["a vow that was never released and still has witnesses", "the order that built it left in the wrong order", "relics whose paperwork outlaws anyone carrying them", "a bell that is still rung at the hours"],
+      natural: ["nothing built it, so nothing in it can be reasoned with", "the passage follows water, not air, and turns without warning", "a nesting season that governs the whole year", "a floor that is a crust over a drop"],
+      ruined: ["whoever squats there now has had time to prepare", "the fall is still falling, in small pieces", "a route in that no longer has a route out at the same height", "the salvage is the bait"]
+    };
+
+    const TREASURE = {
+      funerary: ["inscribed objects nobody is allowed to read aloud", "family seals that still open doors above ground"],
+      industry: ["a sealed ore car on an abandoned level", "unpaid wages in a company safe with the company gone"],
+      civic: ["what the city threw away, and what it lost doing it", "a sealed culvert branch holding a private cache"],
+      faith: ["plate that was never inventoried because it was never owned", "an indulgence ledger naming living debtors"],
+      natural: ["whatever fell in, and it fell from above", "a vein exposed by the same collapse that made the hole"],
+      ruined: ["salvage priced by whoever holds the stair", "the room the roof missed"]
+    };
+
+    const STAGE_NOTE = {
+      rumour: ["nobody claims to have reached the bottom, so the name is a warning", "the mouth is open and unclaimed: no fee, no guide, no liability"],
+      partial: ["partly cleared, so the deep parts of the map are guesses drawn neatly", "a rope line exists on the first two levels and on nothing below"],
+      registered: ["entered in an office as a number, so the fee is real and the danger is discounted", "the office name survives on receipts; the old name survives in the tavern"],
+      picked: ["emptied, and the argument is now about who owns an empty place", "danger has left; ownership has not"]
+    };
+
+    const RELIABILITY = {
+      locals: "Accurate about the entrance, silent about anything below it.",
+      scholars: "Good on what the site was for, wrong on what is in it now.",
+      guild: "Excellent where the ropes are, fictional where the money is.",
+      survivors: "Vivid, narrow, and about one room in particular.",
+      builders: "Describes the site as designed, which is not the site as it is."
+    };
+
+    const ENTRY_TERMS = [
+      "the ward gate is unlocked but watched, and the watcher counts heads",
+      "a rope is sold by the hour at the top, with no refund below the second landing",
+      "entry is free until you carry something out, then a rate applies",
+      "the company ticket names a guide who does not go past the third level",
+      "the temple holds the only key and will not say what it locks",
+      "the descent is permitted, the removal of anything is a separate question",
+      "a chalk mark on the third step means a claim has been jumped"
+    ];
+
+    const LAST_PARTY = [
+      "four went down, one came up, and the one who came up will not say which four",
+      "a hired guard, a scribe and two porters returned early with the pay intact and nothing else",
+      "the whole party walked out the wrong entrance two days later, arguing about who had been carrying the box",
+      "nobody has confirmed the party existed except the man who sold them the map",
+      "a name in the office book, a fee paid in full, and no reported outcome",
+      "they came back richer and refused to spend any of it where they were known"
+    ];
+
+    const WAYS_OUT = [
+      "a water shift that runs under the ward and out at the fulling mill",
+      "the builders side, cut for a crew rather than for a procession",
+      "a shaft with iron rungs that stop six feet short of anything",
+      "the relief chamber stair, which the map draws going up and the stone says going down",
+      "a collapsed passage that has been re-opened recently from the far side",
+      "the old adit, now above the water line only in a season nobody plans for"
+    ];
+
+    const TITLE_TURNS = [
+      "The Thing in %N Came Out",
+      "What the Fee Did Not Cover",
+      "%N, Entered Once",
+      "The Level That Was Not on the Map",
+      "Nobody Is Buried in %N",
+      "The Second Burial"
+    ];
+
+    function switchTab(tabId, btn) {
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+      btn.classList.add("active");
+      document.getElementById(tabId).classList.add("active");
+    }
+
+    function pick(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function cap(w) {
+      return w.replace(/\b[a-z]/g, c => c.toUpperCase());
+    }
+
+    function sent(w) {
+      return w.charAt(0).toUpperCase() + w.slice(1);
+    }
+
+    function bankFor(sel, banks) {
+      if (sel !== "any") return banks[sel];
+      return Object.keys(banks).reduce((acc, k) => acc.concat(banks[k]), []);
+    }
+
+    function labelFor(struct) {
+      const forms = [cap(struct) + " " + pick(["Nine", "Four", "XII", "the Third", "Low", "Halfway"]),
+        cap(struct) + " at " + pick(LOCAL_PLACES).replace(/^the /, ""),
+        cap(struct)];
+      return pick(forms);
+    }
+
+    function spokenFor(name, struct) {
+      const core = name.replace(/^the\s+/i, "").replace(/,.*$/, "");
+      const words = core.split(/[^A-Za-z]+/).filter(w => w && !/^(a|an|the|of|and|at|to|in|that|with|what|where|who)$/i.test(w));
+      const first = (words[0] || struct).toLowerCase();
+      if (Math.random() < 0.5) return "the " + struct;
+      return "the " + first;
+    }
+
+    function buildSite(cls, namer, state) {
+      const klass = cls === "any" ? pick(CLASS_KEYS) : cls;
+      const who = namer === "any" ? pick(NAMER_KEYS) : namer;
+      const struct = pick(STRUCTURE[klass]);
+      const stage = state === "any" ? pick(STAGES) : state;
+      let name, pattern;
+
+      if (who === "locals") {
+        name = Math.random() < 0.55
+          ? "The " + pick(OBSERVED) + " " + cap(struct)
+          : "The " + cap(struct) + " at " + pick(LOCAL_PLACES);
+        pattern = "A condition seen from the mouth, plus the structure word. No owner is claimed.";
+      } else if (who === "scholars") {
+        name = "The " + cap(struct) + " of " + pick(ENTITIES);
+        pattern = "Structure plus an attributed entity, argued from the doorway rather than the interior.";
+      } else if (who === "guild") {
+        name = pick(COMPANIES) + ", " + pick(LOTS);
+        pattern = "Owner plus numbering, which is a price list wearing a name.";
+      } else if (who === "survivors") {
+        name = pick(EVENTS);
+        pattern = "An event phrased like a sentence about one specific person.";
+      } else {
+        const b = pick(BUILDER_FORMS);
+        name = b.word + " " + cap(struct);
+        pattern = "A functional term in a dead language, meaning " + b.gloss + ".";
+      }
+
+      if (stage === "registered" && who !== "guild") {
+        name = pick(LOTS) + ", " + pick(COMPANIES);
+        pattern = "The office form has replaced the name the district uses; receipts and gossip now disagree.";
+      } else if (stage === "picked") {
+        name = sent("the " + pick(["empty", "flooded", "quiet", "silent", "cold", "short cut to"]) + " " + struct).replace(/\s+/g, " ");
+        pattern = "A nickname for a site that has been cleared: danger has left, ownership has not.";
+      }
+
+      const record = "The " + cap(struct) + " of " + pick(ENTITIES) + ", entered in " + pick(OFFICES) + " as " + pick(LOTS);
+      return {
+        name: sent(name.replace(/\s+$/g, "")),
+        klass, who, stage, struct,
+        pattern,
+        label: labelFor(struct),
+        spoken: spokenFor(name, struct),
+        record,
+        hazard: pick(HAZARD[klass]),
+        treasure: pick(TREASURE[klass]),
+        reliability: RELIABILITY[who],
+        stageNote: pick(STAGE_NOTE[stage])
+      };
+    }
+
+    function generateSites() {
+      const cls = document.getElementById("dg-class").value;
+      const namer = document.getElementById("dg-namer").value;
+      const state = document.getElementById("dg_state").value;
+      const count = Math.min(20, Math.max(1, parseInt(document.getElementById("dg-count").value) || 5));
+
+      const used = new Set();
+      const list = [];
+      let guard = 0;
+      while (list.length < count && guard++ < count * 25) {
+        const s = buildSite(cls, namer, state);
+        if (used.has(s.name)) continue;
+        used.add(s.name);
+        list.push(s);
+      }
+
+      document.getElementById("dg-results").innerHTML = list.map(s => `
+        <div class="name-card">
+          <div>
+            <div class="name-text">${s.name}</div>
+            <div class="name-meaning">Map label: ${s.label} &middot; locals say "${s.spoken}" &middot; hazard: ${s.hazard}</div>
+            <div class="etymology-box"><strong>Naming hand:</strong> ${s.pattern}<br><strong>Clearance stage:</strong> ${s.stageNote}<br><strong>Filed as:</strong> ${s.record}<br><strong>Payout:</strong> ${s.treasure}<br><strong>Map trust:</strong> ${s.reliability}</div>
+          </div>
+          <div class="name-actions">
+            <button class="icon-btn" onclick="copyText('${s.name.replace(/'/g, "\\'")}')" title="Copy name">C</button>
+            <button class="icon-btn" onclick="copyText('${(s.name + " - label " + s.label + " - spoken " + s.spoken + " - " + s.hazard + " - " + s.treasure).replace(/'/g, "\\'")}')" title="Copy full entry">F</button>
+          </div>
+        </div>`).join("");
+    }
+
+    function generateSiteSheet() {
+      const s = buildSite(document.getElementById("dg-class").value, document.getElementById("dg-namer").value, document.getElementById("dg_state").value);
+      const title = pick(TITLE_TURNS).replace("%N", s.label);
+
+      document.getElementById("sheet-out").innerHTML = `
+        <div class="char-card">
+          <h3>${s.name}</h3>
+          <div class="char-card-section"><h4>Who calls it what</h4><p>On the map it is <strong>${s.label}</strong>. Down the lane it is <strong>${s.spoken}</strong>. In ${pick(OFFICES)} it is <strong>${s.record}</strong>. ${s.pattern}</p></div>
+          <div class="char-card-section"><h4>What the name is really describing</h4><p>${sent(s.hazard)}. That, and not the architecture, is why the site has the name it has.</p></div>
+          <div class="char-card-section"><h4>Clearance stage</h4><p>${sent(s.stageNote)}. ${s.reliability}</p></div>
+          <div class="char-card-section"><h4>Entry terms</h4><p>${sent(pick(ENTRY_TERMS))}.</p></div>
+          <div class="char-card-section"><h4>The last party</h4><p>${sent(pick(LAST_PARTY))}.</p></div>
+          <div class="char-card-section"><h4>Payout worth describing</h4><p>${sent(s.treasure)}.</p></div>
+          <div class="char-card-section"><h4>The way out nobody has tested</h4><p>${sent(pick(WAYS_OUT))}.</p></div>
+          <div class="char-card-section"><h4>Session title</h4><p><strong>${title}</strong>, which says more than anyone in the world above would. That gap between the in-world name and the table name is where the dread or the joke lives.</p></div>
+          <div class="result-actions"><button class="btn btn-secondary" onclick="copyText(document.querySelector('#sheet-out .char-card').innerText)">Copy Sheet</button></div>
+        </div>`;
+    }
+
+    window.addEventListener("load", generateSites);
+
+  </script>
+</body>
+</html>
